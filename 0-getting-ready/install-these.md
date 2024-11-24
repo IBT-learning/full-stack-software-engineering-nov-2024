@@ -6,10 +6,10 @@ If you work on multiple computers, it will be possible to complete your coursewo
 
 ##### NOTE: Only complete the sections that are applicable to your operating system!
 
--   [Online user accounts (both Windows and Mac)](#online-user-accounts)
--   [Windows instructions](#windows)
--   [Apple/Mac instructions](#apple-macos)
--   [GitHub SSH setup (both Windows and Mac)](#github-ssh-setup)
+- [Online user accounts (both Windows and Mac)](#online-user-accounts)
+- [Windows instructions](#windows)
+- [Apple/Mac instructions](#apple-macos)
+- [Signing in to Github on your terminal (both Windows and Mac)](#signing-in-to-github-on-your-terminal)
 
 ## Online User Accounts
 
@@ -36,7 +36,7 @@ Loom is a tool for creating short video snippets. **This is optional**, but I re
 5. On the "Who do you collaborate with?" you can click "not now". You don't need to add any team members to your workspace.
 6. Finally, you'll be prompted to either install a Loom browser extension or download the Loom Desktop App. Either method of recording a Loom is fine and it's your choice which method you want to use.
 
-## Windows
+# Windows
 
 The instructions below will walk you through installing the following tools:
 
@@ -45,17 +45,17 @@ The instructions below will walk you through installing the following tools:
 1. Visual Studio Code Text Editor
 1. Node.js JavaScript Engine
 
-#### Git Bash - Command Line Tool Installation
+### Git Bash - Command Line Tool Installation
 
 1. Visit the [Git downloads page](https://git-scm.com/downloads/win)
 1. Download either the 32-bit or 64-bit "Standalone Installer"
-    - If you are not sure whether you have a 32-bit or 64-bit system, use [these instructions](https://support.microsoft.com/en-us/windows/which-version-of-windows-operating-system-am-i-running-628bec99-476a-2c13-5296-9dd081cdd808) to find out
+   - If you are not sure whether you have a 32-bit or 64-bit system, use [these instructions](https://support.microsoft.com/en-us/windows/which-version-of-windows-operating-system-am-i-running-628bec99-476a-2c13-5296-9dd081cdd808) to find out
 1. Open your downloads folder and run the installer
 1. In the installer, select the default options, just keep clicking "Next" and don't change anything
 1. Check to see if Git Bash was installed correctly by searching for the program and running it
-    - This is now your "terminal", this is the program you will open when you are instructed to open your terminal
+   - This is now your "terminal", this is the program you will open when you are instructed to open your terminal
 
-### Visual Studio Code Text Editor
+## Visual Studio Code Text Editor
 
 > The tool we are going to use is `Visual Studio Code` which is a free open-source editor with a strong developer community, made by Microsoft. This is a different tool than `Microsoft Visual Studio` which is a proprietary tool for enterprise software teams, and is not free.
 
@@ -63,14 +63,14 @@ The instructions below will walk you through installing the following tools:
 2. Run the installer, accepting the default options
 3. Run the VS Code Application from the start menu or shortcut.
 
-#### Helpful VS Code Extensions
+### Helpful VS Code Extensions
 
 The following extensions for VS Code are helpful, but optional. You can learn how to install extensions [from the official documentation](https://code.visualstudio.com/docs/editor/extension-marketplace).
 
--   [Prettier - Code Formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
--   [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
+- [Prettier - Code Formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+- [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
 
-### Node.js JavaScript Engine
+## Node.js JavaScript Engine
 
 1. Visit the Node.js homepage at <https://nodejs.org/en/>
 2. Click and download the installer for the **Current** version
@@ -79,17 +79,17 @@ The following extensions for VS Code are helpful, but optional. You can learn ho
 
 [Video Installation Guide for Node.js on Windows](https://www.loom.com/share/57f2b35af8a74a3e98f4c8d2f4a63e6d)
 
-## Apple MacOS
+# Apple MacOS
 
 The instructions below will walk you through installing the following tools:
 
 1. Visual Studio Code
 2. Homebrew package manager
 3. Checking essential packages:
-    1. Node.js JavaScript Engine
-    1. Git Command Line
+   1. Node.js JavaScript Engine
+   1. Git Command Line
 
-### Visual Studio Code Text Editor
+## Visual Studio Code Text Editor
 
 > NOTE: The tool we are going to use is `Visual Studio Code` which is a free open-source editor with a strong developer community, made by Microsoft. This is a different tool than `Microsoft Visual Studio` which is a non-free proprietary tool for enterprise software teams.
 
@@ -99,40 +99,40 @@ The instructions below will walk you through installing the following tools:
 4. Run the VS Code Application from the `/Applications` directory, **do not run it from within your `Downloads` folder** as you will not be able to use all the features
 5. Add VS Code to your Dock by right-clicking on the icon to bring up the context menu and choosing Options, Keep in Dock
 6. Install the `code` command-line tool by performing the following
-    - Open VS Code if you have not yet done so.
-    - Open the `Command Palette` by typing the following <kbd>CMD</kbd>-<kbd>SHIFT</kbd>-<kbd>P</kbd>
-    - Type `install code command` and then typing <kbd>RETURN</kbd>
-    - You may be asked to confirm you want to install the `code` command
-    - See the [official documentation for additional help](https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line)
+   - Open VS Code if you have not yet done so.
+   - Open the `Command Palette` by typing the following <kbd>CMD</kbd>-<kbd>SHIFT</kbd>-<kbd>P</kbd>
+   - Type `install code command` and then typing <kbd>RETURN</kbd>
+   - You may be asked to confirm you want to install the `code` command
+   - See the [official documentation for additional help](https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line)
 
-#### Helpful VS Code Extensions
+### Helpful VS Code Extensions
 
 The following extensions for VS Code are helpful, but optional. You can learn how to install extensions [from the official documentation](https://code.visualstudio.com/docs/editor/extension-marketplace).
 
--   [Prettier - Code Formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
--   [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
+- [Prettier - Code Formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+- [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
 
-### MacOS Homebrew
+## MacOS Homebrew
 
 Homebrew is a package manager for MacOS that lets you install tools directly from the Terminal. Once it's installed, it's generally easier to use Homebrew than to use a web browser and graphical installer app.
 
 These instructions are for recent versions of MacOS (MacOS v10.14 Mojave or newer). If these do not work for you, we can assist you in installing the tools another way.
 
-#### Install Homebrew
+### Install Homebrew
 
 1.  Visit <https://brew.sh>
 2.  Copy the **entire line** beneath "Install Homebrew"
-    -   `tip`: use the clipboard icon to copy it
+    - `tip`: use the clipboard icon to copy it
 3.  Open a **Terminal.app** window, paste the copied text, and hit <kbd>Return</kbd>
 4.  Follow the instructions in your terminal. Enter your password and hit <kbd>Return</kbd> as prompted, **you will not see the characters as you type your password**, this is default behavior in command-line applications.
 5.  Follow the default option for any further prompts
     > NOTE: The homebrew install may take a long time! On a slow internet connection, it could take more than an hour. If it takes more than 15 minutes, look at the terminal periodically to make sure things are moving and changing. (If you scroll up you may not see the most recent changes, so make sure you are scrolled to the bottom of your terminal screen.) If things do not change for more than 10 minutes, end the process by typing <kbd>ctrl</kbd> + <kbd>C</kbd> and then run the same command again. If this happens again the next time, send Danny a Slack message for help.
 
-### Node.js (JavaScript)
+## Node.js (JavaScript)
 
 We prefer to use the `brew` command to install Node.js.
 
-#### Install Node.js using Homebrew
+### Install Node.js using Homebrew
 
 1.  Open a Terminal.app window and type the following, followed by <kbd>Return</kbd>
 
@@ -161,6 +161,22 @@ Hopefully, git was already installed by default when you installed homebrew.
           git version 2.30.0
 
 1.  If you see any other message, copy it and paste it into a Slack message to Danny
+
+# Signing in to Github on your terminal
+
+In order to access git repositories from your terminal, you will need to be signed in, or "authenticated". Github provides several ways to do this, but I encourage you to choose one of these two options:
+
+- [Download Github Desktop](#github-desktop)
+- [Authenticate with SHH keys](#github-ssh-setup)
+
+## Github Desktop
+
+In this option, you will download the Github Desktop program and then sign in through the app. Once you are signed in in the app, you will be "authenticated" on your computer and you will be able to access git repositories from your command line.
+
+[Download Github Desktop](https://desktop.github.com/download/)
+[Complete authentication instructions](https://docs.github.com/en/desktop/installing-and-authenticating-to-github-desktop/authenticating-to-github-in-github-desktop)
+
+> IMPORTANT NOTE: We will not be using Github Desktop to perform git operations during this course. We will _only_ use the command line for git operations. The purpose of Github Desktop is to manage your user account only.
 
 ## Github SSH Setup
 
