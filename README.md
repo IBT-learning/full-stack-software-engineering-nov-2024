@@ -5,6 +5,7 @@ This is the central repository for IBT Learning's Full Stack Software Engineerin
 ## Author
 
 👨‍💻 **Author:** [Danny Burrow](https://github.com/burrowdown)
+👨‍💻 **Author:** [Yordanos](https://github.com/yordinia)
 
 ## Support
 
