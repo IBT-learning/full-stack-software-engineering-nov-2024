@@ -23,7 +23,7 @@ I was a mathematics teacher for years before I resign and transitioned into tech
     [![Lindsey Stirling](img.jpg)](https://www.youtube.com/watch?v=aHjpOzsQ9YI&list=RDEMzT1XwmFnIup_KYXuc2rUZA&start_radio=1)
 
     - Click the image below for [***Yanni***](https://www.youtube.com/watch?v=BNi9fOjXx-Y&list=RDEMdN61IXvR_2wuWGTZRHeRLQ&start_radio=1)  playlist
-    [![Lindsey Stirling](img.jpg)](https://www.youtube.com/watch?v=BNi9fOjXx-Y&list=RDEMdN61IXvR_2wuWGTZRHeRLQ&start_radio=1)
+    [![Yanni](img2.jpg)](https://www.youtube.com/watch?v=BNi9fOjXx-Y&list=RDEMdN61IXvR_2wuWGTZRHeRLQ&start_radio=1)
 
 Enjoy my playlist :smiley:
 
