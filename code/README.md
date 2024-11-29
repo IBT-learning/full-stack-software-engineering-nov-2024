@@ -17,3 +17,7 @@
 - A Photographer
 - A Host
 - A pilot
+
+#### A photo of someone I think is cool:
+
+![A dubai landark photo](images/dubai.jpg)
