@@ -1,7 +1,7 @@
 # Amarachi
 
 #### Where I live: Surulere, Lagos, Nigeria
-#### Were I'm from: Imo tate, Nigeria
+#### Were I'm from: Imo State, Nigeria
 
 > A link to a song I like [Undignified by Dunsin Oyekan](https://youtu.be/qesfKdKxXl0?)
 
