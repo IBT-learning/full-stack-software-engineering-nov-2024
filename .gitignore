@@ -1,9 +1,0 @@
-.env
-
-notes/
-notes.*
-
-.vscode/
-.vite/
-
-node_modules/
