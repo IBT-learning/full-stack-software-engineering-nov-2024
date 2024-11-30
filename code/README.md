@@ -1,17 +1,26 @@
-# Quol
+# Quol Peter
 
 ## Introduction
 
-### About me
+#### Where do i live at: Nairobi, Kenya, Africa
 
-#### Where do i live at; Maziwa, Nairobi, Kenya
+#### Where i am from : Juba, South Sudan, Africa
 
-#### I want to hit $1200 by the end of this year
+> A link to my favorite song [Alijoma ft Mac Dee](https://www.youtube.com/watch?v=EVhEbVs8u2Q)
 
-We will use a lot of programs throughout this course. This is not all of them, but these are the ones we need to get started.
+### My top hobbies:
 
-If you work on multiple computers, it will be possible to complete your coursework by synchronizing your work between computers. However, each computer will need to have all of these programs installed and configured.
+1. Learning/studying
+1. Swimming
+1. Travelling
 
-It should not reference information such as your age or birth year, your location or place of birth, your education or employment history, or your family status. I personally prefer usernames _not_ to include words like "dev", "coder", "hacker", etc, but not everyone frowns upon those. It should be short, and written all lowercase. It can include numbers, hyphens `-` or underscores `_`, but it's better if it doesn't.
+### If every job had the same pay,hours and education requirements I would be :
 
-> but these are the ones we need to get started: [Alijoma song](https://www.youtube.com/watch?v=EVhEbVs8u2Q)
+- An _electrical Engineer_
+- An Entrepreneur
+- _Financial consultant_
+- Neuro Surgeon
+
+### A photo of someone i think is cool
+
+![Cristiano Ronaldo](images/Cristiano_Ronaldo.jpg)
