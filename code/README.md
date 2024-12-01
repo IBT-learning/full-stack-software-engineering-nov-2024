@@ -3,7 +3,7 @@
 I live in the same place I was born: **Welkom, Free State, South Africa.** 	
 
 
-> A link to my favourite song: [Brown Skin Girl by Beyonce](https://youtu.be/RXrhqhW2kiU?si=ettO37QuX3xIULxU) 🎶
+> A link to my favourite song: [Brown Skin Girl by Beyonce](https://youtu.be/RXrhqhW2kiU?si=ettO37QuX3xIULxU) 
 ### My top three hobbies are:
   1. Playing chess
   1. Cooking
