@@ -37,3 +37,22 @@ Git is a distributed version control system that tracks versions of files. It is
 🔗 [CSS Selector Reference](https://www.w3schools.com/cssref/css_selectors.php)
 
 -->
+# Full Stack Software Engineering Course
+
+## Week 2 - Git Review and Markdown
+
+### Course Content
+- Git Basics
+- Markdown Syntax
+
+### Requirements
+1. Use at least two different kinds of headers
+2. Use at least one ordered list and one unordered list
+3. Use at least one link
+4. Use at least one image
+
+### Resources
+- [GitHub Documentation](https://docs.github.com/en)
+
+### Image Example
+![GitHub Logo](https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png)
