@@ -19,4 +19,4 @@
 
 #### A photo of someone I think is cool:
 
-![Ayanda Ntanzi](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.deezer.com%2Fen%2Fartist%2F7935466&psig=AOvVaw1Tcb1_VeFG3-2t-wALKDDl&ust=1733262703838000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCOCQw4mJiooDFQAAAAAdAAAAABAJ)
+![Lewis Hamilton](https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcRZe5_7se2P6yOrdFItrBhFm5GacIoTPRpsksHHhHmEGXAWXi-WwBAtIPAiqZJ-OSo3DSV-zQBZYYBN3io)
