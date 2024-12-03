@@ -1,0 +1,15 @@
+# My name is Chiamaka Prosper Nkwazema.
+## I am from Imo State, Nigeria.
+### My favorite music is 28 by Ruth.
+  - Enjoy traveling 
+
+  - Making friends
+
+  - Seeing a movie
+
+1. I love cooking
+2. I enjoy talking.
+[Favortite music by Ruth] (https://youtu.be/BY3izAZX9ZQ)
+
+![My Self] 
+(img src=/markdown assignment/myself.jpg) 
