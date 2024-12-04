@@ -1,4 +1,4 @@
-# 📚 Full Stack Software Engineering
+ # 📚 Full Stack Software Engineering
 
 This is the central repository for IBT Learning's Full Stack Software Engineering program. This cohort begins on April 27, 2024.
 
@@ -36,4 +36,4 @@ Git is a distributed version control system that tracks versions of files. It is
 
 🔗 [CSS Selector Reference](https://www.w3schools.com/cssref/css_selectors.php)
 
--->
+--> 
