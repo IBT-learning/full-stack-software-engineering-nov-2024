@@ -20,7 +20,7 @@ h1 {
     text-align: center;
     font-size: 40px;
     color: red;
-    text-shadow: 0 0px 2px black;
+    font-family: 'Courier New', Courier, monospace;
 }
 h3 {
     text-align: center;
