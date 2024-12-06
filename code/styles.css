@@ -1,0 +1,115 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(202, 211, 160);
+    margin: ;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-image: url(https://www.masaimara.travel/images/hot-air-balloon-hotairsafaris.jpeg);
+    background-size: cover;
+    background-position: center;
+    color: rgba(49, 45, 45, 0.776);
+    background-attachment: fixed;
+-webkit-font-feature-settings: "liga";
+    background-size: inherit;
+    font-style: unset;
+    background-color: bisque;
+    
+}
+
+h1 {
+    color: #0f431bd3;
+    text-emphasis: center;
+}
+p {
+    color: rgb(50, 36, 8);
+    font-size: larger;
+    font-style: calc();
+    font-weight: 100;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    
+    background-color: beige;
+}
+
+nav {
+    color: rgb(15, 75, 128);
+    background-color: rgba(238, 230, 179, 0.986);
+    margin: 0cap;
+    padding: 0cm;
+    text-decoration: none;
+    ;
+}
+/* Gallery Section */
+#gallery {
+    text-align: center;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+}
+
+#gallery h2 {
+    color: #4caf50;
+    margin-bottom: 15px;
+}
+
+#gallery p {
+    margin-bottom: 20px;
+    color: #555;
+    font-size: 1.1em;
+}
+
+/* Image Grid */
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.image-gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.image-gallery img:hover {
+    transform: scale(1.05); /* Zoom effect on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+
+
+a :hover {
+    color: rgba(0, 0, 6, 0.701);
+    text-decoration: none;
+} text-align: center; /* Centers the content */
+margin: 20px auto;
+padding: 20px;
+background: white;
+border-radius: 5px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+max-width: 800px;
+li {
+color: #0f1013d2;
+text-decoration: none;
+font-size: x-large;
+font-style: var(Roman);
+
+    
+}
+a {
+    text-decoration: none;
+    font-weight: 300;
+    font-variant-east-asian: jis90;
+    font-style: var(padding);
+    font-size: larger;
+
+}
+a:hover{
+    color: crimson;
+    transition: 0.4s;
+}
