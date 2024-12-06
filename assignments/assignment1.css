@@ -1,0 +1,144 @@
+body {
+    background: linear-gradient(to bottom, black, red);
+    color: white;
+}
+.imgContainer{
+    width: 100%;
+    position: relative;
+}
+
+.img{
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9);
+    margin: 0 25%;
+    
+}
+h1 {
+    text-align: center;
+    font-size: 40px;
+    color: red;
+    text-shadow: 0 0px 5px black, 0px 0px 5px red;
+}
+h3 {
+    text-align: center;
+}
+p{
+    
+    text-align: center;
+    width: 80%;
+    margin: 20px 10%;
+}
+
+.lastdiv {
+width: 200px;
+font-size: 18px;
+height: 200px;
+justify-self: center;
+margin-top: 40px;
+border-radius: 100px;
+position: relative;
+overflow: hidden;
+animation: scale 2s ease-in-out infinite;
+}
+
+@keyframes scale {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.2);color: white; }
+}
+
+
+@keyframes left {
+    0% { left: 210px; }
+    100% { left: 100 }
+}
+
+@keyframes right {
+    0% { right: 210px; }
+    100% { right: 100 }
+}
+
+.lastdiv::before {
+    content: "";
+    position: absolute;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    height: 160px;
+    width: 200px;
+    left: -210px;
+    background-color: rgba(255, 5, 255, 255);
+    z-index: -1;
+    animation: left 4s linear infinite 4s;
+    background-image: url(https://img.freepik.com/free-photo/front-view-tasty-meat-soup-with-potatoes-greens-dark-desk-meal-meat-dish-sauce_140725-79116.jpg?t=st=1733391230~exp=1733394830~hmac=d9593ffe11ec5866d331d82f6a7fc34333fc97313a06f66e2ba6f08277076dfd&w=740);
+    background-size: cover;
+}
+
+.lastdiv::after {
+    content: "";
+    position: absolute;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    height: 160px;
+    width: 200px;
+    right: -210px;
+    background-color: rgba(255, 5, 255, 255);
+    top: 0;
+    z-index: -1;
+    animation: right 4s linear 8s infinite;
+    background-image: url(https://img.freepik.com/free-photo/beans-soup-meat-carrot-potato-tomato-greens-side-view_141793-3697.jpg?t=st=1733391358~exp=1733394958~hmac=88f965a8e90dc6d62f4af33a3d17584e4b2853193aef947c3697a4ffbbbf1ff6&w=740);
+    background-size: cover;
+}
+#read {
+color: white; 
+font-size: large; 
+margin-top: -10px
+}
+
+.img1 {
+margin: 0 10%;
+}
+
+p{
+font-size: 20px;
+}
+
+.link {
+color: black;
+}
+
+a:hover{
+color: red;
+}
+
+#read {
+background-color: whitesmoke;
+width: 70%;
+margin: 0 15%;
+padding: 5px;
+border-radius: 10px;
+}
+
+.hoverdiv{      
+  margin: 5px 30px;
+}
+
+.imgContainer:hover img{
+filter: grayscale(100%);
+}
+
+
+h3 {
+  position: absolute;
+  bottom: 20px;
+  text-align: center;
+  width: 70%;
+  margin: 0 15%;
+  color: red;
+}
+
+
+.imgContainer:hover h3 {
+    color: white;
+}
