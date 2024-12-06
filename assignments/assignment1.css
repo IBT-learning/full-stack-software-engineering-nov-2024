@@ -20,7 +20,7 @@ h1 {
     text-align: center;
     font-size: 40px;
     color: red;
-    text-shadow: 0 0px 5px black, 0px 0px 5px red;
+    text-shadow: 0 0px 2px black;
 }
 h3 {
     text-align: center;
