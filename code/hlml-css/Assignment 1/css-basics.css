@@ -1,0 +1,37 @@
+body { 
+    background-color: burlywood;
+    padding: 20px;
+    margin: 20px;
+
+
+ h1 {
+    color: blue;
+ }
+ h2 {
+    color: green
+ }
+}
+
+h1, h2 {
+    color: antiquewhite;
+    border: 5px solid beige;
+    margin-bottom: 10px;
+}
+a:hover{
+    color: red;
+}
+
+.blue-text{
+    color: blue;
+}
+
+#block-wrapper{
+    background-color: bisque;
+    margin: 10px;
+    padding: 10px;
+}
+#title {
+    background-color: rgb(90, 173, 173);
+    padding: 10px;
+    border: 1px solid purple;
+}
