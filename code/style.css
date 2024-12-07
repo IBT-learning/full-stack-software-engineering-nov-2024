@@ -1,58 +1,82 @@
-
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f9f9; 
-    color: #333; 
+    background-color: #f4f9f9; /* Light background color */
+    color: #333; /* Dark text color for readability */
 }
 
 header {
-    background-color: #005f73; 
-    color: #ffffff; 
+    background-color: #005f73; /* Dark teal */
+    color: #ffffff; /* White text */
     text-align: center;
     padding: 20px 0;
-    border-bottom: 3px solid #0a9396; 
+    border-bottom: 3px solid #0a9396; /* Accent border */
 }
 
 header h1 {
     margin: 0;
     font-size: 40px;
+    text-decoration: underline; /* Underline the heading */
 }
 
 header h2 {
     margin: 0;
     font-size: 24px;
     font-weight: normal;
+    text-decoration: underline; /* Underline the subheading */
 }
 
 main {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
-    background-color: #ffffff; 
-    border: 1px solid #ccc; 
-    border-radius: 8px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff; /* White background for contrast */
+    border: 1px solid #ccc; /* Subtle border for the main content */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow */
 }
 
-section {
-    margin-bottom: 30px;
+/* Section Styles with Unique Colors */
+section:nth-of-type(1) {
+    background-color: #e8f6f3; /* Soft greenish background */
+    padding: 15px;
+    border-radius: 8px;
+}
+
+section:nth-of-type(2) {
+    background-color: #fef9e7; /* Soft yellow background */
+    padding: 15px;
+    border-radius: 8px;
+}
+
+section:nth-of-type(3) {
+    background-color: #f9e8ef; /* Soft pinkish background */
+    padding: 15px;
+    border-radius: 8px;
+}
+
+section:nth-of-type(4) {
+    background-color: #e8e9f6; /* Soft bluish background */
+    padding: 15px;
+    border-radius: 8px;
 }
 
 section h3 {
-    color: #0a9396; 
-    border-bottom: 2px solid #005f73;
-    padding-bottom: 5px;
+    color: #0a9396; /* Accent color */
+    font-size: 28px;
+    text-decoration: underline; /* Add underline to section headers */
     margin-bottom: 15px;
 }
 
 p {
-    line-height: 1.6;
+    line-height: 24px; /* Improve readability */
     margin-bottom: 15px;
+    font-size: 16px; /* Paragraph font size */
 }
 
-
+/* List Styles */
 .fact-list {
     list-style-type: disc;
     padding-left: 20px;
@@ -60,26 +84,27 @@ p {
 
 .fact-list li {
     margin-bottom: 10px;
+    font-size: 16px; /* List item font size */
 }
 
-
+/* Image Styles */
 .river-image {
-    width: 100%;
-    max-width: 300px; 
-    height: auto; 
-    margin: 10px; 
-    border: 3px solid #0a9396; 
+    width: 100%; /* All images will have the same width */
+    max-width: 300px; /* Limit the width */
+    height: auto; /* Maintain aspect ratio */
+    margin: 10px; /* Space between images */
+    border: 3px solid #0a9396; /* Accent border */
     border-radius: 8px;
 }
 
-
+/* Link Styles */
 a {
-    color: #0a9396; 
-    text-decoration: none;
+    color: #0a9396; /* Accent color */
+    text-decoration: none; /* Remove default underline */
     font-weight: bold;
 }
 
 a:hover {
-    color: #005f73; 
-    text-decoration: underline;
+    color: #005f73; /* Darker teal on hover */
+    text-decoration: underline; /* Add underline on hover */
 }
