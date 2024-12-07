@@ -1,0 +1,17 @@
+h1 {color: bisque;}
+        h2 {color: burlywood;}
+
+        img {padding: 15px;
+        margin: 25px;
+        }
+
+    #block-wrapper {
+        background-color: aquamarine;
+         margin: 15px;
+         padding: 15px;
+    }
+   .bracket-text {background-color: aquamarine;}
+
+   body {background-color: grey;}
+
+   img {border: 10px; border-style: outset; color: aqua;}
