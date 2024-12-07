@@ -20,4 +20,4 @@
 
 #### A photo of someone I think is cool
 
-[Fred Swaniker](https://ik.imagekit.io/thinkers50/wp-content/uploads/Fred-Swaniker--400x400.jpg)
+![Fred Swaniker](https://ik.imagekit.io/thinkers50/wp-content/uploads/Fred-Swaniker--400x400.jpg)
