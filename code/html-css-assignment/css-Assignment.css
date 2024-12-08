@@ -1,0 +1,35 @@
+/* changing the background of the page */
+
+body{
+    background-color: rgb(36, 110, 185);
+}
+
+.list-flowers{
+    color: rgb(236, 220, 251);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande';
+}
+
+#flower-facts{
+    color: rgb(240, 195, 15);
+    border: 5px solid rgb(36, 35, 33);
+    background-color: blueviolet;
+}
+
+img{
+    height: 300px;
+    width: 250px;
+    display: inline-flexbox;
+    margin: 10px 20px 30px 20px;
+    border-radius: 50px; /* tried messing around */
+   
+}
+ /* Removing underline of the links and setting their color */
+a{
+    color: rgb(19, 230, 121);  
+    text-decoration: none; 
+}
+
+/* changing color of links when you hover the links */
+a:hover{
+    color: brown;
+}
