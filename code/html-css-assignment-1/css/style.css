@@ -1,0 +1,42 @@
+
+
+#container{
+    text-align: center;  
+    background-color: rgb(26, 172, 172);
+    max-width: 100%;
+
+}
+#center{
+    border: 2px solid rgb(12, 98, 156);
+    background-color: beige;
+
+}
+
+/* profile image */
+.profile-image{
+    width: 200px;
+}
+
+/* bio div */
+#bio{
+    border: 2px solid rgb(0, 119, 255);
+}
+
+/* my babe gallery */
+.my-babe img{
+    width: 25%;
+    height: 500px;
+}
+
+a{
+    text-decoration: none;
+}
+.change{
+    color: chartreuse;
+}
+a:hover{
+    color: aqua;
+}
+.footer{
+    background-color:coral;
+}
