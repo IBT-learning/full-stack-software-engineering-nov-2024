@@ -10,10 +10,10 @@
 2. Reading
 3. Building ideas to reality using coding
 
-### if every job had the same pay, hours, and eduction requirements, I would be a:
+### if every job had the same pay, hours, and eduction requirements, I would be:
 
 - An actor
-- Story teller
+- A story-teller
 - A Teacher
 
 ### A photo of someone I think is cool:
