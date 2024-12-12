@@ -1,0 +1,53 @@
+body{
+    background-color: rgb(114, 114, 179);
+}
+#position{
+    background-color: rgb(118, 77, 220);
+    position: relative;
+    width: 60%;
+}
+.img1 {
+    width: 300px;
+    height: 200px;
+    margin-left: 10px;
+    
+}
+.img2{
+    width: 300px;
+    height: 200px;
+    margin-left: 10px;
+   
+    
+}
+.img3{
+    width: 300px;
+    height: 200px;
+    margin-top: 10px;
+    margin-left: 10px;
+   
+   
+}
+.img4{
+    width: 300px;
+    height: 200px;
+    margin-left: 10px;
+    margin-top: 10px;
+    
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(178, 206, 206);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+a{
+    color: rgb(210, 229, 229);
+    text-decoration: none;
+}
+a:hover{
+    color: rgb(173, 216, 216);
+}
+
+
+
