@@ -18,4 +18,5 @@
 
 ### A photo of someone I think is cool:
 
+### Sam Altman CEO and Cofounder OpenAI
 ![Sam Altman, CEO & Cofounder OpenAI](https://i.insider.com/63d93b280a08ae0018a62b4f?width=700)
