@@ -7,19 +7,30 @@
 body {
     min-height: 100vh;
     font-family: "Lato", serif;
-    background-color: #202020;
-    color: #637E91;
+    background-color: #845ec2;
+    color: #faccff;
     line-height: 2;
+    overflow-x: hidden;
 }
 
-.container {
+/* .main {
     max-width: 80vw;
     margin: 100px auto;
+} */
+
+
+header {
+    background-color: #08004f;
+    padding: 30px;
+    width: 100vw;
+    box-shadow: 4px 4px 4px 6px;
+    position: fixed;
+    top: 0;
 }
 
 h1 {
     font-size: 45px;
-    color: #8A8BC2;
+    color: #faccff;
     word-spacing: 20px;
     line-height: 1;
 }
@@ -28,22 +39,17 @@ h1 span {
     font-size: 20px;
     display: block;
     font-style: italic;
-    color: #DAD129;
+    color: #dcb0ff;
+    margin-block-start: 20px;
 }
 
-hr {
-    height: 4px;
-    background-color: #8A8BC2;
-    border: 0;
-}
-
-.container--div {
+.main--div {
     margin-top: 50px;
     padding: 0 50px;
     text-align: justify;
 }
 ul li span {
-    color: ;
+    color: #08004f;
     text-transform: uppercase;
     font-weight: bolder;
 }
@@ -53,28 +59,46 @@ ul li span {
 }
 
 h2 {
-    color: #DAD129;
+    color: #08004f;
     font-size: 35px;
     text-decoration: underline;
     text-decoration-color: #8A8BC2;
 }
 
-.container--div .tour li {
+.main--div .tour li {
     list-style: none;
 }
 
-.container--div ul li a {
+.main--div ul li a {
     text-decoration: none;
     color: inherit;
 }
 
-.container--div ul li a:hover {
+.main--div ul li a:hover {
     text-decoration: underline;
     color: #DAD129;
 }
 
-.container--div .img--cont {
+.main--div .img--cont {
     width: 100%;
+}
+
+#fun {
+    margin: 0 60px;
+    width: 90vw;
+    background-color: #fefedf31;
+    border-radius: 8px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#fun h2 {
+    font-style: italic;
+}
+
+#fun .text-cont {
+    width: 50vw;
+    padding-bottom: 15px;
+    border-left: 4px solid #08004f;
 }
 
 .gallary--img img {
@@ -87,4 +111,12 @@ h2 {
     display: inline-block;
     margin: 5px;
     position: relative;
+    z-index: -1;
+}
+
+footer {
+    background-color: #08004f;
+    width: 100vw;
+    text-align: center;
+    padding: 30px;
 }
