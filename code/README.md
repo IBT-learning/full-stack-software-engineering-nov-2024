@@ -13,7 +13,7 @@
 ### if every job had the same pay, hours, and eduction requirements, I would be:
 
 - An actor
-- A story-teller
+- A motivational speaker
 - A Teacher
 
 ### A photo of someone I think is cool:
