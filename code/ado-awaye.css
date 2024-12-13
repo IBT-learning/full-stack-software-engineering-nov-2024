@@ -1,156 +1,139 @@
 /* Ado Awaye */
 
-/* 
-
-selector {
-    property: value;
-    property: value;
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-*/
-
 
 body {
-    background-color: rgb(138, 132, 132);
-    color: rgb(0, 0, 0);
-    font-size: medium;
-    font-family: 'Times New Roman'
-    
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f4f4f4;
 }
 
-
-
-h4 {
-    color: rgb(19, 19, 120);
-    font-weight: bolder; font-style: italic; font: 900;
-    font-size: 20px;
-    border: 2px solid;
-    text-align: center;
-    text-decoration: solid;
-    text-transform: uppercase;
-    margin: 5px;
-    padding: 10px;
-    
-    
-    
-}
-
+/* Headings */
 h1 {
-   color: rgba(117, 12, 12, 0.544);
-   font-weight: bold; font-weight: 100;
-   font-size: 900;
-   text-align: center;
-   text-decoration: wavy;
-   text-decoration: overline;
-   text-transform: uppercase;
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2.5em;
+  border-bottom: 3px solid #3498db;
+  padding-bottom: 10px;
+}
+
+h4, h6 {
+  text-align: center;
+  color: #34495e;
+  margin-bottom: 15px;
 }
 
 h6 {
-    color: black;
-    font-weight: bold;
-    text-align: center;
-    text-transform: uppercase;
-    
+  color: #7f8c8d;
+  font-weight: normal;
 }
 
-span {
-    color: black;
-    font-weight: 200;
-    margin: 20px
-}
-
-img {
-    padding: 20px;
-    /* padding-left: 20px;
-    padding-top: 10px; */
-    margin: 10px;
-    border: 10px;color: aquamarine !important
-}
-
-
-/* class selector */
-
-.purple-text {
-    color: rgb(6, 1, 6);
-}
-
-.wheat-background {
-    background-color: wheat;
-}
-
-
-  /* id selector */
-
-#block-wrapper {
-    background-color: rgb(73, 62, 127);
-    margin: 20px;
-    padding: 10px;
-    width: 1340px;
-}
-
+/* Text Boxes */
 .box {
-    width:  1300px;
-    height: 185px;
-    border: 15px solid rgb(14, 2, 2);
-    padding: 15px;
-    margin: 20px;
-  }
+  background-color: white;
+  border-radius: 8px;
+  padding: 25px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
 
-  .box {
-    width:  1300px;
-    height: 185px;
-    border: 15px solid rgb(14, 2, 2);
-    padding: 15px;
-    margin: 20px;
-  }
+pre {
+  font-family: 'Arial', sans-serif;
+  color: #2980b9;
+  font-weight: bold;
+  margin-bottom: 15px;
+  font-size: 1.2em;
+}
 
-  .box {
-    width:  1300px;
-    height: 185px;
-    border: 15px solid rgb(14, 2, 2);
-    padding: 15px;
-    margin: 20px;
-  }
-  
-  .link { color: #FF0000; } /* CSS link color (red) */
-  .link:hover { color: #00FF00; } /* CSS link hover (green) */
+/* Links */
+a {
+  color: #3498db;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
 
- /* Three image containers (use 50% for four, and 50% for two, etc) */
+a:hover {
+  color: #2980b9;
+  text-decoration: underline;
+}
+
+/* Things to Do List */
+#block-wrapper {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+ol {
+  list-style-type: none;
+  counter-reset: item;
+  padding-left: 20px;
+}
+
+ol li {
+  counter-increment: item;
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 30px;
+}
+
+ol li::before {
+  content: counter(item) ".";
+  position: absolute;
+  left: 0;
+  color: #3498db;
+  font-weight: bold;
+}
+
+/* Image Gallery */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
 .column {
-    float: left; 
-    width: 33.33%;
-    padding: 10px;
+  flex: 1;
+  min-width: 200px;
+  max-width: 300px;
+}
+
+.column img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.column img:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  body {
+      padding: 10px;
   }
-  
-  /* Clear floats after image containers */
-  .row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-  
+
   .row {
-    display: flex;
+      flex-direction: column;
+      align-items: center;
   }
-  
+
   .column {
-    flex: 33.33%;
-    padding: 10px;
+      max-width: 100%;
   }
-
-  *, :before, :after {
-    margin: 0;
-   }
-   
-   
-
-  
-
-  .color1 {color: #292f25;}
-  .color2 {color: #236f74;}
-  .color3 {color: #06e2c5;}
-  .color4 {color: #d3ff74;}
-  .color5 {color: #fffbc7;}
-  
-
-
+}
