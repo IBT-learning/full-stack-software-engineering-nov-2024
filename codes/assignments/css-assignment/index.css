@@ -1,5 +1,4 @@
 .challenge-1 {
-    
     display:flex;
 }
 
@@ -57,7 +56,7 @@ justify-content: space-evenly;
 }
 
 .challenge-8 .red {
-    order: 3;
+    order: 2;
 }
 /* DO NOT CHANGE ANYTHING BELOW HERE */
 
