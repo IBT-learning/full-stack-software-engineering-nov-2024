@@ -1,0 +1,50 @@
+/* Style the body */
+body                                            {padding: 30px 5vw;
+                                                background: rgba(34, 166, 242, 1.0);}
+/* End of body */
+
+
+/* Style the container */
+.container                                      {padding: 50px 50px 0 50px;
+                                                background: #fff;
+                                                border-radius: 10px;
+                                                text-align: justify;
+                                                max-width: 100%;}
+/* End of container */
+
+
+/* Style the link */
+.container a                                    {text-decoration: none;}
+
+.container a:hover                              {color: red;}
+/* End of link */
+
+/* The hr element */
+body hr                                         {border: 4px solid #22A6F2;}
+body header hr:nth-of-type(1)                   {border: 4px solid red;}
+/* End of hr */
+
+/* The list */
+ul.main__list li                                {font-weight: bold;
+                                                font-size: 1.5rem;
+                                                margin-bottom: 20px;
+                                                margin: 20px 0 20px 0;}     
+                                                
+ul.main__list:not(:nth-of-type(1))              {margin-top: 30px;}
+/* End of list */
+
+
+/* Main images */       
+#first__image                                   {border: 8px solid #22A6F2;}    
+
+img.main__image                                 {width: 220px;
+                                                border: 8px solid red;}
+/* End of Images */
+
+/* The footer */
+footer.footer                                   {width: 100%;
+                                                height: 20px;
+                                                background: #22A6F2;
+                                                margin-top: 100px;}
+/* End of footer */
+            
