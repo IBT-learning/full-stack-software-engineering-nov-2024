@@ -1,0 +1,87 @@
+
+.challenge-1 {
+    
+    display: flex;
+    flex-direction: row;
+}
+
+.challenge-2 {
+    
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.challenge-3 {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.challenge-4 {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.challenge-5 {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+.challenge-6 .bubble {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.challenge-7 {
+    display: flex;
+    flex-direction: row;
+    
+    
+}
+
+.challenge-7 .red{
+    
+   flex: 1;
+}
+
+.challenge-8 {
+   
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.challenge-8 .red {
+   
+    order: 2;
+}
+
+
+.bubble {
+    height: 5em;
+    width: 5em;
+    color: white;
+    border-radius: 50%;
+    border: 0.1em solid black;
+}
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.green {
+    background-color: green;
+}
