@@ -3,20 +3,58 @@
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <!-- Title of Webpage -->
         <title>Intro to CSS</title>
+        <!-- End of Title -->
+
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="">
-        <link rel="stylesheet" type="text/css" href="">
+
+        <!-- Using external Stylesheet -->
+        <link rel="stylesheet" type="text/css" href="./main.css">
+        <!-- End of External CSS -->
+
         <link rel="icon" type="image/x-icon" href="">
+
+        <!-- Style tag in Head Section -->
+         <style>
+            h1{background: blue;color: aqua;}
+         </style>
+        <!-- End of Style tag -->
     </head>
     <body>
+        <!-- Three ways of including CSS -->
+         <!-- 1. Inline -->
+         <!-- 2. Style tag in the head section -->
+         <!-- 3. Linked External stylesheet -->
+
+         <!-- Inline CSS -->
+          <div style="width:100%;height:40px;background:green;">
+            01
+          </div>
+          <!-- End of Inline Css -->
+
+          <h1>This is a header</h1>
+
+          <!-- Class Selector -->
+          <h2 class="orange__text">
+            This is an Orange Text
+          </h2>
+
+          <!-- ID Selector -->
+           <!-- N/B ID is a unique identifyer not necessarily for html and css, but will be unique when dealing with programming languages like Javascript -->
+          <h3 id="name">This is a Yellow Text</h3>
+          <h1 id="name">This is a Yellow Text</h1>
 
 
 
 
 
 
-        
+
+
+
 
         <script src="" async defer></script>
     </body>
