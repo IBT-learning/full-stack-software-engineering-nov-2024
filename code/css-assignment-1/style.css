@@ -40,7 +40,9 @@
 /* Challenge 3: Align bubbles to the right (normal order) */
 .challenge-3 {
     display: flex;        /* write code here */
-    justify-content: flex-end;
+    /* justify-content: flex-end; */
+    align-items: right;
+    flex-direction: row-reverse;
 }
 
 /* Challenge 4: Space bubbles out evenly */
@@ -82,26 +84,27 @@ children of .challenge-6 elements.
 /* Challenge 8: Vertically align bubbles and move red to the bottom */
 .challenge-8 {
     display: flex;              /* write code here */
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
     height: 100vh;
 }
 
-.challenge-8 .green::before .red{
-    align-self: center;                 /* write code here */
-    margin-top: auto;
+.challenge-8  .red{
+    flex-direction: column-reverse;
+    align-items: bottom;                 /* write code here */
+    /* margin-top: auto; */
     /* margin-bottom: 25%; */
 }
 
 
-.challenge-8 .red::after{
-    display: flex;
-    align-self: last baseline;   /* write code here */
+/* .challenge-8 .red::after{ */
+    /* display: flex; */
+    /* align-self: last baseline;   write code here */
     /* margin-top: auto; */
     /* margin-bottom: 2%; */
 
-}
+/* } */
 
 
 
