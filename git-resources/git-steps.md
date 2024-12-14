@@ -26,12 +26,12 @@ and then use `git diff` to see your changes line by line and make sure they look
 
 Use **ONLY ONE** of these:
 
--   `git add .` adds all files in the working directory
+- `git add .` adds all files in the working directory
 
--   `git add -A` adds all tracked and untracked files
+- `git add -A` adds all tracked and untracked files
 
--   `git add {path}` adds files at the specified path (it could be a path to a directory or just a single file)
--   `git add code` is an example of the above command, which will add all the changes within your code/ folder
+- `git add {path}` adds files at the specified path (it could be a path to a directory or just a single file)
+- `git add code` is an example of the above command, which will add all the changes within your code/ folder
 
 ## 5. check your staged changes
 
@@ -64,7 +64,7 @@ You will probably see a large box at the top that says "branch-name has recent c
 
 At the top of the page you will see something like this:
 
-![branch selection for pull requests](./0-getting-ready/images/git-compare.png)
+![branch selection for pull requests](./images/git-compare.png)
 
 Change the "base" to your regular branch, and the "compare" to your assignment branch. This determines which branch gets merged into which.
 
