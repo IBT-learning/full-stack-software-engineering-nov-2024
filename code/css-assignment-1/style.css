@@ -4,6 +4,7 @@
 /* .challenge-1 { */
     /* display: flex; */
 /* } */
+
 .challenge-1 {
     display: flex;      /* write code here */
     justify-content: flex-start;
@@ -30,10 +31,10 @@
 
 /* Challenge 2: Align bubbles to the right and reverse order */
 .challenge-2 {
-    display: flex;             /* write code here */
-    /* justify-content: flex-end; */
-    flex-direction: row-reverse;
-    align-items: right; 
+    display: flex;             /*write code here */
+    justify-content: flex-end; 
+    flex-direction: row;
+    /* align-items: right;  */
 }
 
 /* Challenge 3: Align bubbles to the right (normal order) */
@@ -95,6 +96,7 @@ children of .challenge-6 elements.
 
 
 .challenge-8 .red::after{
+    display: flex;
     align-self: last baseline;   /* write code here */
     /* margin-top: auto; */
     /* margin-bottom: 2%; */
