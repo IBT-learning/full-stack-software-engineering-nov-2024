@@ -8,11 +8,22 @@ body {
 
 img{
     width: 100%;
+    min-width: 100%;
+    object-fit: contain;
 }
 
 .heading{
     text-align: center;
     padding: 20px 10px;
+    background-color: #00315e;
+    color: #fff;
+    margin: 30px auto;
+    width: 60%;
+}
+
+.heading h1,
+.heading h2{
+    width: 100%;
 }
 .heading h2{
     font-size: 1rem;
@@ -38,17 +49,39 @@ img{
     justify-content: center;
     align-items: center;
     gap: 1rem;
+    margin:  4rem 0;
 }
 .img_container_d div{
     width:50%;
+    border: 3px solid gray;
+    border-radius: 0.12rem;
+    background-color: #00315e;
+    color: white;
+}
+.img_container_d div small{
+    padding: 1rem;
 }
 @media  screen and (max-width: 769px) {
+
+    .heading{
+        width: 100%;
+    }
+    .heading h1{
+        font-size: 1.2rem;
+    }
+    .heading h2{
+        font-size: 0.88rem;
+    }
+
     .img_container_d{
         flex-direction: column;
     }
     .img_container_d div{
         width:100%;
         padding: 0.55rem;
+    }
+    .img_container_d div small{
+        padding: 0;
     }
 }
 
