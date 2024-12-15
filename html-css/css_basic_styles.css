@@ -1,0 +1,43 @@
+body{
+    background-color: peru;
+    margin: 100px;
+    color: lemonchiffon;
+    font-family: Arial, Helvetica, sans-serif;
+
+    
+}
+
+
+
+
+
+.container_one{
+    border: 5px solid peachpuff;
+    padding: 10px;
+    margin: 50px;
+    color: lemonchiffon;
+}
+
+.images_of_nigeria{
+    background-color: rgba(228, 220, 245, 0.37);
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    align-content: space-between;
+    margin: 100px;
+
+}
+img{
+    width: 300px;
+    height: 400px;
+    margin: 60px;
+    
+}
+#special_p a{
+    color: brown;
+    text-decoration: none;
+    
+
+}
