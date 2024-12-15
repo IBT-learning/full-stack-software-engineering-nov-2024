@@ -1,0 +1,106 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+   background-color: rgb(57, 105, 120);
+   font-family: "Outfit", serif;
+}
+ul.navlinks {
+  list-style: none;
+}
+main {
+    margin: 10px;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+header {
+  height: 20rem;
+  background-image: url("../images/animeHeader.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+  color: purple;
+  padding: 20px 0px;
+  color: whitesmoke;
+  font-size: 3rem;
+}
+
+h2 { 
+  font-size: 2rem;
+  padding: 10px 0px;
+  font-weight: 20px;
+}
+
+.content_group {
+  background-color: bisque;
+  color: rgb(41, 69, 87);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px 0px;
+  border: 3px solid darkslategrey;
+}
+
+#animePicks {
+  display: flex;
+   gap: 40px;
+  flex-wrap: wrap;
+
+}
+p {
+  font-size: 1.2rem;
+}
+
+.anime_group {
+  max-width: 300px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: azure;
+  border: 3px solid darkslategrey;
+  padding: 20px;
+}
+
+.anime_img {
+  border-radius: 40px;
+  object-fit: cover;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+
+}
+
+
+.anime_heading {
+    font-size: 2rem;
+    margin-top: 10px;
+}
+.anime_desciption {
+    font-size: 1.1rem;
+    margin: 16px 0px;
+}
+.navlinks {
+    display: flex;
+    justify-content: space-between;
+    color: brown;
+    margin-top: 15px;
+
+}
+ul.involed {
+    padding: 20px;
+}
+.navlinks li a:hover {
+    color: rgb(79, 58, 33);
+    text-decoration: underline;
+}
