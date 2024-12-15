@@ -51,7 +51,7 @@ children of .challenge-6 elements.
 }
 
 .challenge-8 .red {
-    align-self: end;
+    order: 1;
 }
 
 /* DO NOT CHANGE ANYTHING BELOW HERE */
