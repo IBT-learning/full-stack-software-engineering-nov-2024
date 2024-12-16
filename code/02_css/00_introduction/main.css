@@ -1,0 +1,24 @@
+/* The Element Tag */
+body{
+    background: #000;
+}
+
+div{
+    background: red !important;
+}
+
+/* Class Selector */
+.orange__text{
+    color: orange;
+    border: 5px dashed red;
+}
+
+/* ID Selector */
+#name{
+    color: yellow;
+}
+
+/* Selector {
+            property: value;
+            property: value;
+} */
