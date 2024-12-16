@@ -1,0 +1,38 @@
+.flex                           {display: flex;
+                                height: 50vh;
+                                flex-wrap: wrap;
+                                justify-content: center;
+                                background-color: lightblue;
+                                align-items: center;
+                                align-content: end;}
+
+.flex__box                      {height: 50px;
+                                width: 50px;
+                                background: orchid;
+                                border: 2px solid navy;
+                                border-radius: 10%;
+                                font-size: 3rem;
+                                color: #fff;
+                                margin: 10px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;}
+
+.flex__box:nth-of-type(3)       {align-self: flex-end; order: 1;
+                                flex-grow: 1;
+                                flex-basis: 400px;
+                                flex-shrink: 1;}
+                                
+.flex__box:nth-of-type(4)       {flex-grow: 2;
+                                flex-shrink: 3;}
+
+
+.flex2                          {height: 50vh;
+                                background: gray;
+                                width: 100%;
+                                display: flex;
+                                align-content: space-evenly;
+                                justify-content: space-evenly;
+                                flex-wrap: wrap;} 
+                                
+.flex2__box                     {width: 50px; height: 50px; background: cyan; border-radius: 10%; margin: 10px;}
