@@ -22,4 +22,4 @@
 
 #### A photo of someone  I think is cool :
 
-![Michael Olise](![alt text](image.png))
+![Michael Olise](https://spindustreetsports.com/wp-content/uploads/2024/07/0581a94a-d943-4947-9695-5bea8a4d03c9-1229x1536.jpg)
