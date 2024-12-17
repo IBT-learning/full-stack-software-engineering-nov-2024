@@ -5,26 +5,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css_basics.css">
+    <style>
+        .A {
+            background-color: black;
+        }
+        .B {
+            display: flex;
+            flex-direction: row;
+        }
+        marquee {
+            color: white;
+            font-size: larger;
+            font-style: italic;
+        }
+        p {
+            text-align: center;
+            color: black;
+            font-style: italic;
+            font-size: large;
+        }
+        img {
+            width: 500px;
+            height: 400px;
+            border: 5px solid black;
+            margin-top: 40px;
+            margin-left: 150px;
+            cursor: pointer;
+
+        }
+        ol {
+            font-size: large;
+            padding-left: 150px;
+            padding-top: 10px;
+        }
+        ul {
+            font-size: large;
+            padding-left: 100px;
+            padding-top: 10px;
+        }
+        input {
+            width: 350px;
+            height: 25px;
+            text-align: center;
+            margin-left: 150px;
+            margin-top: 20px;
+            border-radius: 2cm;
+        }
+    </style>
 </head>
 <body>
-    <h1>Thats a good tidings</h1>
-    <p>The situation in the country presently is quite alarming</p>
-    <ol id="block-wrapper">
-        <li>Table</li>
-        <li>Chair</li>
-        <li>Book</li>
-        <li>Ruler</li>
-    </ol>
-     
-    <ul>
-        <li>Pots</li>
-        <li>Plate</li>
-        <li>Fan</li>
-        <li>chair</li>
-    </ul>
+    <div class="A">
+        <marquee behavior="scroll" direction="left">Its a new dawn in my country</marquee>
+    </div>
 
-    <input type="email" placeholder="akanjidaud2@gmail,com">
+    <h1>A good tidings</h1>
+    <p>It's a things of joy to see people of like minds, brainstoming and delibrating to make a positive. <br> May God bless my country. The pictures speaks volume</p>
+    <img src="techpix.jpg" alt="">
+    <img src="techpix2.JPG" alt="">
 
-    
+   
+    <div class="B">
+        <ol id="block-wrapper">
+            <li>Table</li>
+            <li>Chair</li>
+            <li>Book</li>
+            <li>Ruler</li>
+        </ol>
+         
+        <ul>
+            <li>Pots</li>
+            <li>Plate</li>
+            <li>Fan</li>
+            <li>chair</li>
+        </ul>
+    </div>
+    <input type="email" placeholder="akanjidaud2@gmail.com">  
 </body>
 </html>
