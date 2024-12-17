@@ -1,0 +1,106 @@
+body {
+  background-color: #deb887;
+  font-family: sans-serif;
+}
+
+.my-caption {
+  font-family: verdana;
+}
+
+img {
+  width: 500px;
+  border-radius: 15px;
+}
+
+figure {
+display: block;
+margin: 0 auto;
+text-align: center;
+}
+
+h1 {
+  text-align: center;
+  font-family: serif, Impact;
+  font-size: 50px;
+}
+
+#my-info {
+  background-color: #FFE4C4;
+  width: 80%;
+  max-width: 1200px; 
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  border-radius: 20px;
+  padding-top: 20px;
+}
+
+.my-caption {
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+h2 {
+  text-align: center;
+}
+
+P, .hobbies{
+width: 50%;
+margin-left: auto;
+margin-right: auto;
+font-family: Monospace, "Lucida Console";
+font-size: 20px;
+}
+
+hr {
+  height: 3px;
+  background-color: brown;
+  border-color: brown;
+  margin: 20px 10px;
+}
+
+.images {
+  display:inline-block;
+  margin: 25px;
+}
+
+.images img {
+  width: 300px;
+}
+
+.images-caption {
+  width: 300px;
+  text-align: center;
+  font-size: 20px;
+  font-family: "Lucida Console", monospace;
+  margin-bottom: 7px;
+}
+
+a {
+  color: rgb(165, 42, 42);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: burlywood;
+}
+
+a:visited {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+a:active {
+  color: bisque;
+}
+
+.my-hometown {
+  margin-top: 70px;
+  font-family: serif;
+}
+
+.contact {
+  text-align: center;
+}
