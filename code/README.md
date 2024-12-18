@@ -1,6 +1,6 @@
 # 🤓 Florence M 
 
-I live in the same place I was born: **Welkom, Free State, South Africa.** 	
+I live in the same place I was born and raised: **Welkom, Free State, South Africa.** 	
 
 
 > A link to my favourite song: [Brown Skin Girl by Beyonce](https://youtu.be/RXrhqhW2kiU?si=ettO37QuX3xIULxU) 
