@@ -107,3 +107,40 @@ a:hover {
     color: #005f73; 
     text-decoration: underline; 
 }
+
+/* Footer Specific Styles */
+#footer {
+    display: flex; /* Enable Flexbox */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+    background-color: #0a9396; /* Teal background */
+    color: #ffffff; /* White text */
+    text-align: center;
+    width: 100vw; /* Full viewport width */
+    height: 100%; /* Full height of the section */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* Add shadow */
+    padding: 20px;
+}
+
+#footer h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#footer p {
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+#footer a {
+    color: #94d2bd; /* Lighter teal for links */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold;
+}
+
+#footer a:hover {
+    color: #e9d8a6; /* Warm yellow on hover */
+    text-decoration: underline; /* Underline on hover */
+}
+
