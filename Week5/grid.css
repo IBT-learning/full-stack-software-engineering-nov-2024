@@ -1,0 +1,56 @@
+body {
+    font-size: 3em;
+    padding: 0.5rem;
+    font-weight: 5px;
+    color: white;
+    text-shadow: 2px 0px 5px white;
+}
+
+.grid-container {
+    display: grid;
+    height: 100vh;
+    /* grid-template-columns: 2em 1fr 1fr; */
+    grid-template-rows: repeat(4, 1fr) min-content;   
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    /* grid-template-rows: auto; */
+    grid-template-areas: 
+        "one one one" /* One spans all columns */
+        "two three four"
+        "five six four"
+        "seven seven seven";
+        /* gap: 10px; */
+}
+
+.one{
+    background-color: red;
+    /* grid-column-start: 1; */
+    /* grid-column-end: 4; */
+    grid-area: one;
+}
+.two{
+    background-color: blue;
+    grid-area: two;
+}
+.three{
+    background-color: black;
+    grid-area: three;
+    /* grid-column-start: 2; */
+}
+.four{
+    background-color: blue;
+    grid-area: four;
+}
+.five{
+    background-color: green;
+    grid-area: five;
+}
+.six{
+    background-color: yellow;
+    grid-area: six;
+}
+.seven{
+    background-color: purple;
+    /* grid-column-start: 1; */
+    /* grid-column-end: 4; */
+    grid-area: seven;
+}
