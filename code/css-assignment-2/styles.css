@@ -2,9 +2,35 @@
   font-size: 2em;
   gap: 1rem;
   /* Add new properties here */
+  display: grid;
+  grid-template-columns: 18rem 2fr 1fr;
+  grid-template-rows: auto 1fr auto;
 }
 
 /* Add new selectors and new CSS here */
+header{
+  grid-column: 1 / -1;
+}
+
+#left{
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+#main{
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+#right{
+  grid-column: 3;
+  grid-row: 2 / 3;
+}
+
+footer{
+  grid-column: 1 / -1;
+}
+
 
 /* DO NOT CHANGE ANYTHING BELOW THIS LINE  */
 #wrapper > * {
