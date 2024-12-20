@@ -81,6 +81,8 @@ p {
     padding-left: 20px;
 }
 
+
+
 .fact-list li {
     margin-bottom: 10px;
     font-size: 16px; 
@@ -143,6 +145,15 @@ a:hover {
     color: #e9d8a6; /* Warm yellow on hover */
     text-decoration: underline; /* Underline on hover */
 }
+
+.niger-delta-img {
+    width: 100%; /* Responsive width */
+    max-width: 400px; /* Reduce the maximum width */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Prevent gaps below the image */
+    margin: 10px auto; /* Add spacing and center-align the image */
+}
+
 
 
 
