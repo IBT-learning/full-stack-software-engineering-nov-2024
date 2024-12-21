@@ -1,0 +1,34 @@
+body                                        {box-sizing: border-box;
+                                            padding: 0;
+                                            margin: 0;
+                                            background: #df643f;}
+
+.wrapper                                    {display: flex;
+                                            flex-wrap: wrap;
+                                            font-size: 2em;
+                                            color: blueviolet;
+                                            height: 100vh;
+                                            align-content: center;
+                                            align-items: center;
+                                            justify-content: center;
+                                            }
+  
+.box                                        {border: 3px solid black;
+                                            height: 30mm;
+                                            width: 5cm;
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                            border: calc(10vw / 2) solid #c0c0c0ad;}
+
+#one                                        {font-size: 2lh;}
+
+#eight                                      {width: calc(100% - 90vw);
+                                            height: 10vw;
+                                            background: #dfdfdf;}
+                                            
+#two                                        {width: 5%;
+                                            background: #dfdfdf;}
+
+
+
