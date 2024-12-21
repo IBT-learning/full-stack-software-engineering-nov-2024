@@ -43,6 +43,6 @@ Git is a distributed version control system that tracks versions of files. It is
 | 4    | 🎨 CSS      | [CSS Assignment #1 (Flexbox)](1-html-css/flexbox/flexbox-assignment/css-assignment-1.md) |
 | 5    | 🎨 CSS      | [CSS Assignment #2 (Grid)](1-html-css/grid/grid-assignment/css-assignment-2.md)          |
 
-<!--| 5    | 🎨 CSS           | [CSS Assignment #3 (Responsive Design)](1-html-css/media-queries/responsive-assignment/css-assignment-3.md) |
-| 6    | 🌐 HTML & 🎨 CSS | [HTML & CSS Final Project](1-html-css/blog-project.md)                                                      |
+| 5    | 🎨 CSS           | [CSS Assignment #3 (Responsive Design)](1-html-css/media-queries/responsive-assignment/css-assignment-3.md) |
+<!-- | 6    | 🌐 HTML & 🎨 CSS | [HTML & CSS Final Project](1-html-css/blog-project.md)                                                      |
 -->
