@@ -20,5 +20,4 @@
 - Good team player
 
 ### A photo of a tech learning environment
-
-! {}()
+!{}

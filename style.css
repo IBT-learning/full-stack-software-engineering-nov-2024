@@ -1,0 +1,104 @@
+.challenge-1 {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 2cm;
+}
+
+.challenge-2 {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    background-color: aquamarine;
+}
+
+.challenge-3 {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 2cm;
+}
+
+.challenge-4 {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    background-color: aquamarine;
+}
+
+.challenge-5 {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 2cm;
+}
+
+/* 
+Tip: This is called the "child selector". 
+It selects all .bubble elements that are direct
+children of .challenge-6 elements. 
+*/
+.challenge-6 {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    background-color: aquamarine;
+}
+
+.bubble {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 2cm;
+}
+
+.challenge-7 {
+    display: flex;
+    justify-content: center;
+    column-gap: 2cm;
+}
+
+.challenge-7 .red {
+    display: flex;
+    flex-direction: row-reverse;
+    /*flex-wrap: wrap;*/
+    /*justify-content: center;*/
+    column-gap: 2cm;
+}
+
+.challenge-8 {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    background-color: aquamarine;
+}
+
+.challenge-8 .red {
+    /*display: flex;*/
+}
+
+/* DO NOT CHANGE ANYTHING BELOW HERE */
+
+.bubble {
+    height: 5em;
+    width: 5em;
+    color: white;
+    border-radius: 50%;
+    border: 0.1em solid black;
+}
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.green {
+    background-color: green;
+}
