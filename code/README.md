@@ -20,6 +20,6 @@ A song i like:
 
 #### A photo of someone i think is cool:
 
-![Davido](Davido-2023-BET-Awards.jpg)
+![](images/Davido-2023-BET-Awards.jpg)
 
 
