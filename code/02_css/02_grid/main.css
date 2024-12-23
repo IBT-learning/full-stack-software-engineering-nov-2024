@@ -1,1 +1,79 @@
+body, html, *                                   {margin: 0;
+                                                padding: 0;
+                                                box-sizing: border-box;}
+
+
+
+.grid                                           {display: grid;
+                                                grid-template-columns: 14% 70% 14%;
+                                                grid-template-rows: 10vh 40vh 10vh;
+                                                gap: 1% 1%;}
+
+.grid__box, .grid1__box                         {font-size: 3rem;
+                                                padding: 0.5rem;
+                                                font-weight: 700;
+                                                text-shadow: 2px 2px 2px #bbb;
+                                                display: grid;
+                                                justify-content: center;
+                                                align-items: center;}
+
+#one, #one1                                     {background: red;
+                                                grid-column: 1/-1;}
+
+#two, #two2                                     {background: blue;
+                                                grid-row: 2/5;}
+
+#three, #three3                                 {background: green;
+                                                grid-column: 3/-1;}
+
+#four, #four4                                   {background: yellow;
+                                                grid-row: 2/3;}
+
+#five, #five5                                   {background: purple;
+                                                grid-row: 3/5;}
+
+#six, #six6                                     {background: orange;
+                                                grid-row: 5/-1;
+                                                grid-column: 3/-1;}
+
+#seven, #seven7                                 {background: hotpink;
+                                                grid-column: 1/-1;}
+
+
+
+/* For Html1 */
+.grid1                                          {display: grid;
+                                                gap: 1%;
+                                                grid-template-columns: 14% 70% 14%;
+                                                grid-template-rows: 10vh 40vh 10vh;
+                                                grid-template-areas: "header header header"
+                                                                        "sidebar-left main sidebar-right"
+                                                                        "sidebar-left main ."
+                                                                        "sidebar-left main note"
+                                                                        "footer footer footer";}
+
+#one1                                           {background: red;
+                                                grid-area: header;}
+
+#two2                                           {background: blue;
+                                                grid-area: sidebar-left;}
+
+#three3                                         {background: green;
+                                                grid-area: sidebar-right;}
+
+#four4                                          {background: yellow;
+                                                height: 80%;}
+
+.grid1__box-house                               {grid-area: main;
+                                                width: 100%;}
+
+#five5                                          {background: purple;
+                                                height: 20%;}
+
+#six6                                           {background: orange;
+                                                grid-area: note;}
+
+#seven7                                         {background: hotpink;
+                                                grid-area: footer;}
+
 
