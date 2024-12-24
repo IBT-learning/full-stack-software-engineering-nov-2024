@@ -1,0 +1,49 @@
+body                                        {display: grid;
+                                            align-items: center;
+                                            height: 100vh;
+                                            margin: 0;
+                                            padding-inline: 1rem;}
+
+.box                                        {display: grid;
+                                            grid-template-columns: repeat(8, 1fr);
+                                            width: 100%;
+                                            gap: 1rem;}
+
+
+.box__items                                 {background: #eee;
+                                            width: 100%;
+                                            height: 200px;
+                                            border-radius: 1rem;
+                                            display: grid;
+                                            justify-content: center;
+                                            align-items: center;
+                                            color: #fff;
+                                            font-size: 2rem;
+                                            text-shadow: 2px 2px 3px #000;
+                                            box-shadow: 2px 2px 5px #bbb;}
+
+/* Media Query */
+/* For large screen e.g PC, TV */
+@media only screen and (max-width: 1024px){
+    .box                                    {grid-template-columns: repeat(4, 1fr);}
+}
+@media only print and (max-width: 1024px){
+    .box                                    {grid-template-columns: repeat(4, 1fr);}
+}
+
+/* For Tablets and Medium Screen */
+@media only screen and (max-width: 720px){
+    .box                                    {grid-template-columns: repeat(2, 1fr);}
+}
+
+@media only print and (orientation: landscape){
+    .box                                    {grid-template-columns: repeat(4, 1fr);}
+}
+
+/* For Mobile Devices i.e Small Screen */
+@media only screen and (max-width: 500px){
+    .box                                    {grid-template-columns: repeat(1, 1fr);}
+}
+@media only print and (max-width: 500px){
+    .box                                    {grid-template-columns: repeat(1, 1fr);}
+}
