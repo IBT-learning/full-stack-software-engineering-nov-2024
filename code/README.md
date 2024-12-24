@@ -20,4 +20,4 @@
 
 #### A photo of someone I think is cool:
 
-![My niece](Dad-kissing-Grace.jpg)
+![My niece](images/Dad-kissing-Grace.jpg)
