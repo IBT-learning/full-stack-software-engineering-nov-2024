@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Good Tidings</title>
     <link rel="stylesheet" href="css_basics.css">
     <style>
         .A {
@@ -12,6 +12,13 @@
         .B {
             display: flex;
             flex-direction: row;
+            justify-content: space-evenly;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 200cm;
+            margin-right: 250px;
+        }
+        .B ol {
+            margin-left: 100px;
         }
         marquee {
             color: white;
@@ -44,12 +51,17 @@
             padding-top: 10px;
         }
         input {
-            width: 350px;
+            width: 250px;
             height: 25px;
             text-align: center;
-            margin-left: 150px;
-            margin-top: 20px;
-            border-radius: 2cm;
+            color: white;
+            margin-left: 600px;
+            border-radius: 1cm;
+            background-color: rgb(15, 15, 18);
+        
+        }
+        input :hover {
+            background-color: white;
         }
     </style>
 </head>
@@ -79,6 +91,6 @@
             <li>chair</li>
         </ul>
     </div>
-    <input type="email" placeholder="akanjidaud2@gmail.com">  
+    <input type="email" placeholder="akanjidaud2@gmail.com"> 
 </body>
 </html>
