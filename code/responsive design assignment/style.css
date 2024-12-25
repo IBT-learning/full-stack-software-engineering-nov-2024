@@ -115,7 +115,7 @@ header {
 
     #gallery {
         display: grid;
-        grid-template-columns: 1fr 1fr; /* Simplified 2-column layout */
+        grid-template-columns: 1fr 1fr 1fr; /* Simplified 2-column layout */
         gap: 1rem;
     }
 
@@ -136,6 +136,7 @@ header {
     #page-wrapper {
         display: flex;
         gap: 2rem;
+        flex-direction: row;
     }
 
     #profile {
@@ -166,6 +167,8 @@ header {
         text-align: justify;
     }
 }
+
+
 
 
 
