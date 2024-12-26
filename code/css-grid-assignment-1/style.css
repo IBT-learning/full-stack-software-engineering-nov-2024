@@ -25,18 +25,18 @@
     grid-column-end: 10;
 }
 
- #left{
-    flex-wrap: wrap;
-} 
+ /* #left{ */
+   
+/* }  */
 
  #main{ 
     grid-column-start: 2;
     grid-column-end: 9;
-    flex-wrap: wrap;
+    display: flex;
 } 
 
  #right{ 
-    flex-wrap: wrap;
+    display: flex;
 }  
 
 #footer{
