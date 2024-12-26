@@ -115,7 +115,7 @@ header {
 
     #gallery {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr; /* Simplified 2-column layout */
+        grid-template-columns: 1fr 1fr 1fr;
         gap: 1rem;
     }
 
