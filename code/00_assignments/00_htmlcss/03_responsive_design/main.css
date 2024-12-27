@@ -1,0 +1,204 @@
+body {
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#profile {
+    background-color: #f9b8b6;
+    padding: 1em;
+    margin: 1em;
+}
+
+#profile > img {
+    outline: 0.3rem solid #fff;
+    margin: 0.5em 0;
+}
+
+#profile > span {
+    font-size: 1.3em;
+    font-weight: 600;
+    padding-bottom: 1em;
+}
+
+.card {
+    border: 3px solid #006d9e;
+    margin: 0.2rem;
+}
+
+img {
+    width: 100%;
+}
+
+header {
+    background-color: #a7cddf;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* I think i like desktop-first design, so I'll use that for the assignment. Same results will be produced */
+/* These styles will be applied on the largest screen size */
+#page-wrapper                                       {display: grid;
+                                                    grid-template-columns: 20% 78%;
+                                                    gap: 1%;
+                                                    grid-template-rows: repeat(8, 1fr);}
+
+
+#profile                                            {grid-row: 1/5;}
+
+#gallery                                            {grid-row: 1/8;
+                                                    display: grid;
+                                                    grid-template-columns: repeat(4, 1fr);
+                                                    gap: 0.4rem;
+                                                    margin-top: 1em;}
+
+.card                                               {display: flex;
+                                                    flex-direction: column;}
+
+.card span                                          {height: 100%;
+                                                    width: 100%;
+                                                    box-sizing: border-box;
+                                                    padding: 1.5rem 1rem;}
+
+/* Media Queries */
+/* For PC */
+@media only screen and (max-width:1100px)           {
+
+    #gallery                                            {grid-row: 1/8;
+                                                        display: grid;
+                                                        grid-template-columns: repeat(6, 1fr);
+                                                        gap: 0.4rem;}
+
+    .card:nth-of-type(1)                                {grid-column: 1/3;}
+
+    .card:nth-of-type(2)                                {grid-column: 3/5;}
+
+    .card:nth-of-type(3)                                {grid-column: 5/7;}
+
+    .card:nth-of-type(4)                                {grid-column: 1/3;}
+
+    .card:nth-of-type(5)                                {grid-column: 3/5;}
+
+    .card:nth-of-type(6)                                {grid-column: 5/7;}
+
+    .card:nth-of-type(7)                                {grid-column: 1/4;}
+
+    .card:nth-of-type(8)                                {grid-column: 4/7;}
+
+                                                    }
+
+/* For  Tablets */
+@media only screen and (max-width: 882px)           {
+
+    #page-wrapper                                       {display: flex;
+                                                        flex-direction: column;}
+
+    #gallery                                            {margin: 1em;
+                                                        grid-template-columns: repeat(4, 1fr);}
+
+    .card:nth-of-type(1)                                {grid-column: unset;}
+
+    .card:nth-of-type(2)                                {grid-column: unset;}
+
+    .card:nth-of-type(3)                                {grid-column: unset;}
+
+    .card:nth-of-type(4)                                {grid-column: unset;}
+
+    .card:nth-of-type(5)                                {grid-column: unset;}
+
+    .card:nth-of-type(6)                                {grid-column: unset;}
+
+    .card:nth-of-type(7)                                {grid-column: unset;}
+
+    .card:nth-of-type(8)                                {grid-column: unset;}
+
+
+    
+                                                    }
+                                                    
+/* For Medium Screen */
+@media only screen and (max-width: 750px)           {
+
+    #gallery                                            {grid-row: 1/8;
+                                                        display: grid;
+                                                        grid-template-columns: repeat(6, 1fr);
+                                                        gap: 0.4rem;}
+
+    .card:nth-of-type(1)                                {grid-column: 1/3;}
+
+    .card:nth-of-type(2)                                {grid-column: 3/5;}
+
+    .card:nth-of-type(3)                                {grid-column: 5/7;}
+
+    .card:nth-of-type(4)                                {grid-column: 1/3;}
+
+    .card:nth-of-type(5)                                {grid-column: 3/5;}
+
+    .card:nth-of-type(6)                                {grid-column: 5/7;}
+
+    .card:nth-of-type(7)                                {grid-column: 1/4;}
+
+    .card:nth-of-type(8)                                {grid-column: 4/7;}
+    
+                                                    }
+
+/* For Mobile */
+@media only screen and (max-width:500px)            {
+
+
+    #gallery                                            {display: flex;
+                                                        flex-direction: column;
+                                                        margin: 0;}
+
+    .card                                               {display: flex;
+                                                        flex-direction: row;}
+
+    .card.right img                                     {order: 1;}
+
+    .card img                                           {width: 70%;}
+
+    .card span                                          {width: 30%;
+                                                        height: 100%;
+                                                        box-sizing: border-box;
+                                                        padding: 2rem 1rem;}
+
+    .card:nth-of-type(1)                                {grid-column: unset;}
+
+    .card:nth-of-type(2)                                {grid-column: unset;}
+
+    .card:nth-of-type(3)                                {grid-column: unset;}
+
+    .card:nth-of-type(4)                                {grid-column: unset;}
+
+    .card:nth-of-type(5)                                {grid-column: unset;}
+
+    .card:nth-of-type(6)                                {grid-column: unset;}
+
+    .card:nth-of-type(7)                                {grid-column: unset;}
+
+    .card:nth-of-type(8)                                {grid-column: unset;}
+
+
+
+                                                    }
+
+
+/* For smallest of screens */
+@media only screen and (max-width:400px)            {
+    .card                                               {display: flex;
+                                                        flex-direction: column;}
+
+    .card img                                           {width: 100%;}
+
+    .card.right img                                     {order: 0;}
+
+        .card span                                      {width: 100%;
+                                                        height: 100%;
+                                                        box-sizing: border-box;
+                                                        padding: 2rem 1rem;}
+
+                                                    }
+
