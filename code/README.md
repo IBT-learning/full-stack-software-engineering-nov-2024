@@ -16,6 +16,6 @@
 
 #### A photo of somone i think is cool:
 
-! {Tyler Perry}{https://upload.wikimedia.org/wikipedia/commons/d/d1/Tyler_Perry.jpg}
+! {Tyler Perry}(https://upload.wikimedia.org/wikipedia/commons/d/d1/Tyler_Perry.jpg)
 
 
