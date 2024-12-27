@@ -34,7 +34,7 @@ hr{
     margin: 5rem;
 }
 img {
-    width: 30%;
+    width: 500px;
     opacity: 0.6;
 }
 main div {
@@ -45,8 +45,6 @@ main div {
     display: flex;
     padding-top: 15px;
     justify-content: space-evenly;
-    width: 90%;
-    margin: auto;
 }
 footer {
     width: 30%;
@@ -62,3 +60,7 @@ footer {
     border: 3px solid green;
     padding: 10px;
   }
+
+#ingredients {
+    color: #421c03;
+}
