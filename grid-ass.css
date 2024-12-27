@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+}
+
+#wrapper {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 20rem 1fr 1fr;
+    grid-template-rows: 10vh 80vh 1fr 15vh min-content;
+    font-size: 2em;
+    gap: 1rem;
+    text-shadow: 3px 3px 10px white
+}
+
+
+/* Add new selectors and new CSS here */
+
+/* DO NOT CHANGE ANYTHING BELOW THIS LINE  */
+#wrapper > * {
+    background-color: #ddd;
+    min-height: 6vh;
+    padding: 0.5em;
+    align-items: first baseline;
+}
+
+#header {
+    grid-column: 1 / 4;
+}
+
+#left {
+    grid-row: 0 / 1;
+}
+
+#main {
+    grid-column: 2 / 3;
+}
+
+article {
+    height: 75vh;
+}
+
+#right {
+    /*background-color: #5ff8dc;*/
+}
+
+#footer {
+    grid-column: 1 / 4;
+}
