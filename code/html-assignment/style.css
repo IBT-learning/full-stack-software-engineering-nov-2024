@@ -41,6 +41,13 @@ main div {
     display: flex;
 
 }
+.images {
+    display: flex;
+    padding-top: 15px;
+    justify-content: space-evenly;
+    width: 90%;
+    margin: auto;
+}
 footer {
     width: 30%;
     text-align: center;
