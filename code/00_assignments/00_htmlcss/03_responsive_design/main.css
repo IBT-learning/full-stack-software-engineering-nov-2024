@@ -42,7 +42,7 @@ header {
 /* I think i like desktop-first design, so I'll use that for the assignment. Same results will be produced */
 /* These styles will be applied on the largest screen size */
 #page-wrapper                                       {display: grid;
-                                                    grid-template-columns: 30% 68%;
+                                                    grid-template-columns: 20% 78%;
                                                     gap: 1%;
                                                     grid-template-rows: repeat(8, 1fr);}
 
