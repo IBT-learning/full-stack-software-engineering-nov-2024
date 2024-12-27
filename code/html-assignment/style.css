@@ -64,3 +64,10 @@ footer {
 #ingredients {
     color: #421c03;
 }
+
+.ingredients-par {
+    display: block;
+    background-color: #f66df8c2;
+    width: 70%;
+    margin: auto;
+}
