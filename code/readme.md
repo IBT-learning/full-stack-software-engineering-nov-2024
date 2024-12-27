@@ -1,5 +1,12 @@
-Hello, my name is Yordanos Temesgen Yizengaw, I'm from Addis Ababa, Ethiopia.
-I'm part time Bingo Player /cashiere/ and would love a career in Tech.
-Im happy to collaborate with Prospers and, my favorite traditional music is this one,
-- <img src=img/image.png alt=Alt Text width=70 height=70> [Kassmasse](https://www.youtube.com/watch?v=IcchYWg28LQ)
-- <img src=img/image-1.png alt=Alt Text width=70 height=70> [Hewan Gebrawahid](https://www.youtube.com/watch?v=OPoeRmTEqgc&list=PLy65qis52RcDM0Jl39060p5p_ZYdtq4ga)
+# Hello 👋, 
+## My name is Yordanos, I'm from _Addis Ababa, Ethiopia_.
+
+I'm part time Bingo Player /cashiere/ and would love a career in Tech. <br>
+
+### My favorite traditional music are,
+- [Kassmasse](https://www.youtube.com/watch?v=IcchYWg28LQ)
+- [Hewan Gebrawahid](https://www.youtube.com/watch?v=OPoeRmTEqgc&list=PLy65qis52RcDM0Jl39060p5p_ZYdtq4ga)
+
+#### A photo of someone  I think is cool :
+
+![image of joy from inside out](joy.png)
