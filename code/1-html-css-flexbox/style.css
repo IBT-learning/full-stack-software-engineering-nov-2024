@@ -1,0 +1,13 @@
+.flex-parent {
+    display: flex;
+}
+.box {
+    height: 100px;
+    width: 100px;
+    background-color: orchid;
+    border: 2px solid navy;
+    border-radius: 10%;
+    font-size: 3em;
+    color: white;
+    margin: 10px;
+}
