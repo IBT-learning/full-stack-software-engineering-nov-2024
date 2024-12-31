@@ -5,7 +5,6 @@ We will use a lot of programs throughout this course. This is not all of them, b
 If you work on multiple computers, it will be possible to complete your coursework by synchronizing your work between computers. However, each computer will need to have all of these programs installed and configured.
 
 ##### NOTE: Only complete the sections that are applicable to your operating system!
-
 - [Online user accounts (both Windows and Mac)](#online-user-accounts)
 - [Windows instructions](#windows)
 - [Apple/Mac instructions](#apple-macos)
