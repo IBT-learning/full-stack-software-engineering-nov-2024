@@ -1,21 +1,27 @@
 .challenge-1 {
-    /* write code here */
+    display: flex;
 }
 
 .challenge-2 {
-    /* write code here */
+    display: flex;
+    justify-content: end;
+    flex-direction: row-reverse;
 }
 
 .challenge-3 {
-    /* write code here */
+    display: flex;
+    justify-content: end;
 }
 
 .challenge-4 {
-    /* write code here */
+    display: flex;
+    justify-content: space-between;
 }
 
 .challenge-5 {
-    /* write code here */
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
 /* 
@@ -24,7 +30,9 @@ It selects all .bubble elements that are direct
 children of .challenge-6 elements. 
 */
 .challenge-6 .bubble {
-    /* write code here */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .challenge-7 {
@@ -32,15 +40,18 @@ children of .challenge-6 elements.
 }
 
 .challenge-7 .red {
-    /* write code here */
+    flex-grow: 1;
 }
 
 .challenge-8 {
-    /* write code here */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .challenge-8 .red {
-    /* write code here */
+    order: 1;
 }
 
 /* DO NOT CHANGE ANYTHING BELOW HERE */
