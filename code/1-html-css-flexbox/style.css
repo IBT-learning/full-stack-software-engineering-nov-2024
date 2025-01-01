@@ -1,5 +1,11 @@
+body{
+    height: 40px;
+}
 .flex-parent {
     display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content:end
 }
 .box {
     height: 100px;
