@@ -8,7 +8,8 @@
 }
 
 .challenge-3 {
-    /* write code here */
+    display: flex;  
+    justify-content: flex-end;
 }
 
 .challenge-4 {
