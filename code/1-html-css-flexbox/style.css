@@ -38,11 +38,12 @@
 }
 
 .challenge-8 {
-    /* write code here */
+    display: flex;
+    flex-direction: column;
 }
 
 .challenge-8 .red {
-    /* write code here */
+    order: 1;
 }
 
 /* DO NOT CHANGE ANYTHING BELOW HERE */
