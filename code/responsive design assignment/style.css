@@ -83,8 +83,7 @@ header {
         display: flex;
         flex-direction: column;
     }
-
-
+    
     .card span {
         padding: 0.5rem;
         text-align: justify;
