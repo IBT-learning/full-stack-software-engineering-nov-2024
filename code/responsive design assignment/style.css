@@ -79,16 +79,17 @@ header {
         gap: 1rem;
     }
 
-    .card {
+    card {
         display: flex;
         flex-direction: column;
     }
+
 
     .card span {
         padding: 0.5rem;
         text-align: justify;
     }
-}
+}.
 
 
 /* Media query for 1000px */
@@ -123,7 +124,7 @@ header {
     }
 
     .card span {
-        padding: 0.5rem;
+        padding: 0.2rem;
         text-align: justify;
     }
 }
