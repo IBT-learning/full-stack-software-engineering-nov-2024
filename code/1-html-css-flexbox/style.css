@@ -5,15 +5,16 @@ body{
     display: flex;
     flex-direction:row;
     flex-wrap: wrap;
-    justify-content:end
 }
 .box {
-    height: 100px;
-    width: 100px;
+    height: 200px;
+    width: 200px;
     background-color: orchid;
     border: 2px solid navy;
     border-radius: 10%;
     font-size: 3em;
+    text-align: center;
+    padding-top: 40rpx;
     color: white;
     margin: 10px;
 }
