@@ -34,7 +34,7 @@
 }
 
 .challenge-7 .red {
-    /* write code here */
+    flex-grow: 1;
 }
 
 .challenge-8 {
