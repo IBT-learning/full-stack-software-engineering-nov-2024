@@ -13,7 +13,8 @@
 }
 
 .challenge-4 {
-    /* write code here */
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .challenge-5 {
