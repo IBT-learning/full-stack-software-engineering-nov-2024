@@ -1,20 +1,66 @@
-body{
-    height: 40px;
+.challenge-1 {
+    /* write code here */
 }
-.flex-parent {
+
+.challenge-2 {
+    /* write code here */
+}
+
+.challenge-3 {
+    /* write code here */
+}
+
+.challenge-4 {
+    /* write code here */
+}
+
+.challenge-5 {
+    /* write code here */
+}
+
+/* 
+Tip: This is called the "child selector". 
+It selects all .bubble elements that are direct
+children of .challenge-6 elements. 
+*/
+.challenge-6 .bubble {
+    /* write code here */
+}
+
+.challenge-7 {
     display: flex;
-    flex-direction:row;
-    flex-wrap: wrap;
 }
-.box {
-    height: 200px;
-    width: 200px;
-    background-color: orchid;
-    border: 2px solid navy;
-    border-radius: 10%;
-    font-size: 3em;
-    text-align: center;
-    padding-top: 40rpx;
+
+.challenge-7 .red {
+    /* write code here */
+}
+
+.challenge-8 {
+    /* write code here */
+}
+
+.challenge-8 .red {
+    /* write code here */
+}
+
+/* DO NOT CHANGE ANYTHING BELOW HERE */
+
+.bubble {
+    height: 5em;
+    width: 5em;
     color: white;
-    margin: 10px;
+    border-radius: 50%;
+    border: 0.1em solid black;
+}
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.green {
+    background-color: green;
 }
