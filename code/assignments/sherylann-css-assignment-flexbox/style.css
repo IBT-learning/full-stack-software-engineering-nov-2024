@@ -1,0 +1,80 @@
+
+.challenge-1 {
+    display: flex; 
+    justify-content: flex-start;
+}
+
+.challenge-2 {
+    display: flex;
+    justify-content: flex-end; 
+    flex-direction: row-reverse;
+}
+
+.challenge-3 {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+}
+
+.challenge-4 {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.challenge-5 {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 20px; 
+}
+
+.challenge-6 .bubble {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    text-align: center;
+}
+
+.challenge-7 {
+    display: flex;
+    flex-direction: row;
+}
+
+.challenge-7 .red {
+    display: flex;
+    flex-grow: 1;
+}
+
+.challenge-8 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.challenge-8 .red {
+    display: flex;
+    order: 1;
+}
+
+/* DO NOT CHANGE ANYTHING BELOW HERE */
+
+.bubble {
+    height: 5em;
+    width: 5em;
+    color: white;
+    border-radius: 50%;
+    border: 0.1em solid black;
+}
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.green {
+    background-color: green;
+}
