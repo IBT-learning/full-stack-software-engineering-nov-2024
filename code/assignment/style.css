@@ -46,7 +46,6 @@ header {
     width: 70%;
   }
 
-
   #gallery > .right {
     flex-direction: row-reverse;
   }
@@ -61,7 +60,52 @@ header {
  
   /* #gallery > .left {
     flex-direction: row-reverse;
-  } */
-
-  
+  } */ 
 }
+
+@media screen and (min-width: 750px) {
+  #gallery{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1em;
+  }
+
+  #gallery > .card{
+    display: flex;
+    flex-direction: column;
+    width: 1em;
+    gap: 0em;
+  }
+
+  .card > .photo-label {
+    padding: 0 0;
+  }
+  .card > img {
+    width: 100%;
+  }
+  .right > img {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  #page-wrapper {
+    display: grid;
+    grid-template-columns: 25em 1fr;
+    grid-template-rows: 2em 1fr 1fr;
+
+  }
+
+  #page-wrapper > #profile{
+    background-color: #f9b8b6;
+    grid-row-start: 1;
+    grid-row-end: 4;
+  }
+
+  /* #page-wrapper > #gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+  } */
+}
+
