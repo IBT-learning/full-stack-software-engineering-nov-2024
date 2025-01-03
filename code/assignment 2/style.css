@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+}
+
+#profile {
+    background-color: #f9b8b6;
+    padding: 1em;
+    margin: 1em;
+}
+
+#profile > img {
+    outline: 0.3rem solid #fff;
+    margin: 0.5em 0;
+}
+
+#profile > span {
+    font-size: 1.3em;
+    font-weight: 600;
+    padding-bottom: 1em;
+}
+
+
+.card {
+    border: 3px solid #006d9e;
+    margin: 0.2rem;
+}
+
+img {
+    width: 100%;
+}
+
+header {
+    background-color: #a7cddf;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+@media screen and (min-width: 500px) {
+    .card {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .card img{
+        width: 337px;
+    }
+    .photo-label{
+        padding: 0 12px 5px 14px;
+    }
+    .card:nth-child(odd) {
+        flex-direction: row-reverse;
+    }
+    .card:nth-child(even){
+        flex-direction: row;
+    }
+
+}
+
+
+
+
+
+@media screen and (min-width: 750px) {
+    #gallery{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .card {
+        flex: 1;
+        display: flex;
+        min-width: 25%;
+        flex-wrap: wrap;
+    }
+    .card img{
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+    .photo-label {
+        padding: 10px;
+    }
+
+}
+
+
+
+
+@media screen and (min-width: 1000px) {
+    #profile {
+        width: 100px;
+        position: fixed;
+        padding: 0 40px;
+        left: 5px;
+    }
+    #gallery {
+        margin-left: 171px;
+        padding: 0 50px;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        
+    }
+    .card {
+        flex: 1;
+        min-width: 25%;
+    }
+
+}
+    
+    
