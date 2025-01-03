@@ -1,7 +1,7 @@
 # Jane
 
 #### Where i live now: Lagos, Nigeria
-#### Where i'm from: Nigeria
+#### Where i'm from: Abia state, Nigeria
 
 A song i like:
 
@@ -20,6 +20,7 @@ A song i like:
 
 #### A photo of someone i think is cool:
 
-![Davido](images/Davido-2023-BET-Awards.jpg)
+![Davido](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Davido9.jpg/640px-Davido9.jpg)
+
 
 
