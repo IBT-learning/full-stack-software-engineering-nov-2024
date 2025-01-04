@@ -1,0 +1,156 @@
+/* Ado Awaye */
+
+/* 
+
+selector {
+    property: value;
+    property: value;
+}
+
+*/
+
+
+body {
+    background-color: rgb(138, 132, 132);
+    color: rgb(0, 0, 0);
+    font-size: medium;
+    font-family: 'Times New Roman'
+    
+}
+
+
+
+h4 {
+    color: rgb(19, 19, 120);
+    font-weight: bolder; font-style: italic; font: 900;
+    font-size: 20px;
+    border: 2px solid;
+    text-align: center;
+    text-decoration: solid;
+    text-transform: uppercase;
+    margin: 5px;
+    padding: 10px;
+    
+    
+    
+}
+
+h1 {
+   color: rgba(117, 12, 12, 0.544);
+   font-weight: bold; font-weight: 100;
+   font-size: 900;
+   text-align: center;
+   text-decoration: wavy;
+   text-decoration: overline;
+   text-transform: uppercase;
+}
+
+h6 {
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    
+}
+
+span {
+    color: black;
+    font-weight: 200;
+    margin: 20px
+}
+
+img {
+    padding: 20px;
+    /* padding-left: 20px;
+    padding-top: 10px; */
+    margin: 10px;
+    border: 10px;color: aquamarine !important
+}
+
+
+/* class selector */
+
+.purple-text {
+    color: rgb(6, 1, 6);
+}
+
+.wheat-background {
+    background-color: wheat;
+}
+
+
+  /* id selector */
+
+#block-wrapper {
+    background-color: rgb(73, 62, 127);
+    margin: 20px;
+    padding: 10px;
+    width: 1340px;
+}
+
+.box {
+    width:  1300px;
+    height: 185px;
+    border: 15px solid rgb(14, 2, 2);
+    padding: 15px;
+    margin: 20px;
+  }
+
+  .box {
+    width:  1300px;
+    height: 185px;
+    border: 15px solid rgb(14, 2, 2);
+    padding: 15px;
+    margin: 20px;
+  }
+
+  .box {
+    width:  1300px;
+    height: 185px;
+    border: 15px solid rgb(14, 2, 2);
+    padding: 15px;
+    margin: 20px;
+  }
+  
+  .link { color: #FF0000; } /* CSS link color (red) */
+  .link:hover { color: #00FF00; } /* CSS link hover (green) */
+
+ /* Three image containers (use 50% for four, and 50% for two, etc) */
+.column {
+    float: left; 
+    width: 33.33%;
+    padding: 10px;
+  }
+  
+  /* Clear floats after image containers */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .row {
+    display: flex;
+  }
+  
+  .column {
+    flex: 33.33%;
+    padding: 10px;
+  }
+
+  *, :before, :after {
+    margin: 0;
+   }
+   
+   
+
+  
+
+  .color1 {color: #292f25;}
+  .color2 {color: #236f74;}
+  .color3 {color: #06e2c5;}
+  .color4 {color: #d3ff74;}
+  .color5 {color: #fffbc7;}
+  
+
+
