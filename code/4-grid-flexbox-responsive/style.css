@@ -34,3 +34,22 @@ header {
     display: flex;
     justify-content: center;
 }
+
+@media screen and (max-width: 500px) {
+
+    .card {
+        display: grid;
+        grid-template-columns: 70%  1fr;
+        gap: 0.2rem;
+        font-size: clamp(6px, 4vw, 16px);
+    }
+    .card.right {
+        direction: rtl;
+    }
+    #profile {
+        margin: 0;
+        padding: 0 0.1rem 0.3rem 0.1;
+        text-align: center;
+        font-size: clamp(6px, 5vw, 16px);
+    }
+}
