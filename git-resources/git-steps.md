@@ -96,4 +96,13 @@ Then in your terminal:
 1. `git pull`
 1. `git branch -d assignment-branch` (to delete the local branch)
 
+**Optional**, if you want to update your branch with the notes from `main`
+
+1. `git checkout main`
+1. `git pull`
+1. `git checkout my-branch`
+1. `git merge main`
+1. this is going to put you into vim! type `:wq` to save and exit.
+   - (If you wind up in insert mode, hit `escape` until you are able to type `:wq` and see it at the bottom of the terminal window.)
+
 That's it! You're done, great job.
