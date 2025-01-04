@@ -1,0 +1,317 @@
+<div class="row justify-content-center align-items-center flex-wrap d-flex pt20">
+    <div class="col-md-6 col-lg-5 col-sm-5">
+        <h3 class="entered mt0">Online Admission</h3>
+    </div>
+    <div class="col-md-6 col-lg-7 col-sm-7 text-lg-right">
+        <a href="#checkOnlineAdmissionStatus" class="modalclosebtn modal-close-xs w-full-xs mr-lg-1" onclick="openStatusFormmodal();" data-toggle="modal" data-target="#checkOnlineAdmissionStatus">Check Your Form Status</a>
+                    <a href="https://el-shaddaimodelschool.com/welcome/download/1" class='modalclosebtn modal-close-xs w-full-xs text-center'>Download Application Form</a>
+                </div>
+</div>
+<form id="form1" class="spaceb60 spacet40 onlineform" action="https://el-shaddaimodelschool.com/online_admission"   method="post" accept-charset="utf-8" enctype="multipart/form-data">
+            <div class="printcontent">
+    <div class="row">
+     <h4 class="pagetitleh2">Instructions</h4>
+        <div class="col-md-12">
+          <div class="form-group">
+                <p>General Instruction:-&nbsp;These instructions pertain to online application for admission to El-shaddai Model School&nbsp;for the academic year 2025-2026. In the remainder of these instructions, a &quot;Mount Carmel School&quot;.<br />
+1.<span style="font-family: Roboto, Helvetica, Arial, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);">To fill online admission form,&nbsp;<b>Basic Details like as&nbsp;</b><span style="font-family: Roboto, Helvetica, Arial, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);">( Class, First Name, Last Name, Gender, Date of Birth, Mobile Number, Email) etc.</span></span><br />
+2.&nbsp;Filling in admission application form and uploading documents&nbsp;<span style="font-family: Roboto, Helvetica, Arial, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);">and then click on the&nbsp;</span><strong style="box-sizing: border-box; -webkit-tap-highlight-color: transparent; font-family: Roboto, Helvetica, Arial, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);">Submit</strong><span style="font-family: Roboto, Helvetica, Arial, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);">&nbsp;button.</span><br />
+3.&nbsp;<span style="font-family: Roboto, Helvetica, Arial, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);">After submitting form, this will redirect you in&nbsp;</span><strong style="box-sizing: border-box; -webkit-tap-highlight-color: transparent; font-family: Roboto, Helvetica, Arial, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);">Online Admission Review Details</strong><span style="font-family: Roboto, Helvetica, Arial, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);">&nbsp;page where you can check your details what you have filled previously.</span></p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="printcontent">
+<div class="row">
+<h4 class="pagetitleh2">Basic Details</h4>
+    <div class="col-md-3">
+        <div class="form-group">
+            <label>Class</label><small class="req"> *</small>
+            <select  id="class_id" name="class_id" class="form-control"  >
+                <option value="">Select</option>
+                                        <option value="1">Class 1</option>
+                                            <option value="2">Class 2</option>
+                                            <option value="3">Class 3</option>
+                                            <option value="4">Class 4</option>
+                                            <option value="5">Class 5</option>
+                                    </select>
+            <span class="text-danger"></span>
+        </div>
+    </div>
+    <div class="col-md-3 displaynone">
+        <div class="form-group">
+            <label>Section</label><small class="req"> *</small>
+            <select  id="section_id" name="section_id" class="form-control" >
+                <option value="">Select</option>
+            </select>
+            <span class="text-danger"></span>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="form-group">
+            <label>First Name</label><small class="req"> *</small>
+            <input id="firstname" name="firstname" placeholder="" type="text" class="form-control"  value="" autocomplete="off" />
+            <span class="text-danger"></span>
+        </div>
+    </div>
+                      <div class="col-md-3">
+        <div class="form-group">
+            <label>Last Name</label>
+            <input id="lastname" name="lastname" placeholder="" type="text" class="form-control"  value="" autocomplete="off" />
+            <span class="text-danger"></span>
+        </div>
+    </div>
+        </div><!--./row-->
+<div class="row">
+    <div class="col-md-3">
+        <div class="form-group">
+            <label>Gender</label><small class="req"> *</small>
+            <select class="form-control" name="gender">
+                <option value="">Select</option>
+                                        <option value="Male" >Male</option>
+                                            <option value="Female" >Female</option>
+                                    </select>
+            <span class="text-danger"></span>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="form-group">
+            <label>Date of Birth</label><small class="req"> *</small>
+            <input  type="text" class="form-control date2"  value="" id="dob" name="dob" readonly="readonly"/>
+            <span class="text-danger"></span>
+        </div>
+    </div>
+              <div class="col-md-3">
+        <div class="form-group">
+            <label>Mobile Number</label>
+            <input  type="text" class="form-control"  value="" id="mobileno" name="mobileno" autocomplete="off"/>
+            <span class="text-danger"></span>
+        </div>
+    </div>
+             
+    <div class="col-md-3">
+        <div class="form-group">
+            <label>Email</label><small class="req"> *</small>
+            <input type="text" class="form-control"  value="" id="email" name="email" autocomplete="off"/>
+            <span class="text-danger"></span>
+        </div>
+    </div>
+        </div><!--./row-->
+<div class="row">
+                     </div><!--./row-->
+<div class="row">
+                            </div><!--./row-->
+<div class="row">
+                    <div class="col-md-3">
+                <div class="form-group">
+                    <label>Student Photo</label>
+                    <div><input class="filestyle form-control" type='file' name='file' id="file" size='20' />
+                    </div>
+                    <span class="text-danger"></span></div>
+            </div>
+                </div>
+<div class="row">
+                </div>
+ </div>
+    <div class="printcontent">
+  <div class="row">
+    <h4 class="pagetitleh2">Parent Detail</h4>
+           <div class="col-md-3">
+        <div class="form-group">
+            <label>Father Name</label>
+            <input id="father_name" name="father_name" placeholder="" type="text" class="form-control" autocomplete="off"  value="" />
+            <span class="text-danger"></span>
+        </div>
+    </div>
+                                    </div><!---row-->
+    <div class="row">
+             <div class="col-md-3">
+        <div class="form-group">
+            <label>Mother Name</label>
+            <input id="mother_name" name="mother_name" placeholder="" type="text" class="form-control"  value="" autocomplete="off"/>
+            <span class="text-danger"></span>
+        </div>
+    </div>
+                                </div><!--./row-->
+</div><!--./printcontent-->
+         <div class="printcontent">
+   <div class="row">
+    <h4 class="pagetitleh2">Guardian Details</h4>
+      <div class="form-group col-md-12">
+        <label>If Guardian Is<small class="req"> *</small>&nbsp;&nbsp;&nbsp;</label>
+        <label class="radio-inline">
+            <input type="radio" name="guardian_is"    value="father"> Father            </label>
+        <label class="radio-inline">
+            <input type="radio" name="guardian_is"    value="mother"> Mother            </label>
+        <label class="radio-inline">
+            <input type="radio" name="guardian_is"    value="other"> Other            </label>
+        <span class="text-danger"></span>
+    </div>
+            <div class="col-md-3">
+        <div class="form-group">
+            <label>Guardian Name</label><small class="req"> *</small>
+            <input id="guardian_name" name="guardian_name" placeholder="" type="text" class="form-control"  value="" autocomplete="off" />
+            <span class="text-danger"></span>
+        </div>
+    </div>
+                       <div class="col-md-3">
+        <div class="form-group">
+            <label>Guardian Relation</label><small class="req"> *</small>
+            <input id="guardian_relation" name="guardian_relation" placeholder="" type="text" class="form-control"  value="" autocomplete="off"/>
+            <span class="text-danger"></span>
+        </div>
+    </div>
+                     <div class="col-md-3">
+        <div class="form-group">
+            <label>Guardian Email</label>
+            <input id="guardian_email" name="guardian_email" placeholder="" type="text" class="form-control"  value="" autocomplete="off"/>
+            <span class="text-danger"></span>
+        </div>
+    </div>
+                       <div class="col-md-3">
+        <div class="form-group">
+            <label>Guardian Photo</label>
+            <div><input class="filestyle form-control" type='file' name='guardian_pic' id="file" size='20' />
+            </div>
+            <span class="text-danger"></span></div>
+    </div>
+        </div><!--./row-->
+<div class="row">
+        <div class="col-md-3">
+        <div class="form-group">
+            <label>Guardian Phone</label>
+            <input id="guardian_phone" name="guardian_phone" placeholder="" type="text" class="form-control"  value="" autocomplete="off"/>
+            <span class="text-danger"></span>
+        </div>
+    </div>
+                    <div class="col-md-3">
+        <div class="form-group">
+            <label>Guardian Occupation</label>
+            <input id="guardian_occupation" name="guardian_occupation" placeholder="" type="text" class="form-control"  value="" autocomplete="off" />
+            <span class="text-danger"></span>
+        </div>
+    </div>
+                     <div class="col-md-6">
+        <div class="form-group">
+            <label>Guardian Address</label>
+            <textarea id="guardian_address" name="guardian_address" placeholder="" class="form-control" rows="1" autocomplete="off"></textarea>
+            <span class="text-danger"></span>
+        </div>
+    </div>
+            </div>
+   </div>
+              <div class="printcontent">
+    <div class="row"> 
+        <h4 class="pagetitleh2">Student Address Details</h4>
+                        <div class="col-md-6">
+                                 <div class="checkbox">
+                    <label> <input type="checkbox" id="autofill_current_address" onclick="return auto_fill_guardian_address();" autocomplete="off">
+                    If Guardian Address Is Current Address                         </label>
+                </div>
+                                    <div class="form-group">
+                    <label>Current Address</label>
+                    <textarea id="current_address" name="current_address" placeholder="" rows="1" class="form-control" autocomplete="off"></textarea>
+                    <span class="text-danger"></span>
+                </div>
+            </div>
+                                 <div class="col-md-6">
+                                             <div class="checkbox">
+                        <label> <input type="checkbox" id="autofill_address"onclick="return auto_fill_address();">
+                            If Permanent Address Is Current Address  </label>
+                     </div>
+                                           <div class="form-group">
+                        <label>Permanent Address</label>
+                        <textarea id="permanent_address" name="permanent_address" rows="1" placeholder="" class="form-control" autocomplete="off"></textarea>
+                        <span class="text-danger"></span>
+                    </div>
+            </div>
+                         </div>
+        </div>
+                              <div class="printcontent">
+        <div class="row">
+            <h4 class="pagetitleh2">Miscellaneous Details</h4>
+                  </div>
+    <div class="row">
+                      <div class="col-md-4">
+            <div class="form-group">
+             <label>  National Identification Number  </label>
+              <input id="adhar_no" name="adhar_no" placeholder="" type="text" class="form-control"  value=""  autocomplete="off"/>
+              <span class="text-danger"></span>
+             </div>
+           </div>
+                      <div class="col-md-4">
+             <div class="form-group">
+                <label> Local Identification Number</label>
+                 <input id="samagra_id" name="samagra_id" placeholder="" type="text" class="form-control"  value="" autocomplete="off" />
+                     <span class="text-danger"></span>
+             </div>
+          </div>
+               </div>
+    <div class="row">
+                        <div class="col-md-6">
+                <div class="form-group">
+                    <label>Previous School Details</label>
+                    <textarea class="form-control" rows="1" placeholder="" name="previous_school" autocomplete="off"></textarea>
+                    <span class="text-danger"></span>
+                </div>
+            </div>
+                                        </div>
+     </div>
+                    <div class="printcontent">
+      <div class="row">
+        <h4 class="pagetitleh2">Upload Documents</h4>
+        <div class="col-md-6">
+          <div class="form-group">
+            <label> Documents </label> (<small>To Upload Multiple Document Compress It In A Single File Then Upload It</small>)
+            <input id="document" name="document"  type="file" class="form-control filestyle" value="" />
+            <span class="text-danger"></span>
+        </div>
+      </div>
+     </div>
+    </div>
+                <div class="row">
+                               <div class="col-lg-2 col-md-2 col-sm-5">
+                <div class="form-group  ">
+                   <button type="submit" class="onlineformbtn mt10">Submit</button>
+                </div>
+            </div>
+            <div class="col-md-7">
+                <span class="text-danger"></span>
+            </div>
+        </div>
+</div><!--./row-->
+</form>
+<div id="checkOnlineAdmissionStatus" class="modal fade" role="dialog" tabindex="-1">
+<div class="modal-dialog">
+<!-- Modal content-->
+<div class="modal-content">
+  <div class="modal-header modal-header-small">
+    <button type="button" class="close closebtnmodal" data-dismiss="modal">&times;</button>
+    <h4 >Check Your Form Status</h4>
+  </div>
+   <form action="https://el-shaddaimodelschool.com/welcome/checkadmissionstatus" method="post" class="onlineform" id="checkstatusform">
+      <div class="modal-body">
+        <div class="form-group">
+        <label>Enter Your Reference Number</label><small class="req"> *</small>
+           <input type="text" class="form-control" name="refno" id="refno" autocomplete="off">
+             <span class="text-danger" id="error_status_refno"></span>
+        </div>
+         <div class="form-group mb10">
+          <label>Select Your Date of Birth</label><small class="req"> *</small>
+           <input type="text"  class="form-control date2"  name="student_dob" id="student_dob" autocomplete="off" readonly="">
+            <span class="text-danger" id="error_status_dob"></span>
+        </div>
+         <span class="text-danger" id="invaliderror"></span>
+      </div>
+      <div class="modal-footer">
+      <button type="button" class="modalclosebtn btn  mdbtn" data-dismiss="modal">Close</button>
+        <button type="submit" class="onlineformbtn mdbtn" >Submit</button>
+      </div>
+  </form>
+</div>
+</div>
+</div>
