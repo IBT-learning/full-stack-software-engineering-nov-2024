@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  box-sizing: border-box;
 }
 
 #profile {
@@ -33,4 +34,62 @@ header {
   font-size: 2em;
   display: flex;
   justify-content: center;
+}
+
+@media all and (min-width: 500px){
+  .card{
+    display: flex;
+  }
+
+  .card img{
+    width: 80%;
+  }
+
+  .card span{
+    width: 20%;
+    /* min-width: 50px; */
+    padding: 5px;
+  }
+
+  .right img{
+    order: 1;
+  }
+}
+
+@media all and (min-width: 750px){
+  #gallery{
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+
+  .card{
+    flex-direction: column;
+    flex: 1;
+  }
+
+  .card img{
+    width: 100%;
+    min-width: 200px;
+  }
+
+  .card span{
+    min-width: 150px;
+    padding: 10px;
+  }
+
+  .right img{
+    order: 0;
+  }
+}
+
+@media all and (min-width: 1000px){
+  #page-wrapper{
+    display: grid;
+    grid-template-columns: 210px 1fr;
+  }
+
+  #profile{
+    height: 400px;
+  }
 }
