@@ -1,13 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-body {
-    margin: 30px;
-    font-family: "Poppins";
+#wrapper {
+    font-size: 2em;
+    gap: 1rem;
+    /* Add new properties here */
 }
-.big-box {
-    background-color: #eee;
-    max-width: 900px;
-    margin: 0 auto;
+
+/* Add new selectors and new CSS here */
+
+/* DO NOT CHANGE ANYTHING BELOW THIS LINE  */
+#wrapper > * {
+    background-color: #ddd;
+    min-height: 15vh;
+    padding: 0.5em;
 }
-.box {
-    background-color: #ccc;
+
+article {
+    height: 85vh;
 }
