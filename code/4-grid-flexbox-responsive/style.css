@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    box-sizing: border-box;
 }
 
 #profile {
@@ -34,9 +35,8 @@ header {
     display: flex;
     justify-content: center;
 }
-
-@media screen and (max-width: 500px) {
-
+/* Mobile view below 750px including < 500px view widths */
+@media screen and (min-width: 200px) {
     .card {
         display: grid;
         grid-template-columns: 70%  1fr;
@@ -50,6 +50,30 @@ header {
         margin: 0;
         padding: 0 0.1rem 0.3rem 0.1;
         text-align: center;
-        font-size: clamp(6px, 5vw, 16px);
+        font-size: clamp(6px, 4vw, 30px);
     }
 }
+
+@media screen and (min-width: 750px) {
+    
+    #gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 1rem;
+    }
+    .card {
+        display: unset;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    #page-wrapper {
+        display: flex;
+    }
+    #profile {
+        flex: 0 0 10%;
+        font-size: 20px;
+        padding: 0 2rem;
+        margin: 1rem 2rem;
+    }
+} 
