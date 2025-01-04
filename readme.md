@@ -9,4 +9,4 @@ I'm part time Bingo Player /cashiere/ and would love a career in Tech. <br>
 
 #### A photo of someone  I think is cool :
 
-![image of joy from inside out](./0-my-folder/joy.png)
+![image of joy from inside out](./code/0-my-folder/joy.png)
