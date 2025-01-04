@@ -1,4 +1,4 @@
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1124px){
     #wrapper {
     grid-template-columns: min-content 1fr;
     grid-template-areas: 
@@ -7,6 +7,9 @@
     "contents tips"
     "footer footer";
     gap: 0.5rem;
+    }
+    #title {
+        font-size: 5vw;
     }
     #contents {
     margin-left: 0.5rem;
@@ -19,7 +22,7 @@
     }
 }
 /* phone layout */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 560px) {
     #wrapper {
         grid-template-columns: unset;
         grid-template-areas: 

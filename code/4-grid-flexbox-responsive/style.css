@@ -1,7 +1,10 @@
-html, body{
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     overflow-x: hidden;
+}
+body{
     background-color: #ebf2fa;
     font-size: 1.2em;
     color: #381d2a;
@@ -81,9 +84,4 @@ a:hover {
     padding: 1rem;
     border: 3px solid #66a182;
     margin-right: 1rem;
-    min-width: 7em;
-}
-
-h4 {
-    margin: 0;
 }
