@@ -1,95 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS: grid and flexbox</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="styleResponsive.css">
-</head>
-<body>
-    <div id="wrapper">
-        <haeder id="header" class="navigation">
-            <span id="title"> Responsive Demo Page </span>
-            <nav>
-                <a href="/">Home</a>
-                <a href="/">About</a>
-                <a href="/">Contact</a>
-            </nav>
-        </haeder>
-        <aside id="contents">
-            <h4> Topics:</h4>
-            <span class="topic">HTML</span>
-            <span class="topic">CSS</span>
-            <span class="topic">CSS Flexbox</span>
-            <span class="topic">CSS Grid</span>
-            <span class="topic">Javascript</span>
-            <span class="topic">...</span>
-        </aside>
-        <article id="main">
-            <p>
-               If the automobile had followed the same development cycle as the computer,
-               a Rolls-Royce would today cost $100, tet a million
-               miles per gallon, and epxplode once a year, killing
-               everyone inside. (Robert X. Xringely). For a long time it
-               pzzled me hosw something so expensive, so leading edge, could be so useless.
-               And then it occured to me that a computer is a stupid machine with the ability
-               to do incredibly smart things, while computer programmers are 
-               smart people with the ability to do incredibly stupid things. They are,
-               in short, a perfect match. (Bill Bryson) Java is, in many ways, C__-. (Michael Feldman)
-            </p>
-            <p>
-                They have computers, adn they may have other weapons of mass
-                destruction. (janet Reno) the cheapest, fastest and most 
-                reliablee components are those that arent theren (Gordon
-                bell) Everything that can be invernted has been invented.
-                (charles H. Duell, Commisionner, U>S. Office of patents,
-                1899) Firs,t, solve the problem. Then write the code. (John 
-                Johnson)
-            </p>
-            <p>
-                I've finaly learned what 'upward compatible' means. It
-                means we get to keep all oour old mistaked. (Dennie van
-                Tessel) It is not about bits, bytes and protocols, profits, 
-                loosees and margins. (Lou Grestner) The best thingsabout a 
-                boolean is even if you're wrn=ont, you areonly off by a bit. (Anonymous)
-            </p>
-            <p>
-                i think there's a world market fo rabout 5 computers.
-                (Thomas J. Watson, Chairman of the board, IBM, circa 1948)
-                The trouble with programmers is that you can never tell what
-                a programmer is doing until its too late. (Seymour Cray)
-                Complexity kills . it sucks the life out of developers, it 
-                makes products diffficult to plan, build and test, it
-                introduces security challenges, and it causes end-user nad
-                administartor frustration. (Ray Ozzie) the only people who
-                have anything to fear fro mfee software atre thosse whose
-                products are worth even less. (David Emery)
-            </p>
-            <p>
-                Uf McDonalds were run like a software company, one out of every hundred big macs would give you food poisonin, and the response would e 'We're sorry, here's a coupon for two more. (Mark Minasi)
-                It has been said that the great scientific discipliiens are esxample of giants astanding ofn the shoulders of other gialnts. it has also bee said that the software aindlustry s nan example of midgests standing on the toes of oter hidgets. (Alan Cooper). 
-                There are two ways ofconstructing a softwre design. One way is to make it so simple that there are obviously no deficiencies, And the other way is to make it so complicated that there areno obvious deficiancies. (C.A.R. Hoare)
-            </p>
-        </article>
-        <aside id="tips">
-            <h4>Helpful tip:</h4>
-            <p>
-                When you get stuck on  a problem, don't forget to check out 
-                the helpful 
-                <a
-                    href="https://github.com/IBT-learning/full-stack-software-engineering-nov-2024/blob/main/troubleshooting.md"
-                >
-                troubleshooting document</a> 
-                in the class repository.
-            </p>
-        </aside>
-        <footer id="footer" class="navigation">
-            <a href="/">IBT IBT-learning</a>
-            <a href="/">Thinkfic</a>
-            <a href="/">Github repository</a>
-            <a href="mailto:danny@ibtlearning.co">Email Danny</a>
-        </footer>
-    </div>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CSS Grid Challenge</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <!-- DO NOT CHANGE ANYTHING IN THIS FILE -->
+        <header>Photo Gallery</header>
+        <div id="page-wrapper">
+            <div id="profile">
+                <span>Photographer Profile</span>
+                <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/b/bf/Photographing_sunrise_1745.jpg"
+                    alt="photographer capturing a sunset"
+                />
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Aliquam cumque autem magni quas modi! Voluptatibus earum
+                    iste nam sint unde odio, voluptates et tempora ab
+                    praesentium nihil eum porro excepturi.
+                </p>
+            </div>
+
+            <div id="gallery">
+                <div class="card right">
+                    <img
+                        src="ocean.jpg"
+                        alt="aerial shot of islands from the sea"
+                    />
+                    <span class="photo-label">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Fusce consequat, dui ac condimentum finibus, orci.
+                    </span>
+                </div>
+                <div class="card">
+                    <img
+                        src="ocean.jpg"
+                        alt="aerial shot of islands from the sea"
+                    />
+                    <span class="photo-label">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Fusce consequat, dui ac condimentum finibus, orci.
+                    </span>
+                </div>
+                <div class="card right">
+                    <img
+                        src="ocean.jpg"
+                        alt="aerial shot of islands from the sea"
+                    />
+                    <span class="photo-label">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Fusce consequat, dui ac condimentum finibus, orci.
+                    </span>
+                </div>
+                <div class="card">
+                    <img
+                        src="ocean.jpg"
+                        alt="aerial shot of islands from the sea"
+                    />
+                    <span class="photo-label">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Fusce consequat, dui ac condimentum finibus, orci.
+                    </span>
+                </div>
+                <div class="card right">
+                    <img
+                        src="ocean.jpg"
+                        alt="aerial shot of islands from the sea"
+                    />
+                    <span class="photo-label">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Fusce consequat, dui ac condimentum finibus, orci.
+                    </span>
+                </div>
+                <div class="card">
+                    <img
+                        src="ocean.jpg"
+                        alt="aerial shot of islands from the sea"
+                    />
+                    <span class="photo-label">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Fusce consequat, dui ac condimentum finibus, orci.
+                    </span>
+                </div>
+                <div class="card right">
+                    <img
+                        src="ocean.jpg"
+                        alt="aerial shot of islands from the sea"
+                    />
+                    <span class="photo-label">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Fusce consequat, dui ac condimentum finibus, orci.
+                    </span>
+                </div>
+                <div class="card">
+                    <img
+                        src="ocean.jpg"
+                        alt="aerial shot of islands from the sea"
+                    />
+                    <span class="photo-label">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Fusce consequat, dui ac condimentum finibus, orci.
+                    </span>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
