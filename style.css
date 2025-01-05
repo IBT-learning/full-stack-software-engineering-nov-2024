@@ -1,0 +1,93 @@
+/* General bubble styles */
+.bubble {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blue {
+    background-color: blue;
+    color: white;
+}
+
+.red {
+    background-color: red;
+    color: white;
+}
+
+.green {
+    background-color: green;
+    color: white;
+}
+
+/* Challenge 1 */
+.challenge-1 {
+    display: flex;
+    justify-content: flex-start;
+}
+
+/* Challenge 2 */
+.challenge-2 {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+}
+
+/* Challenge 3 */
+.challenge-3 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Challenge 4 */
+.challenge-4 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Challenge 5 */
+.challenge-5 {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Adds a 20px gap between the items */
+}
+
+/* Challenge 6 */
+.challenge-6 {
+    display: flex;
+    justify-content: space-between; /* Aligns items horizontally */
+    align-items: center; /* Aligns items vertically */
+}
+
+.challenge-6 .bubble {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Challenge 7 */
+.challenge-7 {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.challenge-7 .red {
+    flex-grow: 1; /* Allows the red bubble to stretch and fill the available space */
+}
+
+/* Challenge 8 */
+.challenge-8 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.challenge-8 .red {
+    margin-top: auto; /* Moves the red bubble to the bottom */
+}
