@@ -1,14 +1,18 @@
 /* Mobile First Design */
-
+.blogtext-container,
+#main {
+  max-width: 150rem;
+  padding: 1rem 3rem;
+  margin: auto;
+}
 .blogtext-container {
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  gap: 0.1rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
 }
 
 .blogtext-container > * {
   border-radius: 4% 10%;
-  padding: 0.5rem;
 }
 
 #blog-motivation {
@@ -17,7 +21,8 @@
   opacity: 0.8;
 }
 #blog-motivation h3 {
-  font-size: clamp(5px, 5vw, 3rem);
+  font-size: clamp(5px, 5vw, 2.5rem);
+  padding: 1rem;
 }
 #blog-motivation span {
   display: block;
@@ -35,23 +40,22 @@ progress {
   margin: -0.2rem;
 }
 .card {
-  display: flex;
-  flex-direction: column;
   padding: 1rem 1.5rem;
   max-width: 30rem;
   align-items: center;
   background-color: rgb(180, 177, 177);
   border-radius: 10%;
   text-align: center;
-  margin: -0.2rem;
+  margin: auto;
   font-weight: 500;
 }
+
 #recommended .card .timestamp {
   font-size: 0.6rem;
   font-weight: 800;
 }
 #recommended .card .username {
-  font-size: 5vw;
+  font-size: clamp(20px, 2vw, 10rem);
   font-weight: 600;
   margin: -0.5rem;
 }
@@ -65,9 +69,6 @@ progress {
   align-self: flex-end;
 }
 #main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   padding: 0.2rem 0.5rem;
 }
 #blog-container {
@@ -80,20 +81,21 @@ progress {
 }
 #main > p {
   width: 100%;
-  font-size: 4vw;
+  font-size: clamp(1rem, 4vw, 4rem);
   text-align: center;
   background-color: #fffbd5;
 }
 /* Tablet view */
 @media screen and (min-width: 768px) {
   #blog-container {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 3rem;
   }
 }
 
 /* Desctop view */
 @media screen and (min-width: 1024px) {
-  #blog-container {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+  #blog-motivation {
+    padding: 2rem 6rem;
   }
 }
