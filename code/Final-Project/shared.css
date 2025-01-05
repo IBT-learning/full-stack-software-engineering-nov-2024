@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", monospace, sans-serif;
+}
+
+header {
+  background-color: #001d3d;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+
+header h1 {
+    margin: -0.9rem -0.9rem;
+    padding-bottom: 1rem;
+    font-style: italic;
+    font-weight: 800;
+    white-space: nowrap;
+}
+
+#logo img{
+    width: 80%;
+}
+
+nav {
+  display: flex;
+  margin: auto 0;
+  width: clamp(10px, 20vw, 20rem);
+  justify-content: space-between;
+  overflow-x: hidden;
+}
+.add-new-blog img {
+  border: 2px solid whitesmoke;
+  width: clamp(10px, 10vw, 3rem);
+  border-radius: 20%;
+  margin-left: 0;
+}
+.profile-container img {
+  border: 2px solid whitesmoke;
+  border-radius: 50%;
+  width: clamp(10px, 14vw, 4rem);
+  margin-right: 0;
+}
+footer {
+  background-color: greenyellow;
+}
+
+/* 
+background: url("fallback.png") no-repeat center;
+background-image: url("image.svg");
+background-size: contain;
+
+
+.poppins-extralight-italic {
+    font-family: "Poppins", serif;
+    font-weight: 200;
+    font-style: italic;
+  }
+  color: a68a64; 
+  .poppins-light-italic {
+    font-family: "Poppins", serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .poppins-regular-italic {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .poppins-medium-italic {
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: italic;
+  } */
