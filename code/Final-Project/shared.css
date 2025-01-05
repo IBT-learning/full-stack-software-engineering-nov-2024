@@ -8,7 +8,11 @@
 }
 
 #page-wrapper {
+  background-image: url(./img/undraw_personal-goals.svg);
   height: 100vh;
+  background-size: cover; /* Ensures the image covers the screen */
+  background-position: center; /* Centers the image */
+  background-attachment: fixed;
 }
 
 header {
@@ -17,17 +21,36 @@ header {
   display: flex;
   justify-content: space-between;
 }
-
-header h1 {
-    margin: -0.9rem -0.9rem;
-    padding-bottom: 1rem;
-    font-style: italic;
-    font-weight: 800;
-    white-space: nowrap;
+header :nth-child(2) {
+  display: flex;
+  flex-direction: column;
+}
+header :nth-child(2) span {
+  font-size: clamp(1rem, 1vw, 10rem);
+  padding-top: 1rem;
 }
 
-#logo img{
-    width: 80%;
+header h1 {
+  font-style: italic;
+  font-weight: 800;
+  white-space: nowrap;
+  margin-top: -1.5rem;
+  font-size: clamp(3rem, 5vw, 10rem);
+}
+#logo {
+  display: flex;
+  width: fit-content;
+  border: 3px solid orange;
+  border-radius: 25%;
+  height: fit-content;
+  margin: auto 0;
+
+}
+
+#logo img {
+  width: 10vw;
+  height: auto;
+  object-fit: contain;
 }
 
 nav {
@@ -51,12 +74,12 @@ nav {
 }
 footer {
   background-color: #3c4e61;
-  color: white;
+  color: #ffffff;
   text-align: center;
   margin-top: auto;
 }
 footer a {
-  color: yellow;
+  color: #ffff00;
   text-decoration: none;
 }
 
@@ -64,33 +87,3 @@ footer a:hover {
   font-weight: 800;
   text-decoration: underline;
 }
-
-/* 
-background: url("fallback.png") no-repeat center;
-background-image: url("image.svg");
-background-size: contain;
-
-
-.poppins-extralight-italic {
-    font-family: "Poppins", serif;
-    font-weight: 200;
-    font-style: italic;
-  }
-  color: a68a64; 
-  .poppins-light-italic {
-    font-family: "Poppins", serif;
-    font-weight: 300;
-    font-style: italic;
-  }
-  
-  .poppins-regular-italic {
-    font-family: "Poppins", serif;
-    font-weight: 400;
-    font-style: italic;
-  }
-  
-  .poppins-medium-italic {
-    font-family: "Poppins", serif;
-    font-weight: 500;
-    font-style: italic;
-  } */

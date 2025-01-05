@@ -1,3 +1,99 @@
-#page-wrapper {
-    background-image: url(./img/undraw_personal-goals.svg);
+/* Mobile First Design */
+
+.blogtext-container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 0.1rem;
+}
+
+.blogtext-container > * {
+  border-radius: 4% 10%;
+  padding: 0.5rem;
+}
+
+#blog-motivation {
+  border: 2px solid #c2790491;
+  background: linear-gradient(to right, #b20a2c, #fffbd5);
+  opacity: 0.8;
+}
+#blog-motivation h3 {
+  font-size: clamp(5px, 5vw, 3rem);
+}
+#blog-motivation span {
+  display: block;
+  width: fit-content;
+  margin: -0.5rem 0 -1rem auto;
+}
+
+progress {
+  display: block;
+  margin: auto;
+}
+
+#recommended > p {
+  font-weight: 700;
+  margin: -0.2rem;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1.5rem;
+  max-width: 30rem;
+  align-items: center;
+  background-color: rgb(180, 177, 177);
+  border-radius: 10%;
+  text-align: center;
+  margin: -0.2rem;
+  font-weight: 500;
+}
+#recommended .card .timestamp {
+  font-size: 0.6rem;
+  font-weight: 800;
+}
+#recommended .card .username {
+  font-size: 5vw;
+  font-weight: 600;
+  margin: -0.5rem;
+}
+
+.card img {
+  width: 50vw;
+  max-width: 100%;
+}
+
+.card .timestamp {
+  align-self: flex-end;
+}
+#main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.2rem 0.5rem;
+}
+#blog-container {
+  display: grid;
+  gap: 0.8rem;
+}
+#main > hr {
+  border: none;
+  padding: 2rem;
+}
+#main > p {
+  width: 100%;
+  font-size: 4vw;
+  text-align: center;
+  background-color: #fffbd5;
+}
+/* Tablet view */
+@media screen and (min-width: 768px) {
+  #blog-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Desctop view */
+@media screen and (min-width: 1024px) {
+  #blog-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
