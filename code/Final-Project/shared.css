@@ -7,6 +7,10 @@
   font-family: "Poppins", monospace, sans-serif;
 }
 
+#page-wrapper {
+  height: 100vh;
+}
+
 header {
   background-color: #001d3d;
   color: #fff;
@@ -46,7 +50,19 @@ nav {
   margin-right: 0;
 }
 footer {
-  background-color: greenyellow;
+  background-color: #3c4e61;
+  color: white;
+  text-align: center;
+  margin-top: auto;
+}
+footer a {
+  color: yellow;
+  text-decoration: none;
+}
+
+footer a:hover {
+  font-weight: 800;
+  text-decoration: underline;
 }
 
 /* 
