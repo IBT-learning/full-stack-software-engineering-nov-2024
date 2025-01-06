@@ -59,6 +59,15 @@ header {
         text-align: justify;
     }
 
+    .card right img {
+        max-width: 50%;
+    }
+
+    .card right span {
+        padding: 1rem;
+        text-align: justify;
+    }
+
     .card.right {
         flex-direction: row-reverse; /* Alternates text and image sides */
     }
