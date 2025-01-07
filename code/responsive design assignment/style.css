@@ -46,7 +46,6 @@ header {
     .card {
         display: flex;
         align-items: center;
-        /* flex: 1 1 100%; Ensures full-width cards initially */
         margin: 1rem 0;
     }
 
