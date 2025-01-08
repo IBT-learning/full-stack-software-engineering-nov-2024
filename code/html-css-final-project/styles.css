@@ -1,0 +1,100 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+  }
+  
+  header {
+    background-color: #f79292;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+  }
+  
+  nav {
+    margin-top: 10px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  footer {
+    background-color: #ee9a9a;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  /* Home Page */
+  .home {
+    padding: 20px;
+  }
+  
+  .recent-posts {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .post {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .post-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .user-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  /* Profile Page */
+  .profile {
+    padding: 20px;
+  }
+  
+  .bio {
+    text-align: center;
+  }
+  
+  .profile-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 10px auto;
+    display: block;
+  }
+  
+  .user-posts {
+    margin-top: 20px;
+  }
+  
+  .user-posts .post {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  /* Responsive Design */
+  @media (min-width: 768px) {
+    .recent-posts {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
