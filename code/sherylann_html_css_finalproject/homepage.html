@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blogging Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="usepage.html">My Profile</a></li>
+        <li><a href="homepage.html">Home</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="posts">
+      <!-- Post 1 (Current User) -->
+      <article class="post current-user">
+        <div class="user-info">
+          <img src="user-icon.jpg" alt="User Icon" class="user-icon">
+          <span class="username">John k </span>
+          <span class="timestamp">January 8, 2025</span>
+          <button class="edit-post">Edit</button>
+        </div>
+        <div class="post-content">
+          <p class="post-text">This is my first post! Just getting started with my blog... <a href="#">Read more</a></p>
+          <img src="post-image.jpg" alt="Post Image" class="post-image">
+        </div>
+      </article>
+
+      <!-- Post 2 (Another User) -->
+      <article class="post">
+        <div class="user-info">
+          <img src="user-icon2.jpg" alt="User Icon" class="user-icon">
+          <span class="username">AliceSmith</span>
+          <span class="timestamp">January 7, 2025</span>
+        </div>
+        <div class="post-content">
+          <p class="post-text">Learning full-stack development is exciting! Here's what I've learned so far... <a href="#">Read more</a></p>
+        </div>
+      </article>
+
+      <!-- Post 3 (Another User with Image) -->
+      <article class="post">
+        <div class="user-info">
+          <img src="user-icon3.jpg" alt="User Icon" class="user-icon">
+          <span class="username">BobLee</span>
+          <span class="timestamp">January 6, 2025</span>
+        </div>
+        <div class="post-content">
+          <p class="post-text">Check out this amazing project I'm working on! <a href="#">Read more</a></p>
+          <img src="project-image.jpg" alt="Project Image" class="post-image">
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Blogging Platform. All rights reserved.</p>
+  </footer>
+</body>
+</html>
