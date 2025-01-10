@@ -10,9 +10,18 @@
 2.  User Profile Page
 3. Login Page
 
+## View the Live Webpage Here a [https://Mareola-Blog-App](https://mareola-mabs.github.io/Blog-Webpage/index.html) ##
+
 ### Here are some screenshots; ###
-![Homepage](./assets/images/snippet1.png)
-![Homepage](./assets/images/snippet2.png)
-![Homepage](./assets/images/snippet3.png)
-![Mobile View](./assets/images/snippet4.png)
-![Mobile Nav Menu](./assets/images/snippet5.png)
+![Snippet](./assets/images/snippet00.png)
+![Snippet](./assets/images/snippet01.png)
+![Snippet](./assets/images/snippet02.png)
+![Snippet](./assets/images/snippet03.png)
+![Snippet](./assets/images/snippet04.png)
+![Snippet](./assets/images/snippet05.png)
+![Snippet](./assets/images/snippet06.png)
+![Snippet](./assets/images/snippet07.png)
+![Snippet](./assets/images/snippet08.png)
+![Snippet](./assets/images/snippet09.png)
+
+
