@@ -7,6 +7,7 @@ module.exports = {
         'primary-color': '#3F6FF3',
         'primary-color-a': 'rgba(63, 111, 243, 0.9)',
         'nav-color-a': 'rgba(89, 97, 113, 1.0)',
+        'form-bg': 'rgba(248, 249, 252, 1.0)',
         'fonts-color': '#7B8CAE'
       },
 
