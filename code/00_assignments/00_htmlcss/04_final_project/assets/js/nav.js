@@ -39,3 +39,5 @@ window.addEventListener('resize',()=>{
 
     }
 })
+
+// alert(window.innerWidth)
