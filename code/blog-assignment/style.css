@@ -43,7 +43,6 @@ body {
 
 .profile-img {
   width: clamp(10vw, 15vw, 25vw);
-  align-self: flex-end;
 }
 
 .profile-img img {
@@ -70,7 +69,7 @@ body {
 .bio {
   font-size: clamp(0.85rem, 0.6136rem + 1.1818vw, 1.5rem);
   text-align: center;
-  max-width: 60%;
+  max-width: 80%;
   display: flex;
   flex-direction: column;
   gap: 1em;
@@ -170,4 +169,86 @@ footer p {
   padding: 1em 0;
   color: white;
   text-align: center;
+}
+
+.blog-menu a {
+  font-size: clamp(0.7 5rem, 0.4773rem + 1.3636vw, 1.5rem);
+  text-decoration: none;
+  color: white;
+  background-color: #1e89ef;
+  padding-inline: 1em 1.5em;
+  padding-block: 0.75em;
+  clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+  display: none;
+}
+
+.blog-menu a:hover {
+  background-color: #59dcfb;
+  color: #02197c;
+}
+
+@media (min-width: 31.25em) {
+  .recent-post {
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1em;
+  }
+
+  .blog {
+    flex: 1 1 0;
+  }
+}
+
+@media (min-width: 38.938em) {
+  .blog {
+    flex: 1 1 30vw;
+  }
+}
+
+@media (min-width: 62.5em) {
+  .wrapper {
+    display: grid;
+    grid-template-areas:
+      'header main-content main-content main-content '
+      'header main-content main-content main-content '
+      'footer footer footer footer ';
+  }
+
+  #header {
+    grid-area: header;
+    width: 20vw;
+    height: auto;
+  }
+
+  #main-content {
+    grid-area: main-content;
+    width: 78vw;
+  }
+
+  #footer {
+    grid-area: footer;
+    width: auto;
+    margin-block-start: 0;
+  }
+
+  .profile-menu {
+    order: -1;
+  }
+
+  .user-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+  }
+
+  .bio {
+    max-width: 100%;
+  }
+
+  .bio p {
+    font-size: 1rem;
+    padding: 0;
+  }
 }
