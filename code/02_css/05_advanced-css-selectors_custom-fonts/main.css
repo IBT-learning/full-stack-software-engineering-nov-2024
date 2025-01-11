@@ -3,4 +3,5 @@ body > p:nth-of-type(1)                                {font-family: "Jersey 15"
 
                                 
 body > p:nth-of-type(2)                                 {font-family: "Playwrite VN", serif;
-                                                        font-size: 3rem;} 
+                                                        font-size: 3rem;
+                                                        font-weight: bold;} 
