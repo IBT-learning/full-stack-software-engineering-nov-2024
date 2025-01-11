@@ -46,14 +46,14 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-size: 1.2em;
-    padding: 10px 15px; /* Adds padding to the links */
-    border-radius: 5px; /* Rounded corners for links */
-    transition: background-color 0.3s, color 0.3s; /* Smooth transition on hover */
+    padding: 10px 15px; 
+    border-radius: 5px; 
+    transition: background-color 0.3s, color 0.3s; 
 }
 
 nav ul li a:hover {
-    background-color: #1a2d3f; /* Matches the background of posts */
-    color: #ff6f61; /* Text color when hovered */
+    background-color: #1a2d3f;
+    color: #ff6f61; 
 }
 
 /* Main Content */

@@ -40,21 +40,21 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 25px; /* Increase spacing between items */
+    margin: 0 25px; 
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
     font-size: 1.2em;
-    padding: 10px 15px; /* Adds padding to the links */
-    border-radius: 5px; /* Rounded corners for links */
-    transition: background-color 0.3s, color 0.3s; /* Smooth transition on hover */
+    padding: 10px 15px; 
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 nav ul li a:hover {
-    background-color: #1a2d3f; /* Matches the background of posts */
-    color: #ff6f61; /* Text color when hovered */
+    background-color: #1a2d3f;
+    color: #ff6f61;
 }
 
 /* Main Content */
@@ -125,16 +125,16 @@ footer p {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    max-width: 800px; /* Set a maximum width for the posts */
-    margin: 0 auto; /* Center the posts */
+    max-width: 800px; 
+    margin: 0 auto; 
 }
 
 .blog-posts img {
-    max-width: 100%; /* Ensure images are responsive */
+    max-width: 100%; 
     height: auto;
     border-radius: 8px;
-    margin: 0 auto 20px; /* Center the image and add spacing below */
-    display: block; /* Center the image using block display */
+    margin: 0 auto 20px; 
+    display: block; 
 }
 /* Welcome Section */
 .welcome {
