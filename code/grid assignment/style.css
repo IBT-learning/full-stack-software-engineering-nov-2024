@@ -19,7 +19,7 @@
 #header {  
     grid-area: header;   
     color: black;  
-    padding: 20px;  
+    padding: 19px;  
     
 }  
 
@@ -39,10 +39,9 @@
 #footer {  
     grid-area: footer;   
     color: black;  
-    padding: 20px;  
+    padding: 19px;  
     
 }  
-
 
 
 /* DO NOT CHANGE ANYTHING BELOW THIS LINE  */
