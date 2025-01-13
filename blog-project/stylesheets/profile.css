@@ -11,6 +11,10 @@
     padding: 20px;
     min-height: 100vh;
     background-color: #f8fafc;
+    font-family: "Kanit", serif;
+    font-weight: 600;
+    font-style: normal;
+    /* background-color: #333; */
 }
 
 .welcome {
@@ -125,7 +129,7 @@
 
 button {
     border: none;
-    background:#4A148C;
+    background:#333;
     padding: 5px 140px;
     color: #fff;
     border-radius: 10px;
@@ -134,23 +138,25 @@ button {
     font-family: "Kanit", serif;
     font-weight: 800;
     font-style: normal;
-    transition: background-color 1s ease-in-out, box-shadow 1s ease-in-out;
+    transition: transform 1s ease-in-out;
 }
 
 button:hover {
-    background-color: #4A148C;
-    box-shadow: 2px 2px 5px #333, 4px 4px 5px #4A148C;
+    background-color:#333;
+    transform: scale(1.2);
 }
 
 .lastcontent {
     border-radius: 16px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     /* border: 3px solid red; */
-    padding: 20px
+    padding: 20px;
+    background-color: #fff;
+    margin-top: 12px;
 }
 
 .lastcontent h4 {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
     margin-bottom: 15px;
 }
 
