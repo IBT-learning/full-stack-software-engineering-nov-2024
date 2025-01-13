@@ -15,7 +15,7 @@ if (personAge2 < 18) {
   console.log("This person is elderly");
 }
 
-// Challenge 2
+// Challenge2
 const lyric = "Ontop of the Love is beautiful but there is no place to fall";
 const includesLove = lyric.includes("love");
 const includesHeart = lyric.includes("heart");
