@@ -1,0 +1,55 @@
+/* Reset and body styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  #wrapper {
+    display: grid;
+    grid-template-areas:
+      "header header header"
+      "left main right"
+      "footer footer footer";
+    grid-template-columns: 200px 1fr auto;
+    grid-template-rows: auto 1fr auto;
+    height: 200vh;
+    gap: 10px;
+  }
+  
+  #header {
+    grid-area: header;
+    background: #3498db;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  #left {
+    grid-area: left;
+    background: #f39c12;
+    padding: 10px;
+    color: white;
+  }
+  
+  #main {
+    grid-area: main;
+    background: #2ecc71;
+    padding: 10px;
+    color: white;
+  }
+  
+  #right {
+    grid-area: right;
+    background: #9b59b6;
+    padding: 10px;
+    color: white;
+  }
+  
+  #footer {
+    grid-area: footer;
+    background: #34495e;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
