@@ -1,0 +1,47 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(157, 125, 189);
+}
+
+.history {
+  background-color: rgb(198, 187, 209);
+  height: 100px;
+  text-align: center;
+}
+.historic {
+  background-color: darkgray;
+  margin: 50px 0px 150px 150px;
+  width: 900px;
+  padding: 30px;
+}
+.historic a {
+  color: rgb(16, 230, 130);
+  text-decoration: none;
+}
+.historic a:hover {
+  color: rgb(243, 187, 82);
+}
+ul {
+  border: 2px solid rebeccapurple;
+  margin-bottom: 30px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: lighter;
+}
+#his1 {
+  font-size: 40px;
+  text-align: center;
+  margin-top: 30px;
+}
+.historic img {
+  margin-top: 45px;
+  margin-bottom: 45px;
+  width: 600px;
+}
+p {
+  font-family: cursive;
+  margin-top: 20px;
+}
