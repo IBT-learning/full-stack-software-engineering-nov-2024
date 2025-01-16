@@ -9,7 +9,7 @@ const isElderly = personAge > 60;
 const isTeenStr = !isAdult && "This person is a Child.";
 const isAdultStr = isAdult && "This person is an Adult.";
 const isElderlyStr = isElderly && "This person is Elderly.";
-console.log(" \n****** Challenge One ****** \nThe age is " + personAge);
+console.log(" \n****** Challenge One ****** \nThe age is [Randomy Generated] = " + personAge);
 console.log(isElderlyStr || isAdultStr || isTeenStr);
 
 // Challenge #2
