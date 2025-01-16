@@ -5,13 +5,11 @@ const isRomantic = false;
 
 if (isScary && isRomantic){
   console.log(`${movieTitle} is both romantic and scary!`)
-}else if (isScary || isRomantic){
-  if (isScary){
+}else if (isScary){
     console.log(`${movieTitle} is scary.`);
-  }else{
+}else if(isRomantic){
     console.log(`${movieTitle} is romantic.`);
-  }
-}else{
+  }else{
   console.log(`${movieTitle} is neither scary nor romantic!`);
 }
 
