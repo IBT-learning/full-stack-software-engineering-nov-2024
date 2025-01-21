@@ -11,7 +11,7 @@
 
 ## --
 
-| variable inside loopa                                 | scope                    | in each iteration                                                              |
+| variable inside the loop                              | scope                    | in each iteration                                                              |
 | ----------------------------------------------------- | ------------------------ | ------------------------------------------------------------------------------ |
 | let                                                   | block scoped             | new variables are initialized everytime                                        |
 | const                                                 | block                    | loop automatically updates the const value via binding                         |
