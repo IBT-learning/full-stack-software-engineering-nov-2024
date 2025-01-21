@@ -49,12 +49,13 @@ console.log(isVeryTypical)
 
 //Extra Challenge
 
-if (!includesBaby && includesLife && includesLove){
+if (!includesBaby && includesHeart && includesLove){
     console.log('This song is typical')
 }
-else if (includesHeart && includesLife && includesYeah){
+
+if (!includesLife && !includesBaby && includesYeah){
     console.log('This song is very typical')
 }
-else {
+if (includesYeah || includesLife && includesLove || !includesBaby || !includesHeart){
     console.log('This song is not typical')
 }
