@@ -1,0 +1,26 @@
+main {
+  max-width: 35rem;
+  margin: auto;
+}
+.card {
+  padding: 2rem 0.2rem;
+  background-color: rgb(180, 177, 177);
+  border-radius: 6%;
+  text-align: center;
+  margin: auto;
+  font-weight: 500;
+}
+.profile-edit-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+.profile-edit-container .username,
+.profile-edit-container img {
+  font-size: clamp(1rem, 6vw, 5rem);
+  font-weight: 800;
+  width: clamp(1rem, 7vw, 5rem);
+}
+
+.card > img {
+  width: 100%;
+}
