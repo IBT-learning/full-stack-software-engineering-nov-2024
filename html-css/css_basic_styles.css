@@ -1,8 +1,12 @@
 body{
+    flex-wrap: wrap;
+    flex-direction: column;
     background-color: peru;
     margin: 100px;
     color: lemonchiffon;
     font-family: Arial, Helvetica, sans-serif;
+    /* text-wrap: inherit; */
+    
 
     
 }
@@ -20,19 +24,24 @@ body{
 
 .images_of_nigeria{
     background-color: rgba(228, 220, 245, 0.37);
+    display: flex;
+    flex-direction: column;
     display: grid;
     grid-template-columns: 1fr 2fr;
-    justify-content: space-between;
     justify-items: center;
-    align-items: center;
-    align-content: space-between;
     margin: 100px;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    @media screen {flex-wrap: wrap;
+        
+    }
 
 }
 img{
     width: 300px;
     height: 400px;
     margin: 60px;
+    flex-wrap: wrap;
     
 }
 #special_p a{
