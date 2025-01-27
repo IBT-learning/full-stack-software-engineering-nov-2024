@@ -3,64 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CodeShare Blog</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <title>DiamondMedia - News & Photos</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav class="navbar">
-        <div class="nav-container">
-            <a href="index.html" class="logo">CodeShare</a>
-            <div class="nav-links">
-                <a href="profile.html">Profile</a>
-                <a href="#">New Post</a>
-            </div>
+        <div class="nav-brand">DiamondMedia</div>
+        <div class="nav-links">
+            <a href="profile.html" class="nav-link">My Profile</a>
+            <button class="create-post-btn">Create Post</button>
         </div>
     </nav>
 
-    <main class="main-container">
-        <article class="post">
-            <div class="post-header">
-                <img src="/code/html & css final project/image2/rsz_1h1000 Medium.jpeg" alt="User avatar" class="user-avatar">
-                <div class="post-meta">
-                    <a href="profile.html" class="username">henryogun</a>
-                    <div class="timestamp">2 hours ago</div>
+    <main class="container">
+        <div class="posts-grid">
+            <article class="post">
+                <div class="post-header">
+                    <img src="/code/html & css final project/image2/profile 4.jpg" alt="Reporter avatar" class="user-avatar">
+                    <div class="post-meta">
+                        <p class="username">@global_news</p>
+                        <p class="timestamp">2024-01-27 15:30</p>
+                    </div>
                 </div>
-            </div>
-            <div class="post-content">
-                <p>Just discovered a neat JavaScript trick for array manipulation! Here's how you can use the spread operator to remove duplicates:</p>
-                <img src="" alt="Code snippet" class="post-image">
-            </div>
-        </article>
+                <div class="post-content">
+                    <h2>Urban Development Project Transforms City Center</h2>
+                    <div class="photo-gallery">
+                        <img src="/code/html & css final project/image2/image 5.jpg" alt="City view 1">
+                        <img src="/code/html & css final project/image2/image 8.jpg" alt="City view 2">
+                        <img src="/code/html & css final project/image2/image smart-cities.jpg" alt="City view 3">
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dramatic changes in the city center as new development takes shape...</p>
+                </div>
+            </article>
 
-        <article class="post">
-            <div class="post-header">
-                <img src="/code/html & css final project/image2/premium_photo-1726754457459-d2dfa2e3a434.avif" alt="User avatar" class="user-avatar">
-                <div class="post-meta">
-                    <a href="#" class="username">tech_explorer</a>
-                    <div class="timestamp">5 hours ago</div>
+            <article class="post current-user">
+                <div class="post-header">
+                    <img src="/code/html & css final project/image2/profile 5.jpg" alt="User avatar" class="user-avatar">
+                    <div class="post-meta">
+                        <p class="username">@diamondfm</p>
+                        <p class="timestamp">2025-01-27 14:15</p>
+                    </div>
+                    <button class="edit-btn">Edit</button>
                 </div>
-            </div>
-            <div class="post-content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
-            </div>
-        </article>
-
-        <article class="post">
-            <div class="post-header">
-                <img src="/code/html & css final project/image2/photo-1499673610122-01c7122c5dcb.avif" alt="User avatar" class="user-avatar">
-                <div class="post-meta">
-                    <a href="#" class="username">code_master</a>
-                    <div class="timestamp">Yesterday</div>
+                <div class="post-content">
+                    <h2>Local Festival Celebrates Cultural Heritage</h2>
+                    <div class="photo-gallery">
+                        <img src="/code/html & css final project/image2/festival 1.jpeg" alt="Festival 1">
+                        <img src="/code/html & css final project/image2/festival 2.jpg" alt="Festival 2">
+                        <img src="/code/html & css final project/image2/festival 3.jpg" alt="Festival 3">
+                        <img src="/code/html & css final project/image2/festival 4.jpeg" alt="Festival 4">
+                        <img src="/code/html & css final project/image2/festival 5.webp" alt="Festival 5">
+                        <img src="/code/html & css final project/image2/festival 1.webp" alt="Festival 6">
+                    </div>
+                    <p>Annual cultural festival brings together communities, showcasing traditional arts and modern interpretations...</p>
                 </div>
-            </div>
-            <div class="post-content">
-                <p>Started learning React today! The component-based architecture is really intuitive once you get the hang of it. Can't wait to build more projects!</p>
-            </div>
-        </article>
+            </article>
+        </div>
     </main>
 </body>
 </html>
-Last edited 1 minute ago
-
-
