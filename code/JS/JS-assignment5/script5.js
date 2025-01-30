@@ -23,3 +23,30 @@ function divisible (divided, divisor){
 
 console.log(divisible(10, 2));
 console.log(divisible(15, 6));
+
+// Challenge 4
+function greeting(firstName, status){
+  if(status.toLowerCase() === 'friend'){
+    return `Hello ${firstName}!`;
+  }else if(status.toLowerCase() === 'enemy'){
+    return `You are not welcome here ${firstName}!`;
+  }
+}
+
+console.log(greeting('Thanos', 'Enemy'));
+console.log(greeting('Natasha Romanoff', 'friend'));
+
+// extra challenge 4
+function greeting2(firstName, status){
+  if(status.toLowerCase() === 'friend'){
+    return `Hello ${firstName}!`;
+  }else if(status.toLowerCase() === 'enemy'){
+    return `You are not welcome here ${firstName}!`;
+  }else{
+    return `Invalid status: \n Identify yourself as a friend or enemy!`
+  }
+}
+
+console.log(greeting2('Thanos', 'Enemy'));
+console.log(greeting2('Natasha Romanoff', 'friend'));
+console.log(greeting2('Abigail', 'cousin'))
