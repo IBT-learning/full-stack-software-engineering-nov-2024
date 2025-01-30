@@ -5,3 +5,9 @@ function capitalize(word){
 
 console.log(capitalize('hello'));
 
+// challenge 2
+function perentCalc(amount, percentage){
+  return (percentage/100) * amount;
+}
+
+console.log(perentCalc(200, 20));
