@@ -1,0 +1,52 @@
+#wrapper {
+    font-size: 2em;
+    gap: 1rem;
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "left main right"
+    "footer footer footer"
+    ;
+    grid-template-columns: 15rem 1fr 15rem;
+    grid-template-rows: auto 1fr auto;
+
+}
+
+/* claude gave me the wrapper idea */
+
+ #wrapper #header {
+    grid-area: header;
+    background-color: #2072AF;
+}
+
+#wrapper #left {
+    grid-area: left;
+    background-color: #FF0800;
+}
+
+#main {
+    grid-area: main;
+    background-color: #03C03C;
+    display: flex;
+}
+
+#wrapper #right {
+    grid-area: right;
+    background-color: #FFD700;
+}
+
+#wrapper #footer {
+    grid-area: footer;
+    background-color: #8A2BE2;
+}
+
+/* DO NOT CHANGE ANYTHING BELOW THIS LINE  */
+#wrapper > * {
+    background-color: #ddd;
+    min-height: 15vh;
+    padding: 0.5em;
+}
+
+article {
+    height: 85vh;
+}
