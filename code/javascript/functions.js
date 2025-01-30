@@ -28,7 +28,7 @@ function greeting(firstName, status) {
     }
 }
 
-console.log(greeting("Superman", "friend")); // Output: Hello Superman!
-console.log(greeting("Lex Luthor", "enemy")); // Output: Go away Lex Luthor!
-console.log(greeting("John", "unknown")); // Output: Who are you, John?
+console.log(greeting("Superman", "friend"));
+console.log(greeting("Lex Luthor", "enemy")); 
+console.log(greeting("John", "unknown")); 
 
