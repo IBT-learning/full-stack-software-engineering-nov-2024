@@ -1,0 +1,41 @@
+// Challenge #1: 
+// Capitalize
+function capitalize(word) {
+  return word.toUpperCase();
+}
+console.log(capitalize("hello")); // HELLO
+
+
+// Challenge #2: 
+// Percentage Calculator
+function percentCalc(amount, percentage) {
+  return (amount * percentage) / 100;
+}
+console.log(percentCalc(200, 20)); //40
+
+
+// Challenge #3:
+//  Divisible
+function divisible(dividend, divisor) {
+  return dividend % divisor === 0;
+}
+console.log(divisible(6, 3));  //  true
+console.log(divisible(15, 4)); // false
+
+
+// Challenge #4: 
+// Friend, Enemy
+function greeting(firstName, status) {
+  if (status === "friend") {
+    return `Hello ${firstName}!`;
+  } else if (status === "enemy") {
+    return `Go away ${firstName}!`;
+    //extra challenge if status is not friend or enemy
+  } else {
+    return `I don't know you, ${firstName}, but let's be friends!`;
+  }
+}
+console.log(greeting("Superman", "friend")); // Hello Superman!
+console.log(greeting("Lex Luthor", "enemy")); //Go away Lex Luthor!
+//rg.hero or any other state that is not friend or enemy
+console.log(greeting("Batman", "hero")); // I don't know you, Batman, but let's be friends!
