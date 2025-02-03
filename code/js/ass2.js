@@ -34,3 +34,13 @@ console.log(isTypical)
 const isVeryTypical = lyric.includes("heart") && lyric.includes("life") &&
 lyric.includes("baby") && lyric.includes("yeah")
 console.log(isVeryTypical)
+
+// Extra Challenges
+
+if(isVeryTypical){
+  console.log("This song is very typical")
+} else if(isTypical){
+  console.log("This song is typical")
+} else{
+  console.log("This song is not typical")
+}
