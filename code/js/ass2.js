@@ -44,3 +44,40 @@ if(isVeryTypical){
 } else{
   console.log("This song is not typical")
 }
+
+console.log("=============================")
+
+const lyric_ = "🎶 Title: Yeah, My Heart 🎶" +
+"(Verse 1) Yeah, you’re the rhythm in my life," +  
+"Baby, you make it feel so right." +  
+"Every beat of my heart calls your name," +  
+"Without you, it’s not the same. Ma pa mi oo, Iyawo asiko, Mapa mii oo Iyawo Olele" +
+"Eni Ere, ola ijam iwo ni Ife, ti oyinbo pe mo Love life and heart" +  
+"Yeah, baby, stay with me tonight," +  
+"This heart beats for you, hold me tight." +  
+"In this life, you’re my only light," +  
+"Forever love, yeah, feels so right." +  
+"🔥 Short and sweet! Let me know if you want tweaks! 🎵"
+
+const includesLove_ = (lyric_.includes("love"))
+console.log(includesLove_)
+console.log(lyric_.includes("heart"))
+console.log(lyric_.includes("life"))
+console.log(lyric_.includes("baby"))
+console.log(lyric_.includes("yeah"))
+
+const isTypical1 = lyric_.includes("heart") || lyric_.includes("life") ||
+lyric_.includes("baby") || lyric_.includes("yeah")
+console.log(isTypical1)
+
+const isVeryTypical2 = lyric_.includes("heart") && lyric_.includes("life") &&
+lyric_.includes("baby") && lyric_.includes("yeah")
+console.log(isVeryTypical2)
+
+if(isVeryTypical2){
+  console.log("This song is very typical")
+} else if(isTypical1){
+  console.log("This song is typical")
+} else{
+  console.log("This song is not typical")
+}
