@@ -1,44 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User 1 Profile</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Michael Agwogie - Profile</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav>
-          <a href="index.html">Home</a>
-          <a href="profile.html">Profile</a>
-        </nav>
-      </header>
-      <main>
-        <section class="profile-header">
-          <img src="images/198520735_323032106092949_8951232071875405343_n.jpg" alt="User 1 Profile Picture">
-          <h2>User 1</h2>
-          <p>Hi! I love writing blogs about tech and personal development.</p>
-        </section>
-        
-        <section class="blog-posts">
-          <h3>Recent Posts</h3>
-          
-          <!-- Post 1 -->
-          <article class="post">
-            <span class="timestamp">Jan 6, 2025</span>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-          </article>
-          
-          <!-- Post 2 -->
-          <article class="post">
-            <span class="timestamp">Jan 5, 2025</span>
-            <p>Curabitur at lacus ac velit ornare lobortis...</p>
-          </article>
-        </section>
-      </main>
-      
-      <footer>
-        <p>&copy; 2025 Blog App</p>
-      </footer>
-</body>
-</html>
+  <header>
+    <nav>
+      <div class="logo">TechBlog</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Profile</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main-container">
+    <!-- Profile Info (Left Side) -->
+    <aside class="profile-info">
+      <img src="images/198520735_323032106092949_8951232071875405343_n.jpg" alt="Michael Agwogie" class="profile-photo">
+      <h1>Michael Agwogie</h1>
+      <p class="bio">Software Engineer | AI Savvy | Blogger | Tech Enthusiast</p>
+      <div class="profile-details">
+        <p><strong>Location:</strong> Lagos, Nigeria.</p>
+        <p><strong>Skills:</strong> Software Engineering, AI, JavaScript, Reacts, Express js, MongoDB.</p>
+        <p><strong>Interests:</strong> Programming and posting latest updates in the world of I.T.</p>
+      </div>
+    </aside>
+
+    <!-- User Posts (Right Side) -->
+    <section class="user-posts">
+      <h2>My Recent Posts</h2>
+      <article class="post">
+        <div class="post-header">
+          <img src="images/198520735_323032106092949_8951232071875405343_n.jpg" alt="Michael Agwogie" class="user-icon">
+          <span class="username">Michael Agwogie</span>
+          <span class="timestamp">1 day ago</span>
+        </div>
+        <p>SoftBank and OpenAI launch a $3B AI initiative in Japan to enhance AI services across SoftBank's companies.</p>
+      </article>
+
+      <article class="post">
+        <div class="post-header">
+          <img src="images/198520735_323032106092949_8951232071875405343_n.jpg" alt="Michael Agwogie" class="user-icon">
+          <span class="username">Michael Agwogie</span>
+          <span class="timestamp">3 days ago</span>
+        </div>
+        <p>DeepSeek's AI model, built on a small budget, competes with expensive U.S. tech projects, sparking efficiency concerns.</p>
+      </article>
+
+      <article class="post">
+        <div class="post-header">
+          <img src="images/198520735_323032106092949_8951232071875405343_n.jpg" alt="Michael Agwogie" class="user-icon">
+          <span class="username">Michael Agwogie</span>
+          <span class="timestamp">5 days ago</span>
+        </div>
+        <p>Google introduces Android 16 beta with adaptive app support and Live Updates, with a full release expected in Q2 2025.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 TechBlog. All rights reserved.</p>
+  </footer>
