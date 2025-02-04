@@ -3,15 +3,12 @@
 }
 .challenge-2 {
     display: flex;
+    justify-content: right;
     flex-direction: row-reverse;
-    justify-content: flex-end;
-    
-
 }   
 .challenge-3 {
     display: flex;
-    justify-content: flex-end;
-    
+    justify-content: right;
     
 }
 .challenge-4 {
@@ -21,10 +18,11 @@
 .challenge-5 {
     display: flex;
     justify-content: center;
-    gap: 20px;
 
 }
-
+.challenge-5 .bubble {
+    margin: 0 10px; 
+}
 
 .challenge-6 .bubble {
     display: flex;
@@ -36,7 +34,7 @@
 }
 .challenge-7 {
     display: flex;
-
+    justify-content: center;
 
 }
 .challenge-7 .red {
@@ -47,10 +45,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
    
 }
 .challenge-8 .red {
-    order: 1;
+    order: 3;
 
     
 }
