@@ -43,10 +43,10 @@ Git is a distributed version control system that tracks versions of files. It is
 | 9    | Conditionals        | [JS Assignment #3](./2-javascript/assignments/js-assignment-3.md) |
 | 10   | Loops               | [JS Assignment #4](./2-javascript/assignments/js-assignment-4.md) |
 | 11   | Functions           | [JS Assignment #5](./2-javascript/assignments/js-assignment-5.md) |
+| 12   | Objects             | [JS Assignment #6](./2-javascript/assignments/js-assignment-6.md) |
+| 12   | Classes             | [JS Assignment #7](./2-javascript/assignments/js-assignment-7.md) |
 
 <!--
-| 11   | Objects             | [JS Assignment #6](./2-javascript/assignments/js-assignment-6.md)  |
-| 11   | Classes             | [JS Assignment #7](./2-javascript/assignments/js-assignment-7.md)  |
 | 12   | Callbacks           | [JS Assignment #8](./2-javascript/assignments/js-assignment-8.md)  |
 | 12   | JS Final Project    | [JS Final Project](./2-javascript/assignments/js-final-project.md) |
 -->
