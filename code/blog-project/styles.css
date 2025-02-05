@@ -95,11 +95,13 @@ nav {
   padding: 1.5rem; /* Increased padding inside posts */
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle box-shadow */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
 }
+  
+
 
 .post:hover {
-  transform: translateY(-5px); /* Slight lift on hover */
+  transform: translateY(-5px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
 }
 
