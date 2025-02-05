@@ -20,4 +20,4 @@
 - Baker 
 
 ### A photo of nature I think is cool: 
-![Morning fog sunshine mountain](https://cdn.pixabay.com/photo/2019/08/17/04/18/morning-4411421_640.jpg)
+![Morning fog sunshine mountain](images/morning-4411421_1280.jpg)
