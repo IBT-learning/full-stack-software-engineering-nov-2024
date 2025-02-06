@@ -28,4 +28,18 @@ for (let tag of restaurant.tags){
   console.log(tag);
 }
 
-console.log(`---`)
+console.log(`\n ---`)
+
+// Challenge 2
+restaurant.address = `12 Empire Avenue, Welkom, 9463`;
+
+restaurant.staff.pastryChef = {
+  name: 'Florence',
+  'phone number': '+2723-456-7890'
+};
+
+delete restaurant.website;
+
+console.log(restaurant);
+console.log(`\n -----`)
+
