@@ -57,6 +57,10 @@ const menu = {
     let total = 0;
 
     for (let item of items){ // item is the string corresponding to the object key in each iteration
+      if (! Object.keys(this).includes(item)){
+        this[item] = 0;
+      }
+
       total += this[item];
     }
 
@@ -70,3 +74,12 @@ let order2 = ['pizza', 'chocMuffin', 'cola'];
 console.log(menu.order(order1));
 console.log(menu.order(order2));
 console.log(`\n -----`)
+
+// Extra challenge 4
+restaurant.menu = menu;
+
+let order3 = ['tunaSandwich', 'coffee'];
+console.log(restaurant.menu.order(order3));
+
+let order4 = ['chocMuffin', 'pepsi']; // pepsi is the invalid input
+console.log(restaurant.menu.order(order4));
