@@ -28,7 +28,7 @@ for (let tag of restaurant.tags){
   console.log(tag);
 }
 
-console.log(`\n ---`)
+console.log(`\n -----`)
 
 // Challenge 2
 restaurant.address = `12 Empire Avenue, Welkom, 9463`;
@@ -43,3 +43,30 @@ delete restaurant.website;
 console.log(restaurant);
 console.log(`\n -----`)
 
+// Challenge 3 and 4
+const menu = {
+  pizza: 80,
+  tunaSandwich: 32.7,
+  worsRoll: 39,
+  donut: 6.99,
+  chocMuffin: 14.5,
+  cola: 9.99,
+  coffee: 12.5,
+
+  order(items){
+    let total = 0;
+
+    for (let item of items){ // item is the string corresponding to the object key in each iteration
+      total += this[item];
+    }
+
+    return total;
+  }
+}
+
+let order1 = ['worsRoll', 'donut']; 
+let order2 = ['pizza', 'chocMuffin', 'cola'];
+
+console.log(menu.order(order1));
+console.log(menu.order(order2));
+console.log(`\n -----`)
