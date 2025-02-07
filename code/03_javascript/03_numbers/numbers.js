@@ -54,3 +54,6 @@ cl(Math.max(4, 5, 1, 6))
 cl(Infinity)
 cl(Infinity + Infinity)
 cl(Infinity - Infinity)
+
+//CHAINING OPPERATIONS
+cl(6 * 8 + 3 - 1) //50 Uses BODMAS
