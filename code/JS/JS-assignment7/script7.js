@@ -7,7 +7,7 @@ class BankAccount {
   }
 
   deposit(amount){
-    if (typeof amount !== 'number'){
+    if (!Number.isFinite(amount)){
       throw new TypeError(`Argument '${amount}' must be a valid number!`);
     }
 
@@ -23,7 +23,7 @@ class BankAccount {
   }
 
   withdraw(amount){
-    if (typeof amount !== 'number'){
+    if (!Number.isFinite(amount)){
       throw new TypeError(`Argument '${amount}' must be a valid number`);
     }
 
