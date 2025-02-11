@@ -48,7 +48,7 @@ const promoSort2 = prices.map((item) => {
     price: item.price > 10 ? item.price * (25 / 100) : item.price,
   };
 });
-console.log(promoSort2);
+// console.log(promoSort2);
 
 const productAd = [
   "Shoes are on sale for only $37.50!",
