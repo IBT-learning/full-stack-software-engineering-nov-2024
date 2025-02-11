@@ -37,3 +37,18 @@ console.log(inStockProd);
 
 let faveProd = prices.filter((element) => element.price < 20 && element.inStock);
 console.log(faveProd);
+
+// Challenge 4 
+ // You can chain array methods :) 
+let saleAd = [];
+let salePrices = prices
+  .filter((element) => element.price > 10)
+  .map((element) => {
+    let salePrice = element.price - (element.price * 0.25);
+    let str = `${element.product} on sale for ${salePrice}!`;
+    saleAd.push(str);
+    return salePrice;
+  });
+
+console.log(saleAd); // returns the array of sale advertisement strings
+console.log(salePrices); 
