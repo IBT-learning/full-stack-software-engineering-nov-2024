@@ -1,0 +1,14 @@
+h1 {
+    color:green;
+}
+
+span {
+    color:teal;
+    font-weight: 700;
+    margin: 30px;
+}
+
+img {
+    padding: 20px;
+    margin: 10px;
+}
