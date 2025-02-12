@@ -3,10 +3,9 @@
     gap: 1rem;
     display: grid;
     grid-template-areas: 
-    "header header header"
-    "left main right"
-    "footer footer footer"
-    ;
+        "header header header"
+        "left main right"
+        "footer footer footer";
     grid-template-columns: 15rem 1fr 15rem;
     grid-template-rows: auto 1fr auto;
 
@@ -28,6 +27,7 @@
     grid-area: main;
     background-color: #03C03C;
     display: flex;
+    flex-direction: column;
 }
 
 #wrapper #right {
