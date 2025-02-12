@@ -35,7 +35,7 @@ restaurant.address = "456 New St, Abuja, Nigeria"; // Change address
 // Add myself to the staff 
 restaurant.staff.developer = {
   name: "Michael",
-  "phone number": "0707 111",
+  "phone number": "0707 111 2222",
 }; 
 
 delete restaurant.website; // Remove website
@@ -74,6 +74,3 @@ restaurant.menu = menu
 // console.log(menu.order(["burger", "fries", "pasta"]));
 
 console.log(restaurant.menu.order(["pizza", "fries"]));
-
-
-
