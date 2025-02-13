@@ -42,15 +42,6 @@ header {
     /* align-self: flex-start; */
 justify-content: space-evenly;
 
-.photo-label{
-    display: flex;
-    justify-content: flex-start;
-}
-}}
-
-@media  screen and (min-width:750px) {
-    
-}
 @media  screen and (min-width:1000px) {
     #page-wrapper {
         grid-template-columns: min-content 1fr  ;
