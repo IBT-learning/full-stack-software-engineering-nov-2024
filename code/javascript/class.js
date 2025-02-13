@@ -14,7 +14,7 @@ class BankAccount {
         this.withdraw(Math.abs(amount)); 
       } else {
         this.balance += amount;
-        this.transactions.push(`Deposited $${amount}`);
+        // this.transactions.push(`Deposited $${amount}`);
         console.log("Deposit successful! New balance: $" + this.balance);
       }
     }
@@ -27,7 +27,7 @@ class BankAccount {
         console.log("Insufficient Funds. Your balance is still $" + this.balance);
       } else {
         this.balance -= amount;
-        this.transactions.push(`Withdrew $${amount}`);
+        // this.transactions.push(`Withdrew $${amount}`);
         console.log("Withdrawal successful! New balance: $" + this.balance);
       }
     }
