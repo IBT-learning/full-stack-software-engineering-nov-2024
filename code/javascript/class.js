@@ -1,60 +1,105 @@
 class BankAccount {
     constructor(ownerName) {
+      
       this.ownerName = ownerName;
+      
       this.balance = 0;
+      
       this.transactions = [];
     }
   
     // Deposit method
+    
     deposit(amount) {
       if (typeof amount !== "number" || isNaN(amount)) {
+       
         console.log("Invalid amount. Please enter a number.");
-      } else if (amount < 0) {
+           
+        this.transactions.push("Failed Deposit: Invalid amount");
+      
+    } else if (amount < 0) {
+        
         console.log("Negative deposit detected. Converting to withdrawal...");
-        this.withdraw(Math.abs(amount)); 
-      } else {
+        
+        this.withdraw(Math.abs(amount));
+        
+        this.transactions.push(`Converted Deposit to Withdrawal: $${Math.abs(amount)}`) 
+      
+    } else {
+        
         this.balance += amount;
-        // this.transactions.push(`Deposited $${amount}`);
-        console.log("Deposit successful! New balance: $" + this.balance);
+        
+        this.transactions.push(`Deposited $${amount}`);
+
+        console.log(`Deposit successful! New Balance: $${this.balance}`);
       }
     }
   
     // Withdraw method
+   
     withdraw(amount) {
       if (typeof amount !== "number" || isNaN(amount)) {
+        
         console.log("Invalid amount. Please enter a number.");
-      } else if (amount > this.balance) {
-        console.log("Insufficient Funds. Your balance is still $" + this.balance);
-      } else {
+        
+        this.transactions.push("Failed Withdrawal: Invalid amount");
+      
+    } else if (amount > this.balance) {
+        
+        console.log(`Insufficient Funds. Your balance is still $${this.balance}`)
+        
+        this.transactions.push("Failed Withdrawal: Insufficient funds");
+      
+    } else {
+        
         this.balance -= amount;
-        // this.transactions.push(`Withdrew $${amount}`);
-        console.log("Withdrawal successful! New balance: $" + this.balance);
+        
+        this.transactions.push(`Withdrew $${amount}`);
+        
+        console.log(`Withdrawal successful! New balance $${this.balance}`);
+        
       }
     }
   
     // Print transaction history
+    
     printTransactions() {
-      console.log("Transaction History:");
-      if (this.transactions.length === 0) {
-        console.log("No transactions yet.");
-      } else {
-        for (let i = 0; i < this.transactions.length; i++) {
-          console.log(this.transactions[i]);
-        }
-      }
+       
+        console.log("Transaction History:");
+        
+        if (this.transactions.length === 0) {
+          
+          console.log("No transactions yet.");
+       
+        } else {
+         
+            for (let i = 0; i < this.transactions.length; i++) {
+            
+              console.log(this.transactions[i]);
+            
+            }
+          }
     }
   }
   
   // Creating an instance and testing
+ 
   const person = new BankAccount("John Doe");
   
+  
   console.log(person);
+  
+  
   
   person.deposit(100);
   person.withdraw(50);
   person.deposit(-30);
   person.withdraw(100);
   
-  console.log("Final balance: $" + person.balance);
+  console.log(person.transactions);
+  
+
+  console.log(`Final balance: $${person.balance}`);
   person.printTransactions();
   
+
