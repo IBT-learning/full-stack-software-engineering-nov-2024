@@ -1,0 +1,87 @@
+
+
+ body{
+    background-color: rgb(11, 11, 39);
+    
+ }
+ h1{
+ color: aliceblue;
+ }
+ p{
+    color: white;
+ }
+img{
+    display:flex ;
+    max-width: 200px;
+    max-height: 200px;
+    height: 200px;
+    width: 200px;
+    border-radius: 2rem;
+    box-shadow: black;
+}
+ul{
+    display: flex;
+}
+li{
+    display: flex;
+}
+figure{
+    color: white;
+}
+.images{
+    border-radius: black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), 20px 20px 20px rgba(0, 0, 0, 0.2) ;
+    max-width: 55rem;
+    border-radius: 0.5rem;
+    align-items: center;
+    text-align: center;
+}
+p1{
+font-size: medium;
+color: black        ;
+box-shadow: black 2rem;
+padding: 0.5rem ;
+text-align: justify;
+
+
+}
+.info{
+    padding: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), 20px 20px 20px rgba(0, 0, 0, 0.2) ;
+    text-align:justify;
+    max-width: 67.5%;
+    display: flex;
+    background-color: grey;
+    border-radius: 0.3rem;
+    padding: 0.3rem;
+    
+}
+.text_image{
+    max-width: 10rem ;
+    max-height: 10rem;
+}
+
+ #img2{
+    display:flex;
+    height: 200px;
+    width: 200px;
+    border-radius: 200rem;
+    box-shadow: black;
+}
+a:hover{
+   color: red;
+   
+}
+a:active{
+    color: orange;
+}
+a:link{
+    color: blue;
+}
+a:focus{
+    outline: none;
+    color: green;
+}
+a:link{text-decoration: none;
+    
+}
