@@ -5,7 +5,7 @@ console.log(`"Hello my name is ${myName}" `);
 console.log(`When my friends see me they shout ${myName.toUpperCase()}!`);
 
 // challenge 2 
-const   MyNumber = 10; // You can choose any number
+const   MyNumber = 10; 
 
 const result = ((MyNumber * 2 + 8) / 2) - MyNumber;
 

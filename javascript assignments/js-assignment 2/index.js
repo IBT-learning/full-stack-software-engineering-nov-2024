@@ -1,4 +1,4 @@
-// challenge 1
+
 
 const personAge = 25
 const isAdult = personAge >= 18;
@@ -6,7 +6,7 @@ const isElderly = isAdult >= 60;
 results = `Is this person an adult ? ${isAdult}. Is this person elderly ? ${isElderly}`;
 console.log(results);
 
-// extra challenges 
+
 
 const personAges = Math.floor(Math.random() * 101); 
 const isAdults = personAges >= 18;
@@ -26,7 +26,7 @@ if (personAges < 18) {
 }
 
  
-// chapllenge 2 
+
 
 
 let lyric = "serotonin one love heart life baby yeah"
