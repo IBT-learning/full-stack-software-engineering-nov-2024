@@ -34,17 +34,6 @@ Git is a distributed version control system that tracks versions of files. It is
 
 🔗 [CSS Selector Reference](https://www.w3schools.com/cssref/css_selectors.php)
 
-### Web APIs
-
-| Week | Topic                                 | Link                                                                  |
-| ---- | ------------------------------------- | --------------------------------------------------------------------- |
-| 14   | DOM, Query Selectors, Event Listeners | [Web API Assignment #1](./3-web-apis/assignments/web-assignment-1.md) |
-
-<!--
-| 16   | Fetching API Data                     | [Web API Assignment #2](./3-web-apis/assignments/web-assignment-2.md)   |
-| 16   | Web APIs Final Project                | [Web APIs Final Project](./3-web-apis/assignments/web-final-project.md) |
- -->
-
 ### JavaScript
 
 | Week | Topic               | Link                                                               |
