@@ -1,0 +1,294 @@
+/* Filename: styles.css */
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    
+    
+    
+}
+
+.nav-logo img {
+    max-width: 100px;
+}
+
+#search {
+    flex: 1;
+    margin: 0 20px;
+}
+
+#search form {
+    display: flex;
+    justify-content: flex-start;
+}
+
+#search input {
+    padding: 5px;
+    width: 80%;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+}
+
+#search button {
+    padding: 5px 10px;
+    background-color: white;
+    color: #4CAF50;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.navbar-menu {
+    display: flex;
+    list-style: none;
+    
+}
+
+.navbar-menu li a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+   
+}
+
+.navbuttons button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+/* Main Layout */
+.main-layout {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    gap: 20px;
+    margin: 20px;
+}
+
+/* Sidebar */
+.sidebar {
+    background-color: #f4f4f9;
+    padding: 15px;
+    border-right: 1px solid #ddd;
+    /* height: 100%;
+    position: fixed; */
+    
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar li {
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar li a {
+    text-decoration: none;
+    color: #333;
+    margin-left: 10px;
+}
+
+.sidebar li i {
+    font-size: 1.2rem;
+    color: #4CAF50;
+}
+
+/* Article/Profile Section */
+article {
+    grid-column: true;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+/* *******************The start of prof div *********************************** */
+
+.prof {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: #fff;
+    padding: 15px 0;    
+}
+.username h2 {
+    font-size: 1.2em;
+    color: #333;
+   
+}
+.username h3 {
+    font-size: 0.9em;
+    color: #777;
+    font-weight: normal;
+}
+/* *******************The end of prof div *********************************** */
+.profile-section .prof img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-top:3px ;
+}
+section p {
+    font-size: 1rem;
+    color: #555;
+}
+
+section img:last-of-type {
+    grid-column: span 2;
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+
+/* Responsive Design */
+@media screen and (max-width: 450px) {
+    .main-layout {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        margin-left: 0;
+       
+    }
+
+    .sidebar {
+        display: none;
+        position: absolute;
+        top: 70px;
+        /* left: 0; */
+        right: 0;
+        flex-direction: column;
+        text-align: center;
+        background-color: #4CAF50;
+        padding: 30px 10px;
+
+    }
+
+    .navbar {
+        flex-wrap: wrap;
+    }
+    .navbar-menu{
+        display: none;
+        position: absolute;
+        top: 70px;
+        /* left: 0; */
+        right: 0;
+        flex-direction: column;
+        text-align: center;
+        background-color: #4CAF50;
+        padding: 30px 10px;
+
+    }
+    .nav-logo{
+        column-span: all;
+    }
+
+    /* .navbar-menu ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        text-align: center;
+        
+    } */
+    /* .nav-logo img {
+        justify-content: center;
+    } */
+
+    #search input {
+        width: 100%;
+    }
+    .navbuttons button{
+        display: inline-block;
+    }
+    .navbuttons #close-menu-bar{
+        display:none;
+    }
+}
+
+
+
+@media screen and (max-width: 750px) {
+    .main-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        display: none;
+        position: absolute;
+        top: 70px;
+        /* left: 0; */
+        right: 0;
+        flex-direction: column;
+        text-align: center;
+        background-color: #4CAF50;
+        padding: 30px 10px;
+
+    }
+
+    .navbar {
+        flex-wrap: wrap;
+        
+    }
+    .navbar-menu{
+        display: none;
+        position: absolute;
+        top: 70px;
+        /* left: 0; */
+        right: 0;
+        flex-direction: column;
+        text-align: center;
+        background-color: #4CAF50;
+        padding: 30px 10px;
+
+    }
+
+    /* .navbar-menu ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        text-align: center;
+        padding: 100px;
+        
+    } */
+    /* .nav-logo img {
+        justify-content: center;
+    } */
+
+    #search input {
+        width: 100%;
+    }
+    .navbuttons button{
+        display: inline-block;
+    }
+    .navbuttons #close-menu-bar{
+        display:none;
+    }
+}
