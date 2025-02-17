@@ -7,7 +7,9 @@ notes.*
 .vite/
 
 node_modules/
-./code/html-css-final-project/update.css
-./code/html-css-final-project/stylessd.css 
-./code/html-css-final-project/styles.css
+
+
+../../update.css
+code/html-css-final-project/stylessd.css 
+code/html-css-final-project/styles.css
 
