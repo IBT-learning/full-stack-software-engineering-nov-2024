@@ -1,0 +1,148 @@
+/* style.css */
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    color: white;
+    width: 100%;
+    /* min-height: 3rem;
+    position: fixed; */
+}
+
+.nav-logo img {
+    width: 50px;
+}
+
+#search input {
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+}
+
+#search button {
+    padding: 8px 12px;
+    background-color: #ff6600;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+}
+
+.navbar-menu li {
+    margin-left: 20px;
+}
+
+.navbar-menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+.navbuttons {
+    display: none;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background-color: #222;
+    padding: 20px;
+    position: fixed;
+    height: 100%;
+    top: 0px;
+    left: 0;
+    color: rgb(17, 15, 15);
+    background: transparent;
+}
+
+.sidebar ul {
+    list-style: none;
+    margin-top: 3rem;
+}
+
+.sidebar ul li {
+    padding: 15px;
+}
+
+.sidebar ul li a {
+    color: rgb(26, 20, 20);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.sidebar ul li:hover {
+    background-color: #e4d8d8;
+    cursor: pointer;
+}
+
+/* Main Layout */
+.main-layout {
+    margin-left: 270px;
+    padding: 20px;
+}
+
+.profile-section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-section img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.prof {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.prof img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .sidebar {
+        /* width: 100px; */
+        display: none;
+    }
+
+    .main-layout {
+        margin-left: auto;
+    }
+
+    .navbar-menu {
+        display: none;
+    }
+
+    .navbuttons {
+        display: block;
+    }
+}
