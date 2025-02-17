@@ -1,0 +1,42 @@
+#wrapper {
+    font-size: 2em;
+    gap: 1rem;
+    /* Add new properties here */
+    display: grid;
+    grid-template-columns: 150px 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+
+
+}
+
+/* Add new selectors and new CSS here */
+#header {
+    grid-column:1/-1;
+
+}
+#left {
+grid-column: 1/2
+}
+#main{
+    grid-column: 2/5;
+     /* width:70vw; */
+}
+#right {
+    grid-column: -2/-1; 
+    }
+
+#footer {
+    grid-column:1/-1;
+}
+/* DO NOT CHANGE ANYTHING BELOW THIS LINE  */
+#wrapper > * {
+    background-color: #ddd;
+    min-height: 15vh;
+    padding: 0.5em;
+    display: grid;
+    
+}
+
+article {
+    height: 85vh;
+}
