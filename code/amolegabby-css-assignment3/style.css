@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+}
+
+#profile {
+    background-color: #f9b8b6;
+    padding: 1em;
+    margin: 1em;
+}
+
+#profile > img {
+    outline: 0.3rem solid #fff;
+    margin: 0.5em 0;
+}
+
+#profile > span {
+    font-size: 1.3em;
+    font-weight: 600;
+    padding-bottom: 1em;
+}
+
+.card {
+    border: 3px solid #006d9e;
+    margin: 0.2rem;
+    
+}
+
+img {
+    width: 100%;
+}
+
+header {
+    background-color: #a7cddf;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (min-width: 500px) {
+   .card{display:flex; 
+    gap: 1.5em;
+    max-width: 100vw;   
+    border: 3px solid #006d9e;
+    margin: 0.2rem;
+    justify-content:flex-start;
+    align-items: center;
+}
+.right{
+    flex-direction: row-reverse;
+}
+
+img{
+    width: 80%;
+}
+}
+
+@media screen and (min-width:750px) {
+  
+    .card{display:flex; 
+         gap: 1.5em;
+         width: 100vw;   
+         border: 3px solid #006d9e;
+         margin: 0.2rem;
+         width: 30%;
+         flex-wrap: wrap;
+         justify-content:center;
+         align-items: center;
+         box-sizing:border-box;
+        }
+     
+     img{
+         width: 100%;
+     }
+
+     #gallery{
+        display: flex;
+       flex-wrap: wrap;
+       align-items: stretch;
+       justify-content:center;
+       align-items: center;
+       max-width: max-content;
+       
+        } 
+        span{
+            padding:0.5em ;
+        }
+    }
+
+    @media screen and (min-width:820px) {
+  
+        .card{display:flex; 
+             gap: 1.5em;
+             width: 100vw;   
+             border: 3px solid #006d9e;
+             margin: 0.2rem;
+             width: 22%;
+             flex-wrap: wrap;
+             justify-content:center;
+             align-items: center;
+            }
+         
+         img{
+             width: 100%;
+         }
+    
+         #gallery{
+            display: flex;
+           flex-wrap: wrap;
+           align-items: stretch;
+           justify-content:center;
+             align-items: center;
+            } 
+            span{
+                padding:0.5em ;
+            }
+        }
+
+    @media screen and (min-width:1000px){
+        #page-wrapper{
+            display: grid;
+            grid-template-columns: 200px 1fr ;
+
+        }
+        
+        #profile{
+            grid-column: 1/2;
+            box-sizing: content-box;
+            /* height: auto; */
+        }
+
+        #gallery{
+            display: grid;
+            grid-template-columns:auto auto auto auto ;
+            gap: 1em;
+        }
+
+        .card{
+            width: 100%;
+        }
+    } 
