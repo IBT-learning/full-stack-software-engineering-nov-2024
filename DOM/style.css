@@ -1,0 +1,22 @@
+.blue {
+    color: red;
+}
+
+#box {
+    height: 5rem;
+    width: 5rem;
+    border: 3px solid black;
+    margin-bottom: 3px;
+}
+
+.red {
+    background-color: red;
+} 
+
+.opacity {
+    opacity: 0.2;
+}
+
+.toYellow {
+    background-color: yellow;
+}
