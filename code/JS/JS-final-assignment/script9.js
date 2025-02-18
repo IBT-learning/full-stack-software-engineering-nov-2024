@@ -45,7 +45,7 @@ function game1(){
       }
     }
 
-    // ask user if they want to play again
+    // asking user if they want to play again
     wantToPlay = confirm('Do you want to play again?');
 
     if (!wantToPlay){
@@ -54,4 +54,52 @@ function game1(){
   }
 }
 
-game1();
+// game1();
+
+
+
+// game 2 is the version where the comp choses a number in a specific range and the human tries to guess that number
+
+function game2() {
+  let wantToPlay = true;
+
+  while (wantToPlay) {
+    // Values for tracking game state
+    const min = 50, max = 500;
+    let compNumber = Math.floor(Math.random() * (max - min + 1)) + min;
+    let attempts = 0;
+    let gameRunning = true;
+
+    alert(`I have chosen a number between ${min} and ${max}. Try to guess it.`);
+
+    while (gameRunning) {
+      let humanGuess = prompt(`Enter your guess:\nMy number is between ${min} and ${max}`);
+
+      // process human input: convert it and validate it
+      humanGuess = parseInt(humanGuess);
+      if (isNaN(humanGuess) || humanGuess < min || humanGuess > max) {
+        alert(`Please enter a valid number between ${min} and ${max}.`);
+        continue;
+      }
+
+      attempts++;
+
+      if (humanGuess === compNumber) {
+        alert(`Well done! You found my number '${compNumber}' in ${attempts} attempts!`);
+        gameRunning = false;
+      } else if (humanGuess < compNumber) {
+        alert(`Your guess is TOO LOW. Try again!`);
+      } else {
+        alert(`Your guess is TOO HIGH. Try again!`);
+      }
+    }
+
+    wantToPlay = confirm('Do you want to play again?');
+
+    if (!wantToPlay) {
+      alert('Thanks for playing!');
+    }
+  }
+}
+
+game2();
