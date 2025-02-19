@@ -77,7 +77,7 @@ console.log(saleAd);
 // Extra Challenge: Use .reduce() to join all the sale ads into one string
 
 
-const saleMessageConcat  = saleAd.reduce((acc, currMsg) => acc + " " + currMsg)
+const saleMessageConcat  = saleAd.reduce((acc, currMsg) => acc + " " + currMsg, "")
 console.log(saleMessageConcat);
 
 
