@@ -1,0 +1,101 @@
+/* Mobile First Design */
+.blogtext-container,
+#main {
+  max-width: 150rem;
+  padding: 1rem 3rem;
+  margin: auto;
+}
+.blogtext-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.blogtext-container > * {
+  border-radius: 4% 10%;
+}
+
+#blog-motivation {
+  border: 2px solid #c2790491;
+  background: linear-gradient(to right, #b20a2c, #fffbd5);
+  opacity: 0.8;
+}
+#blog-motivation h3 {
+  font-size: clamp(5px, 5vw, 2.5rem);
+  padding: 1rem;
+}
+#blog-motivation span {
+  display: block;
+  width: fit-content;
+  margin: -0.5rem 0 -1rem auto;
+}
+
+progress {
+  display: block;
+  margin: auto;
+}
+
+#recommended > p {
+  font-weight: 700;
+  margin: -0.2rem;
+}
+.card {
+  padding: 1rem 1.5rem;
+  max-width: 30rem;
+  align-items: center;
+  background-color: rgb(180, 177, 177);
+  border-radius: 10%;
+  text-align: center;
+  margin: auto;
+  font-weight: 500;
+}
+
+#recommended .card .timestamp {
+  font-size: 0.6rem;
+  font-weight: 800;
+}
+#recommended .card .username {
+  font-size: clamp(20px, 2vw, 10rem);
+  font-weight: 600;
+  margin: -0.5rem;
+}
+
+.card img {
+  width: 50vw;
+  max-width: 100%;
+}
+
+.card .timestamp {
+  align-self: flex-end;
+}
+#main {
+  padding: 0.2rem 0.5rem;
+}
+#blog-container {
+  display: grid;
+  gap: 0.8rem;
+}
+#main > hr {
+  border: none;
+  padding: 2rem;
+}
+#main > p {
+  width: 100%;
+  font-size: clamp(1rem, 4vw, 4rem);
+  text-align: center;
+  background-color: #fffbd5;
+}
+/* Tablet view */
+@media screen and (min-width: 768px) {
+  #blog-container {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 3rem;
+  }
+}
+
+/* Desctop view */
+@media screen and (min-width: 1024px) {
+  #blog-motivation {
+    padding: 2rem 6rem;
+  }
+}
