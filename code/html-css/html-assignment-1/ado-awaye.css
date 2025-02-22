@@ -1,0 +1,139 @@
+/* Ado Awaye */
+
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+/* Headings */
+h1 {
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2.5em;
+  border-bottom: 3px solid #3498db;
+  padding-bottom: 10px;
+}
+
+h4, h6 {
+  text-align: center;
+  color: #34495e;
+  margin-bottom: 15px;
+}
+
+h6 {
+  color: #7f8c8d;
+  font-weight: normal;
+}
+
+/* Text Boxes */
+.box {
+  background-color: white;
+  border-radius: 8px;
+  padding: 25px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+pre {
+  font-family: 'Arial', sans-serif;
+  color: #2980b9;
+  font-weight: bold;
+  margin-bottom: 15px;
+  font-size: 1.2em;
+}
+
+/* Links */
+a {
+  color: #3498db;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #2980b9;
+  text-decoration: underline;
+}
+
+/* Things to Do List */
+#block-wrapper {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+ol {
+  list-style-type: none;
+  counter-reset: item;
+  padding-left: 20px;
+}
+
+ol li {
+  counter-increment: item;
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 30px;
+}
+
+ol li::before {
+  content: counter(item) ".";
+  position: absolute;
+  left: 0;
+  color: #3498db;
+  font-weight: bold;
+}
+
+/* Image Gallery */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.column {
+  flex: 1;
+  min-width: 200px;
+  max-width: 300px;
+}
+
+.column img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.column img:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  body {
+      padding: 10px;
+  }
+
+  .row {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .column {
+      max-width: 100%;
+  }
+}
