@@ -23,9 +23,6 @@ body {
     border: 3px solid #006d9e;
     margin: 0.2rem;
 }
-
-
-
 img {
     width: 100%;
 }
@@ -36,15 +33,48 @@ header {
     display: flex;
     justify-content: center;
 }
-@media  screen and (min-width:500px) {
-   .right{ 
-    display: flex;
-    /* align-self: flex-start; */
-justify-content: space-evenly;
 
-@media  screen and (min-width:1000px) {
-    #page-wrapper {
-        grid-template-columns: min-content 1fr  ;
-        grid-template-areas: "profile profile "
+@media screen and (min-width: 500px) {
+    #page-wrapper{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2px;
+        margin: 3px;
+    }
+    .card{
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+    } 
+    .right{ 
+        display: flex;
+        /* align-self: flex-start; */
+        justify-content: space-evenly;
+    
        }
+
 }
+@media screen and (min-width: 750px) {
+    #gallery{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2px;
+        margin: 3px;
+    } 
+    .card{
+        /* flex-grow: 1; */
+       
+        padding: 5px;
+    }  
+}
+
+@media screen and (min-width: 1000px) {
+    #page-wrapper{
+        display: grid;
+        grid-template-columns: 250px 1fr;
+        gap: 2px;
+        margin: 3px;
+    }
+}
+
+

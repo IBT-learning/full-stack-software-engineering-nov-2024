@@ -45,8 +45,3 @@ for(let fizz=1; fizz <=40; fizz++){
     }
     
 }
-
-
-
-
-
