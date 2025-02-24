@@ -1,0 +1,30 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#banner{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+}
+
+
+
+.dark-mode {
+    background-color: #333;
+    color: #eee;
+}
+
+button {
+    background-color: #eee;
+    color: #333;
+    cursor: pointer;
+}
+
+.dark-mode button {
+    background-color: #555;
+    color: #eee;
+}
