@@ -1,0 +1,86 @@
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Header styles */
+header {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid white;
+}
+header:hover {
+    background-color: #f0f0f0; /* Light gray on hover */
+}
+
+/* Section styles */
+section {
+    padding: 20px;
+    color: rgb(249, 245, 245);
+    background-color: black;
+    border: #f0f0f0;
+}
+
+/* Individual section background colors */
+section:nth-of-type(2) {
+    background-color: rgb(245, 242, 242); /* Independence section */
+    border: 3px dashed gray; /* Add a dashed white border */
+    padding: 15px; /* Adjust spacing inside the border */
+    border-radius: 5px;
+}
+section:nth-of-type(3) {
+    background-color: red; /* Culture section */
+}
+section:nth-of-type(4) {
+    background-color: rgb(245, 245, 245); /* Sceneries section */
+}
+section:nth-of-type(5) {
+    background-color: green; /* Wildlife section */
+}
+
+/* Image container styles */
+.image-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.image-container img {
+    max-width: 200px;
+    height: auto;
+    border: 2px solid white;
+    margin-bottom: 15px; /* Add spacing between images */
+}
+/* Link styles */
+a1 {
+    color: green;
+    text-decoration: none;
+}
+a1:hover {
+    color: red; /* Changes the  link color on hover */
+}
+
+
+a {
+    color: blue;
+    text-decoration: none;
+}
+a:hover {
+    color: orange; /* Changes the  link color on hover */
+}
+
+/* Text styles */
+h2, p {
+    margin: 10px 0;
+}
+h3, p1 {
+    margin: 10px 0;
+    color: black;
+}
+p2 {
+    margin: 10px 0;
+    color: black;
+}
