@@ -1,7 +1,7 @@
 //challange 1
 const wordList = ["every", "word", "in", "this", "array", "should", "be", "capitalized"];
 let capitalizedWords = []; 
-let capitalizedWordsString = ""; 
+let capitalizedWordsString = "";
 
 for (const word of wordList) {
     const capitalizedWord = word.charAt(0).toUpperCase() + word.slice(1);
