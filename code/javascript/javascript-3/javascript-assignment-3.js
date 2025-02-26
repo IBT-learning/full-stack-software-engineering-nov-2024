@@ -1,6 +1,6 @@
 const movieTitle = "The Dark Knight";
 const isScary = true;
-const isRomantic = false; 
+const isRomantic = false 
 
 if (isScary && isRomantic) {
   console.log(`${movieTitle} is both romantic and scary!`);
