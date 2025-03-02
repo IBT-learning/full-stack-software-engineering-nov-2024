@@ -56,7 +56,7 @@ function userDidntInputNumber() {
 function secondaryPrompt(mediem) {
   numberOfGuesses += 1;
   return prompt(
-    `\n \t (reply h) If the number higher than ${mediem} , \n \t (reply l) If the number is lower than ${mediem} \t , or \n\t (Say C for correct) If the number is ${50} ✔🤗!`
+    `\n \t (reply h) If the number higher than ${mediem} , \n \t (reply l) If the number is lower than ${mediem} \t , or \n\t (Say C for correct) If the number is ${mediem} ✔🤗!`
   );
 }
 
