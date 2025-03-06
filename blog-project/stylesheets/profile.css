@@ -129,9 +129,9 @@
 
 button {
     border: none;
-    background:#333;
+    /*background:#333;*/
     padding: 5px 140px;
-    color: #fff;
+    color: #333;
     border-radius: 10px;
     font-size: 20px;
     /* box-shadow: 2px 2px 5px #333, 3px 3px 4px #4A148C; */
@@ -139,6 +139,7 @@ button {
     font-weight: 800;
     font-style: normal;
     transition: transform 1s ease-in-out;
+    background-color: transparent;
 }
 
 button:hover {
