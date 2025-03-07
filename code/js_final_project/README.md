@@ -5,7 +5,7 @@ Before starting to code this project, please find a partner and play this game t
 Alice thinks of a number
 Bob guesses a number
 Alice says "higher", "lower", or "correct"
-repeat 2 & 3 until Bob guesses correctly
+repeat 5 times until Bob guesses correctly
 After you get a feel for the game, it's time to write a software version of the game, where the human thinks of a number between 1 and 100 and the computer tries to guess it.
 
 Coding the game
@@ -33,3 +33,5 @@ when the game is over, ask the user if they want to play again, and if so play a
 write a version of the game in which the computer chooses the number, the user guesses numbers, and the computer answers whether the guess is higher or lower
 if you finish that and want more, make the program start by giving the user a choice between the two games, and then start the game they ask for
 ... and then ask again at the end of each round
+
+Guess Number Game Web App link: https://numbermindguessinggame.netlify.app/
