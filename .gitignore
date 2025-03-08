@@ -7,3 +7,6 @@ notes.*
 .vite/
 
 node_modules/
+
+.DS_Store
+code/.DS_Store
