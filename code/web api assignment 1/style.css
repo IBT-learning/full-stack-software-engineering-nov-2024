@@ -1,0 +1,46 @@
+/* Basic page styling */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+/* Styling the input field */
+#userSelect {
+    margin: 10px;
+    padding: 5px;
+    font-size: 16px;
+    width: 60px;
+    text-align: center;
+}
+
+/* Styling the to-do list */
+ul {
+    list-style: none;
+    padding: 0;
+    width: 50%;
+    margin: auto;
+}
+
+/* Styling each to-do item */
+li {
+    padding: 10px;
+    margin: 5px;
+    background-color: lightblue;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+/* Hover effect */
+li:hover {
+    background-color: deepskyblue;
+}
+
+/* Styling completed tasks */
+.completed {
+    text-decoration: line-through;
+    color: gray;
+    background-color: lightgray;
+}
