@@ -53,3 +53,7 @@ cl(abc[1]) //b
 
 //SLICE
 cl("alphabets".slice(1, 8))
+
+// PADSTART() AND PADEND()
+console.log(String(7).padStart(5, "sss"))
+console.log(String(7).padEnd(5, "000"))
