@@ -3,13 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Light/Dark Mode</title>
+    <title>To-Do List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        li {
+            list-style: none;
+            padding: 8px;
+            margin: 5px 0;
+            border-bottom: 1px solid #ddd;
+        }
+        .completed {
+            text-decoration: line-through;
+            color: gray;
+        }
+    </style>
 </head>
 <body>
-    <h1 id="banner">Light Mode</h1>
-    <button id="dark-btn">dark</button>
-    <button id="light-btn">light</button>
 
-    <script src="app.js"></script>
+    <h1>User 1's To-Do List</h1>
+    <ul id="to-do-list"></ul>
+
+    <script src="script.js"></script>
 </body>
 </html>
