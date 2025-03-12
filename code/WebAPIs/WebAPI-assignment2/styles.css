@@ -1,0 +1,19 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  background-color: #f1faee;
+  color: #202020;
+}
+
+h1{
+  color: #1d3557;
+}
+
+.completed{
+  text-decoration: line-through;
+  color: #969696;
+}
+
+li{
+  margin-bottom: 7px;
+}
