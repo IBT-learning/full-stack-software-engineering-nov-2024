@@ -1,111 +1,86 @@
-// Fetch blog posts from JSONPlaceholder API
+const blogPostsContainer = document.getElementById("blog-posts");
+const userPostsContainer = document.getElementById("user-posts");
+const usernameElement = document.getElementById("username");
+const emailElement = document.getElementById("email");
+
+// Function to fetch and display blog posts with different users
 async function fetchBlogPosts() {
-    try {
-      // Fetch all posts
-      const response = await fetch('https://jsonplaceholder.typicode.com/posts');
-      const posts = await response.json();
-  
-      // Limit the number of posts (e.g., 4 posts)
-      const numberOfPosts = 4; // Change this to the number of posts you want
-      const limitedPosts = posts.slice(0, numberOfPosts);
-  
-      // Display the limited posts
-      const blogPostsContainer = document.getElementById('blog-posts');
-      blogPostsContainer.innerHTML = ''; // Clear existing content
-  
-      limitedPosts.forEach(post => {
-        const postElement = document.createElement('article');
-        postElement.classList.add('post');
-  
-        postElement.innerHTML = `
-          <div class="post-header">
-            <img src="images/198520735_323032106092949_8951232071875405343_n.jpg" alt="User Icon" class="user-icon">
-            <span class="username">User ${post.userId}</span>
-            <span class="timestamp">2 hours ago</span>
-          </div>
-          <p>${post.title}</p>
-          <p>${post.body}</p>
-        `;
-  
-        blogPostsContainer.appendChild(postElement);
-      });
-    } catch (error) {
-      console.error('Error fetching blog posts:', error);
-    }
+  try {
+    const postsResponse = await fetch("https://jsonplaceholder.typicode.com/posts");
+    const posts = await postsResponse.json();
+
+    const usersResponse = await fetch("https://jsonplaceholder.typicode.com/users");
+    const users = await usersResponse.json();
+
+    blogPostsContainer.innerHTML = ""; // Clear previous posts
+
+    posts.slice(0, 10).forEach(post => {
+      const randomUser = users[Math.floor(Math.random() * users.length)]; // Pick a random user
+      const postElement = createPostElement(post, randomUser);
+      blogPostsContainer.appendChild(postElement);
+    });
+  } catch (error) {
+    console.error("Error fetching posts:", error);
   }
-  
-  fetchBlogPosts();
-  
-  // Fetch user data from JSONPlaceholder API
-  async function fetchUser(userId) {
-    try {
-      const response = await fetch(`https://jsonplaceholder.typicode.com/users/${userId}`);
-      const user = await response.json();
-      return user;
-    } catch (error) {
-      console.error('Error fetching user data:', error);
-      return null;
+}
+
+// Function to fetch and display user-specific posts on the profile page
+async function fetchUserProfile(userId = 1) {
+  try {
+    const userResponse = await fetch(`https://jsonplaceholder.typicode.com/users/${userId}`);
+    const user = await userResponse.json();
+
+    if (usernameElement && emailElement) {
+      usernameElement.textContent = user.username;
+      emailElement.textContent = user.email;
     }
-  }
-  
-  // Fetch posts for a specific user
-  async function fetchUserPosts(userId) {
-    try {
-      const response = await fetch(`https://jsonplaceholder.typicode.com/posts?userId=${userId}`);
-      const posts = await response.json();
-  
-      const userPostsContainer = document.getElementById('user-posts');
-      userPostsContainer.innerHTML = '';
-  
-      if (posts.length === 0) {
-        userPostsContainer.innerHTML = '<p class="no-posts">No posts found for this user.</p>';
-        return;
-      }
-  
-      posts.forEach(post => {
-        const postElement = document.createElement('article');
-        postElement.classList.add('post');
-  
-        postElement.innerHTML = `
-          <div class="post-header">
-            <img src="images/198520735_323032106092949_8951232071875405343_n.jpg" alt="User Icon" class="user-icon">
-            <span class="username">User ${post.userId}</span>
-            <span class="timestamp">2 hours ago</span>
-          </div>
-          <p>${post.title}</p>
-          <p>${post.body}</p>
-        `;
-  
+
+    const postsResponse = await fetch(`https://jsonplaceholder.typicode.com/posts?userId=${userId}`);
+    const posts = await postsResponse.json();
+
+    userPostsContainer.innerHTML = ""; // Clear previous posts
+
+    if (posts.length === 0) {
+      userPostsContainer.innerHTML = "<p class='no-posts'>No posts available.</p>";
+    } else {
+      posts.slice(0, 5).forEach(post => {
+        const postElement = createPostElement(post, user);
         userPostsContainer.appendChild(postElement);
       });
-    } catch (error) {
-      console.error('Error fetching user posts:', error);
-      // Display an error message to the user
-      const userPostsContainer = document.getElementById('user-posts');
-      userPostsContainer.innerHTML = '<p class="error">Failed to load user posts. Please try again later.</p>';
     }
+  } catch (error) {
+    console.error("Error fetching user profile or posts:", error);
   }
-  
-  // Update profile info with user data
-  async function updateProfileInfo(userId) {
-    const user = await fetchUser(userId);
-  
-    if (user) {
-      document.getElementById('username').textContent = user.name;
-      document.getElementById('email').textContent = user.email;
-    } else {
-      document.getElementById('username').textContent = 'Unknown User';
-      document.getElementById('email').textContent = 'No email available';
-    }
-  }
-  
-  // Check which page is loaded and execute the appropriate code
-  if (window.location.pathname.includes('index.html') || window.location.pathname === '/') {
-    // Home page: Fetch and display blog posts
-    // fetchBlogPosts();
-  } else if (window.location.pathname.includes('profile.html')) {
-    // Profile page: Fetch and display posts for a specific user
-    const userId = 1;
-    updateProfileInfo(userId); // Update profile info
-    fetchUserPosts(userId); // Fetch and display user posts
-  }
+}
+
+// Helper function to create a post element
+function createPostElement(post, user) {
+  const postElement = document.createElement("div");
+  postElement.classList.add("post");
+
+  postElement.innerHTML = `
+    <div class="post-header">
+      <img src="https://i.pravatar.cc/40?u=${user.id}" alt="${user.name}" class="user-icon">
+      <div>
+        <a href="profile.html?userId=${user.id}" class="username">${user.name}</a>
+        <p class="timestamp">Post ID: ${post.id}</p>
+      </div>
+    </div>
+    <h3>${post.title}</h3>
+    <p>${post.body}</p>
+  `;
+
+  return postElement;
+}
+
+// Determine which page is active and load the appropriate content
+if (blogPostsContainer) {
+  fetchBlogPosts();
+}
+
+if (userPostsContainer) {
+  const urlParams = new URLSearchParams(window.location.search);
+  const userId = urlParams.get("userId") || 1;
+  fetchUserProfile(userId);
+}
+
