@@ -45,3 +45,11 @@ button{
 .completed button{
   background-color: #457b98;
 }
+
+option{
+  font-size: 1rem;
+}
+
+label{
+  font-weight: 600;
+}
