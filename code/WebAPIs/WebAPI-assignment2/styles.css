@@ -3,17 +3,45 @@ body{
   box-sizing: border-box;
   background-color: #f1faee;
   color: #202020;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 h1{
   color: #1d3557;
 }
 
-.completed{
-  text-decoration: line-through;
-  color: #969696;
+
+ul{
+  list-style-type: none;
 }
 
 li{
-  margin-bottom: 7px;
+  margin-bottom: 10px;
+  border: 2px solid #b8a8dc;
+  padding: 0.7rem;
+  background-color: #ffffff;
+}
+
+button{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #25266d;
+  margin-right: 10px;
+  cursor: pointer;
+  background-color: white;
+}
+
+.completed{
+  /* text-decoration: line-through; */
+  color: #969696;
+}
+
+.marked{
+  background-color: #457b98;
+}
+
+.completed button{
+  background-color: #457b98;
 }

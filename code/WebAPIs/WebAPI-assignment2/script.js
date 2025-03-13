@@ -5,16 +5,30 @@ async function fetchData(){
   let len = data.length; 
   
   for (let i = 0; i < len; i++){
-    let item = document.createElement('li');
-    item.textContent = data[i].title
+    let listItem = document.createElement('li'); // individual items that will contain a btn and span
 
-    list.appendChild(item) 
+    const btn = document.createElement('button');
+    const span = document.createElement('span');
+    span.textContent = data[i].title
 
     if (data[i].completed){
-      item.classList.add('completed');
+      listItem.classList.add('completed');
+      btn.classList.add('marked')
     }
-  }
 
+    btn.addEventListener('click', function() {
+      listItem.classList.toggle('completed');
+      btn.classList.toggle('marked');
+    })
+
+    // append to <li> 
+    listItem.appendChild(btn);
+    listItem.appendChild(span);
+
+    //  then append to <ul> 
+    list.appendChild(listItem) 
+
+  }
 }
 
 fetchData();
