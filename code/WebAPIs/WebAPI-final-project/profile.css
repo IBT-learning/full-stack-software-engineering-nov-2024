@@ -1,0 +1,187 @@
+/* mobile design */
+
+header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #392f51f2;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: #ffffff;
+  height: 4.5rem;
+}
+
+header .profilePic{
+  margin-right: 1rem;
+  margin-left: 1rem;
+  border: 3px solid #221c2f;
+}
+
+header p{
+  font-size: 1.2rem;
+  font-weight: 500;
+  font-family: 'Roboto Slab', sans-serif;
+}
+
+main{
+  margin-top: 5rem;
+  display: grid;
+  grid-template-rows: min-content auto min-content min-content auto auto;
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.description{
+  grid-row: 1;
+}
+
+.location{
+  grid-row: 2;
+
+  display: flex;
+  align-items: center;
+}
+
+.location img{
+  margin-right: 0.5rem;
+}
+
+.date{
+  grid-row: 3;
+
+  display: flex;
+  align-items: center;
+}
+
+.date img{
+  margin-right: 0.5rem;
+}
+
+.stats{
+  grid-row: 4;
+  font-weight: 500;
+}
+
+.posts{
+  grid-row: 5;
+}
+
+/* footer styles */
+footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  background-color: #2c243ff2;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2.5rem;
+  border-top: 1px solid #0e1c36;
+}
+
+footer button{
+  background-color: #221c2f;
+  color: #ffffff;
+  border-radius: 0.25rem;
+  border: none;
+  font-size: 1rem;
+  padding: 0.3rem 0.5rem;
+}
+
+footer a{
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* image styles */
+.profilePic{
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+.icon{
+  width: 20px;
+  height: 20px;
+}
+
+@media all and (min-width: 700px){
+  header{
+    background-color: #392f51;
+  }
+
+  .sideBar1{
+    top:4.5rem;
+  }
+
+  main{
+    display: grid;
+    grid-template-columns: 8rem 1fr;
+    grid-template-rows: min-content auto auto min-content auto;
+    max-width: 47rem;
+    margin: 5rem auto 0 auto;
+  }
+
+  .description{
+    grid-column: 2;
+  }
+
+  .location{
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .date{
+    grid-column: 2;
+  }
+
+  .stats{
+    grid-column: 2;
+  }
+
+  .posts{
+    grid-column: 2;
+  }
+
+  footer{
+    display: none;
+  }
+}
+
+@media all and (min-width: 1024px){
+  .sideBar2{
+    margin-top: 4.5rem;
+  }
+
+  .sideBar3{
+    margin-top: 4.5rem;
+  }
+
+  
+  main{
+    grid-column: 2;
+    grid-row: 1;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0 1rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .sideBar2 .profileSec{
+    display: inline;
+  }
+}
+
+@media all and (min-width: 1260px){
+  .sideBar2 button{
+    width: 100%;
+  }
+}
