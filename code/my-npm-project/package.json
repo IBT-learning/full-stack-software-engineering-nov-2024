@@ -7,7 +7,7 @@
     "start": "node --watch app.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Michael",
   "license": "ISC",
   "description": "",
   "dependencies": {
