@@ -218,6 +218,7 @@ footer button{
     grid-column: 2;
 
     max-width: 47rem;
+    min-width: 32rem;
     margin-bottom: 1rem;
     margin-left: auto;
     margin-right: auto;
@@ -345,6 +346,10 @@ footer button{
     padding: 0 1rem;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .post{
+    min-width: 30rem;
   }
 }
 
