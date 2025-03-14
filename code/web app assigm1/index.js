@@ -4,9 +4,7 @@ let banner = document.getElementById("banner");
 let darkEl = document.getElementById("dark-btn")
 let lightEl = document.getElementById("light-btn");
 
-// console.log(banner)
-// console.log(darkEl)
-// console.log(lightEl)
+
 
 darkEl.addEventListener("click", function(){
     banner.textContent = "Dark Mode";
