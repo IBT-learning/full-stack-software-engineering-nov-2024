@@ -1,0 +1,29 @@
+
+const myName = "Darlington Obioha"
+console.log(myName)
+console.log(myName.length)
+console.log(`Hello, my name is ${myName}`)
+console.log(`When my friends see me they shouit ${myName.toUpperCase()}!`)
+
+
+// Challenge 1
+const num = 8
+//perform the operations
+const num2 = ((num * 2) + 8) / 2 - num
+console.log(num2)
+
+// Challenge 2
+areaOfCircle = (radius) => {
+    const pi = Math.PI
+    const area = pi * radius * radius
+    return area.toFixed(4)
+}
+
+//calculate the area for radius 2
+const area1 = areaOfCircle(2)
+console.log(area1)
+
+//calculate the area for radius 3
+const area2 = areaOfCircle(3)
+console.log(area2)
+
