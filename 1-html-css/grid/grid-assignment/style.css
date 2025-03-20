@@ -4,6 +4,7 @@
     /* Add new properties here */
 }
 
+
 /* Add new selectors and new CSS here */
 
 /* DO NOT CHANGE ANYTHING BELOW THIS LINE  */
@@ -11,6 +12,9 @@
     background-color: #ddd;
     min-height: 15vh;
     padding: 0.5em;
+}
+.wrapper.header{
+    background-color: red;
 }
 
 article {
