@@ -1,0 +1,31 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: sans-serif;
+  gap: 12px;
+  transition: background-color 0.3s ease;
+}
+
+#banner {
+  font-size: 2rem;
+}
+
+button {
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  border-radius: 20%;
+}
+
+.dark-mode {
+  background-color: darkgray;
+  color: black;
+}
+
+.light-mode {
+  background-color: lightgray;
+  color: white;
+}
