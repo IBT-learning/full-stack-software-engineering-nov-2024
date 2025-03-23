@@ -1,0 +1,19 @@
+h1 {
+    color:rgb(1, 26, 53);
+    font-weight: 700;
+}
+body {
+background-color: rgb(75, 186, 230);
+}
+
+img {
+    padding: 10px; color: rgb(1, 26, 53);
+    border: 5px dashed rgb(1, 26, 53); 
+} 
+
+.orange-text {
+    color:rgb(1, 26, 53);}
+#block-wrapper {
+    background-color:rgb(33, 119, 152); 
+    padding: 10px; color: rgb(1, 26, 53);
+    border: 10px; color:rgb(1, 26, 53) }
