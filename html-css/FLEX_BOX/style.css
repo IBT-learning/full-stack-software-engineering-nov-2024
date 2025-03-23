@@ -1,0 +1,30 @@
+.flex_box{
+    background-color: aquamarine;
+    height:40vh;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1em 2em;
+    margin: 20px;
+    padding:20px;
+
+}
+.box{
+    height:70px;
+    width: 70px;
+    background-color: orchid;
+    border: 1px dotted navy;
+    border-radius: 10%;
+    font-size: 3em;
+    color: red;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+
+}
+#one{
+    font-size: 1em;
+    flex-grow: 1;
+}
