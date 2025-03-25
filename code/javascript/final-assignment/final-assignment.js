@@ -1,31 +1,25 @@
-// Function to start the game
 function startGame() {
-    let min = 1;
-    let max = 100;
+    alert("Think of a number between 1 and 100 and I will try to guess it!");
+
+    let lowerBound = 1;
+    let upperBound = 100;
     let guess;
-    let userResponse;
+    let feedback;
 
-    alert("Welcome to the Guess the Number game!");
-    alert("Think of a number between 1 and 100, and I will try to guess it!");
-
+    // Loop until the computer guesses the correct number
     while (true) {
-        guess = Math.floor((min + max) / 2);
-        userResponse = prompt(`Is your number higher than, lower than, or exactly ${guess}? (Enter "h" for higher, "l" for lower, "c" for correct)`);
-
-        if (userResponse === 'h') {
-            // If the guess is too low, adjust the minimum number
-            min = guess + 1;
-        } else if (userResponse === 'l') {
-            // If the guess is too high, adjust the maximum number
-            max = guess - 1;
-        } else if (userResponse === 'c') {
-            // If the guess is correct, end the game
-            alert(`Yay! I guessed your number: ${guess}.`);
+    
+        guess = Math.floor((lowerBound + upperBound) / 2);
+        feedback = prompt(`Is your number higher than, lower than, or exactly ${guess}? (h/l/c)`).toLowerCase();
+        if (feedback === 'h') {
+            lowerBound = guess + 1;
+        } else if (feedback === 'l') {
+            upperBound = guess - 1;
+        } else if (feedback === 'c') {
+            alert(`I guessed your number! It was ${guess}.`);
             break;
         } else {
-            alert("Please enter a valid response: 'h', 'l', or 'c'.");
+            alert("Please respond with 'h', 'l', or 'c'.");
         }
     }
 }
-
-startGame();
