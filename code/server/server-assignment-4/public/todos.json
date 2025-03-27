@@ -1,0 +1,23 @@
+[
+  { "userId": 1, "id": 1, "title": "Buy groceries for the week", "completed": false },
+  { "userId": 1, "id": 2, "title": "Call mom and check in", "completed": false },
+  { "userId": 1, "id": 3, "title": "Finish that book I started a month ago", "completed": false },
+  { "userId": 1, "id": 4, "title": "Go for a 30-minute walk", "completed": true },
+  { "userId": 1, "id": 5, "title": "Clean up my desk (finally!)", "completed": false },
+  { "userId": 1, "id": 6, "title": "Watch an episode of my favorite show", "completed": false },
+  { "userId": 1, "id": 7, "title": "Respond to all pending emails", "completed": false },
+  { "userId": 1, "id": 8, "title": "Try a new recipe for dinner", "completed": true },
+  { "userId": 1, "id": 9, "title": "Water the plants before they rebel", "completed": false },
+  { "userId": 1, "id": 10, "title": "Organize my photo gallery", "completed": true },
+  { "userId": 1, "id": 11, "title": "Plan a weekend adventure", "completed": true },
+  { "userId": 1, "id": 12, "title": "Fix that squeaky chair", "completed": false },
+  { "userId": 1, "id": 13, "title": "Do 10 push-ups (or at least 5)", "completed": true },
+  { "userId": 1, "id": 14, "title": "Listen to a new podcast episode", "completed": true },
+  { "userId": 1, "id": 15, "title": "Text a friend I haven’t talked to in a while", "completed": false },
+  { "userId": 1, "id": 16, "title": "Declutter my phone apps", "completed": true },
+  { "userId": 1, "id": 17, "title": "Write down three things I’m grateful for", "completed": false },
+  { "userId": 1, "id": 18, "title": "Set a reminder for my next haircut", "completed": false },
+  { "userId": 1, "id": 19, "title": "Try meditating for 5 minutes", "completed": true },
+  { "userId": 1, "id": 20, "title": "Check my bank account (hope for the best)", "completed": false },
+  { "userId": 1, "id": 21, "title": "Sleep early for once", "completed": true }
+]

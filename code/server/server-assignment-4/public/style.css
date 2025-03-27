@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #FFFFFF;
+    font-family: Candara, sans-serif;
+    font-size: 25px;
+    background-image: url("components/girl.png.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    padding: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 20px;
+    backdrop-filter: blur(5px);
+}
+
+#to-do-list {
+    list-style-type: none;
+    width: 100%;
+}
+
+#to-do-list .elements {
+    font-size: 22px;
+    font-family: Ebrima, sans-serif;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+}
+
+#to-do-list .elements:last-child {
+    border-bottom: none;
+}
+
+/* Adding some placeholder styles for task items */
+#to-do-list .elements::before {
+    content: "•";
+    margin-right: 10px;
+    color: #6F4E37; /* Using the coffee color you requested */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .container {
+        padding: 15px;
+    }
+}
