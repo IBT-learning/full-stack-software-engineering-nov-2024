@@ -1,0 +1,122 @@
+[
+    {
+        "userId": 1,
+        "id": 1,
+        "title": "Buy groceries",
+        "completed": false
+    },
+    {
+        "userId": 1,
+        "id": 2,
+        "title": "Do laundry",
+        "completed": true
+    },
+    {
+        "userId": 2,
+        "id": 3,
+        "title": "Read a book",
+        "completed": false
+    },
+    {
+        "userId": 2,
+        "id": 4,
+        "title": "Go for a run",
+        "completed": true
+    },
+    {
+        "userId": 3,
+        "id": 5,
+        "title": "Finish project report",
+        "completed": false
+    },
+    {
+        "userId": 3,
+        "id": 6,
+        "title": "Call the doctor",
+        "completed": true
+    },
+    {
+        "userId": 4,
+        "id": 7,
+        "title": "Plan weekend trip",
+        "completed": false
+    },
+    {
+        "userId": 4,
+        "id": 8,
+        "title": "Water the plants",
+        "completed": true
+    },
+    {
+        "userId": 5,
+        "id": 9,
+        "title": "Write a blog post",
+        "completed": false
+    },
+    {
+        "userId": 5,
+        "id": 10,
+        "title": "Practice guitar",
+        "completed": true
+    },
+    {
+        "userId": 6,
+        "id": 11,
+        "title": "Reply to emails",
+        "completed": false
+    },
+    {
+        "userId": 6,
+        "id": 12,
+        "title": "Clean the kitchen",
+        "completed": true
+    },
+    {
+        "userId": 7,
+        "id": 13,
+        "title": "Update resume",
+        "completed": false
+    },
+    {
+        "userId": 7,
+        "id": 14,
+        "title": "Watch a tutorial",
+        "completed": true
+    },
+    {
+        "userId": 8,
+        "id": 15,
+        "title": "Cook dinner",
+        "completed": false
+    },
+    {
+        "userId": 8,
+        "id": 16,
+        "title": "Go grocery shopping",
+        "completed": true
+    },
+    {
+        "userId": 9,
+        "id": 17,
+        "title": "Fix the bicycle",
+        "completed": false
+    },
+    {
+        "userId": 9,
+        "id": 18,
+        "title": "Schedule a dentist appointment",
+        "completed": true
+    },
+    {
+        "userId": 10,
+        "id": 19,
+        "title": "Organize desk",
+        "completed": false
+    },
+    {
+        "userId": 10,
+        "id": 20,
+        "title": "Go for a walk",
+        "completed": true
+    }
+]
