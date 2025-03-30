@@ -48,4 +48,4 @@ Yours will look slightly different because you have a newer version. That's okay
 
 ## If something goes wrong...
 
-We will be troubleshooting individual MongoDB install problems on Saturday, Sep. 14. If you miss that day, you can stay after class on another day to ask for help.
+We will be troubleshooting individual MongoDB install problems on Saturday, April 5. If you miss that day, you can stay after class on another day to ask for help.

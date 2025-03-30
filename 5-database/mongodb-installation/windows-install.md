@@ -22,7 +22,7 @@
 
 1. Open Compass
 1. Click the green "Connect" button
-1. If you see a red box that says `connect ECONNREFUSED 127.0.0.1:27017`, you just need to start the service in the background. Run `brew services start mongodb-community` in your terminal. Then try clicking the green Connect button again.
+1. If you see a red box that says `connect ECONNREFUSED 127.0.0.1:27017`, you just need to start the service in the background. Try [these instructions](https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-windows/#start-mongodb-community-edition-as-a-windows-service). Then try clicking the green Connect button again. If that doesn't work, try opening a PowerShell terminal and running the command `mongod`.
 
 It should now look something like this:
 
@@ -32,4 +32,4 @@ Yours will look slightly different because you have a newer version. That's okay
 
 ## If something goes wrong...
 
-We will be troubleshooting individual MongoDB install problems on Saturday, Sep. 14. If you miss that day, you can stay after class on another day to ask for help.
+We will be troubleshooting individual MongoDB install problems on Saturday, April 5. If you miss that day, you can stay after class on another day to ask for help.
