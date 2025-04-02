@@ -15,12 +15,19 @@ app.get('/greet/:userName', (req, res) => {
 });
 
 app.get('/favourite', (req, res) => {
-  const fave = req.query.fave;
-  if (fave){
-    res.send(`My favourite thing is ${fave}.`);
-  }else{
-    res.send('Favourite thing not specified!')
+  if (Object.keys(req.query).length === 0) {
+    res.send('Favourite things not specified!');
+    return;
   }
+  
+  const favoriteStatements = [];
+
+  for (let key in req.query) {
+    const value = req.query[key];
+    favoriteStatements.push(`My favorite ${key} is ${value}.`);
+  }
+  
+  res.send(favoriteStatements.join(' '));
 });
 
 app.listen(4000, () => {
