@@ -1,0 +1,25 @@
+[
+    {
+      "id": 1,
+      "user": {
+        "name": "Alice Doe",
+        "username": "alice",
+        "profilePhoto": "images/alice.png"
+      },
+      "title": "My First Blog Post",
+      "body": "This is the content of my first blog post.",
+      "image": "images/post1.png"
+    },
+    {
+      "id": 2,
+      "user": {
+        "name": "John Smith",
+        "username": "johns",
+        "profilePhoto": "images/john.png"
+      },
+      "title": "A Day in the Life",
+      "body": "Here’s what I did today...",
+      "image": "images/post2.png"
+    }
+  ]
+  
