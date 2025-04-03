@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Theme and Color Preferences</title>
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div class="container">
+        <h1 id="banner">Default Theme</h1>
+        
+        <!-- Buttons for Dark and Light modes -->
+        <div>
+            <button id="dark-btn" aria-label="Enable Dark Mode">Dark Mode</button>
+            <button id="light-btn" aria-label="Enable Light Mode">Light Mode</button>
+        </div>
+
+        <!-- Background color picker -->
+        <div>
+            <label for="bg-color-picker">Background Color: </label>
+            <input type="color" id="bg-color-picker" aria-label="Select Background Color" />
+        </div>
+
+        <!-- Text color picker -->
+        <div>
+            <label for="text-color-picker">Text Color: </label>
+            <input type="color" id="text-color-picker" aria-label="Select Text Color" />
+        </div>
+
+        <!-- Save button for custom colors -->
+        <button id="save-colors" aria-label="Save Custom Colors">Save Colors</button>
+    </div>
+</body>
+</html>
