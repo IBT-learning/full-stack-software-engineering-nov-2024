@@ -11,7 +11,7 @@ function greeting (firstName, status) {
         // If true, return a a greeting
         return `Hello ${firstName}, my friend!`;
     } 
-    else if (status == "enemy"){
+    else if (status === "enemy"){
         // If false, tell them to go awaay
         return `Hello ${firstName}, Please go away!`;
     }
