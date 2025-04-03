@@ -1,0 +1,21 @@
+[
+    {
+      "id": 1,
+      "userId": 1,
+      "title": "Complete Web APIs assignment",
+      "completed": false
+    },
+    {
+      "id": 2,
+      "userId": 2,
+      "title": "Buy groceries",
+      "completed": true
+    },
+    {
+      "id": 3,
+      "userId": 1,
+      "title": "Clean the house",
+      "completed": false
+    }
+  ]
+  
