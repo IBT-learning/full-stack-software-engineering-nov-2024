@@ -59,18 +59,33 @@ function introduction(name, location, hobby) {
 
 introduction("Mareola", "New Orleans", "Code, and Make Music")
 
+
+// Challenge to display all "Hours and Minutes" in a day
 function clock(hour, minute){
-    if (hour >= 12){
+    minute = minute.toString().padStart(2, "0")
+    if (hour == 12){
+        cl(`${hour}:${minute}PM`)
+    }
+    else if (hour > 12){
         let newHour = hour - 12
         cl(`${newHour}:${minute}PM`)
     }
+
     else{
         cl(`${hour}:${minute}AM`)
     }
 }
 
-for (let i = 0; i <=24; i++){
-    for (let j = 0; j <= 60; j++ ){
+for (let i = 1; i <24; i++){
+    for (let j = 0; j < 60; j++ ){
         clock(i, j)
     }
 }
+
+// ARROW FUNCTIONS
+const paRameters = (param1, param2) =>{
+    cl(param1 + param2)
+}
+
+paRameters(1,5)
+
