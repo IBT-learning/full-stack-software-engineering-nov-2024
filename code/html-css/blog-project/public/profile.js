@@ -1,13 +1,15 @@
 const formGroup = document.getElementsByClassName("form-group");
 
 const getProfile = async () => {
-    const mainData = await fetch("https://jsonplaceholder.typicode.com/users/1");
+    const mainData = await fetch("http://localhost:4000/profile/2");
     const res = await mainData.json();
+    // console.log(res)
 
-    const posts = await fetch("https://jsonplaceholder.typicode.com/posts?userId=1");
+    const posts = await fetch("http://localhost:4000/data");
     const postResponse = await posts.json();
-    const sortedData = postResponse.slice(0, 3);
+    const sortedData = postResponse.slice(2, 5);
 
+    // console.log(sortedData)
     // Create a style element for common styles
     const styleEl = document.createElement('style');
     styleEl.textContent = `
@@ -55,15 +57,15 @@ const getProfile = async () => {
     // Address input
     const inputting2 = document.createElement("input");
     inputting2.type = "text";
-    inputting2.placeholder = `${res.address.street}, ${res.address.city}`;
-    inputting2.value = `${res.address.street}, ${res.address.city}`;
+    inputting2.placeholder = res.body;
+    inputting2.value = res.body;
     inputting2.className = "profile-input";
     formGroup[1].appendChild(inputting2);
 
     // Company info textarea
     const inputting3 = document.createElement("textarea");
-    inputting3.placeholder = `${res.company.bs}, ${res.company.catchPhrase}\nmore at: ${res.email}`;
-    inputting3.value = `${res.company.bs}, ${res.company.catchPhrase}\nmore at: ${res.email}`;
+    inputting3.placeholder = res.body;
+    inputting3.value = res.body;
     inputting3.className = "profile-input";
     inputting3.style.minHeight = "80px"; // Extra height for textarea
     formGroup[2].appendChild(inputting3);

@@ -145,6 +145,7 @@ button {
 button:hover {
     background-color:#333;
     transform: scale(1.2);
+    color:#fff;
 }
 
 .lastcontent {

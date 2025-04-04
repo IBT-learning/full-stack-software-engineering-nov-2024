@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "userid": "Alice",
+    "body": "The sun dipped below the horizon, painting the sky in hues of orange and pink as a gentle breeze rustled the leaves.",
+    "name": "Spaghetti Carbonara",
+    "creator": "Antonio",
+    "date": "2025-03-30"
+  },
+  {
+    "id": 2,
+    "userid": "Bob",
+    "body": "In the heart of the city, the streets buzzed with life, as people hurried past towering buildings, lost in their own worlds.",
+    "name": "Sushi Roll",
+    "creator": "Hiroshi",
+    "date": "2025-03-29"
+  },
+  {
+    "id": 3,
+    "userid": "Charlie",
+    "body": "Deep in the forest, the scent of pine filled the air, and birds chirped melodiously, creating a symphony of nature.",
+    "name": "Chocolate Brownie",
+    "creator": "Linda",
+    "date": "2025-03-28"
+  },
+  {
+    "id": 4,
+    "userid": "Diana",
+    "body": "The waves crashed against the shore, their rhythmic motion a soothing lullaby for those who walked along the sandy beach.",
+    "name": "Tacos Al Pastor",
+    "creator": "Miguel",
+    "date": "2025-03-27"
+  },
+  {
+    "id": 5,
+    "userid": "Ethan",
+    "body": "As the train rumbled down the tracks, passengers gazed out the window, watching the countryside blur into a sea of green.",
+    "name": "Butter Chicken",
+    "creator": "Rahul",
+    "date": "2025-03-26"
+  },
+  {
+    "id": 6,
+    "userid": "Fiona",
+    "body": "The old library was a treasure trove of forgotten stories, its shelves lined with books that whispered tales of distant lands and lost civilizations.",
+    "name": "French Croissant",
+    "creator": "Marie",
+    "date": "2025-03-25"
+  }
+]
