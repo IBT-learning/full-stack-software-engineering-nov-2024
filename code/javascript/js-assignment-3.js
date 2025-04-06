@@ -13,7 +13,7 @@ if (isScary && isRomantic) {
 }
 
 // Extra Challenge
-isFunny = false;
+const isFunny = false;
 if (isScary && isRomantic && isFunny) {
   console.log(`${movieTitle} is scary, romantic and funny `);
 }
