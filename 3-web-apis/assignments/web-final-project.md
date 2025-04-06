@@ -8,7 +8,7 @@ I leave it up to you how to organize your code. You may keep working on the same
 
 > Note: If you took the time to write actual blog posts for your blog, don't worry! We're going to replace it for now, but there will be opportunities to bring that data back for future versions of this blog site.
 
-In this app, we will replace the text of the blog posts with lorem ipsum from the JSONPlaceholder API.
+In this server, we will replace the text of the blog posts with lorem ipsum from the JSONPlaceholder API.
 
 ### Requirements
 

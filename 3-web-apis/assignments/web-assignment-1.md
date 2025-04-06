@@ -1,6 +1,6 @@
 # Web API Assignment #1: Dark mode, Light mode
 
-For the Web assignments, each assignment will need its own folder. You will place at least an `index.html` and `app.js` in this folder. Some assignments will also require CSS.
+For the Web assignments, each assignment will need its own folder. You will place at least an `index.html` and `server.js` in this folder. Some assignments will also require CSS.
 
 ### Dark mode, Light mode
 

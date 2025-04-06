@@ -4,10 +4,10 @@
 
 Look at the [npm notes](../npm-notes.md) for instructions on setting up your npm project. The only dependency you will need to install for this assignment is `express`.
 
-Once your npm project is set up with express, in your `app.js`
+Once your npm project is set up with express, in your `server.js`
 
 1. import express
-1. create the `app` object using the `express` function you imported
+1. create the `server` object using the `express` function you imported
 1. set up your listener on port 4000
 1. when you start your server, you should see the message from your listener
 

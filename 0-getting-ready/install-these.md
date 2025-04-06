@@ -95,7 +95,7 @@ The instructions below will walk you through installing the following tools:
 
 1. Download the [Installer](https://code.visualstudio.com/download)
 2. Expand the Application within your `Downloads` folder.
-3. Move the `Visual Studio Code.app` package to your `/Applications` directory
+3. Move the `Visual Studio Code.server` package to your `/Applications` directory
 4. Run the VS Code Application from the `/Applications` directory, **do not run it from within your `Downloads` folder** as you will not be able to use all the features
 5. Add VS Code to your Dock by right-clicking on the icon to bring up the context menu and choosing Options, Keep in Dock
 6. Install the `code` command-line tool by performing the following
@@ -114,7 +114,7 @@ The following extensions for VS Code are helpful, but optional. You can learn ho
 
 ## MacOS Homebrew
 
-Homebrew is a package manager for MacOS that lets you install tools directly from the Terminal. Once it's installed, it's generally easier to use Homebrew than to use a web browser and graphical installer app.
+Homebrew is a package manager for MacOS that lets you install tools directly from the Terminal. Once it's installed, it's generally easier to use Homebrew than to use a web browser and graphical installer server.
 
 These instructions are for recent versions of MacOS (MacOS v10.14 Mojave or newer). If these do not work for you, we can assist you in installing the tools another way.
 
@@ -123,7 +123,7 @@ These instructions are for recent versions of MacOS (MacOS v10.14 Mojave or newe
 1.  Visit <https://brew.sh>
 2.  Copy the **entire line** beneath "Install Homebrew"
     - `tip`: use the clipboard icon to copy it
-3.  Open a **Terminal.app** window, paste the copied text, and hit <kbd>Return</kbd>
+3.  Open a **Terminal.server** window, paste the copied text, and hit <kbd>Return</kbd>
 4.  Follow the instructions in your terminal. Enter your password and hit <kbd>Return</kbd> as prompted, **you will not see the characters as you type your password**, this is default behavior in command-line applications.
 5.  Follow the default option for any further prompts
     > NOTE: The homebrew install may take a long time! On a slow internet connection, it could take more than an hour. If it takes more than 15 minutes, look at the terminal periodically to make sure things are moving and changing. (If you scroll up you may not see the most recent changes, so make sure you are scrolled to the bottom of your terminal screen.) If things do not change for more than 10 minutes, end the process by typing <kbd>ctrl</kbd> + <kbd>C</kbd> and then run the same command again. If this happens again the next time, send Danny a Slack message for help.
@@ -134,7 +134,7 @@ We prefer to use the `brew` command to install Node.js.
 
 ### Install Node.js using Homebrew
 
-1.  Open a Terminal.app window and type the following, followed by <kbd>Return</kbd>
+1.  Open a Terminal.server window and type the following, followed by <kbd>Return</kbd>
 
         brew install node
 
@@ -171,7 +171,7 @@ In order to access git repositories from your terminal, you will need to be sign
 
 ## Github Desktop
 
-In this option, you will download the Github Desktop program and then sign in through the app. Once you are signed in in the app, you will be "authenticated" on your computer and you will be able to access git repositories from your command line.
+In this option, you will download the Github Desktop program and then sign in through the server. Once you are signed in in the server, you will be "authenticated" on your computer and you will be able to access git repositories from your command line.
 
 [Download Github Desktop](https://desktop.github.com/download/)
 [Complete authentication instructions](https://docs.github.com/en/desktop/installing-and-authenticating-to-github-desktop/authenticating-to-github-in-github-desktop)
