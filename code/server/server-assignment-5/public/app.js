@@ -2,7 +2,7 @@ const header = document.getElementById("banner");
 const dark = document.getElementById("dark-btn");
 const light = document.getElementById("light-btn");
 const switchButton = document.getElementById("switch");
-const body = document.getElementsByTagName("body")[0];
+const body = document.getElementsByTagName("body")[0]; //first item
 
 const getCookieValue = (keyName) => {
   let cookies = document.cookie.split("; ").reduce((acc, cookie) => {

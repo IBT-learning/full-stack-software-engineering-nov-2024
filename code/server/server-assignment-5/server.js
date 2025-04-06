@@ -23,10 +23,6 @@ app.get("/color", (req, res, next) => {
     // res.status(500).send("Error setting cookie");
 })
 
-// app.get("/get-color", (req, res) => {
-//     res.send({background: req.cookies.background || "ffffff"});
-// });
-
 app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);``
 })
