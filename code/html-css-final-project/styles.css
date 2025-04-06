@@ -22,14 +22,24 @@ body {
     justify-content: space-between;
     padding: 10px 20px;
     background-color: #4CAF50;
-    color: white;
-    
-    
+    color: white;  
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 5rem;  
     
 }
 
+
 .nav-logo img {
     max-width: 100px;
+    height: 100%;
+    margin-top: -5px;
+    margin-bottom: auto;
+    border-radius: 0;
+    padding: 0.4rem;
 }
 
 /* comments-section */
