@@ -1,42 +1,16 @@
-/* General Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-}
-
-body {
-    font-family: "Roboto", serif;
-    background-color: #f9f9f9;
-    color: #333;
-    line-height: 1.5;
-    
-}
 
 /* Navigation Bar */
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 20px;
-    background-color: #4CAF50;
-    color: white;
-    font-size: 1.5rem;
-    
-    /* background-color:#2e3267;
-    color: white;
-    /* #2e3267
-    #424890 */
+    padding: 15px 30px;
+    font-size: 1.5rem;     
 }
 
-.nav-logo img {
-    width: 100px;
-   
-}
 .navbar a{
     color: white;
     text-transform: uppercase;
+    padding: 0 10px;
+
+
 
 }
 
