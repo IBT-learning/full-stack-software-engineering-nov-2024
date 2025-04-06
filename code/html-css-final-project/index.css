@@ -1,62 +1,4 @@
-/* General Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style: none;
 
-}
-
-body {
-    font-family: "Roboto", serif;
-    line-height: 1.6;
-    background-color: #f4f4f9;
-    color: #333;
-}
-
-/* Navigation Bar */
-.navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    color: white;
-    
-    
-    
-}
-
-.nav-logo img {
-    max-width: 100px;
-}
-
-#search {
-    /* flex: 1; */
-    margin: 0 20px;
-}
-
-#search form {
-    display: flex;
-    justify-content: flex-start;
-}
-
-#search input {
-    padding: 5px;
-    width: 80%;
-    margin-right: 10px;
-    border: 1px solid #ddd;
-    border-radius: 30px;
-}
-
-#search button {
-    padding: 5px 10px;
-    background-color: white;
-    color: #4CAF50;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-}
 
 .navbar-menu {
     display: flex;
@@ -111,19 +53,7 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* ====================PROFILE SECTION========================== */
 
 
 .profile-details{
@@ -179,8 +109,49 @@ body {
 }
 
 
+/* ====================SEARCH AREA========================== */
+.search-bar{
+    /* background-color: #4CAF50; */
+    margin: 1.5rem 0;
+    padding: 2rem 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+#search {
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+
+#search input {
+    padding: 0.5rem;
+    width: 50%;
+    margin-right: 10px;
+    border: 1px solid #4CAF50;
+    border-radius: 30px;
+    font-size: 1rem;
+}
+
+#search button {
+    padding: 0.6rem;
+    margin: 0 1rem ;
+    background-color: #4CAF50;
+    color: #fff;
+    border: 1px solid #000;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+#search button:hover {
+    background-color: #007;
+}
 
 /* Article/Profile Section */
+
 article {
     grid-column: true;
     background: white;
@@ -228,11 +199,74 @@ section img:last-of-type {
 
 
 /* Responsive Design */
+@media screen and (max-width: 750px) {
+    .main-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        display: none;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        flex-direction: column;
+        text-align: center;
+        background-color: #4CAF50;
+        padding: 30px 10px;
+
+    }
+
+    .navbar {
+        flex-wrap: wrap;
+        
+    }
+    .navbar-menu{
+        display: none;
+        position: absolute;
+        top: 70px;
+        /* left: 0; */
+        right: 0;
+        flex-direction: column;
+        text-align: center;
+        background-color: #4CAF50;
+        padding: 30px 10px;
+
+    }
+    #search form {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    /* .navbar-menu ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        text-align: center;
+        padding: 100px;
+        
+    } */
+    /* .nav-logo img {
+        justify-content: center;
+    } */
+
+    #search input {
+        width: 100%;
+    }
+    .navbuttons button{
+        display: inline-block;
+    }
+    .navbuttons #close-menu-bar{
+        display:none;
+    }
+}
+
+
 @media screen and (max-width: 450px) {
     .main-layout {
         grid-template-columns: 1fr;
         gap: 10px;
-        margin-left: 0;
        
     }
 
@@ -294,62 +328,4 @@ section img:last-of-type {
 
 
 
-@media screen and (max-width: 750px) {
-    .main-layout {
-        grid-template-columns: 1fr;
-    }
 
-    .sidebar {
-        display: none;
-        position: absolute;
-        top: 70px;
-        /* left: 0; */
-        right: 0;
-        flex-direction: column;
-        text-align: center;
-        background-color: #4CAF50;
-        padding: 30px 10px;
-
-    }
-
-    .navbar {
-        flex-wrap: wrap;
-        
-    }
-    .navbar-menu{
-        display: none;
-        position: absolute;
-        top: 70px;
-        /* left: 0; */
-        right: 0;
-        flex-direction: column;
-        text-align: center;
-        background-color: #4CAF50;
-        padding: 30px 10px;
-
-    }
-
-    /* .navbar-menu ul{
-        position: absolute;
-        top: 70px;
-        left: 0;
-        right: 0;
-        flex-direction: column;
-        text-align: center;
-        padding: 100px;
-        
-    } */
-    /* .nav-logo img {
-        justify-content: center;
-    } */
-
-    #search input {
-        width: 100%;
-    }
-    .navbuttons button{
-        display: inline-block;
-    }
-    .navbuttons #close-menu-bar{
-        display:none;
-    }
-}

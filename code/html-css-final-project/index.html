@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aseefa Blog</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="styles.css">
 
     
 <!-- --------------------------------iconscout cdn -->
@@ -16,7 +17,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet">
 
 </head>
-<body>
+<body >
     <nav>
         <div class="navbar">
             <a href="index.html" class="nav-logo">
@@ -26,7 +27,7 @@
                 <ul class="navbar-menu">
                     <li><a href="profile.html">Profile</a></li>
                     <li><a href="#">Notifications</a></li>
-                    <li><a href="#">Log Out</a></li>
+                   
 
                 </ul>
                 <div class="navbuttons">
@@ -41,7 +42,8 @@
 
 <!-- *****************The side Bar*********************** -->
 
-    <section class="main-layout">
+<section class="main-layout">
+
         <div class="sidebar">
             <span class="profile-details">
                 <img src="images/logo.png" alt="Profile Picture">
@@ -56,125 +58,166 @@
                 <li><i class="uil uil-fire"></i><a href="#">Trending</a></li>
                 <li><i class="uil uil-question-circle"></i><a href="#">FAQs</a></li>
                 <li><i class="uil uil-setting"></i><a href="#">Settings</a></li>
+                <li><i class="uil uil-signout"></i><a href="#">Log Out</a></li>
+
             </ul>
         </div>
+
+   
 <!-- *****************The end of side Bar*********************** -->
 
 
  <!-- *****************The Main Section*********************** -->       
+    <section>
 
-
-<article>
-        <div id="search">
-            <form action="">
-                <input type="text" placeholder="Search ...">
-                <button type="submit">Search</button>
-            </form>
-        </div>
-</article>
-
-<article>
-
-    <div class="profile-section">
-        <div class="prof">
-            <img src="images/med6.jpg" alt="profile picture">
-            <div class="username">
-                <h2>Ella Toone</h2>
-                <h3>01/19/2025</h3>
-            </div>
-        </div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et blanditiis, officia deserunt doloremque nostrum nihil quas pariatur repellendus consequuntur. Nesciunt.</p>
-        <img src="images/med6.jpg" alt="">
-    </div>
-</article>
-
-<article>
-        <div class="profile-section">
-            <div class="prof">
-                <img src="images/med5.jpg" alt="profile picture">
-                <div class="username">
-                    <h2>Harry Lindelof</h2>
-                    <h3>01/17/2025</h3>
+        <div class="search-bar">
+                <div id="search">
+                    <form action="" method="get">
+                        <input type="text" placeholder="Search ..." >
+                        <i class="uil uil-search"></i>
+                        <button type="submit">Search</button>
+                        
+                    </form>
                 </div>
-            </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et blanditiis, officia deserunt doloremque nostrum nihil quas pariatur repellendus consequuntur. Nesciunt.</p>
-            <img src="images/med5.jpg" alt="">
-        </div>
-</article>
+         </div>
 
-<article>
-        <div class="profile-section">
-            <div class="prof">
-                <img src="images/med4.jpg" alt="profile picture">
+        <article>
+            <div class="profile-section">
+                <div class="prof">
+                    <img src="images/med6.jpg" alt="profile picture">
                     <div class="username">
-                    <h2>Jonh Terry</h2>
-                <h3>01/16/2025</h3>
+                        <h2>Ella Toone</h2>
+                        <h3>01/19/2025</h3>
+                    </div>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et blanditiis, officia deserunt doloremque nostrum nihil quas pariatur repellendus consequuntur. Nesciunt.</p>
+                <img src="images/med6.jpg" alt="">
+                <div class="comments-section">
+                    <i class="uil uil-thumbs-up">Likes</i>
+                    <i class="uil uil-comment">Comments</i>
+                    <i class="uil uil-share">Share</i>
                 </div>
             </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et blanditiis, officia deserunt doloremque nostrum nihil quas pariatur repellendus consequuntur. Nesciunt.</p>
-            <img src="images/med4.jpg" alt="">
-        </div>
-</article>
+        </article>
 
-<article>
-        <div class="profile-section">
-            <div class="prof">
-                <img src="images/med3.jpg" alt="profile picture">
-                <div class="username">
-                    <h2>Nicki Beyonce</h2>
-                    <h3>01/15/2025</h3>
+        <article>
+            <div class="profile-section">
+                <div class="prof">
+                    <img src="images/med5.jpg" alt="profile picture">
+                    <div class="username">
+                        <h2>Harry Lindelof</h2>
+                        <h3>01/17/2025</h3>
+                    </div>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et blanditiis, officia deserunt doloremque nostrum nihil quas pariatur repellendus consequuntur. Nesciunt.</p>
+                <img src="images/med5.jpg" alt="">
+                <div class="comments-section">
+                    <i class="uil uil-thumbs-up">Likes</i>
+                    <i class="uil uil-comment">Comments</i>
+                    <i class="uil uil-share">Share</i>
                 </div>
             </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et blanditiis, officia deserunt doloremque nostrum nihil quas pariatur repellendus consequuntur. Nesciunt.</p>
-            <img src="images/med3.jpg" alt="">
-        </div>
-</article>
+        </article>
 
-<article>
-        <div class="profile-section">
-            <div class="prof">
-                <img src="images/med2.jpg" alt="profile picture">
-                <div class="username">
-                    <h2>Sylvester stallone</h2>
-                    <h3>01/13/2025</h3>
+        <article>
+            <div class="profile-section">
+                <div class="prof">
+                    <img src="images/med4.jpg" alt="profile picture">
+                        <div class="username">
+                        <h2>Jonh Terry</h2>
+                    <h3>01/16/2025</h3>
+                    </div>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et blanditiis, officia deserunt doloremque nostrum nihil quas pariatur repellendus consequuntur. Nesciunt.</p>
+                <img src="images/med4.jpg" alt="">
+                <div class="comments-section">
+                    <i class="uil uil-thumbs-up">Likes</i>
+                    <i class="uil uil-comment">Comments</i>
+                    <i class="uil uil-share">Share</i>
                 </div>
             </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et blanditiis, officia deserunt doloremque nostrum nihil quas pariatur repellendus consequuntur. Nesciunt.</p>
-            <img src="images/med2.jpg" alt="">
-        </div>
-</article>
+        </article>
 
-<article>
-        <div class="profile-section">
-            <div class="prof">
-                <img src="images/med1.jpg" alt="profile picture">
-                <div class="username">
-                    <h2>Paul Forest</h2>
-                    <h3>01/11/2025</h3>
+        <article>
+            <div class="profile-section">
+                <div class="prof">
+                    <img src="images/med3.jpg" alt="profile picture">
+                    <div class="username">
+                        <h2>Nicki Beyonce</h2>
+                        <h3>01/15/2025</h3>
+                    </div>
                 </div>
-
-            </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et blanditiis, officia deserunt doloremque nostrum nihil quas pariatur repellendus consequuntur. Nesciunt.</p>
-            <img src="images/med1.jpg" alt="">
-        </div>
-</article>
-
-<article>
-        <div class="profile-section">
-            <div class="prof">
-                <img src="images/med9.jpg" alt="profile picture">
-                <div class="username">
-                    <h2>Jane Washingtone</h2>
-                    <h3>01/10/2025</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et blanditiis, officia deserunt doloremque nostrum nihil quas pariatur repellendus consequuntur. Nesciunt.</p>
+                <img src="images/med3.jpg" alt="">
+                <div class="comments-section">
+                    <i class="uil uil-thumbs-up">Likes</i>
+                    <i class="uil uil-comment">Comments</i>
+                    <i class="uil uil-share">Share</i>
                 </div>
             </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et blanditiis, officia deserunt doloremque nostrum nihil quas pariatur repellendus consequuntur. Nesciunt.</p>
-            <img src="images/med3.jpg" alt="">
-        </div>
-</article>
+        </article>
 
+        <article>
+            <div class="profile-section">
+                <div class="prof">
+                    <img src="images/med2.jpg" alt="profile picture">
+                    <div class="username">
+                        <h2>Sylvester stallone</h2>
+                        <h3>01/13/2025</h3>
+                    </div>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et blanditiis, officia deserunt doloremque nostrum nihil quas pariatur repellendus consequuntur. Nesciunt.</p>
+                <img src="images/med2.jpg" alt="">
+                <div class="comments-section">
+                    <i class="uil uil-thumbs-up">Likes</i>
+                    <i class="uil uil-comment">Comments</i>
+                    <i class="uil uil-share">Share</i>
+                </div>
+            </div>
+        </article>
+
+        <article>
+            <div class="profile-section">
+                <div class="prof">
+                    <img src="images/med1.jpg" alt="profile picture">
+                    <div class="username">
+                        <h2>Paul Forest</h2>
+                        <h3>01/11/2025</h3>
+                    </div>
+
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et blanditiis, officia deserunt doloremque nostrum nihil quas pariatur repellendus consequuntur. Nesciunt.</p>
+                <img src="images/med1.jpg" alt="">
+                <div class="comments-section">
+                    <i class="uil uil-thumbs-up">Likes</i>
+                    <i class="uil uil-comment">Comments</i>
+                    <i class="uil uil-share">Share</i>
+                </div>
+            </div>
+        </article>
+
+        <article>
+            <div class="profile-section">
+                <div class="prof">
+                    <img src="images/med9.jpg" alt="profile picture">
+                    <div class="username">
+                        <h2>Jane Washingtone</h2>
+                        <h3>01/10/2025</h3>
+                    </div>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et blanditiis, officia deserunt doloremque nostrum nihil quas pariatur repellendus consequuntur. Nesciunt.</p>
+                <img src="images/med3.jpg" alt="">
+                <div class="comments-section">
+                    <i class="uil uil-thumbs-up">Likes</i>
+                    <i class="uil uil-comment">Comments</i>
+                    <i class="uil uil-share">Share</i>
+                </div>
+            </div>
+        </article>
+   </section>
+</section>
  <!-- *****************The end of Main Section*********************** -->       
         
-    </section>
+    
 </body>
 </html>
