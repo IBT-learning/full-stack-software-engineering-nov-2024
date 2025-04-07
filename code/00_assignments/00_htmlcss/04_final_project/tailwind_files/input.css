@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*, html                                                       {@apply focus:outline-none}
+
+.nav__burger-con.active                                       {@apply outline outline-primary-color-a;}
+
+.nav__burger-con--items.active                                {@apply rotate-45}
+.nav__burger-con--items1.active                               {@apply hidden}
+.nav__burger-con--items2.active                               {@apply -rotate-45}
+
+.mobile__nav.active                                           {@apply translate-x-0}
