@@ -1,4 +1,4 @@
-/* General Styles */
+ /* General Styles */
 body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
@@ -297,4 +297,40 @@ footer {
 
 #changePicBtn:hover {
   background-color: #580fa9;
+}
+
+.about-blog {
+  background-color: #eef1f5; /* soft blue-gray that blends well */
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  color: #222;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 2rem;
+}
+
+.about-blog h2 {
+  font-size: 1.5rem;
+  color: #1a73e8; /* Google-style blue */
+  margin-bottom: 1rem;
+}
+
+.about-blog p {
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tag {
+  background-color: #e1ecf4;
+  color: #0366d6;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
 }

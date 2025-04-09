@@ -36,5 +36,43 @@
     "date": "2025-03-10",
     "tags": ["Web Dev", "JavaScript"],
     "category": "Web Development"
+  },
+  {
+    "id": 3,
+    "user": {
+      "id": 2,
+      "name": "Jane Smith",
+      "username": "janesmith",
+      "profilePhoto": "images/jane_smith.jpg",
+      "bio": "Remote work advocate. Loves React and writing tech articles.",
+      "location": "Abuja, Nigeria",
+      "skills": "Technical Writing, React, Remote Work Culture",
+      "interests": "Writing, frontend development, and helping people code better"
+    },
+    "title": "Why Remote Work is Here to Stay",
+    "body": "With the rise of digital tools, remote work is more productive and popular than ever. Here's what the future looks like.",
+    "image": "images/remote_work.jpg",
+    "date": "2025-04-06",
+    "tags": ["Remote Work", "Productivity"],
+    "category": "Work Culture"
+  },
+  {
+    "id": 4,
+    "user": {
+      "id": 2,
+      "name": "Jane Smith",
+      "username": "janesmith",
+      "profilePhoto": "images/jane_smith.jpg",
+      "bio": "Remote work advocate. Loves React and writing tech articles.",
+      "location": "Abuja, Nigeria",
+      "skills": "Technical Writing, React, Remote Work Culture",
+      "interests": "Writing, frontend development, and helping people code better"
+    },
+    "title": "Top 5 VS Code Extensions for Developers",
+    "body": "Boost your workflow with these essential VS Code extensions. From Prettier to Live Server, here’s what you need.",
+    "image": "images/vscode_extensions.jpg",
+    "date": "2025-04-05",
+    "tags": ["VS Code", "Tools", "Developer Life"],
+    "category": "Developer Tools"
   }
 ]
