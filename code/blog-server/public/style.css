@@ -1,0 +1,89 @@
+/* Layout container */
+.layout {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  gap: 30px;
+  padding: 20px 30px;
+  max-width: 1400px;
+  margin: auto;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #a4b281, #e9f5ff);
+  color: #333;
+  line-height: 1.6;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav ul li a {
+  color: rgb(101, 37, 37);
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  transition: 0.2s ease;
+}
+
+.nav ul li a:hover {
+  text-decoration: underline;
+  color: #bbdefb;
+}
+
+
+/* Sidebar styles */
+.sidebar {
+  background: #d8cb90;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.05);
+  height: fit-content;
+  position: sticky;
+  top: 20px;
+}
+
+.sidebar h2 {
+  font-size: 18px;
+  color: #0d47a1;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  display: block;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: background 0.2s;
+}
+
+.sidebar ul li a:hover {
+  background-color: #e3f2fd;
+  color: #0d47a1;
+}
+
+/* Responsive sidebar stacking */
+@media (max-width: 900px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+  .sidebar {
+    margin-bottom: 20px;
+  }
+}
