@@ -1,0 +1,40 @@
+[
+  {
+    "id": 1,
+    "user": {
+      "id": 1,
+      "name": "Michael Agwogie",
+      "username": "michaeltech",
+      "profilePhoto": "images/198520735_323032106092949_8951232071875405343_n.jpg",
+      "bio": "Software Engineer | AI Savvy | Blogger | Tech Enthusiast",
+      "location": "Lagos, Nigeria",
+      "skills": "Software Engineering, AI, JavaScript, React, Express.js, MongoDB",
+      "interests": "Programming and posting latest updates in the world of I.T."
+    },
+    "title": "The Future of AI in Software Development",
+    "body": "Artificial Intelligence is revolutionizing how we write and maintain code. New tools like GitHub Copilot are just the beginning...",
+    "image": "images/ai-dev.jpg",
+    "date": "2025-03-15",
+    "tags": ["AI", "Programming"],
+    "category": "Emerging Tech"
+  },
+  {
+    "id": 2,
+    "user": {
+      "id": 1,
+      "name": "Michael Agwogie",
+      "username": "michaeltech",
+      "profilePhoto": "images/198520735_323032106092949_8951232071875405343_n.jpg",
+      "bio": "Software Engineer | AI Savvy | Blogger | Tech Enthusiast",
+      "location": "Lagos, Nigeria",
+      "skills": "Software Engineering, AI, JavaScript, React, Express.js, MongoDB",
+      "interests": "Programming and posting latest updates in the world of I.T."
+    },
+    "title": "React 19: What's New?",
+    "body": "The upcoming React release introduces groundbreaking features like compiler optimizations and simplified state management...",
+    "image": "images/react19.jpg",
+    "date": "2025-03-10",
+    "tags": ["Web Dev", "JavaScript"],
+    "category": "Web Development"
+  }
+]
