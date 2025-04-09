@@ -114,15 +114,29 @@ async function fetchPosts() {
   }
   
   // page initializers
+  // async function initBlogPage() {
+  //   const posts = await fetchPosts();
+  //   renderPosts(posts);
+    
+  //   // Set about section from first post's user data
+  //   if (posts.length > 0) {
+  //     const aboutSection = document.querySelector('.about-blog p');
+  //     if (aboutSection) {
+  //       aboutSection.textContent = `TechBlog by ${posts[0].user.name} - ${posts[0].user.bio}`;
+  //     }
+  //   }
+  // }
+
   async function initBlogPage() {
     const posts = await fetchPosts();
     renderPosts(posts);
     
-    // Set about section from first post's user data
+    // Update about section by appending to existing content
     if (posts.length > 0) {
       const aboutSection = document.querySelector('.about-blog p');
       if (aboutSection) {
-        aboutSection.textContent = `TechBlog by ${posts[0].user.name} - ${posts[0].user.bio}`;
+        aboutSection.textContent = `${aboutSection.textContent}`;
+        // This preserves the original text and adds the user bio
       }
     }
   }
