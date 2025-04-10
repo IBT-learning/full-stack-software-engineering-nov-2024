@@ -1,9 +1,6 @@
 body {
     margin: 0;
-<<<<<<< HEAD
-=======
-    
->>>>>>> main
+
 }
 
 #profile {
@@ -39,8 +36,6 @@ header {
     justify-content: center;
 }
 
-
-<<<<<<< HEAD
 /* Responsive design*/
 
 @media screen and (min-width:500px){
@@ -86,7 +81,6 @@ header {
             align-self: start;
         }
     }
-=======
 @media screen and (min-width:500px){
 #gallery{
     display:flex;
@@ -131,4 +125,3 @@ header {
         align-self: start;
     }
 }
->>>>>>> main
