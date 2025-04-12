@@ -1,32 +1,38 @@
 [
   {
-    "title": "Teriyaki tofu",
-    "author": "Danny Burrow",
-    "ingredients": ["firm tofu", "teriyaki sauce", "cornflour", "frying oil"],
-    "instructions": "Press excess water from tofu. Cut into bite-size pieces. Dredge in cornflour. Deep fry. Drain excess oil, then coat in teriyaki sauce. Serve over rice."
+    "title": "Spicy Chickpea Stew",
+    "author": "Zara Kintu",
+    "ingredients": ["chickpeas", "onion", "garlic", "tomatoes", "coconut milk", "cumin", "paprika", "chili flakes", "spinach", "salt", "oil"],
+    "instructions": "Sauté chopped onions and garlic in oil until translucent. Add cumin, paprika, and chili flakes. Stir in chopped tomatoes and cook for 5 minutes. Add chickpeas and coconut milk, simmer for 15 minutes. Add spinach and cook until wilted. Season with salt. Serve hot with rice or flatbread."
   },
   {
-    "title": "BBQ Pulled Pork",
-    "author": "Danny Burrow",
-    "ingredients": ["whole pork shoulder", "bbq spice mix"],
-    "instructions": "Pat pork shoulder dry and liberally coat with salt and spices. Place on a rack in oven at 225F for 8-12 hours, until roast is fall-apart tender. Cool slightly, then shred. Mix with skimmed and strained pan drippings as desired. "
+    "title": "Creamy Mushroom Pasta",
+    "author": "Leo Martinez",
+    "ingredients": ["pasta", "mushrooms", "garlic", "cream", "parmesan", "butter", "parsley", "salt", "pepper"],
+    "instructions": "Cook pasta until al dente. In a pan, sauté garlic and mushrooms in butter until golden. Add cream and simmer. Stir in parmesan and cooked pasta. Mix well, season, and garnish with parsley."
   },
   {
-    "title": "Grilled Chicken",
-    "author": "Habeebah Aleilo",
-    "ingredients": ["whole chicken", "spice", "herbs", "oil", "salt"],
-    "instructions": "Marinate the chicken with a blend of spices, herbs, salt, and oil, let it sit for at least an hour, then grill over medium heat until golden brown and fully cooked, turning occasionally."
+    "title": "Shakshuka",
+    "author": "Amira Said",
+    "ingredients": ["eggs", "tomatoes", "onion", "bell pepper", "garlic", "paprika", "cumin", "chili", "olive oil", "salt", "pepper"],
+    "instructions": "Sauté onions, garlic, and bell pepper in olive oil. Add tomatoes, paprika, cumin, and chili. Simmer until thick. Make small wells and crack in eggs. Cover and cook until eggs are just set. Serve with bread."
   },
   {
-    "title": "Goat Nyamachoma",
-    "author": "Bilha Wambugu",
-    "ingredients": "Basmati Rice, red onions, pre-boiled peas, tomatoes, green/red/yellow capsicum ",
-    "instructions": "Fry red onions untill golden brown. Add pre-boiled peas,tomatoes and the mixed colors capsicum mixture and let it cook for 3 mins. Add 1.5 cups of rice and 3 cups of water. Let it cook for 20mins on  low heat. Let the water evaporate to dryness . Serve with goat meat or grilled chicken. "
+    "title": "Thai Basil Fried Rice",
+    "author": "Noah Tan",
+    "ingredients": ["rice", "chicken or tofu", "garlic", "onion", "soy sauce", "fish sauce", "chili", "basil leaves", "egg", "oil"],
+    "instructions": "Sauté garlic and onion in oil. Add chicken or tofu and cook through. Push to the side, scramble an egg. Add rice, sauces, and chili. Stir-fry until hot. Toss in basil leaves and serve."
   },
   {
-    "title": "Jollof Rice and Chicken ",
-    "author": "Jemi Tigo",
-    "ingredients": ["stew", "rice", "chicken"],
-    "instructions": "Add rice to already prepare stew with a little water,leave to cook for about 40 minute.Serve with grilled chicken."
+    "title": "Vegetable Stir Fry",
+    "author": "Kemi Obasi",
+    "ingredients": ["broccoli", "carrots", "bell pepper", "snow peas", "soy sauce", "ginger", "garlic", "cornstarch", "oil", "sesame seeds"],
+    "instructions": "Stir-fry all veggies in hot oil. Add ginger and garlic. Mix soy sauce with cornstarch and a bit of water, pour into the pan. Stir until sauce thickens. Sprinkle with sesame seeds before serving."
+  },
+  {
+    "title": "Butternut Squash Soup",
+    "author": "Daniel Wanjohi",
+    "ingredients": ["butternut squash", "onion", "garlic", "carrot", "vegetable broth", "cream or coconut milk", "thyme", "salt", "pepper", "olive oil"],
+    "instructions": "Roast squash, carrots, and garlic with olive oil. In a pot, sauté onion, add roasted vegetables and broth. Simmer, then blend until smooth. Stir in cream or coconut milk. Season and serve warm."
   }
 ]
