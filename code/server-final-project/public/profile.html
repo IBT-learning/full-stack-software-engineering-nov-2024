@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Michael Agwogie - Profile</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <script src="index.js" defer></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">TechBlog</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="profile.html">Profile</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main-container">
+    <!-- Profile Info (Left Side) -->
+  <aside class="profile-info">
+      <img src="image/198520735_323032106092949_8951232071875405343_n.jpg" alt="Michael Agwogie" class="profile-photo">
+      <img src="image/198520735_323032106092949_8951232071875405343_n.jpg" alt="Michael Agwogie" class="profile-photo" id="profileImage">
+
+<!-- Hidden file input -->
+<input type="file" id="uploadInput" accept="image/*" style="display: none;">
+
+<!-- Button to trigger file selection -->
+<button id="changePicBtn">Change Profile Picture</button>
+
+      <h1>Michael Agwogie</h1>
+      <p class="bio">Software Engineer | AI Savvy | Blogger | Tech Enthusiast</p>
+      <div class="profile-details">
+        <p><strong>Location:</strong> Lagos, Nigeria.</p>
+        <p><strong>Skills:</strong> Software Engineering, AI, JavaScript, React, Express.js, MongoDB.</p>
+        <p><strong>Interests:</strong> Programming and posting latest updates in the world of I.T.</p>
+      </div>
+  </aside>
+
+    <!-- User Posts (Right Side) -->
+    <section class="user-posts">
+      <h2>My Recent Posts</h2>
+      <!-- Posts will be dynamically added here by index.js -->
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 TechBlog. All rights reserved.</p>
+  </footer>
+
+  <script defer src="index.js"></script>
+</body>
+</html>
