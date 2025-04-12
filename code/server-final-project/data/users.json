@@ -8,6 +8,19 @@
       "location": "Lagos, Nigeria",
       "skills": ["Software Engineering", "AI", "JavaScript", "React", "Express.js", "MongoDB"],
       "interests": ["Programming", "Posting latest updates in the world of I.T."]
+    },
+
+    {
+        "id": 2,
+      "name": "Jane Smith",
+      "username": "janesmith",
+      "profilePhoto": "images/jane_smith.jpg",
+      "bio": "Remote work advocate. Loves React and writing tech articles.",
+      "location": "Abuja, Nigeria",
+      "skills": "Technical Writing, React, Remote Work Culture",
+      "interests": "Writing, frontend development, and helping people code better"
     }
-  ]
+
+    
+]
   

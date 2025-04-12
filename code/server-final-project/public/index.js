@@ -32,6 +32,21 @@ async function fetchPosts() {
       return [];
     }
   }
+
+  async function fetchUserData(userId) {
+    try {
+      const response = await fetch(`/api/users/${userId}`);
+      if (!response.ok) {
+        throw new Error("Failed to fetch user data");
+      }
+      const user = await response.json();
+      console.log(user); // Log the fetched user data
+      return user;
+    } catch (error) {
+      console.error("Error fetching user data:", error);
+    }
+  }
+  
   
 // rendering function
 
@@ -113,19 +128,7 @@ async function fetchPosts() {
     });
   }
   
-  // page initializers
-  // async function initBlogPage() {
-  //   const posts = await fetchPosts();
-  //   renderPosts(posts);
-    
-  //   // Set about section from first post's user data
-  //   if (posts.length > 0) {
-  //     const aboutSection = document.querySelector('.about-blog p');
-  //     if (aboutSection) {
-  //       aboutSection.textContent = `TechBlog by ${posts[0].user.name} - ${posts[0].user.bio}`;
-  //     }
-  //   }
-  // }
+  
 
   async function initBlogPage() {
     const posts = await fetchPosts();
