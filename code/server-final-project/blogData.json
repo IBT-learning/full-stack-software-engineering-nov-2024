@@ -1,0 +1,26 @@
+[
+    {
+      "id": 1,
+      "user": {
+        "name": "Patrick Uche",
+        "profileUrl": "profile.html"
+      },
+      "title": "How to design a landing page",
+      "date": "April 12, 2025",
+      "body": "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam molestiae corrupti nisi, mollitia a consequuntur perferendis laborum in eius aut hic ipsa deserunt, ratione fugit iusto sunt quo non saepe.",
+
+      "image": "assets/img/education.png"
+    },
+    {
+      "id": 2,
+      "user": {
+        "name": "Patutechz",
+        "profileUrl": "profile.html"
+      },
+      "title": "How to design a beautiful dashboard",
+      "date": "April 11, 2025",
+      "body": "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam molestiae corrupti nisi, mollitia a consequuntur perferendis laborum in eius aut hic ipsa deserunt, ratione fugit iusto sunt quo non saepe.",
+      "image": "assets/img/dashboard.png"
+    }
+  ]
+  
