@@ -28,5 +28,20 @@
     "author": "Jemi Tigo",
     "ingredients": ["stew", "rice", "chicken"],
     "instructions": "Add rice to already prepare stew with a little water,leave to cook for about 40 minute.Serve with grilled chicken."
-  }
+  },
+  {
+  "title": "Ugali with Sukuma Wiki",
+  "author": "Kevin Yegon",
+  "ingredients": [
+    "maize flour (unga ya ugali)",
+    "water",
+    "sukuma wiki (collard greens)",
+    "onion",
+    "tomato",
+    "salt",
+    "cooking oil"
+  ],
+  "instructions": "Boil water and gradually add maize flour while stirring continuously with a cooking stick until thick and firm. In another pan, sauté chopped onions and tomatoes in oil, then add chopped sukuma wiki and salt. Stir and cook for about 5-7 minutes until tender. Serve hot with the ugali."
+}
+
 ]
