@@ -1,9 +1,7 @@
 import express from "express";
 import fs from "fs/promises";
 import path from "path";
-import { fileURLToPath } from "url";
-import cors from "cors";
-app.use(cors());
+import { fileURLToPath } from "url"
 
 const app = express();
 const PORT = 4000;
