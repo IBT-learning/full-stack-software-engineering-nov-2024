@@ -20,7 +20,13 @@
   {
     "title": "Goat Nyamachoma",
     "author": "Bilha Wambugu",
-    "ingredients": ["Basmati Rice", "red onions", "pre-boiled peas", "tomatoes", "green/red/yellow capsicum"],
+    "ingredients": [
+      "Basmati Rice",
+      "red onions",
+      "pre-boiled peas",
+      "tomatoes",
+      "green/red/yellow capsicum"
+    ],
     "instructions": "Fry red onions until golden brown. Add pre-boiled peas, tomatoes, and the mixed capsicum. Cook for 3 minutes. Add 1.5 cups of rice and 3 cups of water. Let it cook for 20 mins on low heat. Let the water evaporate completely. Serve with goat meat or grilled chicken."
   },
   {
@@ -28,6 +34,20 @@
     "author": "Jemi Tigo",
     "ingredients": ["stew", "rice", "chicken"],
     "instructions": "Add rice to already prepared stew with a little water. Leave to cook for about 40 minutes. Serve with grilled chicken."
+  },
+  {
+    "title": "Ugali with Sukuma Wiki",
+    "author": "Kevin Yegon",
+    "ingredients": [
+      "maize flour (unga ya ugali)",
+      "water",
+      "sukuma wiki (collard greens)",
+      "onion",
+      "tomato",
+      "salt",
+      "cooking oil"
+    ],
+    "instructions": "Boil water and gradually add maize flour while stirring continuously with a cooking stick until thick and firm. In another pan, sauté chopped onions and tomatoes in oil, then add chopped sukuma wiki and salt. Stir and cook for about 5-7 minutes until tender. Serve hot with the ugali."
   },
   {
     "title": "Fried Plantains",
@@ -44,19 +64,44 @@
   {
     "title": "Chickpea Salad",
     "author": "Layla Hassan",
-    "ingredients": ["canned chickpeas", "cucumber", "cherry tomatoes", "red onion", "lemon juice", "olive oil", "salt", "pepper"],
+    "ingredients": [
+      "canned chickpeas",
+      "cucumber",
+      "cherry tomatoes",
+      "red onion",
+      "lemon juice",
+      "olive oil",
+      "salt",
+      "pepper"
+    ],
     "instructions": "Rinse chickpeas. Dice vegetables and mix in a bowl. Drizzle with lemon juice and olive oil. Add salt and pepper to taste. Chill before serving."
   },
   {
     "title": "Coconut Curry Lentils",
     "author": "Priya Sharma",
-    "ingredients": ["red lentils", "coconut milk", "onion", "garlic", "curry powder", "ginger", "salt"],
+    "ingredients": [
+      "red lentils",
+      "coconut milk",
+      "onion",
+      "garlic",
+      "curry powder",
+      "ginger",
+      "salt"
+    ],
     "instructions": "Sauté onion, garlic, and ginger. Add curry powder and stir. Add lentils and coconut milk. Simmer until lentils are soft. Add salt to taste and serve with rice."
   },
   {
     "title": "Beef Stir Fry",
     "author": "Liu Chen",
-    "ingredients": ["beef strips", "soy sauce", "garlic", "ginger", "bell peppers", "onion", "cornflour"],
+    "ingredients": [
+      "beef strips",
+      "soy sauce",
+      "garlic",
+      "ginger",
+      "bell peppers",
+      "onion",
+      "cornflour"
+    ],
     "instructions": "Marinate beef in soy sauce, garlic, and ginger. Stir-fry beef until browned. Add sliced vegetables and cook until tender-crisp. Thicken sauce with cornflour and serve with rice or noodles."
   }
 ]
