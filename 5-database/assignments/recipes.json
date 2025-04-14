@@ -109,5 +109,23 @@
     "author": "Sherifah Hassan",
     "ingredients": ["yam", "egg", "vegetable oil", "salt", "sugar"],
     "instructions": "Peel the yam and cut into slices. Boil the yam in a pot of water with a pinch of salt and sugar until soft. In a separate pan, heat vegetable oil and fry the egg until scrambled. Serve the yam with the scrambled egg on top."
+  },
+  {
+    "title": "Egusi Soup with Pounded Yam",
+    "author": "Michael Agwogie",
+    "ingredients": [
+      "ground egusi (melon seeds)",
+      "palm oil",
+      "beef or goat meat",
+      "stock fish",
+      "dry fish",
+      "blended peppers",
+      "onions",
+      "seasoning cubes",
+      "salt",
+      "waterleaf or spinach",
+      "pounded yam"
+    ],
+    "instructions": "Boil the meat, stock fish, and dry fish with seasoning until tender. In a separate pot, heat palm oil and add blended onions and peppers. Stir in ground egusi and fry for a few minutes. Add the cooked meat and stock, stir, and let it simmer until thickened. Add vegetables and cook for a few more minutes. Serve hot with pounded yam."
   }
 ]
