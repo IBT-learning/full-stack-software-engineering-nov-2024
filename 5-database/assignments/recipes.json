@@ -103,5 +103,11 @@
       "cornflour"
     ],
     "instructions": "Marinate beef in soy sauce, garlic, and ginger. Stir-fry beef until browned. Add sliced vegetables and cook until tender-crisp. Thicken sauce with cornflour and serve with rice or noodles."
+  },
+  {
+    "title": "YAM and EGG",
+    "author": "Sherifah Hassan",
+    "ingredients": ["yam", "egg", "vegetable oil", "salt", "sugar"],
+    "instructions": "Peel the yam and cut into slices. Boil the yam in a pot of water with a pinch of salt and sugar until soft. In a separate pan, heat vegetable oil and fry the egg until scrambled. Serve the yam with the scrambled egg on top."
   }
 ]
