@@ -34,6 +34,31 @@ app.post("/", async(req, res) => {
 
 })
 
+app.get("/", async(req, res) => {
+    try {
+        const collection = await getCollection();
+
+        const allDocuments = await collection.find().toArray();
+
+        res.status(200).send(allDocuments);
+    } catch (error) {
+        console.log(error)
+    }
+})
+
+app.get("/find/:id", async(req, res) => {
+    try {
+        const collection = await getCollection();
+        const id = req.params.id;
+
+        const result = await collection.find({_id: new ObjectId(id)}).toArray();
+        res.status(200).send(result[0]);
+
+    } catch (error) {
+        console.log(error)
+    }
+})
+
 app.listen(PORT, () => {
     console.log("running on " + PORT)
 })
