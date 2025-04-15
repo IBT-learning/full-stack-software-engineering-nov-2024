@@ -1,0 +1,56 @@
+[
+  {
+    "userId": 1,
+    "id": 1,
+    "title": "Buy groceries",
+    "completed": true
+  },
+  {
+    "userId": 1,
+    "id": 2,
+    "title": "Finish off JavaScript project",
+    "completed": false
+  },
+  {
+    "userId": 1,
+    "id": 3,
+    "title": "Pay electricity bill",
+    "completed": true
+  },
+  {
+    "userId": 1,
+    "id": 4,
+    "title": "Organise workspace",
+    "completed": false
+  },
+  {
+    "userId": 1,
+    "id": 5,
+    "title": "Clear Takealot cart",
+    "completed": false
+  },
+  {
+    "userId": 1,
+    "id": 6,
+    "title": "Go for a 5km run",
+    "completed": true
+  },
+  {
+    "userId": 1,
+    "id": 7,
+    "title": "Go to choir practice",
+    "completed": true
+  },
+  {
+    "userId": 1,
+    "id": 8,
+    "title": "Call mom",
+    "completed": true
+  },
+  {
+    "userId": 1,
+    "id": 9,
+    "title": "Prepare Eucledean Geometry for Gr10 tutorial",
+    "completed": false
+  }
+]
