@@ -1,0 +1,156 @@
+/* css/style.css */
+/*Global Styles*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  background-color: #f5f5f5;
+  color: #333;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Header & Nav */
+.site-header {
+  background: #fff;
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+}
+.site-header h1 {
+  font-size: 2rem;
+  letter-spacing: 2px;
+}
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+.main-nav a:hover {
+  background: #eee;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+/* Blog posts */
+.blog-posts,
+.profile {
+  width: 90%;
+  max-width: 900px;
+  margin: 20px auto;
+}
+.post {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.post-header {
+  display: flex;
+  padding: 15px;
+  background: #fafafa;
+  border-bottom: 1px solid #eee;
+}
+.user-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 15px;
+}
+.post-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.username {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+time {
+  font-size: 0.9rem;
+  color: #777;
+}
+.post-content {
+  padding: 15px;
+}
+.post-content img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-top: 15px;
+}
+
+/* Profile header */
+.profile-header {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.profile-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+.profile-info h2 {
+  font-size: 1.5rem;
+}
+.profile-info p {
+  margin-top: 10px;
+  color: #555;
+}
+
+/* Profile posts */
+.profile-posts h3 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+}
+.edit-icon {
+  margin-left: auto;
+}
+.edit-icon img {
+  width: 20px;
+  height: 20px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px 0;
+  background: #fff;
+  border-top: 1px solid #ddd;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .post {
+    display: flex;
+  }
+  .post-header,
+  .post-content {
+    width: 50%;
+  }
+  .post-content {
+    border-left: 1px solid #eee;
+  }
+
+  .profile-header {
+    display: flex;
+    align-items: center;
+    text-align: left;
+  }
+  .profile-photo {
+    margin-right: 20px;
+  }
+}

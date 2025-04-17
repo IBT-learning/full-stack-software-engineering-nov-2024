@@ -1,0 +1,43 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 20px;
+  background: #f4f4f4;
+}
+h1 {
+  color: #e28307;
+}
+to-do-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: white;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+button.toggle {
+  background: #007bff;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  padding: 5px 10px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+button.toggle:hover {
+  background: #0056b3;
+  transform: scale(1.2);
+}
