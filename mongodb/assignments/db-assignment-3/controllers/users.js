@@ -1,0 +1,34 @@
+import express from "express";
+import User from "../models/user.js";
+import bcrypt from "bcrypt";
+import Recipe from "../models/recipe.js";
+// import * as punycode from "node:punycode";
+import jwt from "jsonwebtoken";
+
+const router = express.Router();
+const SALT = 12;
+const JWT_SECRET = "my secret";
+
+router.get("/", async (req, res) => {
+  const recipes = await Recipe.find();
+  res.json(recipes);
+  // console.log(user);
+});
+
+router.post("/create", async (req, res) => {
+  try {
+    const { password, email } = req.body;
+
+    const newUser = new User({
+      email,
+      password: bcrypt.hashSync(password, SALT),
+    });
+    await newUser.save();
+    res.json("successfully created");
+  } catch (err) {
+    console.log(err);
+    res.status(500).send(err);
+  }
+});
+
+export default router;
