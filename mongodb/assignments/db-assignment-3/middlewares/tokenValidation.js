@@ -1,6 +1,6 @@
 import jwt from "jsonwebtoken";
 
-const JWT_KEY = "Secret_key";
+const JWT_SECRET = "my secret";
 
 const tokenValidation = (req, res, next) => {
   try {
@@ -9,7 +9,7 @@ const tokenValidation = (req, res, next) => {
     if (!token) {
       res.status(401).send("authorization missing");
     } else {
-      const payload = jwt.verify(token, JWT_KEY);
+      const payload = jwt.verify(token, JWT_SECRET);
       // req.user = payload.userId;
       if (!payload) {
         res.status(401).send("user not authorized");
