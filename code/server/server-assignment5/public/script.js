@@ -1,6 +1,4 @@
 const heading = document.getElementById('banner');
-// const darkBtn = document.getElementById('dark-btn');
-// const lightBtn = document.getElementById('light-btn');
 const themeBtn = document.getElementById('mode-btn');
 const body = document.body;
 
@@ -14,30 +12,42 @@ function toggleMode(){
   body.classList.toggle('ligthMode', isLightMode);
 }
 
-themeBtn.addEventListener('click', toggleMode);
+// to get value of cookies
+function getCookieVal(keyName){
+  if (document.cookie.includes(keyName)) {
+    const nameVal = document.cookie
+      .split(";")
+      .find((string) => string.includes(keyName))
+      .split("=")
+      .at(1);
+
+    return nameVal;
+  } else {
+    return null;
+  }
+}
+
+// Set theme based on cookie when page loads
+document.addEventListener('DOMContentLoaded', () => {
+  const savedColor = getCookieVal('color');
+
+  if (savedColor === 'black') {
+    isLightMode = false;
+    heading.textContent = 'Dark Mode';
+    body.classList.add('darkMode');
+    body.classList.remove('lightMode');
+  } else {
+    isLightMode = true;
+    heading.textContent = 'Light Mode';
+    body.classList.add('lightMode');
+    body.classList.remove('darkMode');
+  }
+});
 
 
-// function toggleMode(isLightMode){
-//   if (!isLightMode){
-//     heading.textContent = 'Dark Mode';
-//     body.classList.remove('whiteBackground');
-//     body.classList.add('blackBackground');
-//     heading.classList.remove('blackText');
-//     heading.classList.add('whiteText');
-//   }else{
-//     heading.textContent = 'Light Mode';
-//     body.classList.remove('blackBackground');
-//     body.classList.add('whiteBackground');
-//     heading.classList.remove('whiteText');
-//     heading.classList.add('blackText');
-//   }
-// }
+themeBtn.addEventListener('click', () => {
+  toggleMode();
 
-// darkBtn.addEventListener('click', function(){
-//   toggleMode(false);
-// });
-// lightBtn.addEventListener('click', function(){
-//   toggleMode(true);
-// });
-
-// // notes to self: the addEventListener() method only takes a function object not function call, so always use a wrapper of some sort when passing an event handler with an argument. :)
+  const color = isLightMode ? 'white' : 'black';
+  fetch(`/background?bgColor=${color}`);
+});
