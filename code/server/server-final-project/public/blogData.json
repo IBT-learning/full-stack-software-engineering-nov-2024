@@ -1,0 +1,56 @@
+[
+  {
+    "userId": "1",
+    "id": "1",
+    "title": "Am I the Bad Guy Here?",
+    "body": "The quick brown fox jumps over the lazy dog, but not every sentence is meant to carry meaning. Sometimes placeholder text exists simply to demonstrate structure, layout, and flow."
+  },
+  {
+    "userId": "1",
+    "id": "2",
+    "title": "The Craziest Thing I've Seen This Week",
+    "body": "In the world of web development, design, and content creation, it helps to have filler material that mimics real language without distracting the viewer."
+  },
+  {
+    "userId": "1",
+    "id": "3",
+    "title": "Can I Actually Learn Python in 24 Hours?",
+    "body": "Whether it's a mock article, a sample blog post, or a demo of static site rendering, using well-formed text blocks can give life to your project before real content is available. This paragraph exists purely to fill space, offering consistency in format while the actual message is still being crafted."
+  },
+  {
+    "userId": "2",
+    "id": "1",
+    "title": "I Said What I Said—Was I Wrong Though?",
+    "body": "Writing often begins not with clarity, but with intention. A single sentence can inspire an entire post, or it can simply exist to fill space until something better arrives. In development, placeholder text is a silent collaborator, helping structure come to life"
+  },
+  {
+    "userId": "3",
+    "id": "1",
+    "title": "Be Honest: Would You Have Done the Same?",
+    "body": " Designers rely on it to visualize spacing, rhythm, and balance. Developers use it to test rendering, components, and layout responsiveness."
+  },
+  {
+    "userId": "4",
+    "id": "1",
+    "title": "Good Intentions, Bad Outcome—My Fault?",
+    "body": "Placeholder content doesn't need to be profound—it only needs to exist. Each sentence in a block like this helps create the shape of future writing."
+  },
+  {
+    "userId": "5",
+    "id": "1",
+    "title": "Did I Cross a Line, or Are They Just Sensitive?",
+    "body": "You can evaluate font size, line height, and paragraph spacing more effectively with natural language. This paragraph is doing exactly that, acting as a stand-in for thoughts that haven't been written yet."
+  },
+  {
+    "userId": "6",
+    "id": "1",
+    "title": "I Followed the Rules… But Now I Feel Guilty",
+    "body": "It offers the feel of a genuine article without any of the commitment. Every word here is temporary, but it still matters. It reflects the structure your real content will eventually follow. There are no bold ideas or life-changing insights here—just flow, form, and function."
+  },
+  {
+    "userId": "7",
+    "id": "1",
+    "title": "My Friend Thinks I Betrayed Them. Did I?",
+    "body": "You're reading this to see how the content fits within a given space. Maybe you're previewing styles or trying out a new font pairing. "
+  }
+]
