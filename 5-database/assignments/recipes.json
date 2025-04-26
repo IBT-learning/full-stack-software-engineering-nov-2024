@@ -127,5 +127,60 @@
       "pounded yam"
     ],
     "instructions": "Boil the meat, stock fish, and dry fish with seasoning until tender. In a separate pot, heat palm oil and add blended onions and peppers. Stir in ground egusi and fry for a few minutes. Add the cooked meat and stock, stir, and let it simmer until thickened. Add vegetables and cook for a few more minutes. Serve hot with pounded yam."
+  },
+  {
+    "title": "Vegetable Samosas",
+    "author": "Aisha Khan",
+    "ingredients": [
+      "samosa pastry sheets",
+      "potatoes",
+      "peas",
+      "carrots",
+      "spices (cumin, coriander)",
+      "oil for frying"
+    ],
+    "instructions": "Boil and mash potatoes. Mix with peas, grated carrots, and spices. Cut pastry sheets into triangles, fill with mixture, and seal. Deep fry until golden brown."
+  },
+  {
+    "title": "Pasta Primavera",
+    "author": "Marco Rossi",
+    "ingredients": [
+      "pasta (spaghetti or penne)",
+      "bell peppers",
+      "zucchini",
+      "carrots",
+      "olive oil",
+      "garlic",
+      "parmesan cheese"
+    ],
+    "instructions": "Cook pasta according to package instructions. Sauté garlic in olive oil, add sliced vegetables, and cook until tender. Toss with pasta and sprinkle with parmesan cheese before serving."
+  },
+  {
+    "title": "Chocolate Chip Cookies",
+    "author": "Emily Johnson",
+    "ingredients": [
+      "butter",
+      "brown sugar",
+      "granulated sugar",
+      "eggs",
+      "vanilla extract",
+      "flour",
+      "baking soda",
+      "salt",
+      "chocolate chips"
+    ],
+    "instructions": "Cream butter and sugars together. Add eggs and vanilla. Mix in dry ingredients. Fold in chocolate chips. Drop spoonfuls onto a baking sheet and bake at 350F for 10-12 minutes."
+  },
+  {
+    "title": "Caesar Salad",
+    "author": "Darlington Obioha",
+    "ingredients": [
+      "romaine lettuce",
+      "croutons",
+      "parmesan cheese",
+      "Caesar dressing",
+      "black pepper"
+    ],
+    "instructions": "Wash and chop romaine lettuce. Toss with croutons, parmesan cheese, and Caesar dressing. Season with black pepper to taste. Serve chilled."
   }
 ]
