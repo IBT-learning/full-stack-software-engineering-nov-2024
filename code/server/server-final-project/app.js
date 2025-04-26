@@ -1,9 +1,9 @@
-import expess from 'express';
+import express from 'express';
 
-const app = expess();
+const app = express();
 const PORT = 3001;
 
-app.use(expess.static('public'));
+app.use(express.static('public'));
 
 app.listen(PORT, () => {
   console.log(`Listening on 127.0.0.1:${PORT}`);
