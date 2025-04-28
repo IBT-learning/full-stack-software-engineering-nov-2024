@@ -14,11 +14,9 @@ const PORT = process.env.PORT;
 app.use(express.json());
 app.use(cors());
 
-// Routes
-// app.use("/recipes", recipeRouter); // all recipe routes prefixed with /recipes
-app.use("/users", userRouter);     // all user routes prefixed with /users
+app.use("/users", userRouter); 
 app.use("/recipes", tokenValidation, recipeRouter)
-// app.use("/auth", userRouter)
+
 
 
 // Start the server
