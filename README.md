@@ -41,12 +41,8 @@ Git is a distributed version control system that tracks versions of files. It is
 | 21   | Building our recipe archive | [Before we begin...](./5-database/assignments/db-assignment-0.md)              |
 | 21   | Using the MongoDB driver    | [MongoDB practice](./5-database/assignments/db-assignment-1.md)                |
 | 22   | Mongoose Schemas            | [Create a CRUD app with Mongoose](./5-database/assignments/db-assignment-2.md) |
-
-| 23 | User Authentication | [Add users to your recipe app](./5-database/assignments/db-assignment-3.md) |
-
-<!--
+| 23   | User Authentication         | [Add users to your recipe app](./5-database/assignments/db-assignment-3.md)    |
 | 24   | Database Final Project      | [Database Final Project](.5-database/assignments/db-final-project.md)          |
- -->
 
 ### Server
 
