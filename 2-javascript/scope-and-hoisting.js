@@ -20,7 +20,7 @@ displayName("Danny", "B")
 // generally we avoid declaring variables in the global scope
 const globalScopVar = "global"
 
-// UNLESS we a global constant
+// UNLESS we want a global constant
 const HOURS_IN_A_DAY = 24
 const MINUTES_IN_AN_HOUR = 60
 

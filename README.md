@@ -34,6 +34,35 @@ Git is a distributed version control system that tracks versions of files. It is
 
 🔗 [CSS Selector Reference](https://www.w3schools.com/cssref/css_selectors.php)
 
+### Databases
+
+| Week | Topic                       | Link                                                                           |
+| ---- | --------------------------- | ------------------------------------------------------------------------------ |
+| 21   | Building our recipe archive | [Before we begin...](./5-database/assignments/db-assignment-0.md)              |
+| 21   | Using the MongoDB driver    | [MongoDB practice](./5-database/assignments/db-assignment-1.md)                |
+| 22   | Mongoose Schemas            | [Create a CRUD app with Mongoose](./5-database/assignments/db-assignment-2.md) |
+| 23   | User Authentication         | [Add users to your recipe app](./5-database/assignments/db-assignment-3.md)    |
+| 24   | Database Final Project      | [Database Final Project](.5-database/assignments/db-final-project.md)          |
+
+### Server
+
+| Week | Topic                        | Link                                                                   |
+| ---- | ---------------------------- | ---------------------------------------------------------------------- |
+| 17   | Using npm packages           | [Server Assignment #1](./4-server/assignments/server-assignment-1.md)  |
+| 17   | My First Express Server      | [Server Assignment #2](./4-server/assignments/server-assignment-2.md)  |
+| 18   | Getting started with Postman | [Server Assignment #3](./4-server/assignments/server-assignment-3.md)  |
+| 19   | Locally stored to-do list    | [Server Assignment #4](./4-server/assignments/server-assignment-4.md)  |
+| 20   | Cookies                      | [Server Assignment #5](./4-server/assignments/server-assignment-5.md)  |
+| 20   | Server Final Project         | [Server Final Project](./4-server/assignments/server-final-project.md) |
+
+### Web APIs
+
+| Week | Topic                                 | Link                                                                    |
+| ---- | ------------------------------------- | ----------------------------------------------------------------------- |
+| 14   | DOM, Query Selectors, Event Listeners | [Web API Assignment #1](./3-web-apis/assignments/web-assignment-1.md)   |
+| 16   | Fetching API Data                     | [Web API Assignment #2](./3-web-apis/assignments/web-assignment-2.md)   |
+| 16   | Web APIs Final Project                | [Web APIs Final Project](./3-web-apis/assignments/web-final-project.md) |
+
 ### JavaScript
 
 | Week | Topic               | Link                                                               |
