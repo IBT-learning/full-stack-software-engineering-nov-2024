@@ -12,6 +12,39 @@ const JWT_KEY = process.env.JWT_KEY
 import tokenValidation from '../middlewares/tokenValidation.js';
 
 
+// Existing routes (Example: Get all recipes)
+router.get("/", tokenValidation, async (req, res) => {
+  try {
+    const recipes = await Recipe.find();
+    res.status(200).json(recipes);
+  } catch (err) {
+    res.status(500).send(`Error fetching recipes: ${err.message}`);
+  }
+});
+
+// New route: Get all recipes by a specific user
+router.get("/user/:userId", tokenValidation, async (req, res) => {
+  try {
+    const { userId } = req.params;
+
+    // Validate if userId is a valid MongoDB ObjectId
+    if (!mongoose.Types.ObjectId.isValid(userId)) {
+      return res.status(400).send(`Invalid user ID: ${userId}`);
+    }
+
+    // Find all recipes created by the user
+    const recipes = await Recipe.find({ createdBy: userId });
+
+    if (recipes.length === 0) {
+      return res.status(404).send(`No recipes found for user with ID: ${userId}`);
+    }
+
+    res.status(200).json(recipes); // Return the recipes as JSON
+  } catch (err) {
+    res.status(500).send(`Error fetching recipes: ${err.message}`);
+  }
+});
+
 router.post("/", tokenValidation, async (req, res) => {
     try {
       const data = req.body;
