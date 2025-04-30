@@ -1,6 +1,6 @@
 async function fetchPosts() {
   try {
-    const response = await fetch('https://jsonplaceholder.typicode.com/posts');
+    const response = await fetch('http://127.0.0.1:3001/posts');
     const posts = await response.json();
 
     const appPosts = document.querySelectorAll('.post');
@@ -15,6 +15,10 @@ async function fetchPosts() {
       // to change post content
       const textSection = appPosts[i].querySelector('.text');
       textSection.textContent = post.body;
+
+      // to change post titles
+      const title = appPosts[i].querySelector('h4');
+      title.textContent = post.title;
     }
   } catch (error) {
     console.error('Failed to fetch posts:', error);
