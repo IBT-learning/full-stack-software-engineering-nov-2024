@@ -7,6 +7,7 @@ const Book = new mongoose.Schema(
       required: true,
       maxlength: 150,
       trim: true,
+      maxLength: [150, "Titles must be 150 characters or less"],
     },
     author: {
       type: String,
