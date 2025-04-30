@@ -2,10 +2,13 @@ import express from "express";
 import User from "../models/user.js";
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
+// import { config } from "dotenv";
+
+// config();
 
 const router = express.Router();
-const SALT = 12;
-const JWT_KEY = "Secret_key";
+const SALT = parseInt(process.env.SALT);
+const JWT_KEY = process.env.JWT_KEY;
 
 router.post("/register", async (req, res) => {
   try {
@@ -17,7 +20,7 @@ router.post("/register", async (req, res) => {
       password: bcrypt.hashSync(password, SALT),
     });
     await newUser.save();
-    res.send("new user added successfully.");
+    res.json(newUser);
   } catch (err) {
     console.log(err);
     res.send(err);
