@@ -1,0 +1,43 @@
+body {
+    font-size: 16px;
+    font-family: "Rubik", sans-serif;
+    line-height: 1.3;
+    background-color: #073a5a;        /* for seeting background color of the webpage*/
+
+ }
+      
+.color-text{
+    color: rgb(255, 255, 255);
+}
+
+#headers-color{
+    color: aliceblue;
+  text-align: center;
+}
+
+.images-section{
+background-color: rgb(5, 30, 65);
+
+}
+
+img{
+    width: 300px;
+    height: 300px;
+  margin-right: 80px;
+  margin-left: 30px;
+}
+
+
+
+
+
+.hover-text {
+    color: rgb(255, 213, 0); /* Default color */
+    text-decoration: none; /* Optional: removes underline */
+  }
+  
+  a:hover {
+    color: rgb(57, 176, 255); /* Color when hovered */
+
+  }
+  
