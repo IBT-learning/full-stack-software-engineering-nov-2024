@@ -160,4 +160,3 @@ async function fetchPosts() {
   } else {
     initBlogPage();
   }
-  
