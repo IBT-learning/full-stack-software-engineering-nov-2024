@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API-Powered Blog</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="blog-header">
+        <div class="container">
+            <h1 class="blog-title">Modern Blog</h1>
+            <nav class="blog-nav">
+                <ul>
+                    <li><a href="#" class="active"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="#"><i class="fas fa-user"></i> Profile</a></li>
+                    <li><a href="#"><i class="fas fa-rss"></i> Subscribe</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Welcome to Our Blog</h2>
+                <p>Fetching the latest posts from JSONPlaceholder API</p>
+            </div>
+        </section>
+
+        <section class="blog-controls">
+            <div class="search-box">
+                <input type="text" placeholder="Search posts..." id="search-input">
+                <button id="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="user-selector">
+                <label for="user-filter">Filter by Author:</label>
+                <select id="user-filter">
+                    <option value="all">All Authors</option>
+         
+                </select>
+            </div>
+        </section>
+
+        <section class="posts-grid" id="posts-container">
+
+            <div class="loading-spinner">
+                <div class="spinner"></div>
+                <p>Loading posts...</p>
+            </div>
+        </section>
+
+        <div class="pagination" id="pagination">
+   
+        </div>
+    </main>
+
+    <footer class="blog-footer">
+        <div class="container">
+            <p>Made By Lucid</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+.controls {
+    margin: 20px 0;
+    text-align: center;
+}
+
+#user-select {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+#to-do-list {
+    list-style: none;
+    padding: 0;
+}
+
+.todo-item {
+    background-color: white;
+    margin: 8px 0;
+    padding: 12px 15px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.todo-item:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.todo-text {
+    flex-grow: 1;
+    margin: 0 10px;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #888;
+    background-color: #f0f0f0;
+}
+
+.checkbox {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #4CAF50;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.checkbox.checked {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.checkbox.checked::after {
+    content: "✓";
+}
