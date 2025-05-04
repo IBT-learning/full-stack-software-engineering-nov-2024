@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess The Number Game, your favourite game</title>
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+
+<body>
+
+    <div class="game-container">
+
+        <head>
+            <nav class="game-head-container">
+                <h1>Guess The Number Game</h1>
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About Game</a>
+                    </li>
+                </ul>
+            </nav>
+        </head>
+        <main class="game-body-container">
+            <section class="game-body-container-content">
+                <h2>GUESS THE NUMBER</h2>
+                <p class="enter">Enter a number between 1 and 100</p>
+                <form>
+                    <input type="text" id="user-guess" placeholder="Enter your guess" />
+                    <div class="buttons">
+                        <button id="submit-guess">Submit</button>
+                        <button id="restart-game">Restart</button>
+                    </div>
+                </form>
+                <p class="message">Guess:
+                    <span id="message"></span>
+                </p>
+
+                <p class="message">attempts:
+                    <span id="attempts"></span>
+                </p>
+
+            </section>
+            <section class="game-body-container-img">
+
+                <img src="./assets/img/guessTheNumber.jpg" alt="" id="game-img">
+
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2025 Guess The Number Game.<br />Follow <a href="https://github.com/mrchukwu"
+                    target="_blank">kennedy
+                    chukwu</a> with ♥️
+            </p>
+        </footer>
+
+    </div>
+    <script src="./assets/app.js"></script>
+</body>
+
+</html>
