@@ -13,7 +13,8 @@ If you do have uncommited changes, that's okay! You can stash them and retrieve 
 ## Check out the main branch
 
 1. `git checkout main`
-1. `git pull`
+1. `git reset --hard main`
+   - This will help if you've accidentally made commits to your `main` branch at any point
 1. Make a new branch called `<your name>-recipe` (replace your-name with your name!)
 1. Find the file at `5-database/assignments/recipes.json`.
 1. Open the file and add a recipe to it. You will NOT be copying this file into your code folder, you will change it right here where it is!
