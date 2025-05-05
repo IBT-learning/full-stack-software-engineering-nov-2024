@@ -1,8 +1,9 @@
 import express from 'express';
 import path from 'path';
+import fs from 'fs';
 
 const app = express();
-const PORT = 3001;
+const PORT = process.env.PORT || 3001;
 
 app.use(express.static('public'));
 
@@ -14,6 +15,8 @@ app.get('/posts', (req, res) => {
 //
 app.get('/posts/:id', (req, res) => {
   const id = req.params.id;
+
+  fs.readFile(path.join(import.meta.dirname, 'public/blogData.json'));
   console.log(id);
 
   // const post = 
