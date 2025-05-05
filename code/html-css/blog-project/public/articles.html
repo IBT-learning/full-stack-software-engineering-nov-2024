@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Articles</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body class="bg-gray-50 min-h-screen">
+<div class="container mx-auto px-4 py-6 max-w-4xl">
+    <!-- Header -->
+<!--    <header class="mb-8">-->
+<!--        <h1 class="text-2xl font-bold text-gray-800">My Articles</h1>-->
+<!--        <p class="text-gray-600">Create and manage your articles</p>-->
+<!--    </header>-->
+
+    <!-- Header -->
+    <header class="mb-8">
+        <div class="flex justify-between items-center">
+            <div>
+                <h1 class="text-2xl font-bold text-gray-800">My Articles</h1>
+                <p class="text-gray-600">Create and manage your articles</p>
+            </div>
+            <!-- Back Button -->
+            <a href="./profile.html" id="backButton" class="flex items-center text-blue-600 hover:text-blue-800 transition-colors">
+                <i class="bi bi-arrow-left mr-1"></i> Back to Profile
+            </a>
+        </div>
+    </header>
+
+    <!-- Create Article Button -->
+    <button id="newArticleBtn" class="mb-6 w-full sm:w-auto bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg flex items-center justify-center transition-colors">
+        <i class="bi bi-plus-lg mr-2"></i> New Article
+    </button>
+
+    <!-- Create Article Form (Hidden by default) -->
+    <div id="createArticleForm" class="hidden bg-white rounded-lg shadow p-6 mb-8">
+        <h2 class="text-xl font-semibold mb-4">Create New Article</h2>
+        <form id="articleForm" class="space-y-4">
+            <div>
+                <label for="title" class="block text-gray-700 mb-1">Title</label>
+                <input type="text" id="title" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500" required>
+            </div>
+
+<!--            <div>-->
+<!--                <label for="author" class="block text-gray-700 mb-1">Author</label>-->
+<!--                <input type="text" id="author" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500" value="John Doe" required>-->
+<!--            </div>-->
+
+            <div>
+                <label for="description" class="block text-gray-700 mb-1">Description</label>
+                <textarea id="description" rows="3" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500" required></textarea>
+            </div>
+
+            <div class="flex space-x-3 pt-2">
+                <button type="button" id="cancelFormBtn" class="flex-1 bg-gray-200 hover:bg-gray-300 py-2 px-4 rounded-lg transition-colors">
+                    Cancel
+                </button>
+                <button type="submit" class="flex-1 bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-lg flex items-center justify-center">
+                    <i class="bi bi-save mr-2"></i> Save
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Articles List -->
+    <div class="space-y-4">
+        <!-- Article Card 1 -->
+        <div class="bg-white rounded-lg shadow p-6">
+            <div class="flex justify-between items-start">
+                <div>
+                    <h3 class="text-lg font-semibold title">Getting Started with Tailwind CSS</h3>
+                    <p class="text-gray-600 text-sm mt-1 author">John Doe • May 15, 2023</p>
+                </div>
+                <div class="flex space-x-2">
+<!--                    <button class="text-blue-600 hover:text-blue-800 p-1">-->
+<!--                        <i class="bi bi-pencil"></i>-->
+<!--                    </button>-->
+                    <button class="text-red-600 hover:text-red-800 p-1 delete">
+                        <i class="bi bi-trash"></i>
+                    </button>
+                </div>
+            </div>
+            <p class="mt-3 text-gray-700 description">A comprehensive guide to using Tailwind in your projects with practical examples and best practices.</p>
+        </div>
+
+        <!-- Article Card 2 -->
+        <div class="bg-white rounded-lg shadow p-6">
+            <div class="flex justify-between items-start">
+                <div>
+                    <h3 class="text-lg font-semibold title">The Future of Web Development</h3>
+                    <p class="text-gray-600 text-sm mt-1 author">John Doe • April 28, 2023</p>
+                </div>
+                <div class="flex space-x-2">
+<!--                    <button class="text-blue-600 hover:text-blue-800 p-1">-->
+<!--                        <i class="bi bi-pencil"></i>-->
+<!--                    </button>-->
+                    <button class="text-red-600 hover:text-red-800 p-1 delete">
+                        <i class="bi bi-trash"></i>
+                    </button>
+                </div>
+            </div>
+            <p class="mt-3 text-gray-700 description">Exploring emerging trends in modern web development and what to expect in the coming years.</p>
+        </div>
+
+        <!-- Article Card 3 -->
+        <div class="bg-white rounded-lg shadow p-6">
+            <div class="flex justify-between items-start">
+                <div>
+                    <h3 class="text-lg font-semibold title">Effective Time Management</h3>
+                    <p class="text-gray-600 text-sm mt-1 author">John Doe • March 10, 2023</p>
+                </div>
+                <div class="flex space-x-2">
+<!--                    <button class="text-blue-600 hover:text-blue-800 p-1">-->
+<!--                        <i class="bi bi-pencil"></i>-->
+<!--                    </button>-->
+                    <button class="text-red-600 hover:text-red-800 p-1 delete">
+                        <i class="bi bi-trash"></i>
+                    </button>
+                </div>
+            </div>
+            <p class="mt-3 text-gray-700 description">Strategies for maximizing productivity in your workday and achieving better work-life balance.</p>
+        </div>
+    </div>
+</div>
+
+<script src="articles.js">
+
+</script>
+</body>
+</html>

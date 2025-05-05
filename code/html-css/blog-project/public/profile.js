@@ -1,96 +1,138 @@
-const formGroup = document.getElementsByClassName("form-group");
+// DOM elements
+const fullNameInput = document.getElementById("fullname");
+const bioInput = document.getElementById("bio");
+const addressInput = document.getElementById("address");
+const form = document.querySelector("form");
 
-const getProfile = async () => {
-    const mainData = await fetch("http://localhost:4000/profile/2");
-    const res = await mainData.json();
-    // console.log(res)
+// Check if user exists and load data
+const checkAndLoadUser = async () => {
+  const userToken = localStorage.getItem("userToken");
 
-    const posts = await fetch("http://localhost:4000/data");
-    const postResponse = await posts.json();
-    const sortedData = postResponse.slice(2, 5);
-
-    // console.log(sortedData)
-    // Create a style element for common styles
-    const styleEl = document.createElement('style');
-    styleEl.textContent = `
-        .profile-input {
-            width: 100%;
-            padding: 10px;
-            border-radius: 5px;
-            border-width: 0;
-            background-color: #333;
-            color: #fff;
-            font-size: 14px;
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
-        
-        .post-paragraph {
-            background-color: #f5f5f5;
-            padding: 15px;
-            border-radius: 8px;
-            margin-bottom: 15px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-        
-        .post-title {
-            font-weight: bold;
-            margin-bottom: 8px;
-            color: #333;
-        }
-        
-        .post-body {
-            color: #666;
-            line-height: 1.5;
-        }
-    `;
-    document.head.appendChild(styleEl);
-
-    // Name input
-    const inputting = document.createElement("input");
-    inputting.type = "text";
-    inputting.placeholder = res.name;
-    inputting.value = res.name;
-    inputting.className = "profile-input";
-    formGroup[0].appendChild(inputting);
-
-    // Address input
-    const inputting2 = document.createElement("input");
-    inputting2.type = "text";
-    inputting2.placeholder = res.body;
-    inputting2.value = res.body;
-    inputting2.className = "profile-input";
-    formGroup[1].appendChild(inputting2);
-
-    // Company info textarea
-    const inputting3 = document.createElement("textarea");
-    inputting3.placeholder = res.body;
-    inputting3.value = res.body;
-    inputting3.className = "profile-input";
-    inputting3.style.minHeight = "80px"; // Extra height for textarea
-    formGroup[2].appendChild(inputting3);
-
-    // Content section
-    const contents = document.getElementsByClassName("lastcontent");
-
-    // Display the posts with improved formatting
-    for (let j = 0; j < sortedData.length; j++) {
-        const postContainer = document.createElement("div");
-        postContainer.className = "post-paragraph";
-
-        const titleElement = document.createElement("div");
-        titleElement.className = "post-title";
-        titleElement.textContent = sortedData[j].title;
-
-        const bodyElement = document.createElement("div");
-        bodyElement.className = "post-body";
-        bodyElement.textContent = sortedData[j].body;
-
-        postContainer.appendChild(titleElement);
-        postContainer.appendChild(bodyElement);
-
-        contents[0].appendChild(postContainer);
+  if (userToken) {
+    try {
+      const userData = await getUser(userToken);
+      if (userData) {
+        // Populate form with existing data
+        fullNameInput.value = userData.fullName || "";
+        bioInput.value = userData.bio || "";
+        addressInput.value = userData.address || "";
+        return true; // User exists
+      }
+    } catch (error) {
+      console.error("Error fetching user:", error);
     }
-}
+  }
+  return false; // User doesn't exist
+};
 
-getProfile();
+// Get user data
+const getUser = async (token) => {
+  try {
+    const response = await fetch(`http://localhost:4000/users/user/${token}`, {
+      method: "GET",
+      headers: {
+        authorization: token,
+        "Content-Type": "application/json",
+      },
+    });
+
+    if (!response.ok) throw new Error("Failed to fetch user");
+    return await response.json();
+  } catch (error) {
+    console.error("Error:", error);
+    return null;
+  }
+};
+
+// Create new user
+const createUser = async (userData) => {
+  try {
+    const response = await fetch("http://localhost:4000/users/", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(userData),
+    });
+
+    const result = await response.json();
+    if (result.token) {
+      localStorage.setItem("userToken", result.token);
+    }
+    return result;
+  } catch (error) {
+    console.error("Error:", error);
+    throw error;
+  }
+};
+
+// Update existing user
+const updateUser = async (token, userData) => {
+  try {
+    const response = await fetch(`http://localhost:4000/users/${token}`, {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json",
+        authorization: token,
+      },
+      body: JSON.stringify(userData),
+    });
+
+    if (!response.ok) throw new Error("Failed to update user");
+    return await response.json();
+  } catch (error) {
+    console.error("Error:", error);
+    throw error;
+  }
+};
+
+// Form submission handler
+form.addEventListener("submit", async (e) => {
+  e.preventDefault();
+
+  const userData = {
+    fullName: fullNameInput.value,
+    bio: bioInput.value,
+    address: addressInput.value,
+  };
+
+  const userToken = localStorage.getItem("userToken");
+
+  try {
+    if (userToken) {
+      // Update existing user
+      await updateUser(userToken, userData);
+      showToast("Profile updated successfully!");
+    } else {
+      // Create new user
+      await createUser(userData);
+      showToast("Account created successfully!");
+    }
+  } catch (error) {
+    console.error("Error saving user:", error);
+    showToast("Error saving profile", "error");
+  }
+});
+
+// Show toast notification
+const showToast = (message, type = "success") => {
+  const toast = document.createElement("div");
+  toast.className = `fixed bottom-4 right-4 ${
+    type === "success" ? "bg-green-500" : "bg-red-500"
+  } text-white px-4 py-2 rounded-lg shadow-lg animate-fade-in`;
+  toast.innerHTML = message;
+  document.body.appendChild(toast);
+
+  setTimeout(() => {
+    toast.classList.add("animate-fade-out");
+    setTimeout(() => toast.remove(), 300);
+  }, 3000);
+};
+
+// Initialize page
+(async () => {
+  const userExists = await checkAndLoadUser();
+  if (!userExists) {
+    console.log("No existing user found");
+  }
+})();
