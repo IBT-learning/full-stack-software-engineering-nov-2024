@@ -182,5 +182,18 @@
       "black pepper"
     ],
     "instructions": "Wash and chop romaine lettuce. Toss with croutons, parmesan cheese, and Caesar dressing. Season with black pepper to taste. Serve chilled."
+  }, 
+  {
+    "title": "Gari Soakings",
+    "author": "Nathan Turkson",
+    "ingredients": [
+      "Gari",
+      "Milk",
+      "Sugar",
+      "Groundnuts",
+      "Water"
+    ],
+    "instructions": "Pour some gari into a cup. Add three table spoons of sugar. Add five tablespoons of milk. Pour some water into it and add some grounduts."
   }
+
 ]
