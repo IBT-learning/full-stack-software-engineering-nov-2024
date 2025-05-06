@@ -1,0 +1,69 @@
+const restaurant = {
+  name: "Gigi's Pizza Shack",
+  address: "123 Main St, Portland OR 97200",
+  tags: ["pizza", "family", "dine-in", "take-out", "arcade"],
+  website: "http://www.gigispizza.com/",
+  staff: {
+    owner: {
+      name: "Gigi",
+      "phone number": "123-234-3456",
+    },
+    manager: {
+      name: "Rose",
+      "phone number": "234-345-4567",
+    },
+    chef: {
+      name: "Musa",
+      "phone number": "345-456-5678",
+    },
+  },
+}
+
+//Challenge #1: Accessing Data
+
+console.log(restaurant.name); // Restaurant's name
+console.log(restaurant.tags[2]); // Third item from tags
+console.log(restaurant.staff.chef.name); // Chef's name
+restaurant.tags.forEach(tag => console.log(tag)); // loop for all tags
+
+//Challenge #2 : Updating Data
+
+restaurant.address = "456 Nairobi St, Nairobi, Kenya"; // Updating address
+restaurant.staff.developer = { name: "Your Name", "phone number": "456-567-6789" }; // Adding yourself
+
+delete restaurant.website; // Removing the website
+
+console.log(restaurant); // Log the updated object
+
+
+// Challenge #3: Creating a new object
+const menu = {
+    burger: 5.0,
+    fries: 3.5,
+    ugali: 4.0,
+    soda: 2.0,
+    salad: 4.5,
+
+
+
+    // Challenge #4: Creating an object method
+    order(items) {
+        let total = 0;
+        items.forEach(item => {
+          if (this[item] !== undefined) {
+            total += this[item];
+          }
+        });
+        return total;
+    }
+};
+
+console.log(menu.order(["burger", "fries"])); // 8.5
+console.log(menu.order(["burger", "fries", "fries"])); // 12
+console.log(menu.order(["burger", "fries", "pasta"])); // 8.5 (ignoring "pasta")
+
+
+restaurant.menu = menu;// Extra Challenge: Adding menu to the restaurant object
+
+// Making an order using restaurant.menu.order()
+console.log(restaurant.menu.order(["ugali", "soda"])); // 10.0
