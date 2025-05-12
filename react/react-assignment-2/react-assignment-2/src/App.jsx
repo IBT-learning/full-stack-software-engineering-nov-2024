@@ -44,7 +44,6 @@ function App() {
 
     setAllTasks(updatedTasks);
   }
-
   return (
     <div className="container">
       <div className="screen-title">
