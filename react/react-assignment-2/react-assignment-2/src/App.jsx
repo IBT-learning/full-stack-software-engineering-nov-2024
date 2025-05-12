@@ -13,11 +13,8 @@ function App() {
     { id: 3, task: "finish homework", completed: false },
   ]);
 
-  const [completedTask, setCompletedTask] = useState(false);
-
   function toggleTask() {
     const allData = allTasks;
-    // setFilteredTasks(allData);
 
     const isExist = allData.find((com) => com.task === task);
 
@@ -36,24 +33,16 @@ function App() {
   }
 
   function handleToggleStatus(name) {
-    const allData = allTasks;
+    const updatedTasks = allTasks.map((task) => {
+      if (task.task === name) {
+        const updatedTask = { ...task, completed: !task.completed };
+        setIsCompleted(updatedTask.completed); // update isCompleted
+        return updatedTask;
+      }
+      return task;
+    });
 
-    const isExist = allData.find((com) => com.task === name);
-
-    if (isExist) {
-      allTasks.forEach((task) => {
-        if (task.task === isExist.task) {
-          task.completed = !task.completed;
-          if (task.completed) {
-            setIsCompleted(true);
-          } else {
-            setIsCompleted(false);
-          }
-        }
-      });
-    }
-
-    setAllTasks(allData);
+    setAllTasks(updatedTasks);
   }
 
   return (
