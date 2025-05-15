@@ -1,12 +1,14 @@
 import express from 'express';
 import { dbConnect } from './db.js';
 import recipeRouter from './controllers/recipes.js';
+import useRouter from './controllers/users.js';
 
 const app = express();
 const PORT = process.env.PORT || 3005;
 
 app.use(express.json());
 app.use('/recipes', recipeRouter);
+app.use('/auth', useRouter);
 
 const startServer = async() => {
   try{
