@@ -68,11 +68,12 @@ router.post('/login', async (req, res) => {
     // if the user is a valid user, create a JWT and attach it to the response
     const payload = {userId: user._id};
     const token = jwt.sign(payload, SECRET, {expiresIn: 60*60*24*7});
+    const {_id, name} = user;
 
     res.status(200).json({
       'Success': 'Valid user logged in',
       token,
-      user
+      user: {name, _id}
     });
   }catch (err){
     console.error('Error logging in: ', err);

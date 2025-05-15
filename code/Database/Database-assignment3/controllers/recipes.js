@@ -1,6 +1,7 @@
 import express from 'express';
 import Recipe from '../models/Recipe.js';
 import { mongoose } from '../db.js';
+import tokenValidator from '../middleware/tokenValidator.js';
 
 const router = express.Router();
 
@@ -34,7 +35,7 @@ router.get('/find/:recipeId', async (req, res) => {
   }
 });
 
-router.post('/', async (req, res) => {
+router.post('/', tokenValidator, async (req, res) => {
   try{
     const newRecipe = new Recipe(req.body);
     await newRecipe.save();
@@ -54,7 +55,7 @@ router.post('/', async (req, res) => {
   }
 });
 
-router.put('/update/:recipeId', async (req, res) => {
+router.put('/update/:recipeId', tokenValidator, async (req, res) => {
   const id = req.params.recipeId;
   try{
     if (!mongoose.Types.ObjectId.isValid(id)){
@@ -83,7 +84,7 @@ router.put('/update/:recipeId', async (req, res) => {
   }
 });
 
-router.delete('/delete/:recipeId', async (req, res) => {
+router.delete('/delete/:recipeId', tokenValidator, async (req, res) => {
   const id = req.params.recipeId;
   try{
      if (!mongoose.Types.ObjectId.isValid(id)){
