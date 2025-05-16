@@ -34,7 +34,14 @@ const recipeSchema = new mongoose.Schema({
 
   instructions: {
     type: String, 
-    required: true}
+    required: true
+  },
+
+  createdBy: {
+    type: mongoose.Schema.ObjectId,
+    required: true,
+    ref: 'User'
+  }
 },
 {timestamps: true}
 );

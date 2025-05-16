@@ -37,9 +37,16 @@ router.get('/find/:recipeId', async (req, res) => {
 
 router.post('/', tokenValidator, async (req, res) => {
   try{
-    const newRecipe = new Recipe(req.body);
+    const newRecipe = new Recipe({
+      createdBy: req.user.userId,
+      ...req.body
+  });
+
     await newRecipe.save();
-    res.status(201).json(newRecipe);
+
+    res.status(201).json({
+      'Success': 'New recipe created',
+      newRecipe});
   }catch (err){
     console.error('Error creating recipe: ', err);
 
@@ -56,17 +63,27 @@ router.post('/', tokenValidator, async (req, res) => {
 });
 
 router.put('/update/:recipeId', tokenValidator, async (req, res) => {
-  const id = req.params.recipeId;
-  try{
-    if (!mongoose.Types.ObjectId.isValid(id)){
-      return res.status(422).json({'Error': 'Invalid recipe Id'});
-    }
+  const id = req.params.recipeId; 
+  const userId = req.user.userId; // this is the user logged in
+ 
+  if (!mongoose.Types.ObjectId.isValid(id)){
+    return res.status(422).json({'Error': 'Invalid recipe Id'});
+  }
 
-    const result = await Recipe.updateOne({_id: id}, req.body);
-    console.log(result);
-    if (result.matchedCount === 0){
+  try{
+    // only if the id is valid: fetch recipe and check ownership
+    const recipe = await Recipe.findById(id);
+
+    if (!recipe){
       return res.status(404).json({'Error': 'Recipe not found'});
     }
+
+    if(userId.toString() !== recipe.createdBy.toString()){
+      return res.status(403).json({'Error': 'Cannot update recipe from another user'});
+    }
+    
+    const {createdBy, ...updateInfo} = req.body;
+    await Recipe.updateOne({_id: id}, updateInfo);
 
     res.status(200).json({'Success': 'Updated a recipe'});
   }catch (err) {
