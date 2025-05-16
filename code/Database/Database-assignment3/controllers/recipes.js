@@ -103,16 +103,24 @@ router.put('/update/:recipeId', tokenValidator, async (req, res) => {
 
 router.delete('/delete/:recipeId', tokenValidator, async (req, res) => {
   const id = req.params.recipeId;
-  try{
-     if (!mongoose.Types.ObjectId.isValid(id)){
-      return res.status(422).json({'Error': 'Invalid recipe Id'});
-    }
+  const userId = req.user.userId; // this is the user logged in
 
-    const result = await Recipe.deleteOne({_id: id});
-    // console.log(result);
-    if (result.deletedCount === 0){
+  if (!mongoose.Types.ObjectId.isValid(id)){
+   return res.status(422).json({'Error': 'Invalid recipe Id'});
+  }
+
+  try{
+   const recipe = await Recipe.findById(id);
+
+    if (!recipe){
       return res.status(404).json({'Error': 'Recipe not found'});
+    }    
+
+    if(userId.toString() !== recipe.createdBy.toString()){
+      return res.status(403).json({'Error': 'Cannot delete recipe from another user'});
     }
+    
+    await Recipe.deleteOne({_id: id});
 
     res.status(200).json({'Success': 'Deleted recipe'});
   }catch (err) {
