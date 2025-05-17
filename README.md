@@ -34,6 +34,19 @@ Git is a distributed version control system that tracks versions of files. It is
 
 🔗 [CSS Selector Reference](https://www.w3schools.com/cssref/css_selectors.php)
 
+### React
+
+| Week | Topic                            | Link                                                                       |
+| ---- | -------------------------------- | -------------------------------------------------------------------------- |
+| 25   | Intro to React                   | [Controlling Data with State](./6-react/assignments/react-assignment-1.md) |
+| 26   | Lifting state to parent          | [To-do app](./6-react/assignments/react-assignment-2.md)                   |
+| 27   | useEffect / fetching remote data | [Quotation generator](./6-react/assignments/react-assignment-3.md)         |
+
+<!--
+| 28   | React Router                     | [Client for Recipe API](./6-react/assignments/react-assignment-4.md)       |
+| 29   | Putting it all together          | [React Final Project](./6-react/assignments/react-final-project.md)        |
+-->
+
 ### Databases
 
 | Week | Topic                       | Link                                                                           |
