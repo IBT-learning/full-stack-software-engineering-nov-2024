@@ -1,30 +1,23 @@
+import "dotenv/config";
 import express from "express";
-import fs from 'fs';
-import cors from 'cors';
+import fs from "fs";
+import cors from "cors";
+import { dbConnect } from "./db.js";
+import userRouter from "./controllers/users.js";
+import postRouter from "./controllers/posts.js";
+import cookieParser from "cookie-parser";
 
 const app = express();
+app.use(express.json());
 app.use(cors());
+app.use(cookieParser());
 app.use(express.static("public"));
+app.use("/users", userRouter);
+app.use("/posts", postRouter);
 
+const PORT = process.env.SERVER_PORT;
 
-const PORT= 4000;
-
-app.get("/data", (req, res) => {
-  const mainData = fs.readFileSync("./public/data.json");
-  const info = JSON.parse(mainData);
-  res.send(info);
-})
-
-app.get("/profile/:id", (req, res) => {
-  const id = req.params.id;
-  const mainData = fs.readFileSync("./public/data.json");
-  const info = JSON.parse(mainData)
-
-  if (info[id]) {
-    res.send(info[id]);
-  } else {
-    console.log("not found")
-  }
-})
-
-app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
+app.listen(PORT, () => {
+  console.log("Server started on port " + PORT);
+  dbConnect();
+});
