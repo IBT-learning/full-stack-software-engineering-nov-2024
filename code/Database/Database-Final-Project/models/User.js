@@ -1,13 +1,13 @@
 import { mongoose } from "../db.js";
 
 const userSchema = new mongoose.Schema({
-  name: {
-    type: String,
-    required: true,
-    maxLength: [100, 'Name cannot contain more than 100 characters'],
-    minLength: [2, 'Name has to be atleast 2 characters long'],
-    trim: true
-  },
+  // name: {
+  //   type: String,
+  //   required: true,
+  //   maxLength: [100, 'Name cannot contain more than 100 characters'],
+  //   minLength: [2, 'Name has to be atleast 2 characters long'],
+  //   trim: true
+  // },
 
   dislayName: {
     type: String,

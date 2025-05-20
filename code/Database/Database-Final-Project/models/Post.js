@@ -12,8 +12,8 @@ const postSchema = new mongoose.Schema({
   body: {
     type: String,
     required: true,
-    minLength: [2, 'Post title must be atleast 2 characters'],
-    maxLength: [100, 'Post title cannot be more than 100 characters'],
+    minLength: [2, 'Post must be atleast 2 characters'],
+    maxLength: [500, 'Post cannot be more than 500 characters'],
     trim: true
   },
 
