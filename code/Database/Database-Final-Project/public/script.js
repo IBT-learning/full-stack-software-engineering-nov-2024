@@ -1,6 +1,6 @@
 async function fetchPosts() {
   try {
-    const response = await fetch('http://127.0.0.1:3001/api/posts');
+    const response = await fetch('http://127.0.0.1:4500/');
     const posts = await response.json();
 
     const appPosts = document.querySelectorAll('.post');

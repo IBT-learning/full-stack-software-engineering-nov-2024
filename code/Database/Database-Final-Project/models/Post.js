@@ -17,8 +17,12 @@ const postSchema = new mongoose.Schema({
     trim: true
   },
 
-  image: {
-    type: String
+  media: {
+    type: [String],
+    validate: {
+      validator: (val) => val.length < 5,
+      message: 'Max of 4 media files allowed'
+    }
   },
 
   createdBy: {

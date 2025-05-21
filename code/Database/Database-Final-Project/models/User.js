@@ -9,11 +9,11 @@ const userSchema = new mongoose.Schema({
   //   trim: true
   // },
 
-  dislayName: {
+  displayName: {
     type: String,
     required: true,
     unique: true,
-    maxLength: [100, 'Display name cannot contain more than 100 characters'],
+    maxLength: [50, 'Display name cannot contain more than 50 characters'],
     minLength: [2, 'Display name has to be atleast 2 characters long'],
     trim: true
   },
