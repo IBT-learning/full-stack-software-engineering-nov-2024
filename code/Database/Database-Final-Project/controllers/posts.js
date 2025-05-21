@@ -1,10 +1,13 @@
-import exrpess from 'express';
+import express from 'express';
+import dayjs from 'dayjs';
+import relativeTime from 'dayjs/plugin/relativeTime.js';
 import Post from '../models/Post.js';
 import User from '../models/User.js';
 import { mongoose } from '../db.js';
 import tokenValidator from '../middleware/tokenValidator.js';
 
-const router = exrpess.Router();
+const router = express.Router();
+dayjs.extend(relativeTime);
 
 // get all posts
 router.get('/', async (req, res) => {
@@ -33,8 +36,22 @@ router.get('/:userId', async (req, res) => {
       return res.status(404).json({'Error': 'User not found'});
     }
 
-    const posts = await Post.find({createdBy: id});
-    res.status(200).json(posts);
+    const rawPosts = await Post.find({createdBy: id}).populate('createdBy', 'displayName').sort({ createdAt: -1 });
+    const postsDisplay = rawPosts.map((post) => {
+      return {
+        creator: post.createdBy,
+        title: post.title,
+        body: post.body,
+        createdAtAgo: dayjs(post.createdAt).fromNow()
+      }
+    });
+
+    const profile = rawPosts[0].createdBy.displayName;
+
+    res.status(200).json({
+      profile: profile,
+      posts: postsDisplay
+    });
   }catch (err){
     console.error('Error finding user: ', err);
     res.status(500).json({'Error': 'Cannot find user, server error'});

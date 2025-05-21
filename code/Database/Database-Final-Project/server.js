@@ -3,7 +3,7 @@ import express from 'express';
 import cors from 'cors';
 import { dbConnect } from './db.js';
 import postsRouter from './controllers/posts.js';
-import authRouter from './controllers/users.js';
+import authRouter from './controllers/auth.js';
 
 const app = express();
 const PORT = process.env.PORT;
