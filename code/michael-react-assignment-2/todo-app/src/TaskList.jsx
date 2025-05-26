@@ -1,7 +1,3 @@
-
-
-
-
 function TaskList({ tasks, toggleCompleted, deleteTask }) {
   return (
     <ul>
