@@ -42,15 +42,12 @@ function App() {
     <>
       <div className="app">
       <h1>To-Do List</h1>
-      <form onSubmit={handleAddTask}>
-        <input
-          type="text"
-          placeholder="Add new task"
-          value={newTask}
-          onChange={(e) => setNewTask(e.target.value)}
-        />
-        <button type="submit">Add</button>
-      </form>
+      
+      <TaskForm
+      newTask={newTask}
+      setNewTask={setNewTask}
+      handleAddTask={handleAddTask}
+      />
 
       <TaskList
         tasks={tasks}
