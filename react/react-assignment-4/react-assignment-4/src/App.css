@@ -1,0 +1,98 @@
+/* App.css */
+.app-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.app-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.app-header h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.app-subtitle {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+}
+
+.posts-container {
+    min-height: 300px;
+}
+
+.loading-spinner, .error-message, .no-posts {
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 2rem;
+    color: #7f8c8d;
+}
+
+.error-message {
+    color: #e74c3c;
+}
+
+.posts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.post-card {
+    background: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.post-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.post-title {
+    font-size: 1.3rem;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    min-height: 3.5rem;
+}
+
+.read-more-btn {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+}
+
+.read-more-btn:hover {
+    background-color: #2980b9;
+}
+
+.header-info {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    justify-self: center;
+}
+
+.header-info button {
+    border-width: 0;
+    padding: 0 40px;
+    height: 2rem;
+    border-radius: 40px;
+    font-size: 19px;
+    font-family: Calibri;
+    color: #333;
+    background-color: transparent;
+    font-weight: bold;
+}
