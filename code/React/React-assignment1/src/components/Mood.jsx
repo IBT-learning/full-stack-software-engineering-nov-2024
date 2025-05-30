@@ -12,12 +12,12 @@ import './mood.css';
     { emoji: "🤒", description: "sick"}
   ];
 
-  function Mood(){
+  function Mood({name}){
     let [mood, setMood] = useState('____');
 
     return (
       <section className='moodboard'>
-        <h2> You are feeling {mood} today!</h2>
+        <h2> {name} is feeling {mood} today!</h2>
         <div className='list'>
           {moods.map((mood, i) => (
             <button key={i} onClick={() => setMood(mood.description)}>
