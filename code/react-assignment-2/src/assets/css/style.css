@@ -1,0 +1,56 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #020617;
+  color: #e2e8f0;
+}
+
+h1 {
+  color: #e2e8f0;
+}
+.app-container {
+  text-align: center;
+  margin: 20px;
+}
+
+.input-container {
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  width: 300px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #8b5cf6;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #4c1d95;
+}
+
+.task {
+  padding: 10px;
+  margin: 10px auto;
+  width: 300px;
+  border-radius: 5px;
+  background-color: #020617; 
+  color: #e2e8f0;
+  cursor: pointer;
+  border: 1px solid #ccc;
+}
+
+.task.completed {
+  text-decoration: line-through;
+  background-color: #020617;
+  color: #8b5cf6;
+  border-color: #8b5cf6;
+}
