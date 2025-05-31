@@ -1,0 +1,29 @@
+.moodboard{
+  border: 2px solid #e856ff;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin: 1rem auto;
+}
+
+.list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+button{
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  width: 6.5rem;
+  background-color: #181818;
+  border: 1px solid #181818;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+button:hover{
+  border: 1px solid #767676;
+}
