@@ -51,7 +51,6 @@ function App() {
     setSelectedTags(options);
   };
 
-  
   return (
     <>
       <div className="app-container">
