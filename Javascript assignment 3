@@ -1,0 +1,46 @@
+// --- Challenge #1: Movie Booleans ---
+
+const movieTitle = "Ghosted"; // change this to a movie you like
+const isScary = true;
+const isRomantic = true;
+
+if (isScary && isRomantic) {
+  console.log(`${movieTitle} is both romantic and scary!`);
+} else if (isRomantic) {
+  console.log(`${movieTitle} is romantic.`);
+} else if (isScary) {
+  console.log(`${movieTitle} is scary.`);
+} else {
+  console.log(`${movieTitle} is neither romantic nor scary.`);
+}
+
+// --- Extra Challenge: Adding isFunny ---
+
+const isFunny = false;
+
+// Nested conditionals to evaluate all combinations
+console.log("\nExtra Challenge with isFunny:");
+
+if (isRomantic) {
+  if (isScary) {
+    if (isFunny) {
+      console.log(`${movieTitle} is romantic, scary, and funny!`);
+    } else {
+      console.log(`${movieTitle} is romantic and scary.`);
+    }
+  } else if (isFunny) {
+    console.log(`${movieTitle} is romantic and funny.`);
+  } else {
+    console.log(`${movieTitle} is romantic.`);
+  }
+} else if (isScary) {
+  if (isFunny) {
+    console.log(`${movieTitle} is scary and funny.`);
+  } else {
+    console.log(`${movieTitle} is scary.`);
+  }
+} else if (isFunny) {
+  console.log(`${movieTitle} is funny.`);
+} else {
+  console.log(`${movieTitle} is neither romantic, scary, nor funny.`);
+}
