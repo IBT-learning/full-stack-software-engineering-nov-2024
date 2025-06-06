@@ -1,0 +1,27 @@
+// Strings Section
+
+// 1. Create a constant variable with your name
+const name = "Amina";
+
+// 2. Log the length of the string
+console.log("Length of name:", name.length);
+
+// 3. Template string: Hello, my name is ____
+console.log(`Hello, my name is ${name}`);
+
+// 4. Template string with name in ALL CAPS
+console.log(`When my friends see me they shout ${name.toUpperCase()}!`);
+
+
+// Numbers Section
+
+// Challenge 1: Result should be 4
+const originalNumber = 10; // You can pick any number
+
+const result = ((originalNumber * 2 + 8) / 2) - originalNumber;
+console.log("Result of number challenge:", result); // Should log 4
+
+// Challenge 2: Area of a circle, rounded to 4 decimal places
+const radius = 3;
+const area = Math.PI * radius * radius;
+console.log("Area of circle:", area.toFixed(4)); // toFixed returns a string
