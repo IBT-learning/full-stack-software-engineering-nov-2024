@@ -3,26 +3,20 @@ import cors from "cors";
 import dotenv from "dotenv";
 import { dbConnect } from "./db.js";
 import recipeRouter from "./controllers/recipes.js";
-import userRouter from "./controllers/users.js";
-import tokenValidation from "./middlewares/tokenValidation.js"
 
 const app = express();
 dotenv.config();
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 4000;
 
 // Middleware
 app.use(express.json());
 app.use(cors());
 
-app.use("/users", userRouter); 
-// app.use("/recipes", tokenValidation, recipeRouter)
-
-app.use("/recipes", recipeRouter)
-
+// Only recipes, without token validation
+app.use("/recipes", recipeRouter);
 
 // Start the server
 app.listen(PORT, () => {
   dbConnect();
   console.log(`[server]: listening on port ${PORT}`);
 });
-
