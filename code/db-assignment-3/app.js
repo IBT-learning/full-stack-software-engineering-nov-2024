@@ -15,7 +15,9 @@ app.use(express.json());
 app.use(cors());
 
 app.use("/users", userRouter); 
-app.use("/recipes", tokenValidation, recipeRouter)
+// app.use("/recipes", tokenValidation, recipeRouter)
+
+app.use("/recipes", recipeRouter)
 
 
 // Start the server
@@ -23,3 +25,4 @@ app.listen(PORT, () => {
   dbConnect();
   console.log(`[server]: listening on port ${PORT}`);
 });
+
