@@ -1,2 +1,98 @@
+.app {
+  max-width: 500px;
+  min-width: 400px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #1c1c1c;
+}
 
-  
+header{
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-width: 100%;
+}
+
+h1{
+  color: #dfe8f0;
+  margin: 0.1rem 0.5rem;
+  font-size: 1.5rem;
+}
+
+input{
+  height: 2rem;
+  width: 18rem;
+  border: 2px solid #961fc1;
+  margin-right: 6px;
+}
+
+.add{
+  font-size: 1.2rem;
+  height: 2rem;
+  width: 5rem;
+  /* padding: 7px; */
+  background-color: #6b1b6b;
+  border: none;
+  border-radius: 2.5px;
+  cursor: pointer;
+}
+
+input, .add{
+  vertical-align: middle;
+}
+
+.add:hover{
+  background-color: #6b1b6bbd;
+}
+
+.add:disabled {
+  background: #744e74;
+  cursor: not-allowed;
+}
+
+.task-list{
+  list-style-type: none;
+  padding: 0;
+}
+
+.task-item{
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin: 5px 0;
+  background-color: #ededed;
+  color: #1c1c1c;
+  border-radius: 4px;
+  border: 3px solid #754675;
+}
+
+.task-item.completed{
+  border: 3px solid #7d007d;
+  background-color: #e7d6d6;
+}
+
+.task-text{
+  margin: 0 10px;
+}
+
+.completed .task-text{
+  color: #828282;
+}
+
+.complete-btn{
+  width: 20px;
+  height: 20px;
+  border: 1px solid #8b8b8b;
+  background-color: #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.completed .complete-btn{
+  background-color: #613061;
+  color: #ffffff;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
