@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function Item({task, toggleComplete}){
+function Item({task, toggleComplete, deleteTask}){
   
   return(
     <li className={`task-item ${task.completed ? 'completed': ''}`}>
@@ -10,6 +10,10 @@ function Item({task, toggleComplete}){
       <span className="task-text">
         {task.task}
       </span>
+
+      <button className="delete-btn" onClick={() => deleteTask(task.id)}>
+        🗑
+      </button>
     </li>
   )
 }

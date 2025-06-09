@@ -17,7 +17,11 @@ function App() {
     setTaskList(taskList.map((task) => {
       return task.id === id ? {...task, completed : !task.completed} : task
     }));
-  }
+  };
+
+  const deleteTask = (id) => {
+    return setTaskList(taskList.filter((task) => task.id !== id));
+  };
   
   return (
     <section className='app'>
@@ -32,6 +36,7 @@ function App() {
                   key={task.id}
                   task={task}
                   toggleComplete={toggleComplete}
+                  deleteTask={deleteTask}
                />
        })}
       </ul>

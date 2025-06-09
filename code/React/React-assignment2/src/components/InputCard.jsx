@@ -6,8 +6,7 @@ function InputCard({setTaskList}){
 
 
   const onAdd = () => {
-    // you want to add the new task to the taskList array when you hit the add button 
-
+    // I want to add the new task to the taskList array when I hit the add button 
      if (!taskInput.trim()) return;
      
     const newTask = {

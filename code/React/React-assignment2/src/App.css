@@ -1,6 +1,5 @@
 .app {
-  max-width: 500px;
-  min-width: 400px;
+  width: 520px;
   margin: 0 auto;
   padding: 30px;
   background-color: #1c1c1c;
@@ -21,9 +20,17 @@ h1{
 
 input{
   height: 2rem;
-  width: 18rem;
+  width: 20rem;
   border: 2px solid #961fc1;
+  border-radius: 2px;
   margin-right: 6px;
+  font-size: 1rem;
+}
+
+input:focus{
+  outline: none;
+  border-color: #961fc1;
+  box-shadow: 0 0 0 3px #c62bff4d;
 }
 
 .add{
@@ -50,6 +57,21 @@ input, .add{
   cursor: not-allowed;
 }
 
+.delete-btn {
+  background: none;
+  border: none;
+  color: #444444;
+  font-size: 1.2em;
+  cursor: pointer;
+  margin-left: auto;
+  font-weight: 700;
+}
+
+.delete-btn:hover{
+  color: #2a2a2a;
+  transform: scale(1.1);
+}
+
 .task-list{
   list-style-type: none;
   padding: 0;
@@ -58,16 +80,17 @@ input, .add{
 .task-item{
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding: 10px;
-  margin: 5px 0;
+  margin: 6px 0;
   background-color: #ededed;
   color: #1c1c1c;
   border-radius: 4px;
-  border: 3px solid #754675;
+  border: 3px solid #695369;
 }
 
 .task-item.completed{
-  border: 3px solid #7d007d;
+  border: 3px solid #850185;
   background-color: #e7d6d6;
 }
 
@@ -86,6 +109,10 @@ input, .add{
   background-color: #ffffff;
   border-radius: 50%;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
 }
 
 .completed .complete-btn{
