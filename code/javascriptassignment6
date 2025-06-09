@@ -1,0 +1,77 @@
+// === Initial restaurant object ===
+const restaurant = {
+  name: "Gigi's Pizza Shack",
+  address: "123 Main St, Portland OR 97200",
+  tags: ["pizza", "family", "dine-in", "take-out", "arcade"],
+  website: "http://www.gigispizza.com/",
+  staff: {
+    owner: {
+      name: "Gigi",
+      "phone number": "123-234-3456",
+    },
+    manager: {
+      name: "Rose",
+      "phone number": "234-345-4567",
+    },
+    chef: {
+      name: "Musa",
+      "phone number": "345-456-5678",
+    },
+  },
+};
+
+// === Challenge #1: Accessing Data ===
+console.log("Restaurant name:", restaurant.name);
+console.log("Third tag:", restaurant.tags[2]);
+console.log("Chef's name:", restaurant.staff.chef.name);
+
+console.log("Tags:");
+for (const tag of restaurant.tags) {
+  console.log(tag);
+}
+
+// === Challenge #2: Updating Data ===
+// Change address
+restaurant.address = "456 Tech Ave, Nairobi, Kenya";
+
+// Hire yourself
+restaurant.staff.developer = {
+  name: "Faith",
+  "phone number": "555-123-4567",
+};
+
+// Remove website
+delete restaurant.website;
+
+console.log("\nUpdated Restaurant:");
+console.log(restaurant);
+
+// === Challenge #3: Creating a new object ===
+const menu = {
+  pizza: 8.0,
+  soda: 2.0,
+  salad: 4.5,
+  iceCream: 3.0,
+
+  // === Challenge #4: Object Method ===
+  order(items) {
+    let total = 0;
+    for (const item of items) {
+      if (this[item] !== undefined) {
+        total += this[item];
+      }
+    }
+    return total;
+  },
+};
+
+console.log("\nMenu Order Examples:");
+console.log(menu.order(["pizza", "soda"])); // 10.0
+console.log(menu.order(["pizza", "soda", "iceCream"])); // 13.0
+console.log(menu.order(["pizza", "fries"])); // 8.0 (fries ignored)
+
+// === Extra Challenge: Add menu to restaurant ===
+restaurant.menu = menu;
+
+console.log("\nOrder from restaurant's menu:");
+console.log(restaurant.menu.order(["salad", "iceCream", "unknown"])); // 7.5

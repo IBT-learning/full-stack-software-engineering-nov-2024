@@ -1,0 +1,48 @@
+// === Challenge #1 ===
+
+const movieTitle = "Ghosted";
+const isScary = false;
+const isRomantic = true;
+
+// Basic conditionals
+if (isScary && isRomantic) {
+    console.log(`${movieTitle} is both romantic and scary!`);
+} else if (isRomantic) {
+    console.log(`${movieTitle} is romantic.`);
+} else if (isScary) {
+    console.log(`${movieTitle} is scary.`);
+} else {
+    console.log(`${movieTitle} is neither romantic nor scary.`);
+}
+
+// === Extra Challenge ===
+
+const isFunny = true;
+
+console.log("\n=== Extended with isFunny ===");
+
+if (isScary) {
+    if (isRomantic) {
+        if (isFunny) {
+            console.log(`${movieTitle} is a romantic, scary, and funny movie!`);
+        } else {
+            console.log(`${movieTitle} is a romantic and scary movie.`);
+        }
+    } else {
+        if (isFunny) {
+            console.log(`${movieTitle} is a scary and funny movie.`);
+        } else {
+            console.log(`${movieTitle} is just scary.`);
+        }
+    }
+} else if (isRomantic) {
+    if (isFunny) {
+        console.log(`${movieTitle} is a romantic and funny movie.`);
+    } else {
+        console.log(`${movieTitle} is just romantic.`);
+    }
+} else if (isFunny) {
+    console.log(`${movieTitle} is just funny.`);
+} else {
+    console.log(`${movieTitle} is neither scary, romantic, nor funny.`);
+}

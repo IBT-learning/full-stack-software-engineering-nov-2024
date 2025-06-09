@@ -1,0 +1,39 @@
+// === Challenge #1: Capitalize ===
+function capitalize(word) {
+    return word.toUpperCase();
+}
+
+console.log(capitalize("hello")); // Output: HELLO
+
+
+// === Challenge #2: Percentage Calculator ===
+function percentCalc(amount, percentage) {
+    return (amount * percentage) / 100;
+}
+
+console.log(percentCalc(200, 20)); // Output: 40
+
+
+// === Challenge #3: Divisible ===
+function divisible(dividend, divisor) {
+    return dividend % divisor === 0;
+}
+
+console.log(divisible(6, 3));  // Output: true
+console.log(divisible(15, 4)); // Output: false
+
+
+// === Challenge #4: Friend, Enemy ===
+function greeting(firstName, status) {
+    if (status === "friend") {
+        return `Hello ${firstName}!`;
+    } else if (status === "enemy") {
+        return `Go away ${firstName}!`;
+    } else {
+        return `I don't know you, ${firstName}. Are you friend or foe?`;
+    }
+}
+
+console.log(greeting("Superman", "friend"));    // Output: Hello Superman!
+console.log(greeting("Lex Luthor", "enemy"));   // Output: Go away Lex Luthor!
+console.log(greeting("Batman", "frenemy"));     // Output: I don't know you, Batman. Are you friend or foe?

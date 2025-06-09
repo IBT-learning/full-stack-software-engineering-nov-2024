@@ -1,0 +1,48 @@
+// === Challenge #1 ===
+const wordList = ["every", "word", "in", "this", "array", "should", "be", "capitalized"];
+
+console.log("=== Capitalized Words ===");
+
+// Capitalize each word and log it
+for (const word of wordList) {
+    const capitalizedWord = word[0].toUpperCase() + word.slice(1);
+    console.log(capitalizedWord);
+}
+
+// Extra: Build a new array with capitalized words
+const capitalizedArray = [];
+let capitalizedString = "";
+
+for (const word of wordList) {
+    const cap = word[0].toUpperCase() + word.slice(1);
+    capitalizedArray.push(cap);
+    capitalizedString += cap + " ";
+}
+
+console.log("\n=== New Capitalized Array ===");
+console.log(capitalizedArray);
+
+console.log("\n=== Capitalized String ===");
+console.log(capitalizedString.trim());
+
+
+// === Challenge #2 ===
+console.log("\n=== Divisible by 3 ===");
+
+for (let i = 1; i <= 10; i++) {
+    const isDivisible = i % 3 === 0;
+    console.log(`${i} is divisible by 3? ${isDivisible}`);
+}
+
+
+// === Extra: FizzBuzz ===
+console.log("\n=== FizzBuzz (1 to 40) ===");
+
+for (let i = 1; i <= 40; i++) {
+    let output = "";
+
+    if (i % 3 === 0) output += "Fizz";
+    if (i % 5 === 0) output += "Buzz";
+
+    console.log(output ? `${i}: ${output}` : `${i}`);
+}
