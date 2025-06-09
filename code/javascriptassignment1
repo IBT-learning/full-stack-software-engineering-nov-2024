@@ -1,0 +1,31 @@
+// === STRINGS ===
+
+// 1. Create a constant variable with your name
+const myName = "Faith";
+
+// 2. Log the length of the string
+console.log("Name length:", myName.length);
+
+// 3. Log: "Hello, my name is ___"
+console.log(`Hello, my name is ${myName}`);
+
+// 4. Log: "When my friends see me they shout ___!" with name in all caps
+console.log(`When my friends see me they shout ${myName.toUpperCase()}!`);
+
+
+// === NUMBERS ===
+
+// Challenge 1
+const originalNumber = 20; // You can choose any number
+
+const result = ((originalNumber * 2 + 8) / 2) - originalNumber;
+
+console.log("Challenge 1 result:", result); // Should log 4
+
+
+// Challenge 2
+const radius = 3;
+const area = Math.PI * Math.pow(radius, 2);
+const roundedArea = area.toFixed(4); // Rounds to 4 decimal places
+
+console.log(`Area of a circle with radius ${radius}:`, roundedArea);
