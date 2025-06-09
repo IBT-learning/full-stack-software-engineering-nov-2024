@@ -1,0 +1,55 @@
+function guessTheNumber() {
+  alert("Think of a number between 1 and 100 (inclusive), and I'll try to guess it!");
+
+  let low = 1;
+  let high = 100;
+  let guesses = 0;
+  let userResponse = "";
+
+  while (low <= high) {
+    let guess = Math.floor((low + high) / 2);
+    guesses++;
+
+    // Ask user if the number is higher, lower, or correct compared to guess
+    userResponse = prompt(
+      `Is your number higher (h), lower (l), or correct (c) compared to ${guess}? Please enter 'h', 'l', or 'c'.`
+    );
+
+    if (!userResponse) {
+      alert("Please enter 'h', 'l', or 'c'. Let's try again.");
+      guesses--; // don't count invalid input as a guess
+      continue;
+    }
+
+    userResponse = userResponse.toLowerCase();
+
+    if (userResponse === "c") {
+      alert(`I guessed it! Your number is ${guess}. It took me ${guesses} guesses.`);
+      break;
+    } else if (userResponse === "h") {
+      low = guess + 1;
+    } else if (userResponse === "l") {
+      high = guess - 1;
+    } else {
+      alert("Invalid input. Please enter only 'h' (higher), 'l' (lower), or 'c' (correct).");
+      guesses--; // don't count invalid input as a guess
+    }
+  }
+
+  if (low > high) {
+    alert("Hmm, something doesn't add up. Are you sure you gave correct answers?");
+  }
+}
+
+function playGame() {
+  do {
+    guessTheNumber();
+  } while (
+    prompt("Do you want to play again? (yes/no)").toLowerCase().startsWith("y")
+  );
+
+  alert("Thanks for playing! Goodbye.");
+}
+
+// Start the game
+playGame();
