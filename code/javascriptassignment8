@@ -1,0 +1,64 @@
+// === Challenge #1: Practice .filter() ===
+const numbers = [1,2,3,4,5,6,7,8,9,10];
+
+const largerThan7 = numbers.filter(num => num > 7);
+console.log("Numbers larger than 7:", largerThan7);
+
+const evenNumbers = numbers.filter(num => num % 2 === 0);
+console.log("Even numbers:", evenNumbers);
+
+const divisibleBy3 = numbers.filter(num => num % 3 === 0);
+console.log("Numbers divisible by 3:", divisibleBy3);
+
+// === Challenge #2: Practice .map() ===
+const squares = numbers.map(num => num * num);
+console.log("Squares:", squares);
+
+const halves = numbers.map(num => num / 2);
+console.log("Halves:", halves);
+
+// === Challenge #3: Using .filter() to filter objects ===
+const prices = [
+  { product: "shoes", price: 50, inStock: true },
+  { product: "light bulb", price: 3, inStock: true },
+  { product: "stuffed animal", price: 15, inStock: false },
+  { product: "jacket", price: 75, inStock: false },
+  { product: "keychain", price: 4, inStock: true },
+];
+
+const lessThan20 = prices.filter(item => item.price < 20);
+console.log("Products costing less than $20:", lessThan20);
+
+const inStockItems = prices.filter(item => item.inStock);
+console.log("Products in stock:", inStockItems);
+
+const inStockAndCheap = prices.filter(item => item.inStock && item.price < 20);
+console.log("Products in stock and less than $20:", inStockAndCheap);
+
+// === Challenge #4: Using .map() to map objects ===
+// Sale: 25% off on all items (just reduce price)
+const saleAll = prices.map(item => ({
+  ...item,
+  price: Number((item.price * 0.75).toFixed(2))
+}));
+console.log("All items 25% off:", saleAll);
+
+// Sale only on items > $10
+const saleAbove10 = prices.map(item => {
+  if (item.price > 10) {
+    return {...item, price: Number((item.price * 0.75).toFixed(2))};
+  } else {
+    return {...item};
+  }
+});
+console.log("Items > $10 at 25% off:", saleAbove10);
+
+// Ad strings for sale
+const saleAds = saleAbove10.map(item => 
+  `${item.product} are on sale for only $${item.price.toFixed(2)}!`
+);
+console.log("Sale Ads:", saleAds);
+
+// === Extra challenge: reduce to join all ads into one string ===
+const allAdsString = saleAds.reduce((acc, curr) => acc + " " + curr, "").trim();
+console.log("All ads combined:", allAdsString);
