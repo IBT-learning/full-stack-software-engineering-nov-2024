@@ -1,69 +1,109 @@
-/* Reset margins and paddings */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
+/* General Styles */
 body {
-  font-family: sans-serif;
-  height: 100vh;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
 }
 
-#wrapper {
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  grid-template-columns: 150px 1fr 200px;
-  grid-template-areas:
-    "header header header"
-    "sidebar main right"
-    "footer footer footer";
-  font-size: 2em;
-  gap: 1rem;
+/* Heading Styles */
+h1 {
+    margin-top: 20px;
 }
 
-/* Grid area assignments */
-header {
-  grid-area: header;
-  background: #4CAF50;
-  color: white;
-  padding: 1rem;
-  text-align: center;
+h3 {
+    margin-top: 20px;
 }
 
-aside.left {
-  grid-area: sidebar;
-  background: #f4f4f4;
-  padding: 1rem;
+/* Bubble Styles */
+.bubble {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    color: white;
 }
 
-main {
-  grid-area: main;
-  background: #fff;
-  padding: 1rem;
+/* Bubble Colors */
+.blue {
+    background-color: blue;
 }
 
-aside.right {
-  grid-area: right;
-  background: #ddd;
-  padding: 1rem;
+.red {
+    background-color: red;
 }
 
-footer {
-  grid-area: footer;
-  background: #333;
-  color: white;
-  text-align: center;
-  padding: 1rem;
+.green {
+    background-color: green;
 }
 
-/* DO NOT CHANGE ANYTHING BELOW THIS LINE  */
-#wrapper > * {
-  background-color: #ddd;
-  min-height: 15vh;
-  padding: 0.5em;
+/* Flexbox Challenge 1 */
+.challenge-1 {
+    display: flex;
+    justify-content: center;
 }
 
-article {
-  height: 85vh;
+/* Flexbox Challenge 2 */
+.challenge-2 {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+}
+
+/* Flexbox Challenge 3 */
+.challenge-3 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Flexbox Challenge 4 */
+.challenge-4 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Flexbox Challenge 5 */
+.challenge-5 {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Flexbox Challenge 6 */
+.challenge-6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.challenge-6 .bubble {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Flexbox Challenge 7 */
+.challenge-7 {
+    display: flex;
+}
+
+.challenge-7 .red {
+    flex-grow: 1;
+}
+
+/* Flexbox Challenge 8 */
+.challenge-8 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.challenge-8 .red {
+    align-self: flex-end;
 }
