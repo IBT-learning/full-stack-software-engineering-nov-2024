@@ -1,5 +1,6 @@
 {
   "devDependencies": {
+    "supertest": "^7.1.1",
     "vitest": "^3.2.3"
   },
   "name": "test-server",
@@ -11,12 +12,14 @@
     "cac": "^6.7.14",
     "chai": "^5.2.0",
     "check-error": "^2.1.1",
+    "cors": "^2.8.5",
     "debug": "^4.4.1",
     "deep-eql": "^5.0.2",
     "es-module-lexer": "^1.7.0",
     "esbuild": "^0.25.5",
     "estree-walker": "^3.0.3",
     "expect-type": "^1.2.1",
+    "express": "^5.1.0",
     "fdir": "^6.4.5",
     "js-tokens": "^9.0.1",
     "loupe": "^3.1.3",

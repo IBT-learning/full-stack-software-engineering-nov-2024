@@ -4,7 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "vitest",
     "start": "node --watch server.js"
   },
   "keywords": [],
@@ -20,5 +20,8 @@
     "express": "^5.1.0",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.14.1"
+  },
+  "devDependencies": {
+    "vitest": "^3.2.3"
   }
 }

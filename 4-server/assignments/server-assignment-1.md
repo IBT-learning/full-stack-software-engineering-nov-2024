@@ -18,23 +18,23 @@ If you run into trouble with any of these steps, reach out to Danny or Adesoji. 
 
 1. create a new directory somewhere in your `code` folder
 1. `cd` into it
-1. create an `server.js` file in this directory
+1. create an `app.js` file in this directory
    - in this file, add a console log with any message
 1. run `npm init -y`
 1. in the new `package.json` file:
-   - add a new "start" script with this value: `node --watch server.js`
+   - add a new "start" script with this value: `node --watch app.js`
    - add the line: `"type": "module",`
-1. in your terminal run `npm start`; you should see the message you wrote in the `server.js`
+1. in your terminal run `npm start`; you should see the message you wrote in the `app.js`
 1. press `ctrl c` or `cmd c` to end the running process in your terminal
 
 ### Step 2: Use the "chalk" package
 
 1. run `npm install chalk`
-1. in your `server.js`
+1. in your `app.js`
    - add this line: `import chalk from "chalk"`
    - and this line: `console.log(chalk.bold("hello"))`
 1. in your terminal, run `npm start`; you should see "hello" in **bold** as output
-1. you can now make further changes to your `server.js` and it should automatically refresh the output in your terminal
+1. you can now make further changes to your `app.js` and it should automatically refresh the output in your terminal
 
 ### Step 3: Have some fun!
 

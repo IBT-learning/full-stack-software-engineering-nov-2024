@@ -4,7 +4,7 @@
 
 Look at the [npm notes](../npm-notes.md) for instructions on setting up your npm project. The only dependency you will need to install for this assignment is `express`.
 
-Once your npm project is set up with express, in your `server.js`
+Once your npm project is set up with express, in your `app.js`
 
 1. import express
 1. create the `server` object using the `express` function you imported
