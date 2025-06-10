@@ -1,47 +1,69 @@
-body {
-  font-family: sans-serif;
-  max-width: 600px;
-  margin: 2rem auto;
-  padding: 1rem;
-  background-color: #f4f4f4;
+/* Reset margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-h1 {
+body {
+  font-family: sans-serif;
+  height: 100vh;
+}
+
+#wrapper {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 150px 1fr 200px;
+  grid-template-areas:
+    "header header header"
+    "sidebar main right"
+    "footer footer footer";
+  font-size: 2em;
+  gap: 1rem;
+}
+
+/* Grid area assignments */
+header {
+  grid-area: header;
+  background: #4CAF50;
+  color: white;
+  padding: 1rem;
   text-align: center;
 }
 
-input {
-  display: block;
-  margin: 1rem auto;
-  font-size: 1rem;
-  padding: 0.25rem;
+aside.left {
+  grid-area: sidebar;
+  background: #f4f4f4;
+  padding: 1rem;
 }
 
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-li {
+main {
+  grid-area: main;
   background: #fff;
-  margin: 0.5rem 0;
-  padding: 0.75rem;
-  border-radius: 5px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  padding: 1rem;
 }
 
-.completed {
-  text-decoration: line-through;
-  color: gray;
+aside.right {
+  grid-area: right;
+  background: #ddd;
+  padding: 1rem;
 }
 
-.check-btn {
-  cursor: pointer;
-  padding: 0.25rem 0.5rem;
-  background-color: lightblue;
-  border: none;
-  border-radius: 4px;
-  font-size: 0.9rem;
+footer {
+  grid-area: footer;
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* DO NOT CHANGE ANYTHING BELOW THIS LINE  */
+#wrapper > * {
+  background-color: #ddd;
+  min-height: 15vh;
+  padding: 0.5em;
+}
+
+article {
+  height: 85vh;
 }
