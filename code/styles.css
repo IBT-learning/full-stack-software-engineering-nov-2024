@@ -1,0 +1,47 @@
+body {
+  font-family: sans-serif;
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: #f4f4f4;
+}
+
+h1 {
+  text-align: center;
+}
+
+input {
+  display: block;
+  margin: 1rem auto;
+  font-size: 1rem;
+  padding: 0.25rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #fff;
+  margin: 0.5rem 0;
+  padding: 0.75rem;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.check-btn {
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+  background-color: lightblue;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
