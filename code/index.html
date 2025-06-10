@@ -4,7 +4,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Lectures Diary - Home</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -15,28 +14,33 @@
     </nav>
   </header>
 
-  <main class="post-feed">
-    <article class="post">
-      <div class="post-header">
-        <img src="https://images.unsplash.com/photo-1502685104226-ee32379fefbe?w=200" alt="User icon" class="user-icon" />
-        <div>
-          <p class="username">JaneDoe</p>
-          <time datetime="2025-06-10">June 10, 2025</time>
-        </div>
-      </div>
-      <p class="post-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    </article>
-
-    <article class="post">
-      <div class="post-header">
-        <img src="https://images.unsplash.com/photo-1502685104226-ee32379fefbe?w=200" alt="User icon" class="user-icon" />
-        <div>
-          <p class="username">AlexTech</p>
-          <time datetime="2025-06-09">June 9, 2025</time>
-        </div>
-      </div>
-      <p class="post-content">Aliquam erat volutpat. Curabitur sit amet fermentum erat.</p>
-    </article>
+  <main id="blog-posts">
+    <!-- Posts will be populated here by JavaScript -->
   </main>
+
+  <script>
+    // Fetch posts
+    fetch("https://jsonplaceholder.typicode.com/posts?_limit=5")
+      .then(res => res.json())
+      .then(posts => {
+        const blogContainer = document.getElementById("blog-posts");
+        posts.forEach(post => {
+          const postElement = document.createElement("article");
+          postElement.className = "blog-post";
+          postElement.innerHTML = `
+            <div class="post-header">
+              <img src="https://i.pravatar.cc/40?img=${post.userId}" alt="User icon" class="user-icon" />
+              <span class="username">User ${post.userId}</span>
+              <span class="timestamp">Just now</span>
+            </div>
+            <div class="post-content">
+              <h2>${post.title}</h2>
+              <p>${post.body}</p>
+            </div>
+          `;
+          blogContainer.appendChild(postElement);
+        });
+      });
+  </script>
 </body>
 </html>

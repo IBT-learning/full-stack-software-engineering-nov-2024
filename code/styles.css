@@ -1,51 +1,53 @@
+/* Reset */
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f9f9f9;
-  color: #333;
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  padding: 1rem;
+  background: #f4f4f4;
 }
 
 header {
-  background-color: #005f73;
-  color: white;
+  background: #333;
+  color: #fff;
   padding: 1rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  margin-bottom: 1rem;
+}
+
+header h1 {
+  margin-bottom: 0.5rem;
 }
 
 nav a {
-  color: white;
+  color: #ffd700;
+  margin-right: 1rem;
   text-decoration: none;
-  margin-left: 1rem;
 }
 
-.post-feed, .user-posts {
-  padding: 1rem;
+main {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
-.post {
-  background: white;
+/* Blog Post Card */
+.blog-post {
+  background: #fff;
   padding: 1rem;
-  border-radius: 0.5rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
 .post-header {
   display: flex;
-  gap: 0.5rem;
   align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .user-icon {
@@ -54,50 +56,61 @@ nav a {
   border-radius: 50%;
 }
 
-.profile {
-  padding: 1rem;
+.username {
+  font-weight: bold;
+  color: #333;
+}
+
+.timestamp {
+  margin-left: auto;
+  color: gray;
+  font-size: 0.8rem;
+}
+
+.post-content h2 {
+  margin: 0.5rem 0;
+  font-size: 1.25rem;
+  color: #111;
+}
+
+.post-content p {
+  color: #444;
+}
+
+/* Profile */
+.profile-section {
   display: flex;
-  flex-direction: column;
   align-items: center;
   gap: 1rem;
+  margin-bottom: 2rem;
 }
 
 .profile-photo {
-  width: 100px;
   border-radius: 50%;
+  width: 100px;
 }
 
-/* Desktop styles */
-@media (min-width: 768px) {
-  .post-feed, .user-posts {
+.bio h2 {
+  margin-bottom: 0.5rem;
+}
+
+@media (min-width: 600px) {
+  main {
     flex-direction: row;
     flex-wrap: wrap;
   }
 
-  .post {
-    flex: 1 1 calc(50% - 2rem);
-    margin: 1rem;
+  .blog-post {
+    width: 48%;
   }
 
-  .profile {
-    flex-direction: row;
-    justify-content: center;
+  .profile-section {
     gap: 2rem;
   }
 }
-@media (min-width: 600px) and (max-width: 1024px) {
-  .post-feed, .user-posts {
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 1rem;
-  }
 
-  .post {
-    flex: 1 1 calc(100% - 2rem); /* Full width on tablet */
-  }
-
-  .profile {
-    flex-direction: column;
-    align-items: center;
+@media (min-width: 900px) {
+  .blog-post {
+    width: 30%;
   }
 }
