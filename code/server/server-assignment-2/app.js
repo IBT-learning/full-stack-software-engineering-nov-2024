@@ -10,12 +10,12 @@ app.get('/', (req, res) => {
 })
 
 app.get('/about', (req, res) => {
-    res.send("This is me in my little world; lover of football and more.")
-    res.send("This is me in my little world; lover of football and more.")
+    res.send({message: "This is me in my little world; lover of football and more."})
+    // res.send("This is me in my little world; lover of football and more.")
 })
 
 app.get('/greet/:username', (req, res) => {
-    res.send(`Welcome, ${req.params.username}`);
+    res.send({message:`Welcome, ${req.params.username}`});
 })
 app.get("/favorite?", (req, res) => {
     const favouriteThing = req.query.fave;
@@ -30,13 +30,10 @@ app.get("/favorite?", (req, res) => {
 
     if (queryEntries.length > 0) {
         const response = queryEntries.map(([key, value]) => `My favorite ${key} is ${value}`).join(", ");
-        res.send(response);
+        res.send({message: response});
     } else {
-        res.send("Please provide some favorite things in the query parameters.");
+        res.send({message: "Please provide some favorite things in the query parameters."});
     }
 })
 
-app.listen(4000, () => {
-    console.log('Server started on port:4000 ');
-})
-
+export default app;
