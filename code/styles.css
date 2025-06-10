@@ -1,133 +1,48 @@
-/* General Styles */
 body {
+    font-family: Arial, sans-serif;
     margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
 }
 
 header {
-    background-color: #a7cddf;
-    font-size: 2em;
-    display: flex;
-    justify-content: center;
-    padding: 1em;
-}
-
-#profile {
-    background-color: #f9b8b6;
-    padding: 1em;
-    margin: 1em;
-}
-
-#profile > img {
-    outline: 0.3rem solid #fff;
-    margin: 0.5em 0;
-    width: 100%;
-    height: auto;
-}
-
-#profile > span {
-    font-size: 1.3em;
-    font-weight: 600;
-    padding-bottom: 1em;
-}
-
-.card {
-    border: 3px solid #006d9e;
-    margin: 0.2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.card img {
-    width: 100%;
-    height: auto;
-}
-
-.card .photo-label {
-    padding: 0.5rem;
-    background-color: #fff;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
     text-align: center;
 }
 
-/* Media Queries */
-
-/* Regular (Mobile) Layout */
-#page-wrapper {
-    padding: 1em;
+h1 {
+    margin: 0;
 }
 
-/* 500px Layout */
-@media (min-width: 500px) {
-    #page-wrapper {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 1rem;
-    }
-
-    #profile {
-        flex: 1 1 100%; /* Takes full width */
-    }
-
-    #gallery {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 1rem;
-        justify-content: center;
-    }
-
-    .card {
-        flex: 1 1 calc(50% - 1rem); /* Two columns */
-    }
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 }
 
-/* 750px Layout */
-@media (min-width: 750px) {
-    #page-wrapper {
-        display: flex;
-        flex-wrap: nowrap;
-        gap: 2rem;
-    }
-
-    #profile {
-        flex: 1 1 25%; /* Profile takes 1/4 of the width */
-    }
-
-    #gallery {
-        flex: 1 1 75%; /* Gallery takes 3/4 of the width */
-        display: flex;
-        flex-wrap: wrap;
-        gap: 1rem;
-    }
-
-    .card {
-        flex: 1 1 calc(33.33% - 1rem); /* Three columns */
-    }
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
 }
 
-/* 1000px Layout */
-@media (min-width: 1000px) {
-    #page-wrapper {
-        display: grid;
-        grid-template-columns: 1fr 3fr; /* Two-column grid: Profile and Gallery */
-        grid-gap: 2rem;
-        align-items: start;
-    }
+ul {
+    margin: 10px 0;
+    padding: 0 20px;
+}
 
-    #profile {
-        grid-column: 1 / 2; /* Profile in the first column */
-        grid-row: 1;
-    }
-
-    #gallery {
-        grid-column: 2 / 3; /* Gallery in the second column */
-        display: grid;
-        grid-template-columns: repeat(3, 1fr); /* Three equal columns */
-        grid-gap: 1rem;
-    }
-
-    .card {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
 }
