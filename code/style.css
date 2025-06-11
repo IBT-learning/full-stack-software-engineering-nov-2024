@@ -1,0 +1,67 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #e1fdd8;
+}
+h1{
+    font-size: 60px;
+    text-align: center;
+    color: rgb(8, 27, 44);
+}
+h2{
+    font-size: 40px;
+    margin-top: 10px;
+    text-align: center;
+    text-transform: capitalize;
+}
+.jellof,.egusi,.efo{
+    margin: 10px;
+   
+}
+h4{
+    font-size: 30px;
+    color: rgb(18, 1, 21);
+}
+p, span{
+    font-size: 20px;
+}
+.jellof img, .egusi img, .efo img{
+    display: block;
+    width: 50%;
+    margin: auto;
+    padding: 10px 0;
+}
+h5{
+    margin-top: 10px;
+    font-size: 25px;
+    padding: 5px;
+}
+ol, ul{
+    padding: 10px;
+    font-size: 20px;
+    list-style-position: inside;
+   box-shadow: 3px 3px 10px 3px rgb(170, 189, 190);
+    background-color: rgb(235, 226, 215);
+}
+#food_img{
+   text-align: center;
+   max-width: 100%;
+   background-color: #f5f5dc;
+}
+#food_img img{
+    display: inline-block;
+    width: 30%;
+    margin: 1%;
+}
+a{
+    text-decoration: none;
+    color: rgb(10, 71, 83);
+    font-size: 20px;
+    display: block;
+}
+a:hover{
+    color: rgb(66, 75, 75);
+}
