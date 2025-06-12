@@ -15,7 +15,7 @@ function isOwner(recipe, userId) {
 }
 
 // 🔹 GET all recipes (protected)
-router.get("/", tokenValidation, async (req, res) => {
+router.get("/",  async (req, res) => {
   try {
     const recipes = await Recipe.find();
     res.status(200).json(recipes);
@@ -46,7 +46,7 @@ router.get("/user/:userId", tokenValidation, async (req, res) => {
 });
 
 // 🔹 GET a single recipe by ID (new)
-router.get("/:recipeId", tokenValidation, async (req, res) => {
+router.get("/:recipeId", async (req, res) => {
   try {
     const { recipeId } = req.params;
     if (!mongoose.Types.ObjectId.isValid(recipeId)) {
