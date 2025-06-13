@@ -7,7 +7,7 @@ import { mongoose } from "../db.js";
 import Recipe from "../models/Recipe.js";
 import User from "../models/User.js";
 const JWT_KEY = process.env.JWT_KEY;
-import tokenValidation from "../middlewares/tokenValidation.js";
+// import tokenValidation from "../middlewares/tokenValidation.js";
 
 // 🔁 Reusable ownership check helper
 function isOwner(recipe, userId) {
@@ -25,7 +25,7 @@ router.get("/",  async (req, res) => {
 });
 
 // 🔹 GET recipes by user (protected)
-router.get("/user/:userId", tokenValidation, async (req, res) => {
+router.get("/user/:userId", async (req, res) => {
   try {
     const { userId } = req.params;
 
@@ -65,7 +65,7 @@ router.get("/:recipeId", async (req, res) => {
 });
 
 // 🔹 POST (create new recipe)
-router.post("/", tokenValidation, async (req, res) => {
+router.post("/", async (req, res) => {
   try {
     const data = req.body;
 
@@ -90,7 +90,7 @@ router.post("/", tokenValidation, async (req, res) => {
 });
 
 // 🔹 PUT (update recipe)
-router.put("/update/:recipeId", tokenValidation, async (req, res) => {
+router.put("/update/:recipeId", async (req, res) => {
   try {
     const { recipeId } = req.params;
     if (!mongoose.Types.ObjectId.isValid(recipeId)) {
@@ -114,7 +114,7 @@ router.put("/update/:recipeId", tokenValidation, async (req, res) => {
 });
 
 // 🔹 DELETE (remove recipe)
-router.delete("/delete/:recipeId", tokenValidation, async (req, res) => {
+router.delete("/delete/:recipeId",async (req, res) => {
   try {
     const { recipeId } = req.params;
     if (!mongoose.Types.ObjectId.isValid(recipeId)) {

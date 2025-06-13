@@ -2,20 +2,46 @@ import React, { useEffect, useState } from "react";
 import { getRecipes, deleteRecipe } from "../api";
 import { Link } from "react-router-dom";
 
+// const RecipePage = () => {
+//   const [recipes, setRecipes] = useState([]);
+
+//   const load = async () => {
+//     const data = await getRecipes();
+//     setRecipes(data);
+//   };
+
+//   useEffect(() => { load(); }, []);
+
+//   const handleDelete = async (id) => {
+//   await deleteRecipe(id);
+//     load();
+//   };
+
 const RecipePage = () => {
   const [recipes, setRecipes] = useState([]);
 
-  const load = async () => {
-    const data = await getRecipes();
-    setRecipes(data);
-  };
+  useEffect(() => {
+    const fetchRecipes = async () => {
+      try {
+        const data = await getRecipes();
+        setRecipes(data);
+      } catch (error) {
+        console.error(error.message);
+      }
+    };
 
-  useEffect(() => { load(); }, []);
+    fetchRecipes();
+  }, []);
 
   const handleDelete = async (id) => {
-    await deleteRecipe(id);
-    load();
+    try {
+      await deleteRecipe(id);
+      setRecipes((prevRecipes) => prevRecipes.filter((r) => r._id !== id));
+    } catch (error) {
+      console.error(error.message);
+    }
   };
+
 
   return (
     <div>
