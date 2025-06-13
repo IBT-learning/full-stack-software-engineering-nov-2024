@@ -1,0 +1,127 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body style */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #ece9e6, #ffffff);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+/* Container */
+.todo-container {
+  width: 100%;
+  max-width: 500px;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+  transition: 0.3s ease;
+}
+
+.todo-container:hover {
+  transform: translateY(-3px);
+}
+
+/* Title */
+.todo-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #333;
+}
+
+/* Form */
+form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+input[type="text"] {
+  flex-grow: 1;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: 0.2s;
+}
+
+input[type="text"]:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.2);
+}
+
+button {
+  padding: 12px 18px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* List */
+ul {
+  list-style: none;
+}
+
+/* Task item */
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f9f9f9;
+  padding: 12px 14px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  border-left: 4px solid #007bff;
+  transition: background 0.3s, transform 0.2s;
+}
+
+li:hover {
+  transform: scale(1.01);
+  background: #f1f1f1;
+}
+
+li.completed {
+  background-color: #d4edda;
+  color: #555;
+  text-decoration: line-through;
+  border-left-color: #28a745;
+}
+
+li span {
+  flex-grow: 1;
+  cursor: pointer;
+}
+
+/* Delete button */
+li button {
+  background: none;
+  border: none;
+  color: #dc3545;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 0 8px;
+}
+
+li button:hover {
+  color: #a71d2a;
+}
