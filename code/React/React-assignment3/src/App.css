@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+.container{
+  max-width: 600px;
+}
+
+h1{
+  color: #a0d22c;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+select{
+  height: 1.8rem;
+  font-size: 1rem;
+  border: none;
+  background-color: #434343;
+  padding: 0.3rem;
+  border-radius: 4px;
+}
+
+option{
+  background-color: #3b3b3b;
+}
+
+.quote{
+  font-size: 1.1rem;
+  color: #c3dc90;
+}
