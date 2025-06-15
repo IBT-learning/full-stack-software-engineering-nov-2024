@@ -1,0 +1,24 @@
+# Environment variables (never commit secrets!)
+.env
+.env.local
+
+# Node.js dependencies and logs
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor/IDE files (VSCode, IntelliJ)
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# macOS system files
+.DS_Store
+
+# Database files (if using local MongoDB)
+data/db/ 
