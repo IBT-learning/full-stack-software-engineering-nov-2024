@@ -1,0 +1,104 @@
+body {
+  background-color: rgb(201, 200, 173);
+}
+
+main {
+  /* margin-left: 10rem;
+  margin-right: 50vw; */
+  align-items: center;
+  /* text-align: center; */
+  display: grid;
+
+}
+.sec{
+  margin-left: 20rem;
+  margin-right: 20rem;
+}
+
+.sec div{
+  border: 3px solid blue;
+}
+
+#seconImg{
+  margin-top: 5em;
+}
+
+#sec2{
+  display: grid;
+  margin-right: 20rem;
+  margin-left: 20rem;
+  margin-top: 12px;
+  background-color: rgb(208, 125, 219);
+}
+
+#sec2 h2 {
+  text-decoration: underline;
+  text-align: center;
+}
+
+#imgSec{
+  display: flex; 
+  margin-left: 27rem; 
+  margin-right: 20rem; 
+  gap: 20px;
+  width: 5rem;
+  margin-top: 1em; */
+}
+
+.img1{
+  /* width: 40vw;  */
+  height: 30vh;
+}
+
+.img2{
+  /* width: 40vw;  */
+  height: 30vh;
+}
+
+footer {
+  text-align: center;
+}
+footer a {
+  text-decoration: none;
+}
+footer a:link {
+  color: blue;
+}
+
+footer a:active {
+  color: green;
+}
+
+footer a:hover {
+  color: red;
+}
+
+footer a:visited {
+  color: carmine;
+}
+
+@media( max-width: 1728px) {
+  
+  #olojo{
+    width: 30em;
+  }
+
+  #imgSec{
+    display: grid;
+    align-items: center;
+    margin-left: 21em
+
+  }
+
+  #sec2{
+    padding-right: 20px;
+  }
+
+  footer{
+    margin-left: 13em;
+  }
+}
+
+/* @media( max-width: 1028px) {
+  
+} */
