@@ -1,0 +1,53 @@
+#wrapper {
+    display: grid;
+    grid-template-columns: 10vh 100vh 10vh 10vh minmax();
+    gap: 0.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+    grid-template-rows: 6.35vh 10vh 10vh min-content; 
+
+}
+
+
+/* Add new selectors and new CSS here */
+#wrapper #header{
+    grid-column: 1/5;
+    grid-row: 1/2;
+
+}
+#wrapper #left{
+    grid-column: 1/2;
+    grid-row: 3/5;
+    
+  
+
+}
+#wrapper #main{
+    grid-column: 2/4;
+    grid-row: 3/5;
+    
+}
+#wrapper #right{
+    grid-column:4/5 ;
+    grid-row: 3/5;
+    
+}
+#wrapper #footer{
+    grid-column: 1/5;
+    grid-row: 5/5;
+    
+}
+
+/* DO NOT CHANGE ANYTHING BELOW THIS LINE  */
+#wrapper > * {
+    background-color: #ddd;
+    min-height: 15vh;
+    padding: 0.5em;
+}
+.wrapper.header{
+    background-color: red;
+}
+
+article {
+    height: 85vh;
+}
