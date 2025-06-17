@@ -39,8 +39,7 @@ Git is a distributed version control system that tracks versions of files. It is
 | Week | Topic                     | Link                                                                                      |
 | ---- | ------------------------- | ----------------------------------------------------------------------------------------- |
 | 30   | Automated testing: Server | [Writing automated server tests](./7-test-and-deploy/assignments/testing-assignment-1.md) |
-
-<!-- | 31   | Automated testing: Client | [Writing automated client tests](./7-test-and-deploy/assignments/testing-assignment-2.md) | -->
+| 31   | Automated testing: Client | [Writing automated client tests](./7-test-and-deploy/assignments/testing-assignment-2.md) |
 
 ### React
 
