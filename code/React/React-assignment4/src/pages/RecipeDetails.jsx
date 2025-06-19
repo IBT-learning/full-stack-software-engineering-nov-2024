@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 function RecipeDetails() {
   const [recipe, setRecipe] = useState({});
@@ -16,26 +16,39 @@ function RecipeDetails() {
 
         const recipeDetails = await res.json();
         setRecipe(recipeDetails);
-        console.log(recipe);s
       }catch(err){
         console.error('Failed to fetch recipe details ', err);
       }
     }
 
     fetchRecipeDetails();
-  }, []);
+  }, [recipeId]);
 
   return <>
-    <h2>{recipe.title}</h2>
-    <h3 id="author">by {recipe.author}</h3>
-    <div id="ingredients-wrapper">
-      <h3>Ingredients</h3>
-      <p>{recipe.ingredients}</p>
+    <div className="recipe-wrapper">
+      <h2>{recipe.title}</h2>
+      <h3 id="author">by {recipe.author}</h3>
+      <div id="ingredients-wrapper">
+        <h3>Ingredients</h3>
+        <ul>
+          {recipe.ingredients ? recipe.ingredients.map((ingredient, i) => (
+           <li key={i}>
+            {ingredient}
+           </li>)
+          ) : null }
+        </ul>
+      </div>
+      <div id="instructions-wrapper">
+        <h3>Instructions</h3>
+        <p>{recipe.instructions}</p>
+      </div>
+      <Link to={`/${recipeId}/edit`} className="edit-link">
+        <button className="edit-btn">
+          Edit Recipe
+        </button>
+      </Link>
     </div>
-    <div id="instructions-wrapper">
-      <h3>Instructions</h3>
-      <p>{recipe.instructions}</p>
-    </div>
+    
   </>
 }
 
