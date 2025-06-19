@@ -1,0 +1,239 @@
+body{
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* 
+Home page 
+*/
+h1{
+  color: #ffffff;
+  margin-right: auto;
+  margin-bottom: 0.6rem;
+  margin-top: 0.6rem;
+}
+
+header{
+  background-color: #152744;
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.1rem 1rem;
+}
+
+header a{
+  padding: 0.6rem;
+  border-radius: 7px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+header .active {
+  color: #ffffff;
+  background-color: #62219e;
+}
+
+main {
+  padding: 1.5rem;
+}
+
+a{
+  text-decoration: none;
+  color: #e0e0e0;
+}
+
+#recipe-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+.recipe{
+  color: #fff;
+  background-color: #0b3143;
+  /* border: 2px solid #072e3a; */
+  border-radius: 0.5rem;
+  padding: 0.8rem;
+}
+
+.recipe h3{
+  margin: 0.4rem 0.1rem;
+}
+
+.recipe h4{
+  color: #c2efff;
+  margin: 0.6rem 0.1rem;
+}
+
+/* 
+Recipe view page 
+*/
+.recipe-wrapper{
+  max-width: 800px;
+  margin: 1rem auto;
+}
+
+.recipe-wrapper > h2{
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.recipe-wrapper > h3{
+  margin-top: 0.5rem;
+  color: #97e1fc;
+  margin-top: 0.5rem;
+}
+
+#ingredients-wrapper, #instructions-wrapper{
+  background-color: #202020;
+  border: 2px solid #787878;
+  border-radius: 0.3rem;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+#ingredients-wrapper h3, #instructions-wrapper h3{
+  margin-top: 0.5rem;
+  margin-bottom: 0.3rem;
+}
+
+.edit-btn{
+  padding: 0.75rem;
+  background-color: #7344ff;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #ececec;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.edit-btn:hover{
+  background-color: #6d3dff;
+}
+
+
+/* 
+Create page 
+*/
+.error-message{
+  color: #ffffff;
+  background-color: #ff4c4c;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.create-wrapper{
+  border-radius: 1rem;
+  padding: 1.8rem;
+  max-width: 700px;
+  margin: 0.5rem auto;
+  background-color: #2c2c2c;
+}
+
+.create-wrapper h2{
+  margin-top: 0;
+  text-align: center;
+}
+
+form label{
+   display: block;
+   margin-bottom: 0.3rem;
+   margin-top: 0.8rem;
+   font-weight: 500;
+   font-size: 1.2rem;
+}
+
+[type="text"]{
+  height: 1.8rem;
+}
+
+form input[type="text"], form textarea{
+  width: 100%;
+  border: 1px solid #444444;
+  border-radius: 0.5rem;
+  padding: 0.8rem;
+  color: #ffffff;
+  font-size: 1rem;
+  /* margin: 0.2rem; */
+  transition: border-color 0.3s ease;
+  box-sizing: border-box;
+  background-color: #3f3f3f;
+}
+
+form input[type="text"]:focus,
+form textarea:focus {
+  border-color: #9e71b5;
+  outline: none;
+}
+
+textarea{
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+}
+
+form p {
+  font-size: 0.85rem;
+  color: #bcbcbc;
+  margin-top: 0.2rem;
+}
+
+form button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #7344ff;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #ececec;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 1rem;
+}
+
+
+form .btn:hover:not(:disabled) {
+  background-color: #6638f1;
+}
+
+form .btn:disabled {
+  background-color: #888;
+  cursor: not-allowed;
+}
+
+/*
+Edit page
+*/
+
+.cancel-btn{
+  background-color: #063e58;
+  transition: background-color 0.3s ease;
+}
+
+.cancel-btn:hover{
+  background-color: #094965;
+}
+
+.delete-btn{
+  background-color: #933636;
+  transition: background-color 0.3s ease;
+}
+
+.delete-btn:hover{
+  background-color: #bc2b2b;
+}
+
+.btn-group{
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
