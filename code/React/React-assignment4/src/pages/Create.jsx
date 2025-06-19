@@ -9,7 +9,7 @@ function Create(){
     instructions: ''
   });
 
-  const [isSubmitting, setIsSubmmiting] = useState(false);
+  const [isSubmitting, setIsSubmiting] = useState(false);
   const [error, setError] = useState('');
 
   const navigate = useNavigate(); 
@@ -24,7 +24,7 @@ function Create(){
 
     const handleSubmit = async (event) => {
       event.preventDefault(); // prevents the default form submission to avoid page reload
-      setIsSubmmiting(true);
+      setIsSubmiting(true);
       setError('');
 
       try{
@@ -41,7 +41,7 @@ function Create(){
         const res = await fetch('http://localhost:3005/recipes', {
           method: 'POST',
           headers: {
-            'content-Type': 'application/json'
+            'Content-Type': 'application/json'
           },
           body: JSON.stringify(reqBody)
         })
@@ -58,7 +58,7 @@ function Create(){
         console.error('Error creating recipe: ', err);
         setError(err.message);
       }finally{
-        setIsSubmmiting(false);
+        setIsSubmiting(false);
       }
     }
 

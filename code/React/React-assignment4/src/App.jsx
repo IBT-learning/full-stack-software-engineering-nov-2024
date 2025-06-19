@@ -6,19 +6,6 @@ import Create from './pages/Create.jsx';
 import RecipeDetails from './pages/RecipeDetails.jsx';
 import Edit from './pages/Edit.jsx';
 
-// const router = createBrowserRouter(
-//   createRoutesFromElements(
-//     <Route path='/' element={<AppLayout />}>
-//       <Route path='/'>
-//       <Route index element={<Home />} />
-//       <Route path=':id' element={<RecipeDetails />} />
-//       <Route path=':id/edit' element={<Edit />} />
-//       </Route>
-
-//       <Route path='/create' element={<Create />} />
-//     </Route>
-//   )
-// );
 
 const router = createBrowserRouter(
   createRoutesFromElements(

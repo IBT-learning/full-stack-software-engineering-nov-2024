@@ -178,6 +178,7 @@ form textarea:focus {
 
 textarea{
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 1rem;
 }
 
 form p {
@@ -205,7 +206,7 @@ form .btn:hover:not(:disabled) {
   background-color: #6638f1;
 }
 
-form button:disabled {
+form .btn:disabled {
   background-color: #888;
   cursor: not-allowed;
 }

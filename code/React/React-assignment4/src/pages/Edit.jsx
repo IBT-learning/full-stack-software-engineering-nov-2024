@@ -9,7 +9,6 @@ function Edit() {
     instructions: ''
   });
 
-  // const [isLoading, setIsLoading] = useState(true);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [error, setError] = useState('');
   
@@ -26,7 +25,6 @@ function Edit() {
 
         const recipe = await res.json();
         
-        // Convert ingredients array back to comma-separated string for editing
         const ingredientsString = recipe.ingredients.join(', ');
         
         setFormData({
@@ -46,12 +44,12 @@ function Edit() {
   }, [recipeId]);
 
     const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setFormData(prevData => ({
-      ...prevData,
-      [name]: value
+     const { name, value } = e.target;
+     setFormData(prevData => ({
+       ...prevData,
+       [name]: value
     }));
-  };
+   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -81,13 +79,11 @@ function Edit() {
       });
 
       if (!response.ok) {
-        const errorData = await response.json();
-        throw new Error(errorData.Error || 'Failed to update recipe');
+        throw new Error(`HTTP error status: ${res.status}`);
       }
 
-      console.log('Recipe updated successfully');
+      // console.log('Recipe updated successfully');
       
-      // Navigate back to the recipe detail page
       navigate(`/${recipeId}`);
       
     } catch (err) {
@@ -106,18 +102,16 @@ function Edit() {
     if (!confirmDelete) return;
 
     try {
-      const response = await fetch(`http://localhost:3005/recipes/delete/${recipeId}`, {
+      const res = await fetch(`http://localhost:3005/recipes/delete/${recipeId}`, {
         method: 'DELETE'
       });
 
-      if (!response.ok) {
-        const errorData = await response.json();
-        throw new Error(errorData.Error || 'Failed to delete recipe');
+      if (!res.ok) {
+        throw new Error(`HTTP error status: ${res.status}`);
       }
 
-      console.log('Recipe deleted successfully');
+      // console.log('Recipe deleted successfully');
       
-      // Navigate back to home page after successful deletion
       navigate('/');
       
     } catch (err) {
