@@ -1,17 +1,4 @@
-# Environment variables
-.env
-
-# Node modules
 node_modules/
-
-# OS files
+.env
 .DS_Store
-Thumbs.db
-
-# Build output
-dist/
-build/
-
-# Editor folders
-.vscode/
-.idea/
+package-lock.json

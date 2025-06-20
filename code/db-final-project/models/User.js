@@ -1,20 +1,17 @@
 import mongoose from 'mongoose';
 
-
 const userSchema = new mongoose.Schema(
   {
+    username: { type: String, required: true },
     email: { type: String, required: true, unique: true },
     password: { type: String, required: true },
-    profilePhoto: { type: String, default: '/path/to/default/photo.jpg' },  // Profile photo URL
-    bio: { type: String, default: '' },  // Short biography
-    createdAt: { type: Date, default: Date.now },
-    posts: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Post' }]  // Reference to posts created by this user
+    profilePhoto: { type: String, default: 'default.jpg' }, 
+    bio: { type: String, default: '' },
+    location: { type: String, default: '' },
+    skills: { type: [String], default: [] },
+    interests: { type: [String], default: [] },
   },
-  {
-    timestamps: true,  // Automatically manage `createdAt` and `updatedAt` fields
-  }
+  { timestamps: true }
 );
 
-const User = mongoose.model('User', userSchema);
-
-export default User;
+export default mongoose.model('User', userSchema);

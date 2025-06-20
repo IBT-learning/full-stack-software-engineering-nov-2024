@@ -1,26 +1,24 @@
-import express from "express";
-import cors from "cors";
-import dotenv from "dotenv";
-import { dbConnect } from "./db.js";
-import userRouter from "./controllers/users.js";
-import postRouter from "./controllers/posts.js";
-import tokenValidation from "./middlewares/tokenValidation.js";
+import express from 'express';
+import dotenv from 'dotenv';
+import cors from 'cors';
+import userRouter from './controllers/users.js';
+import postRouter from './controllers/posts.js';
+import { connectDB } from './db.js';
+import tokenValidation from './middlewares/tokenValidation.js';
 
+dotenv.config();
 const app = express();
-dotenv.config();  // Load environment variables
-
-const PORT = process.env.PORT;
 
 // Middleware
+app.use(cors()); // Enable CORS
 app.use(express.json());
-app.use(cors());
+
+// Database
+connectDB();
 
 // Routes
-app.use("/users", userRouter); 
-app.use("/posts", tokenValidation, postRouter);
+app.use('/api/users', userRouter);
+app.use('/api/posts', tokenValidation, postRouter);
 
-// Start the server
-app.listen(PORT, () => {
-  dbConnect();
-  console.log(`[server]: listening on port ${PORT}`);
-});
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
