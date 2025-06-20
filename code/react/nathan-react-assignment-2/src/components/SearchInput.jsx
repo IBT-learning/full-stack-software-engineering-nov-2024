@@ -12,7 +12,7 @@ const SearchInput = ({ handleFilter }) => {
         <input
           value={searchTerm}
           type="text"
-          placeholder="Search note.."
+          placeholder="Search to do item.."
           onChange={(e)=>{
             handleFilter(e.target.value) 
             setSearchTerm(e.target.value)
