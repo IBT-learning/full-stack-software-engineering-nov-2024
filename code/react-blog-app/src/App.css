@@ -1,0 +1,408 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+body {
+  margin: 0;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  color: #333;
+  background: #f5f6fa;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 20px;
+  margin: 0;
+  background: #007bff;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #ffcc5b;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #888;
+  background: #fff;
+  margin-top: 40px;
+  border-top: 1px solid #eee;
+}
+
+form {
+  margin: 40px auto;
+  padding: 20px;
+  background: #ffffff;
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #0003;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form input, form textarea, form button {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+form button {
+  background: #007bff;
+  color: #ffffff;
+  font-weight: bold;
+  border: none;
+  transition: background 0.3s ease;
+}
+
+form button:hover {
+  background: #0056b3;
+}
+
+.posts-wrapper {
+  padding: 20px;
+}
+
+.posts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.post-card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #0003;
+  transition: transform 0.2s ease;
+}
+
+.post-card:hover {
+  transform: translateY(-5px);
+}
+
+.post-card h3 {
+  margin-bottom: 10px;
+  color: #007bff;
+}
+
+.post-card p {
+  color: #555;
+}
+
+.post-card .tags {
+  margin-top: 10px;
+  color: #888;
+  font-style: italic;
+}
+
+.profile-wrapper {
+  margin: 40px auto;
+  padding: 20px;
+  background: #ffffff;
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #0003;
+  text-align: center;
+}
+
+.profile-wrapper h1 {
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+.profile-wrapper p {
+  color: #555;
+}
+
+.profile-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 2rem;
+}
+
+.profile-grid {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.profile-form,
+.profile-preview {
+  flex: 1 1 48%;
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Make sure labels and inputs are clean and spaced */
+.profile-form label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+.profile-form input,
+.profile-form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.25rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.profile-form button {
+  margin-top: 1.5rem;
+  padding: 0.6rem 1.2rem;
+  background-color: royalblue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.profile-form button:hover {
+  background-color: #0056b3;
+}
+
+/* General resets */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #f0f4f8, #e9eff5);
+  color: #333;
+  height: 100vh;
+}
+
+/* Center the entire page */
+.home-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  padding: 2rem;
+}
+
+.home-content {
+  background: white;
+  padding: 2.5rem 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  max-width: 500px;
+  width: 100%;
+  overflow: hidden; /* ensures nothing breaks out */
+}
+
+/* Heading */
+.home-content h1 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  color: #222;
+}
+
+.highlight {
+  color: #0d6efd;
+}
+
+/* Paragraphs */
+.home-content p {
+  font-size: 1rem;
+  margin: 1rem 0;
+}
+
+
+.btn {
+  display: inline-block;
+  background-color: #0d6efd;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  margin: 0.5rem;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+  max-width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.btn:hover {
+  background-color: #084298;
+}
+
+/* === Dark Mode Styles === */
+body.dark-mode {
+  background: #121212;
+  color: #f5f5f5;
+}
+
+body.dark-mode nav ul {
+  background: #1e1e1e;
+}
+
+body.dark-mode nav ul li a {
+  color: #f5f5f5;
+}
+
+body.dark-mode nav ul li a:hover {
+  color: #ffcc5b;
+}
+
+body.dark-mode form,
+body.dark-mode .post-card,
+body.dark-mode .profile-form,
+body.dark-mode .profile-preview,
+body.dark-mode .home-content {
+  background-color: #1e1e1e;
+  color: #f5f5f5;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+}
+
+body.dark-mode .post-card h3,
+body.dark-mode .profile-wrapper h1,
+body.dark-mode .home-content h1 {
+  color: #90cdf4;
+}
+
+body.dark-mode .post-card p,
+body.dark-mode .profile-wrapper p,
+body.dark-mode .home-content p {
+  color: #ccc;
+}
+
+body.dark-mode footer {
+  background: #1e1e1e;
+  color: #999;
+  border-top: 1px solid #444;
+}
+
+body.dark-mode .btn,
+body.dark-mode form button,
+body.dark-mode .profile-form button {
+  background-color: #0d6efd;
+  color: #fff;
+}
+
+body.dark-mode .btn:hover,
+body.dark-mode form button:hover,
+body.dark-mode .profile-form button:hover {
+  background-color: #084298;
+}
+
+body.dark-mode input,
+body.dark-mode textarea {
+  background-color: #2a2a2a;
+  color: #fff;
+  border: 1px solid #555;
+}
+
+/* ==== RESPONSIVE STYLING ==== */
+@media (max-width: 1024px) {
+  .container {
+    padding: 1rem;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  form {
+    max-width: 90%;
+  }
+
+  .posts-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-grid {
+    flex-direction: column;
+  }
+
+  .profile-form,
+  .profile-preview {
+    flex: 1 1 100%;
+  }
+
+  .home-content {
+    padding: 2rem 1.5rem;
+  }
+
+  .home-content h1 {
+    font-size: 1.6rem;
+  }
+
+  .btn {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .post-card {
+    padding: 15px;
+  }
+
+  .post-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .home-content {
+    box-shadow: none;
+    border-radius: 8px;
+  }
+
+  .home-content h1 {
+    font-size: 1.4rem;
+  }
+
+  .home-content p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .btn {
+    display: block;
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+
+  .home-content {
+    padding: 2rem 1rem;
+  }
+}
+
