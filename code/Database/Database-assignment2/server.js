@@ -1,10 +1,12 @@
 import express from 'express';
 import { dbConnect } from './db.js';
 import recipeRouter from './controllers/recipes.js';
+import cors from 'cors';
 
 const app = express();
 const PORT = process.env.PORT || 3005;
 
+app.use(cors());
 app.use(express.json());
 app.use('/recipes', recipeRouter);
 
