@@ -1,0 +1,17 @@
+{
+  "name": "sherylanns_server_assignment1_npm-practice",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "app.js",
+
+  "scripts": {
+    "start": "node --watch app.js"
+  },
+  "keywords": [],
+  "author": "Sheryl",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "chalk": "^5.4.1"
+  }
+}
