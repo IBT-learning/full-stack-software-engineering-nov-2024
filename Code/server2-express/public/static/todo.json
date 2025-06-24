@@ -1,0 +1,32 @@
+[
+  {
+    "userId": 1,
+    "id": 1,
+    "title": "Feed the space llama",
+    "completed": false
+  },
+  {
+    "userId": 1,
+    "id": 2,
+    "title": "Water the carnivorous plants",
+    "completed": true
+  },
+  {
+    "userId": 2,
+    "id": 3,
+    "title": "Submit time-travel report",
+    "completed": false
+  },
+  {
+    "userId": 2,
+    "id": 4,
+    "title": "Clean up robot oil spills",
+    "completed": true
+  },
+  {
+    "userId": 3,
+    "id": 5,
+    "title": "Test banana-powered jetpack",
+    "completed": false
+  }
+]
