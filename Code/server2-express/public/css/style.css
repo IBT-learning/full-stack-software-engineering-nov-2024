@@ -1,0 +1,17 @@
+body {
+    background-color: #593;
+}
+
+h1 {
+    color: white;
+}
+
+img {
+    width: 40vw;
+}
+
+#images {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
