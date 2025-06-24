@@ -38,89 +38,69 @@ header {
 /*At min-width: 500px*/
 
 @media (min-width: 500px) {
-    #gallery {
-        display: flex;
-        flex-direction: column;
-    }
-
     .card {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        padding: 1em;
+        display: flex; 
+        align-items: center; 
     }
-
+    
     .card.right {
-        flex-direction: row-reverse;
+        flex-direction: row-reverse; 
     }
-
+    
     .card img {
-        width: 50%;
-        margin: 0 1em;
+        width: 50%; 
     }
-
+    
     .photo-label {
-        width: 50%;
+        width: 50%; 
         padding: 1em;
+        box-sizing: border-box;
     }
 }
 
-/*At min-width: 750px*/
-
+/* At min-width: 750px*/
 @media (min-width: 750px) {
     #gallery {
         display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
+        flex-wrap: wrap; 
+        gap: 0.4rem; 
     }
-
+    
     .card {
-        flex-direction: column;
-        width: 45%;
-        margin: 1em;
-    }
-
-    .card img {
-        width: 100%;
-        margin: 0;
-    }
-
-    .photo-label {
-        width: 100%;
-        padding: 0.5em;
+        width: calc(50% - 0.2rem); 
+        margin: 0; 
     }
 }
 
-/*At mid-width: 1000px*/
-
+/* At min-widith: 1000px*/
 @media (min-width: 1000px) {
     #page-wrapper {
         display: grid;
-        grid-template-columns: 1fr 2fr;
-        gap: 2em;
-        margin: 2em;
+        grid-template-columns: 1fr 2fr; 
+        gap: 1rem; 
+        padding: 1rem; 
     }
-
+    
     #profile {
-        margin: 0;
+        margin: 0; 
     }
-
+    
     #gallery {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1em;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 0.4rem;
     }
-
-    .card {
-        width: 100%;
-        flex-direction: column;
+    
+    .card, .card.right {
+        flex-direction: column; 
+        width: 100%; 
     }
-
+    
     .card img {
-        width: 100%;
+        width: 100%; 
     }
-
+    
     .photo-label {
-        padding: 0.5em;
+        width: 100%; 
     }
 }
