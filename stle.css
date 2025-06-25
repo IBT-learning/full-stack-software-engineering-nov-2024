@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+}
+
+@media (min-width: 500px) {
+    body {
+        display: flex;
+        flex-direction: row;
+    }
+    .card {
+        background-color: rgb(245, 107, 107);
+        row-gap: 5px;
+        text-align: center;
+    } 
+    .card > span {
+        display: flex;
+        flex-direction: row;
+        margin-top: 9px;
+    }
+}
+
+@media (min-width: 750px) {
+    body {
+        display: flex;
+    }
+    #profile > span {
+        display: flex;
+        justify-content: center;
+    }
+    .card > span {
+        display: flex;
+        color: white;
+        margin: 10px;
+    }
+    .card > img {
+        margin-left: 200px;
+        color: #f9b8b6;
+    }
+    .card {
+        background-color: #c61a1a;
+    }
+    .card > span {
+        color: white;
+        margin-bottom: 10px;
+        margin-left: 10px;
+    }
+    .card > img {
+        margin-top: 10px;
+    }
+}
+
+@media (min-width: 1000px) {
+    body {
+        display: grid;
+    }
+    #profile > span {
+        color: blue;
+        display: flex;
+        justify-content: center;
+
+    }
+    .card > span {
+        color: white;
+        margin-bottom: 10px;
+        margin-left: 10px;
+    }
+    .card > img {
+        margin-top: 10px;
+    }
+    .card {
+        display: grid;
+        grid-template-rows: min-content 1fr;
+        gap: 20px;
+        background-color: rgb(110, 2, 2);
+    }
+}
+
+
+
+#profile {
+    background-color: #f9b8b6;
+    padding: 1em;
+    /*margin: 1em;*/
+}
+
+#profile > img {
+    outline: 0.3rem solid #fff;
+    margin: 0.5em 0;
+}
+
+#profile > span {
+    font-size: 1.3em;
+    font-weight: 600;
+    padding-bottom: 1em;
+}
+
+.card {
+    /*border: 3px solid #006d9e;*/
+    margin: 0.2rem;
+}
+
+img {
+    width: 100%;
+}
+
+header {
+    background-color: #a7cddf;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 10px;
+}
