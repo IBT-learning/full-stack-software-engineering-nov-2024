@@ -1,6 +1,6 @@
 // Challenge 1
 
-const movieTitle ="Spyder Man 3";
+const movieTitle ="Spider Man 3";
 const isScary = true;
 const isRomantic = true;
 if (isScary && isRomantic){
