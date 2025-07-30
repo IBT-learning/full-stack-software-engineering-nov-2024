@@ -1,0 +1,86 @@
+/* CSS Variables for theme colors */
+:root {
+    --bg-light: #f5f5f5;
+    --text-light: #333333;
+    --bg-dark: #222222;
+    --text-dark: #e0e0e0;
+    --transition-speed: 0.3s;
+}
+
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-light);
+    color: var(--text-light);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: background-color var(--transition-speed),
+                color var(--transition-speed);
+    min-height: 100vh;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: var(--bg-dark);
+    color: var(--text-dark);
+}
+
+/* Container for centering content */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    gap: 2rem;
+}
+
+/* Banner styles */
+#banner {
+    font-size: 2.5rem;
+    text-align: center;
+    transition: color var(--transition-speed);
+}
+
+/* Theme toggle button styles */
+.theme-button {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+    background-color: #4a90e2;
+    color: white;
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+.theme-button:hover {
+    transform: scale(1.05);
+    background-color: #357abd;
+}
+
+.theme-button:active {
+    transform: scale(0.95);
+}
+
+/* Icon animation */
+.icon {
+    transition: transform var(--transition-speed);
+}
+
+.dark-mode .icon {
+    transform: rotate(180deg);
+}
+
+/* Focus styles for accessibility */
+.theme-button:focus {
+    outline: 3px solid #4a90e2;
+    outline-offset: 2px;
+}
