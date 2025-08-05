@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechInsights Blog</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Header */
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+
+        .logo {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #667eea;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: #667eea;
+            background: rgba(102, 126, 234, 0.1);
+        }
+
+        /* Main Content */
+        main {
+            background: rgba(255, 255, 255, 0.95);
+            margin: 2rem auto;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+            overflow: hidden;
+            min-height: 80vh;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+            padding: 4rem 2rem;
+            position: relative;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="white" opacity="0.1"/><circle cx="75" cy="75" r="1" fill="white" opacity="0.05"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+            opacity: 0.3;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            font-weight: 300;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Content Sections */
+        .content {
+            padding: 3rem 2rem;
+        }
+
+        .section {
+            display: none;
+        }
+
+        .section.active {
+            display: block;
+        }
+
+        /* User Selector */
+        .user-selector {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 15px;
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+
+        .user-selector h3 {
+            margin-bottom: 1rem;
+            color: #495057;
+        }
+
+        .user-selector select {
+            padding: 0.75rem 1.5rem;
+            border: 2px solid #dee2e6;
+            border-radius: 50px;
+            font-size: 1rem;
+            background: white;
+            color: #495057;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            outline: none;
+            min-width: 250px;
+        }
+
+        .user-selector select:focus,
+        .user-selector select:hover {
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+
+        /* Blog Posts */
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .blog-post {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+            transition: all 0.3s ease;
+            border: 1px solid #e9ecef;
+        }
+
+        .blog-post:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .post-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 1.5rem;
+            position: relative;
+        }
+
+        .post-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="10" cy="10" r="1" fill="white" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23dots)"/></svg>');
+        }
+
+        .post-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .post-author {
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .post-id {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 0.25rem 0.75rem;
+            border-radius: 15px;
+            font-size: 0.9rem;
+        }
+
+        .post-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            line-height: 1.4;
+            position: relative;
+            z-index: 1;
+            text-transform: capitalize;
+        }
+
+        .post-content {
+            padding: 1.5rem;
+        }
+
+        .post-body {
+            color: #6c757d;
+            line-height: 1.7;
+            font-size: 1rem;
+        }
+
+        .post-body.short {
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: #495057;
+        }
+
+        .post-body.long {
+            text-align: justify;
+        }
+
+        /* Profile Section */
+        .profile-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+            position: relative;
+        }
+
+        .profile-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="profile-pattern" width="50" height="50" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="2" fill="white" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23profile-pattern)"/></svg>');
+            opacity: 0.3;
+        }
+
+        .profile-info {
+            position: relative;
+            z-index: 1;
+        }
+
+        .profile-avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            font-size: 3rem;
+        }
+
+        .profile-name {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            font-weight: 300;
+        }
+
+        .profile-details {
+            opacity: 0.9;
+            font-size: 1.1rem;
+        }
+
+        .profile-details p {
+            margin: 0.25rem 0;
+        }
+
+        /* Loading and Error States */
+        .loading {
+            text-align: center;
+            padding: 3rem;
+            color: #6c757d;
+        }
+
+        .spinner {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #667eea;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin-bottom: 1rem;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .error {
+            background: #f8d7da;
+            color: #721c24;
+            padding: 1.5rem;
+            border-radius: 15px;
+            text-align: center;
+            margin: 2rem 0;
+        }
+
+        /* Animations */
+        .fade-in {
+            animation: fadeIn 0.6s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 1rem;
+            }
+
+            nav {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .nav-links {
+                gap: 1rem;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero p {
+                font-size: 1.1rem;
+            }
+
+            .blog-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .content {
+                padding: 2rem 1rem;
+            }
+
+            .user-selector select {
+                min-width: auto;
+                width: 100%;
+            }
+        }
+
+        /* Mobile Navigation */
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: #333;
+        }
+
+        @media (max-width: 768px) {
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: white;
+                flex-direction: column;
+                padding: 1rem;
+                box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            }
+
+            .nav-links.show {
+                display: flex;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">📝 TechInsights</a>
+                <button class="mobile-menu-btn" onclick="toggleMobileMenu()">☰</button>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#" class="nav-link active" data-section="home">Home</a></li>
+                    <li><a href="#" class="nav-link" data-section="profile">Profile</a></li>
+                    <li><a href="#" class="nav-link" data-section="about">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Home Section -->
+        <section id="home" class="section active">
+            <div class="hero">
+                <div class="hero-content">
+                    <h1>Welcome to TechInsights</h1>
+                    <p>Discover amazing stories, insights, and perspectives from our community of writers and thinkers.</p>
+                </div>
+            </div>
+            
+            <div class="content">
+                <div class="user-selector">
+                    <h3>🎯 Filter by Author</h3>
+                    <select id="authorFilter">
+                        <option value="all">All Authors</option>
+                        <option value="1">Leanne Graham</option>
+                        <option value="2">Ervin Howell</option>
+                        <option value="3">Clementine Bauch</option>
+                        <option value="4">Patricia Lebsack</option>
+                        <option value="5">Chelsey Dietrich</option>
+                        <option value="6">Mrs. Dennis Schulist</option>
+                        <option value="7">Kurtis Weissnat</option>
+                        <option value="8">Nicholas Runolfsdottir</option>
+                        <option value="9">Glenna Reichert</option>
+                        <option value="10">Clementina DuBuque</option>
+                    </select>
+                </div>
+
+                <div id="blogPosts" class="blog-grid">
+                    <div class="loading">
+                        <div class="spinner"></div>
+                        <p>Loading amazing blog posts...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Profile Section -->
+        <section id="profile" class="section">
+            <div class="profile-header">
+                <div class="profile-info">
+                    <div class="profile-avatar">👤</div>
+                    <h2 class="profile-name" id="profileName">Select an Author</h2>
+                    <div class="profile-details" id="profileDetails">
+                        <p>Choose an author from the dropdown to view their profile</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="content">
+                <div class="user-selector">
+                    <h3>👤 Select Author Profile</h3>
+                    <select id="profileUserSelect">
+                        <option value="">Choose an author...</option>
+                        <option value="1">Leanne Graham</option>
+                        <option value="2">Ervin Howell</option>
+                        <option value="3">Clementine Bauch</option>
+                        <option value="4">Patricia Lebsack</option>
+                        <option value="5">Chelsey Dietrich</option>
+                        <option value="6">Mrs. Dennis Schulist</option>
+                        <option value="7">Kurtis Weissnat</option>
+                        <option value="8">Nicholas Runolfsdottir</option>
+                        <option value="9">Glenna Reichert</option>
+                        <option value="10">Clementina DuBuque</option>
+                    </select>
+                </div>
+
+                <div id="userPosts" class="blog-grid">
+                    <div style="text-align: center; padding: 3rem; color: #6c757d;">
+                        <h3>Select an author above to view their posts</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="hero">
+                <div class="hero-content">
+                    <h1>About TechInsights</h1>
+                    <p>A modern blog platform showcasing dynamic content from talented writers worldwide.</p>
+                </div>
+            </div>
+            
+            <div class="content">
+                <div style="max-width: 800px; margin: 0 auto; text-align: center; padding: 2rem;">
+                    <h2 style="margin-bottom: 2rem; color: #333;">Our Mission</h2>
+                    <p style="font-size: 1.2rem; line-height: 1.8; color: #6c757d; margin-bottom: 2rem;">
+                        TechInsights is a dynamic blog platform that brings together diverse voices and perspectives. 
+                        We leverage modern web technologies to create an engaging reading experience that adapts 
+                        to both short insights and long-form content.
+                    </p>
+                    <div style="background: #f8f9fa; padding: 2rem; border-radius: 15px; margin-top: 3rem;">
+                        <h3 style="color: #667eea; margin-bottom: 1rem;">🚀 Features</h3>
+                        <ul style="list-style: none; color: #6c757d; line-height: 2;">
+                            <li>📱 Responsive design for all devices</li>
+                            <li>🎨 Beautiful, modern interface</li>
+                            <li>⚡ Dynamic content loading</li>
+                            <li>👥 Author profiles and filtering</li>
+                            <li>🔍 Smart content adaptation</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // Global variables
+        let allPosts = [];
+        let allUsers = [];
+        let currentSection = 'home';
+
+        // DOM elements
+        const blogPostsContainer = document.getElementById('blogPosts');
+        const authorFilter = document.getElementById('authorFilter');
+        const profileUserSelect = document.getElementById('profileUserSelect');
+        const userPostsContainer = document.getElementById('userPosts');
+        const profileName = document.getElementById('profileName');
+        const profileDetails = document.getElementById('profileDetails');
+
+        // Initialize the app
+        document.addEventListener('DOMContentLoaded', async () => {
+            await loadInitialData();
+            setupEventListeners();
+        });
+
+        // Load initial data
+        async function loadInitialData() {
+            try {
+                // Load posts and users concurrently
+                const [postsResponse, usersResponse] = await Promise.all([
+                    fetch('https://jsonplaceholder.typicode.com/posts'),
+                    fetch('https://jsonplaceholder.typicode.com/users')
+                ]);
+
+                if (!postsResponse.ok || !usersResponse.ok) {
+                    throw new Error('Failed to fetch data');
+                }
+
+                allPosts = await postsResponse.json();
+                allUsers = await usersResponse.json();
+
+                // Display first 12 posts by default
+                displayPosts(allPosts.slice(0, 12));
+
+            } catch (error) {
+                console.error('Error loading data:', error);
+                showError(blogPostsContainer, 'Failed to load blog posts. Please try refreshing the page.');
+            }
+        }
+
+        // Display posts with user information
+        function displayPosts(posts, container = blogPostsContainer) {
+            if (posts.length === 0) {
+                container.innerHTML = `
+                    <div style="text-align: center; padding: 3rem; color: #6c757d; grid-column: 1 / -1;">
+                        <h3>No posts found</h3>
+                        <p>Try selecting a different author or view all posts.</p>
+                    </div>
+                `;
+                return;
+            }
+
+            container.innerHTML = posts.map((post, index) => {
+                const user = allUsers.find(u => u.id === post.userId) || { name: 'Unknown Author', username: 'unknown' };
+                const isShort = post.body.length < 100;
+                const isLong = post.body.length > 200;
+                
+                return `
+                    <article class="blog-post fade-in" style="animation-delay: ${index * 0.1}s">
+                        <div class="post-header">
+                            <div class="post-meta">
+                                <div class="post-author">
+                                    <span>👤</span>
+                                    <span>${user.name}</span>
+                                </div>
+                                <div class="post-id">#${post.id}</div>
+                            </div>
+                            <h2 class="post-title">${post.title}</h2>
+                        </div>
+                        <div class="post-content">
+                            <div class="post-body ${isShort ? 'short' : isLong ? 'long' : ''}">${post.body}</div>
+                        </div>
+                    </article>
+                `;
+            }).join('');
+        }
+
+        // Setup event listeners
+        function setupEventListeners() {
+            // Navigation
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const section = e.target.dataset.section;
+                    showSection(section);
+                });
+            });
+
+            // Author filter
+            authorFilter.addEventListener('change', (e) => {
+                const userId = e.target.value;
+                filterPostsByAuthor(userId);
+            });
+
+            // Profile user select
+            profileUserSelect.addEventListener('change', (e) => {
+                const userId = e.target.value;
+                if (userId) {
+                    loadUserProfile(userId);
+                } else {
+                    resetProfileSection();
+                }
+            });
+        }
+
+        // Show specific section
+        function showSection(sectionName) {
+            // Update navigation
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.classList.remove('active');
+            });
+            document.querySelector(`[data-section="${sectionName}"]`).classList.add('active');
+
+            // Update sections
+            document.querySelectorAll('.section').forEach(section => {
+                section.classList.remove('active');
+            });
+            document.getElementById(sectionName).classList.add('active');
+
+            currentSection = sectionName;
+
+            // Close mobile menu
+            document.getElementById('navLinks').classList.remove('show');
+        }
+
+        // Filter posts by author
+        function filterPostsByAuthor(userId) {
+            showLoading(blogPostsContainer);
+            
+            setTimeout(() => {
+                let filteredPosts;
+                if (userId === 'all') {
+                    filteredPosts = allPosts.slice(0, 12);
+                } else {
+                    filteredPosts = allPosts.filter(post => post.userId === parseInt(userId));
+                }
+                displayPosts(filteredPosts);
+            }, 500);
+        }
+
+        // Load user profile
+        async function loadUserProfile(userId) {
+            try {
+                showLoading(userPostsContainer);
+                
+                const user = allUsers.find(u => u.id === parseInt(userId));
+                const userPosts = allPosts.filter(post => post.userId === parseInt(userId));
+
+                // Update profile header
+                profileName.textContent = user.name;
+                profileDetails.innerHTML = `
+                    <p><strong>@${user.username}</strong></p>
+                    <p>📧 ${user.email}</p>
+                    <p>📱 ${user.phone}</p>
+                    <p>🌐 ${user.website}</p>
+                    <p>🏢 ${user.company.name}</p>
+                    <p>📍 ${user.address.city}, ${user.address.zipcode}</p>
+                `;
+
+                // Display user's posts
+                setTimeout(() => {
+                    displayPosts(userPosts, userPostsContainer);
+                }, 300);
+
+            } catch (error) {
+                console.error('Error loading user profile:', error);
+                showError(userPostsContainer, 'Failed to load user profile.');
+            }
+        }
+
+        // Reset profile section
+        function resetProfileSection() {
+            profileName.textContent = 'Select an Author';
+            profileDetails.innerHTML = '<p>Choose an author from the dropdown to view their profile</p>';
+            userPostsContainer.innerHTML = `
+                <div style="text-align: center; padding: 3rem; color: #6c757d;">
+                    <h3>Select an author above to view their posts</h3>
+                </div>
+            `;
+        }
+
+        // Show loading state
+        function showLoading(container) {
+            container.innerHTML = `
+                <div class="loading">
+                    <div class="spinner"></div>
+                    <p>Loading content...</p>
+                </div>
+            `;
+        }
+
+        // Show error state
+        function showError(container, message) {
+            container.innerHTML = `
+                <div class="error">
+                    <p>❌ ${message}</p>
+                </div>
+            `;
+        }
+
+        // Mobile menu toggle
+        function toggleMobileMenu() {
+            document.getElementById('navLinks').classList.toggle('show');
+        }
+
+        // Keyboard shortcuts
+        document.addEventListener('keydown', (e) => {
+            if (e.key === '1') showSection('home');
+            if (e.key === '2') showSection('profile');
+            if (e.key === '3') showSection('about');
+        });
+
+        // Smooth scrolling for better UX
+        document.addEventListener('click', (e) => {
+            if (e.target.classList.contains('nav-link')) {
+                setTimeout(() => {
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                }, 100);
+            }
+        });
+    </script>
+</body>
+</html>
