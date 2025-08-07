@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>My Blog</h1>
+        <nav>
+            <button id="all-posts-btn" class="active">All Posts</button>
+            <button id="create-post-btn">Create Post</button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Posts View -->
+        <div id="posts-view" class="view active">
+            <div class="filters">
+                <label for="user-filter">Filter by Author:</label>
+                <select id="user-filter">
+                    <option value="">All Authors</option>
+                </select>
+            </div>
+            
+            <div id="posts-container">
+                <div class="loading">Loading posts...</div>
+            </div>
+        </div>
+
+        <!-- Create Post View -->
+        <div id="create-view" class="view">
+            <h2>Create New Post</h2>
+            <form id="create-post-form">
+                <div class="form-group">
+                    <label for="post-user">Author:</label>
+                    <select id="post-user" required>
+                        <option value="">Select Author</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="post-title">Title:</label>
+                    <input type="text" id="post-title" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="post-body">Content:</label>
+                    <textarea id="post-body" required rows="10"></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="post-image">Image Path (optional):</label>
+                    <input type="text" id="post-image" placeholder="images/image1.jpg">
+                </div>
+                
+                <button type="submit">Create Post</button>
+            </form>
+        </div>
+
+        <!-- Post Detail Modal -->
+        <div id="post-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div id="modal-content"></div>
+            </div>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>

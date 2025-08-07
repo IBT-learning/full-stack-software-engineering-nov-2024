@@ -1,0 +1,24 @@
+{
+  "name": "blog-server-final",
+  "version": "1.0.0",
+  "description": "Simple blog server replacing jsonplaceholder with local Express server",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "keywords": [
+    "blog",
+    "express",
+    "server",
+    "api"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
