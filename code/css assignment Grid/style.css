@@ -1,0 +1,38 @@
+#wrapper {
+    font-size: 2em;
+    gap: 1rem;
+    grid-template-areas: 
+    "header header header header header header"
+    "left-aside main main main main right-aside"
+    "footer footer footer footer footer footer";
+    display: grid;
+
+    
+}
+#left {
+    grid-area: left-aside;
+}
+#header {
+    grid-area: header;
+}
+#main {
+    grid-area: main;
+}
+#footer {
+    grid-area: footer;
+}
+#right {
+    grid-area: right-aside;
+}
+/* Add new selectors and new CSS here */
+
+/* DO NOT CHANGE ANYTHING BELOW THIS LINE  */
+#wrapper > * {
+    background-color: #ddd;
+    min-height: 15vh;
+    padding: 0.5em;
+}
+
+article {
+    height: 85vh;
+}
