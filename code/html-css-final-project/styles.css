@@ -1,0 +1,57 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+
+}
+
+body {
+    font-family: "Roboto", serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;  
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 5rem;  
+    
+}
+
+
+.nav-logo img {
+    max-width: 100px;
+    height: 100%;
+    margin-top: -5px;
+    margin-bottom: auto;
+    border-radius: 0;
+    padding: 0.4rem;
+}
+
+/* comments-section */
+.comments-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.comments-section i{
+    font-size: 1.2rem;
+    color: #4CAF50;
+    margin-right: 10px;
+}
