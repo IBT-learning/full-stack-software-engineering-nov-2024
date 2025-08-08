@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #5adcfc28;
+  font-size: 1rem;
+  min-height: 100vh;
+  font-family: 'Lato', serif;
+  line-height: 1.5;
+  word-spacing: 2px;
+}
+
+.blog-header {
+  width: auto;
+  background: repeating-linear-gradient(
+    209.12deg,
+    #0344a6 92.46%,
+    #02197c 100%
+  );
+  background-repeat: repeat;
+  background-size: auto auto;
+  padding: 2em;
+}
+
+.header-row {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-profile {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile-img {
+  width: clamp(10vw, 15vw, 25vw);
+}
+
+.profile-img img {
+  width: 100%;
+  border-radius: 50%;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.185);
+}
+
+.profile-menu a {
+  font-size: clamp(0.75rem, 0.4773rem + 1.3636vw, 1.5rem);
+  text-decoration: none;
+  color: white;
+  clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+  background-color: #1e89ef;
+  padding-inline: 1em 1.5em;
+  padding-block: 0.75em;
+}
+
+.profile-menu a:hover {
+  background-color: #59dcfb;
+  color: #02197c;
+}
+
+.bio {
+  font-size: clamp(0.85rem, 0.6136rem + 1.1818vw, 1.5rem);
+  text-align: center;
+  max-width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+main {
+  padding: 0 clamp(20px, 4vw, 40px);
+}
+
+.blog {
+  box-shadow: -5px 6px 65px 0px rgba(0, 0, 0, 0.64);
+  padding: 1em;
+}
+
+h1 {
+  text-transform: uppercase;
+  margin-block: 1em;
+  font-size: clamp(1rem, 0.6364rem + 1.8182vw, 2rem);
+}
+
+.recent-post {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3em;
+}
+
+.blog {
+  width: 85vw;
+}
+
+.blog-post {
+  font-size: clamp(0.5rem, 0.3182rem + 0.9091vw, 1rem);
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.blog-post img {
+  width: 100%;
+}
+
+.blog-post h3 {
+  margin-block-end: 0.75em;
+}
+
+.blog-post h3 span a {
+  color: #0344a6;
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+.blog-post h3 span a:hover {
+  padding-inline: 0.5em;
+  padding-block: 0.2em;
+  background-color: #0344a6;
+  color: #5adcfc;
+}
+
+.poster {
+  width: 50px;
+  height: 50px;
+}
+
+.poster img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.blog-footer {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.timestamp {
+  border-inline-start: 2px solid #144fe3;
+  padding-inline-start: 0.35em;
+}
+
+footer {
+  width: auto;
+  background: repeating-linear-gradient(
+    209.12deg,
+    #0344a6 92.46%,
+    #02197c 100%
+  );
+  background-repeat: repeat;
+  background-size: auto auto;
+  margin-block-start: 2em;
+  font-size: clamp(0.85rem, 0.6136rem + 1.1818vw, 1.5rem);
+}
+
+footer p {
+  padding: 1em 0;
+  color: white;
+  text-align: center;
+}
+
+.blog-menu a {
+  font-size: clamp(0.7 5rem, 0.4773rem + 1.3636vw, 1.5rem);
+  text-decoration: none;
+  color: white;
+  background-color: #1e89ef;
+  padding-inline: 1em 1.5em;
+  padding-block: 0.75em;
+  clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+  display: none;
+}
+
+.blog-menu a:hover {
+  background-color: #59dcfb;
+  color: #02197c;
+}
+
+@media (min-width: 31.25em) {
+  .recent-post {
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1em;
+  }
+
+  .blog {
+    flex: 1 1 0;
+  }
+}
+
+@media (min-width: 38.938em) {
+  .blog {
+    flex: 1 1 30vw;
+  }
+}
+
+@media (min-width: 62.5em) {
+  .wrapper {
+    display: grid;
+    grid-template-areas:
+      'header main-content main-content main-content '
+      'header main-content main-content main-content '
+      'footer footer footer footer ';
+  }
+
+  #header {
+    grid-area: header;
+    width: 20vw;
+    height: auto;
+  }
+
+  #main-content {
+    grid-area: main-content;
+    width: 78vw;
+  }
+
+  #footer {
+    grid-area: footer;
+    width: auto;
+    margin-block-start: 0;
+  }
+
+  .profile-menu {
+    order: -1;
+  }
+
+  .user-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+  }
+
+  .bio {
+    max-width: 100%;
+  }
+
+  .bio p {
+    font-size: 1rem;
+    padding: 0;
+  }
+}
