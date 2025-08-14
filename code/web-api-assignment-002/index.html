@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced To-Do List</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 2rem;
+            color: #333;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            position: relative;
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="white" opacity="0.1"/><circle cx="75" cy="75" r="1" fill="white" opacity="0.05"/><circle cx="50" cy="10" r="0.5" fill="white" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+            opacity: 0.3;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            font-weight: 300;
+            margin-bottom: 0.5rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .header p {
+            opacity: 0.9;
+            font-size: 1.1rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .controls {
+            padding: 2rem;
+            background: #f8f9fa;
+            border-bottom: 1px solid #e9ecef;
+        }
+
+        .user-selector {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .user-selector label {
+            font-weight: 600;
+            color: #495057;
+            font-size: 1.1rem;
+        }
+
+        .user-selector select {
+            padding: 0.75rem 1rem;
+            border: 2px solid #dee2e6;
+            border-radius: 50px;
+            font-size: 1rem;
+            background: white;
+            color: #495057;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            outline: none;
+            min-width: 200px;
+        }
+
+        .user-selector select:focus,
+        .user-selector select:hover {
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .stat-card {
+            background: white;
+            padding: 1rem 1.5rem;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            text-align: center;
+            min-width: 120px;
+        }
+
+        .stat-number {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #667eea;
+            display: block;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            color: #6c757d;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .todo-container {
+            padding: 2rem;
+            max-height: 60vh;
+            overflow-y: auto;
+        }
+
+        .todo-container::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .todo-container::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 4px;
+        }
+
+        .todo-container::-webkit-scrollbar-thumb {
+            background: #667eea;
+            border-radius: 4px;
+        }
+
+        .todo-container::-webkit-scrollbar-thumb:hover {
+            background: #5a6fd8;
+        }
+
+        #to-do-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .todo-item {
+            background: white;
+            border: 2px solid #e9ecef;
+            border-radius: 15px;
+            padding: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .todo-item::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            background: #667eea;
+            transform: scaleY(0);
+            transition: transform 0.3s ease;
+        }
+
+        .todo-item:hover::before {
+            transform: scaleY(1);
+        }
+
+        .todo-item:hover {
+            border-color: #667eea;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.15);
+        }
+
+        .todo-checkbox {
+            width: 24px;
+            height: 24px;
+            border: 3px solid #dee2e6;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            flex-shrink: 0;
+            position: relative;
+        }
+
+        .todo-checkbox::after {
+            content: '✓';
+            color: white;
+            font-weight: bold;
+            font-size: 14px;
+            opacity: 0;
+            transform: scale(0);
+            transition: all 0.3s ease;
+        }
+
+        .todo-text {
+            flex: 1;
+            font-size: 1.1rem;
+            line-height: 1.5;
+            transition: all 0.3s ease;
+        }
+
+        .todo-id {
+            background: #e9ecef;
+            color: #6c757d;
+            padding: 0.25rem 0.75rem;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            flex-shrink: 0;
+        }
+
+        /* Completed state */
+        .todo-item.completed {
+            background: #f8f9fa;
+            border-color: #28a745;
+        }
+
+        .todo-item.completed::before {
+            background: #28a745;
+            transform: scaleY(1);
+        }
+
+        .todo-item.completed .todo-checkbox {
+            background: #28a745;
+            border-color: #28a745;
+        }
+
+        .todo-item.completed .todo-checkbox::after {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        .todo-item.completed .todo-text {
+            text-decoration: line-through;
+            color: #6c757d;
+        }
+
+        .todo-item.completed .todo-id {
+            background: #28a745;
+            color: white;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 3rem;
+            color: #6c757d;
+        }
+
+        .spinner {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #667eea;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin-bottom: 1rem;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .error {
+            background: #f8d7da;
+            color: #721c24;
+            padding: 1rem;
+            border-radius: 10px;
+            text-align: center;
+            margin: 1rem;
+        }
+
+        .fade-in {
+            animation: fadeIn 0.5s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            body {
+                padding: 1rem;
+            }
+
+            .header h1 {
+                font-size: 2rem;
+            }
+
+            .controls {
+                padding: 1.5rem;
+            }
+
+            .stats {
+                gap: 1rem;
+            }
+
+            .stat-card {
+                min-width: 100px;
+                padding: 0.75rem 1rem;
+            }
+
+            .todo-container {
+                padding: 1.5rem;
+            }
+
+            .todo-item {
+                padding: 1rem;
+            }
+
+            .user-selector {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .user-selector select {
+                min-width: auto;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📋 Smart To-Do List</h1>
+            <p>Manage tasks with style and efficiency</p>
+        </div>
+        
+        <div class="controls">
+            <div class="user-selector">
+                <label for="user-select">👤 Select User:</label>
+                <select id="user-select">
+                    <option value="1">User 1 - Leanne Graham</option>
+                    <option value="2">User 2 - Ervin Howell</option>
+                    <option value="3">User 3 - Clementine Bauch</option>
+                    <option value="4">User 4 - Patricia Lebsack</option>
+                    <option value="5">User 5 - Chelsey Dietrich</option>
+                    <option value="6">User 6 - Mrs. Dennis Schulist</option>
+                    <option value="7">User 7 - Kurtis Weissnat</option>
+                    <option value="8">User 8 - Nicholas Runolfsdottir</option>
+                    <option value="9">User 9 - Glenna Reichert</option>
+                    <option value="10">User 10 - Clementina DuBuque</option>
+                </select>
+            </div>
+            
+            <div class="stats">
+                <div class="stat-card">
+                    <span class="stat-number" id="total-count">0</span>
+                    <span class="stat-label">Total</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number" id="completed-count">0</span>
+                    <span class="stat-label">Completed</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number" id="remaining-count">0</span>
+                    <span class="stat-label">Remaining</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="todo-container">
+            <ul id="to-do-list"></ul>
+        </div>
+    </div>
+
+    <script>
+        // DOM elements
+        const todoList = document.getElementById('to-do-list');
+        const userSelect = document.getElementById('user-select');
+        const totalCount = document.getElementById('total-count');
+        const completedCount = document.getElementById('completed-count');
+        const remainingCount = document.getElementById('remaining-count');
+        
+        let currentTodos = [];
+
+        // Fetch todos for a specific user
+        async function fetchTodos(userId = 1) {
+            try {
+                // Show loading state
+                todoList.innerHTML = `
+                    <div class="loading">
+                        <div class="spinner"></div>
+                        <p>Loading todos for User ${userId}...</p>
+                    </div>
+                `;
+
+                const response = await fetch(`https://jsonplaceholder.typicode.com/todos?userId=${userId}`);
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                
+                const todos = await response.json();
+                currentTodos = todos.map(todo => ({
+                    ...todo,
+                    userCompleted: todo.completed // Track original completion status
+                }));
+                
+                renderTodos();
+                updateStats();
+                
+            } catch (error) {
+                console.error('Error fetching todos:', error);
+                todoList.innerHTML = `
+                    <div class="error">
+                        <p>❌ Failed to load todos. Please try again.</p>
+                        <p><small>${error.message}</small></p>
+                    </div>
+                `;
+            }
+        }
+
+        // Render todos to the DOM
+        function renderTodos() {
+            todoList.innerHTML = '';
+            
+            currentTodos.forEach((todo, index) => {
+                const li = document.createElement('li');
+                li.className = `todo-item fade-in ${todo.completed ? 'completed' : ''}`;
+                li.style.animationDelay = `${index * 0.05}s`;
+                
+                li.innerHTML = `
+                    <div class="todo-checkbox"></div>
+                    <span class="todo-text">${todo.title}</span>
+                    <span class="todo-id">#${todo.id}</span>
+                `;
+                
+                // Add click event listener for toggling completion
+                li.addEventListener('click', () => toggleTodo(todo.id));
+                
+                // Add keyboard support
+                li.setAttribute('tabindex', '0');
+                li.addEventListener('keydown', (e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        toggleTodo(todo.id);
+                    }
+                });
+                
+                todoList.appendChild(li);
+            });
+        }
+
+        // Toggle todo completion status
+        function toggleTodo(todoId) {
+            const todo = currentTodos.find(t => t.id === todoId);
+            if (todo) {
+                todo.completed = !todo.completed;
+                renderTodos();
+                updateStats();
+                
+                // Add subtle haptic feedback simulation
+                const todoElement = document.querySelector(`[data-id="${todoId}"]`);
+                if (todoElement) {
+                    todoElement.style.transform = 'scale(0.98)';
+                    setTimeout(() => {
+                        todoElement.style.transform = '';
+                    }, 150);
+                }
+            }
+        }
+
+        // Update statistics
+        function updateStats() {
+            const total = currentTodos.length;
+            const completed = currentTodos.filter(todo => todo.completed).length;
+            const remaining = total - completed;
+            
+            // Animate number changes
+            animateNumber(totalCount, parseInt(totalCount.textContent) || 0, total);
+            animateNumber(completedCount, parseInt(completedCount.textContent) || 0, completed);
+            animateNumber(remainingCount, parseInt(remainingCount.textContent) || 0, remaining);
+        }
+
+        // Animate number changes
+        function animateNumber(element, from, to) {
+            const duration = 500;
+            const steps = 20;
+            const stepValue = (to - from) / steps;
+            let current = from;
+            let step = 0;
+            
+            const timer = setInterval(() => {
+                current += stepValue;
+                step++;
+                
+                if (step >= steps) {
+                    current = to;
+                    clearInterval(timer);
+                }
+                
+                element.textContent = Math.round(current);
+            }, duration / steps);
+        }
+
+        // Event listeners
+        userSelect.addEventListener('change', (e) => {
+            const userId = e.target.value;
+            fetchTodos(userId);
+        });
+
+        // Initialize the app
+        document.addEventListener('DOMContentLoaded', () => {
+            fetchTodos(1); // Start with user 1
+        });
+
+        // Add some nice touches
+        document.addEventListener('keydown', (e) => {
+            // Quick user switching with number keys
+            if (e.key >= '1' && e.key <= '9') {
+                const userId = e.key;
+                userSelect.value = userId;
+                fetchTodos(userId);
+            }
+            // Switch to user 10 with '0' key
+            else if (e.key === '0') {
+                userSelect.value = '10';
+                fetchTodos('10');
+            }
+        });
+
+        // Add tooltips for better UX
+        userSelect.addEventListener('mouseenter', () => {
+            userSelect.title = 'Use number keys 1-9, 0 for quick switching';
+        });
+    </script>
+</body>
+</html>
