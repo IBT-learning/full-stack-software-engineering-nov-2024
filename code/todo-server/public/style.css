@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.controls {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.controls label {
+    font-weight: 600;
+    color: #555;
+    margin-right: 10px;
+}
+
+#user-select {
+    padding: 10px 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    background: white;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+}
+
+#user-select:focus {
+    outline: none;
+    border-color: #667eea;
+}
+
+#to-do-list {
+    list-style: none;
+    padding: 0;
+}
+
+#to-do-list li {
+    background: #f8f9fa;
+    margin-bottom: 10px;
+    padding: 15px 20px;
+    border-radius: 10px;
+    border-left: 4px solid #667eea;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.1rem;
+}
+
+#to-do-list li:hover {
+    transform: translateX(5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+#to-do-list li.completed {
+    text-decoration: line-through;
+    color: #6c757d;
+    background: #e9ecef;
+    border-left-color: #28a745;
+    opacity: 0.7;
+}
+
+.toggle-btn {
+    background: #667eea;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+    margin-left: 15px;
+}
+
+.toggle-btn:hover {
+    background: #5a6fd8;
+    transform: scale(1.05);
+}
+
+.completed .toggle-btn {
+    background: #28a745;
+}
+
+.completed .toggle-btn:hover {
+    background: #218838;
+}
+
+.todo-text {
+    flex-grow: 1;
+}
+
+.loading {
+    text-align: center;
+    color: #666;
+    font-style: italic;
+    padding: 20px;
+}

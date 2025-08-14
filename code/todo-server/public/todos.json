@@ -1,0 +1,92 @@
+[
+  {
+    "userId": 1,
+    "id": 1,
+    "title": "Buy groceries for the week",
+    "completed": false
+  },
+  {
+    "userId": 1,
+    "id": 2,
+    "title": "Finish reading that book",
+    "completed": true
+  },
+  {
+    "userId": 1,
+    "id": 3,
+    "title": "Call mom and catch up",
+    "completed": false
+  },
+  {
+    "userId": 1,
+    "id": 4,
+    "title": "Clean the garage",
+    "completed": true
+  },
+  {
+    "userId": 1,
+    "id": 5,
+    "title": "Learn a new recipe",
+    "completed": false
+  },
+  {
+    "userId": 2,
+    "id": 6,
+    "title": "Plan weekend hiking trip",
+    "completed": false
+  },
+  {
+    "userId": 2,
+    "id": 7,
+    "title": "Fix the squeaky door",
+    "completed": true
+  },
+  {
+    "userId": 2,
+    "id": 8,
+    "title": "Water all the plants",
+    "completed": false
+  },
+  {
+    "userId": 2,
+    "id": 9,
+    "title": "Organize photo album",
+    "completed": true
+  },
+  {
+    "userId": 2,
+    "id": 10,
+    "title": "Research vacation destinations",
+    "completed": false
+  },
+  {
+    "userId": 3,
+    "id": 11,
+    "title": "Practice guitar for 30 minutes",
+    "completed": false
+  },
+  {
+    "userId": 3,
+    "id": 12,
+    "title": "Update resume",
+    "completed": true
+  },
+  {
+    "userId": 3,
+    "id": 13,
+    "title": "Buy birthday gift for sister",
+    "completed": false
+  },
+  {
+    "userId": 3,
+    "id": 14,
+    "title": "Schedule dentist appointment",
+    "completed": true
+  },
+  {
+    "userId": 3,
+    "id": 15,
+    "title": "Learn 5 new words in Spanish",
+    "completed": false
+  }
+]
