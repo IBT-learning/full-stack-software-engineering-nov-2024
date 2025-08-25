@@ -1,7 +1,7 @@
 [build]
   base = "code/henryogun-professional-blog"
   command = "npm run build"
-  publish = "build"
+  publish = "dist"
 
 [build.environment]
   NODE_VERSION = "18"
