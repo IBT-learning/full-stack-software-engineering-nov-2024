@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "userId": 1,
+    "title": "Getting Started with JavaScript",
+    "body": "JavaScript is one of the most popular programming languages in the world. It started as a simple scripting language for web browsers, but now it powers everything from servers to mobile apps. In this post, I'll share some tips for beginners who are just starting their JavaScript journey. First, understand the basics: variables, functions, and objects. Then move on to more advanced concepts like promises and async/await. Practice is key - build small projects and gradually increase complexity.",
+    "image": "images/profile1.jpg"
+  },
+  {
+    "id": 2,
+    "userId": 2,
+    "title": "The Art of Coffee Making",
+    "body": "There's something magical about brewing the perfect cup of coffee. It's not just about the beans, though they're certainly important. The grind size, water temperature, and brewing method all play crucial roles. I've been experimenting with different techniques for years, and I've learned that consistency is key. Start with good quality beans, invest in a proper grinder, and pay attention to your water-to-coffee ratio. A good cup of coffee can transform your entire day.",
+    "image": "images/profile2.jpg"
+  },
+  {
+    "id": 3,
+    "userId": 3,
+    "title": "Designing for Mobile First",
+    "body": "Mobile-first design isn't just a trend - it's a necessity in today's digital landscape. With more users accessing websites on mobile devices than ever before, designing for smaller screens first ensures your site works well everywhere. Start with the essential content and functionality, then enhance for larger screens. Use flexible layouts, optimize images, and always test on real devices. Remember, a great mobile experience often translates to a better desktop experience too.",
+    "image": "images/profile3.jpg"
+  },
+  {
+    "id": 4,
+    "userId": 1,
+    "title": "Building REST APIs with Express",
+    "body": "Express.js makes building REST APIs incredibly straightforward. In this post, I'll walk through creating a basic API that handles CRUD operations. We'll start by setting up our Express server, then add routes for GET, POST, PUT, and DELETE operations. Don't forget to include proper error handling and input validation. Testing your API endpoints is crucial - I recommend using tools like Postman or Insomnia during development.",
+    "image": "images/image1.jpg"
+  },
+  {
+    "id": 5,
+    "userId": 4,
+    "title": "Sustainable Living Tips",
+    "body": "Living sustainably doesn't have to be difficult or expensive. Small changes in our daily routines can make a big difference for the environment. Start with simple swaps: reusable water bottles instead of plastic ones, walking or biking for short trips, and buying local produce when possible. Reduce food waste by meal planning and composting organic scraps. Every action counts, and collective efforts create meaningful change.",
+    "image": "images/image2.jpg"
+  },
+  {
+    "id": 6,
+    "userId": 2,
+    "title": "Photography Composition Basics",
+    "body": "Good composition can transform an ordinary photo into something extraordinary. The rule of thirds is a great starting point - imagine your frame divided into nine equal sections and place important elements along these lines or at their intersections. Leading lines draw the viewer's eye through the image, while framing creates depth and focus. Don't forget about lighting - natural light during golden hour often produces the most flattering results.",
+    "image": "images/image3.jpg"
+  },
+  {
+    "id": 7,
+    "userId": 5,
+    "title": "The Science of Learning",
+    "body": "Understanding how our brains learn can help us become more effective students and teachers. Spaced repetition is one of the most powerful learning techniques - reviewing information at increasing intervals helps transfer knowledge from short-term to long-term memory. Active recall, where you test yourself rather than just re-reading notes, also significantly improves retention. Mix different types of practice to strengthen neural pathways.",
+    "image": "images/image4.jpg"
+  },
+  {
+    "id": 8,
+    "userId": 3,
+    "title": "Color Theory in Design",
+    "body": "Color is one of the most powerful tools in a designer's toolkit. Understanding color theory helps create harmonious, effective designs that communicate the right message. The color wheel shows relationships between colors - complementary colors create contrast and energy, while analogous colors provide harmony and peace. Consider the psychological impact of colors too: blue conveys trust and stability, while red evokes excitement and urgency.",
+    "image": "images/image5.jpg"
+  },
+  {
+    "id": 9,
+    "userId": 2,
+    "title": "Altism Spectrum Disease",
+    "body": "Altism in children has increased over the years, the cause of the alarming increase is yet to be identified. However scientist are on a continuing research to identify factors responsible for the upsurge of Altism in children. ",
+    "image": "images/image8.jpg"
+  }
+]

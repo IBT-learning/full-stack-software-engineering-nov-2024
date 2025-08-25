@@ -1,0 +1,104 @@
+.quote-card {
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-left: 4px solid #007bff;
+  position: relative;
+  overflow: hidden;
+}
+
+.quote-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #667eea, #764ba2, #4facfe);
+  /* Cross-browser fallbacks */
+  background: -webkit-linear-gradient(90deg, #667eea, #764ba2, #4facfe);
+  background: -moz-linear-gradient(90deg, #667eea, #764ba2, #4facfe);
+  background: -o-linear-gradient(90deg, #667eea, #764ba2, #4facfe);
+}
+
+.quote-card::after {
+  content: '💫';
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 1.2rem;
+  opacity: 0.3;
+  transition: all 0.3s ease;
+}
+
+.quote-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.quote-card:hover::after {
+  opacity: 0.7;
+  transform: rotate(360deg);
+}
+
+.quote-content {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin: 0 0 20px 0;
+  font-style: italic;
+  color: #495057;
+  text-align: center;
+}
+
+.quote-author {
+  text-align: right;
+  font-weight: 600;
+  color: #007bff;
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.quote-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+
+.tag {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  /* Cross-browser fallbacks */
+  background: -webkit-linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: -moz-linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: -o-linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.tag:hover {
+  transform: scale(1.05);
+  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.4);
+}
+
+.tag::before {
+  content: '#';
+  opacity: 0.7;
+  margin-right: 2px;
+}
+
+@media (max-width: 768px) {
+  .quote-card {
+    padding: 20px;
+  }
+  
+  .quote-content {
+    font-size: 1rem;
+  }
+}

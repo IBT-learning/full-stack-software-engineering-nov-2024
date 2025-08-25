@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "Henry Ogun",
+    "username": "H1",
+    "email": "henry@gmail.com"
+  },
+  {
+    "id": 2,
+    "name": "Ayobanjo Ogun",
+    "username": "AYBELLZ",
+    "email": "ayoogun@gmail.com"
+  },
+  {
+    "id": 3,
+    "name": "Kehinde Ogun",
+    "username": "KennyJ",
+    "email": "kehinde@gmail.com"
+  },
+  {
+    "id": 4,
+    "name": "Demmilade Ogun",
+    "username": "Demmy",
+    "email": "demmy@gmail.com"
+  },
+  {
+    "id": 5,
+    "name": "Taiye Ogun",
+    "username": "Taiye",
+    "email": "taiye@gmail.com"
+  }
+]
