@@ -1,0 +1,100 @@
+/* Dynamic Ingredients Component Styles */
+.dynamic-ingredients {
+  margin-bottom: 1.5rem;
+}
+
+.form-label {
+  display: block;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.ingredient-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.ingredient-input {
+  flex: 1;
+  padding: 0.75rem;
+  border: 2px solid #e9ecef;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.ingredient-input:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.ingredient-input::placeholder {
+  color: #6c757d;
+}
+
+.remove-ingredient {
+  background: #dc3545;
+  color: white;
+  border: none;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  line-height: 1;
+}
+
+.remove-ingredient:hover {
+  background: #c82333;
+  transform: scale(1.1);
+}
+
+.add-ingredient {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 0.5rem;
+  font-weight: 500;
+}
+
+.add-ingredient:hover {
+  background: #218838;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(40, 167, 69, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .ingredient-row {
+    margin-bottom: 1rem;
+  }
+  
+  .ingredient-input {
+    font-size: 0.9rem;
+    padding: 0.6rem;
+  }
+  
+  .remove-ingredient {
+    width: 32px;
+    height: 32px;
+    font-size: 1rem;
+  }
+  
+  .add-ingredient {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+}
