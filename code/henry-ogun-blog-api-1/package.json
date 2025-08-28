@@ -1,0 +1,22 @@
+{
+  "name": "henry-ogun-blog-api-1",
+  "version": "1.0.0",
+  "description": "Blog API for Henry Ogun's professional blog",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  },
+  "keywords": ["blog", "api", "express", "mongodb"],
+  "author": "Henry Ogun",
+  "license": "MIT"
+}
