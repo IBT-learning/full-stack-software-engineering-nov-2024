@@ -1,0 +1,66 @@
+.mood-board {
+  background: white;
+  border-radius: 15px;
+  padding: 30px;
+  margin: 20px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.mood-statement {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 30px;
+  font-weight: 300;
+}
+
+.emoji-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.emoji-button {
+  font-size: 48px;
+  background: none;
+  border: 3px solid transparent;
+  border-radius: 50%;
+  padding: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.emoji-button:hover {
+  border-color: #007bff;
+  background-color: #f0f8ff;
+  transform: scale(1.1);
+}
+
+.emoji-button:active {
+  transform: scale(0.95);
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .emoji-container {
+    gap: 10px;
+  }
+  
+  .emoji-button {
+    font-size: 36px;
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+  }
+  
+  .mood-statement {
+    font-size: 20px;
+  }
+}
