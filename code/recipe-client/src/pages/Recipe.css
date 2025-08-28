@@ -1,0 +1,241 @@
+/* Single Recipe Page Styles */
+.recipe-detail {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.recipe-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.back-link {
+  color: #667eea;
+  text-decoration: none;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.back-link:hover {
+  color: #5a6fd8;
+  text-decoration: none;
+}
+
+.recipe-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.edit-button {
+  background: #ffc107;
+  color: #212529;
+  text-decoration: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.edit-button:hover {
+  background: #e0a800;
+  transform: translateY(-2px);
+  text-decoration: none;
+  color: #212529;
+}
+
+.delete-button {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.delete-button:hover {
+  background: #c82333;
+  transform: translateY(-2px);
+}
+
+.recipe-content {
+  background: white;
+  border-radius: 12px;
+  padding: 2.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-content h1 {
+  color: #333;
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin: 0 0 1.5rem 0;
+  line-height: 1.2;
+}
+
+.recipe-meta {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: #f8f9fa;
+  border-radius: 10px;
+}
+
+.meta-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.meta-item strong {
+  color: #495057;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.recipe-description {
+  margin-bottom: 2.5rem;
+}
+
+.recipe-description h2 {
+  color: #333;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0 0 1rem 0;
+  border-bottom: 2px solid #667eea;
+  padding-bottom: 0.5rem;
+}
+
+.recipe-description p {
+  color: #555;
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+.recipe-ingredients {
+  margin-bottom: 2.5rem;
+}
+
+.recipe-ingredients h2 {
+  color: #333;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0 0 1rem 0;
+  border-bottom: 2px solid #28a745;
+  padding-bottom: 0.5rem;
+}
+
+.recipe-ingredients ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.recipe-ingredients li {
+  padding: 0.75rem;
+  margin-bottom: 0.5rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border-left: 3px solid #28a745;
+  transition: background-color 0.3s ease;
+}
+
+.recipe-ingredients li:hover {
+  background: #e9ecef;
+}
+
+.recipe-instructions {
+  margin-bottom: 2rem;
+}
+
+.recipe-instructions h2 {
+  color: #333;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0 0 1rem 0;
+  border-bottom: 2px solid #ffc107;
+  padding-bottom: 0.5rem;
+}
+
+.instructions-text p {
+  color: #555;
+  line-height: 1.7;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background: #fff;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  border-left: 3px solid #ffc107;
+}
+
+.instructions-text p:last-child {
+  margin-bottom: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .recipe-detail {
+    padding: 1rem;
+  }
+  
+  .recipe-header {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+  }
+  
+  .recipe-actions {
+    justify-content: center;
+  }
+  
+  .recipe-content {
+    padding: 1.5rem;
+  }
+  
+  .recipe-content h1 {
+    font-size: 2rem;
+  }
+  
+  .recipe-meta {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+  
+  .edit-button,
+  .delete-button {
+    flex: 1;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .recipe-content h1 {
+    font-size: 1.7rem;
+  }
+  
+  .recipe-ingredients li,
+  .instructions-text p {
+    padding: 0.6rem;
+  }
+}
