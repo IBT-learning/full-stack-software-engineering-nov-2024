@@ -1,0 +1,17 @@
+### Test Home Endpoint
+GET http://localhost:4000/
+
+### Test About Endpoint  
+GET http://localhost:4000/about
+
+### Test Greet Endpoint
+GET http://localhost:4000/greet/John
+
+### Test Favorite with Query
+GET http://localhost:4000/favorite?fave=coding
+
+### Test Favorite without Query
+GET http://localhost:4000/favorite
+
+### Test Multiple Favorites
+GET http://localhost:4000/favorites?color=blue&food=pizza
