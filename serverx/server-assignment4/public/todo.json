@@ -1,0 +1,6 @@
+[
+  { "userId": 1, "id": 1, "title": "Finish Express homework", "completed": false },
+  { "userId": 1, "id": 2, "title": "Buy jollof rice ingredients", "completed": true },
+  { "userId": 2, "id": 3, "title": "Plan weekend trip", "completed": false },
+  { "userId": 2, "id": 4, "title": "Read JavaScript book", "completed": true }
+]

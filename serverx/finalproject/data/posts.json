@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "userId": 101,
+    "title": "My First Blog Post",
+    "body": "This is the content of my very first blog post. Exciting times!",
+    "image": "images/post1.jpg"
+  },
+  {
+    "id": 2,
+    "userId": 102,
+    "title": "Another Day, Another Post",
+    "body": "Some interesting things to share with you all.",
+    "image": "images/post2.jpg"
+  }
+]
