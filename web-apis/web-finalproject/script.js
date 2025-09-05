@@ -1,24 +1,24 @@
-async function loadPosts() {
-  try {
-    const response = await fetch("https://jsonplaceholder.typicode.com/posts?_limit=5");
-    const posts = await response.json();
+document.addEventListener("DOMContentLoaded", () => {
+  const postsContainer = document.getElementById("posts-container");
 
-    const container = document.getElementById("posts");
-    container.innerHTML = "";
-
-    posts.forEach(post => {
-      const div = document.createElement("div");
-      div.classList.add("post");
-      div.innerHTML = `
-        <h2>${post.title}</h2>
-        <p>${post.body}</p>
-      `;
-      container.appendChild(div);
+  // Fetch all posts
+  fetch("https://jsonplaceholder.typicode.com/posts")
+    .then(response => response.json())
+    .then(posts => {
+      // Show first 5 posts (to avoid overloading page with 100)
+      posts.slice(0, 5).forEach(post => {
+        const postElement = document.createElement("div");
+        postElement.classList.add("post");
+        postElement.innerHTML = `
+          <h2>${post.title}</h2>
+          <p>${post.body}</p>
+          <small>Post ID: ${post.id} | User ID: ${post.userId}</small>
+        `;
+        postsContainer.appendChild(postElement);
+      });
+    })
+    .catch(error => {
+      console.error("Error fetching posts:", error);
+      postsContainer.innerHTML = `<p>Failed to load posts.</p>`;
     });
-  } catch (err) {
-    console.error("Error loading posts:", err);
-  }
-}
-
-// Run once the HTML is loaded
-document.addEventListener("DOMContentLoaded", loadPosts);
+});
