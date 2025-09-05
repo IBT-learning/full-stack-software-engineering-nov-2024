@@ -1,22 +1,24 @@
-// Fetch blog posts when page loads
+async function loadPosts() {
+  try {
+    const response = await fetch("https://jsonplaceholder.typicode.com/posts?_limit=5");
+    const posts = await response.json();
 
-document.addEventListener("DOMContentLoaded", () => {
-  fetch("https://jsonplaceholder.typicode.com/posts?_limit=5") // limit to 5 posts
-    .then(response => response.json())
-    .then(posts => {
-      const container = document.getElementById("blog-posts");
+    const container = document.getElementById("posts");
+    container.innerHTML = "";
 
-      posts.forEach(post => {
-        const postElement = document.createElement("div");
-        postElement.classList.add("post");
+    posts.forEach(post => {
+      const div = document.createElement("div");
+      div.classList.add("post");
+      div.innerHTML = `
+        <h2>${post.title}</h2>
+        <p>${post.body}</p>
+      `;
+      container.appendChild(div);
+    });
+  } catch (err) {
+    console.error("Error loading posts:", err);
+  }
+}
 
-        postElement.innerHTML = `
-          <h2>${post.title}</h2>
-          <p>${post.body}</p>
-        `;
-
-        container.appendChild(postElement);
-      });
-    })
-    .catch(error => console.error("Error fetching posts:", error));
-});
+// Run once the HTML is loaded
+document.addEventListener("DOMContentLoaded", loadPosts);
