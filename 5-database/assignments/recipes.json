@@ -202,5 +202,22 @@
       "Raw veggies to pickle (Jalapenos or Cucumbers or Redishes)"
     ],
     "instructions": "Mix the water, vinegar, sugar, salt, oregano and mustard seeds and bring liquid to a boil. Into a jar, put the vegetables to be pickled. Pour the boiling mixture into the jar (ensure that the liquid submerges the vegetables). Wait for the mixture to cool and enjoy the vegetables."
+  },
+
+  [
+  {
+    "name": "Jollof Rice",
+    "ingredients": ["rice", "tomatoes", "onions", "pepper", "oil", "seasoning"],
+    "instructions": "Cook tomato stew, add rice, simmer until done. Serve with fried plantains."
+  },
+  {
+    "title": "chips varietes",
+    "name": "Pancakes",
+    "ingredients": ["flour", "milk", "eggs", "sugar", "butter"],
+    "instructions": "Mix ingredients, fry batter in a pan until golden brown on both sides."
   }
 ]
+
+]
+
+
