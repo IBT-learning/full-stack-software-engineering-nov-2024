@@ -1,0 +1,17 @@
+.topic-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.topic-card {
+  height: 10rem;
+  width: 10rem;
+  background-color: aliceblue;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
