@@ -1,0 +1,27 @@
+.mood-container {
+  text-align: center;
+  margin-top: 50px;
+  font-family: Arial, sans-serif;
+}
+
+.mood-title {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.mood-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.mood-emoji {
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.mood-emoji:hover {
+  transform: scale(1.2);
+}
