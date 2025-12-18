@@ -1,0 +1,112 @@
+:root {
+  --bg: #ffffff;
+  --text: #111111;
+  --card-bg: #f9f9f9;
+  --accent: #5abecd;
+  --border-radius: 16px;
+  --shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+body.dark {
+  --bg: #1a1a1a;
+  --text: #e0e0e0;
+  --card-bg: #2a2a2a;
+  --accent: #ff79f4;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em;
+  background-color: var(--card-bg);
+  box-shadow: var(--shadow);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  margin: 0;
+  font-size: 1.5em;
+  color: var(--accent);
+}
+
+.controls, .back-home {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.toggle-btn, .back-home {
+  background: none;
+  border: 2px solid var(--accent);
+  color: var(--accent);
+  padding: 0.5em 1em;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.toggle-btn:hover, .back-home:hover {
+  background: var(--accent);
+  color: white;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5em;
+  padding: 2em;
+}
+
+.post-card {
+  background: var(--card-bg);
+  border-radius: var(--border-radius);
+  padding: 1.5em;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.20), 0 1.5px 4px rgba(90, 190, 205, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  transition: transform 0.2s, box-shadow 0.2s;
+  opacity: 0.97;
+}
+
+.post-card:hover {
+  transform: translateY(-10px);
+}
+
+.author-link {
+  text-decoration: none;
+  color: var(--accent);
+  font-weight: bold;
+  font-size: 0.95em;
+}
+
+.avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  margin-right: 0.5em;
+}
+
+.post-title {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-around;
+  opacity: 0.8;
+  font-size: 0.9em;
+}
