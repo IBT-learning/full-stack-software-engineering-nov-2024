@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Number Guessing Game</h1>
+            <p class="subtitle">Can you outsmart the computer, or will it guess your number?</p>
+        </header>
+        
+        <div class="game-info">
+            <div class="info-box">
+                <div class="info-title">Game Mode</div>
+                <div id="modeDisplay" class="info-value">None Selected</div>
+            </div>
+            <div class="info-box">
+                <div class="info-title">Guesses</div>
+                <div id="guessCount" class="info-value">0</div>
+            </div>
+            <div class="info-box">
+                <div class="info-title">Status</div>
+                <div id="gameStatus" class="game-status not-playing">Not Playing</div>
+            </div>
+        </div>
+        
+        <div class="mode-selector">
+            <h2>Select Game Mode</h2>
+            <div class="mode-buttons">
+                <button class="mode-btn computer" onclick="startGame('computer')">Computer Guesses</button>
+                <button class="mode-btn player" onclick="startGame('player')">You Guess</button>
+            </div>
+        </div>
+        
+        <div class="game-area">
+            <div class="output-container">
+                <div id="output">Select a game mode to begin. In "Computer Guesses" mode, think of a number between 1-100 and the computer will try to guess it. In "You Guess" mode, you'll try to guess the computer's secret number.</div>
+            </div>
+            
+            <div class="controls">
+                <!-- Computer guessing controls -->
+                <div id="computerControls" class="controls-section" style="display: none;">
+                    <div class="button-row">
+                        <button class="control-btn response-btn higher" onclick="handleResponse('h')">Higher</button>
+                        <button class="control-btn response-btn lower" onclick="handleResponse('l')">Lower</button>
+                        <button class="control-btn response-btn correct" onclick="handleResponse('c')">Correct!</button>
+                    </div>
+                </div>
+                
+                <!-- Player guessing controls -->
+                <div id="playerControls" class="controls-section" style="display: none;">
+                    <div class="input-group">
+                        <input type="number" id="guessInput" min="1" max="100" placeholder="Enter your guess (1-100)">
+                        <button id="submitGuess" onclick="submitPlayerGuess()">Submit Guess</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="instructions">
+            <h3>How to Play</h3>
+            <ul>
+                <li><strong>Computer Guesses:</strong> Think of a number between 1-100. The computer will try to guess it. Tell the computer if its guess is too high, too low, or correct.</li>
+                <li><strong>You Guess:</strong> The computer picks a random number between 1-100. You try to guess it, and the computer will tell you if your guess is too high or too low.</li>
+                <li>Try to win in as few guesses as possible!</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
